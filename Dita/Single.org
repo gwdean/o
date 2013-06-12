@@ -1,0 +1,30 @@
+* Single Sourcing in =org-mode=
+** Overview
+- Assemble Topics
+- Filter Content
+- Export Content
+
+** Code Summary
+- See attached document
+
+** Transclusion Construction
+
+#+BEGIN_EXAMPLE
+#+INCLUDE: "File.org"
+#+END_EXAMPLE
+
+** Headings and Tags
+Headings can contain more than one =:tag:=
+
+#+BEGIN_EXAMPLE
+>  * Level 1 heading            :tag1:tag2:
+>  ** Level 2 heading      :tag3:tag4:tag5:
+>  *** Level 3 heading          :tag1:tag4:
+#+END_EXAMPLE
+
+** Include/exclude tagged headings from export
+#+BEGIN_EXAMPLE
+ #+EXPORT_SELECT_TAGS: tag1
+ #+EXPORT_EXCLUDE_TAGS: tag2
+#+END_EXAMPLE
+** File1 File2 File3

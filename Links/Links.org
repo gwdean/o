@@ -1,0 +1,19 @@
+* Internal Links
+
+[[#my-custom-id]]
+
+#+NAME: My Target
+| a  | table      |
+|----+------------|
+| of | four cells | 
+
+<<My Target>>
+   
+* External Links
+[[http://orgmode.org/][Org Mode]]
+[[http://orgmode.org/#docs][Org Mode Docs]]
+
+file:Page1.org
+file:Page2.org
+file:Hyperlinks.html
+file:Hyperlinks.org

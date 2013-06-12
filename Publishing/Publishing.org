@@ -1,0 +1,9 @@
+To understand publishing in Org Mode, we need to learn about
+some other concepts first. 
+
+** Footnotes (26)
+The Org homepage[fn:1] now looks a lot better than it used to.
+
+[fn:1] The link is http:orgmode.org
+
+** Links

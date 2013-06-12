@@ -1,0 +1,44 @@
+Lucas.org
+; Variations on the Lucas Tower (aka "Tower of Hanoi")
+* Ditaa Drawing of the Tower
+* Hofstadter's Version
+* Rosetta Code
+http://rosettacode.org/wiki/Towers_of_Hanoi
+
+** Common Lisp
+(defun move (n from to via)
+  (cond ((= n 1)
+         (format t "Move from ~A to ~A.~%" from to))
+        (t 
+	 (move (- n 1) from via to)
+	 (format t "Move from ~A to ~A.~%" from to)
+	 (move (- n 1) via to from))))
+
+** Emacs Lisp
+(defun move (n from to via)
+  (cond ((= n 1)
+         (print (format "Move from %S to %S" from to)))
+	(t
+	 (progn
+	   (move (- n 1) from via to)
+	   (print (format "Move from %S to %S" from to))
+	   (move (- n 1) via to from)))))
+
+** Io
+hanoi := method(n, from, to, via,
+  if (n == 1) then (
+    writeln("Move from ", from, " to ", to)
+  ) else (
+    hanoi(n - 1, from, via, to  )
+    hanoi(1    , from, to , via )
+    hanoi(n - 1, via , to , from)
+  )
+)
+** Racket
+(define (hanoi n a b c)
+  (when (> n 0)
+    (hanoi (- n 1) a c b)
+    (printf "Move ~a to ~a\n" a b)
+    (hanoi (- n 1) c b a)))
+(hanoi 4 'left 'middle 'right)
+

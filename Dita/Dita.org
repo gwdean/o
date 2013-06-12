@@ -1,0 +1,20 @@
+Dita.org
+This is a set of utilities, code snippets, and
+commentaries for understanding the relationship 
+between DITA and org-mode. It draws heavily on 
+the work of John Tait. (http:///www.johntait.org)
+
+* DITA subject scheme map tutorial
+* DITA manual demo
+* DITA content references
+* The Unicorn and the Finch
+* Single sourcing
+* Topic based authoring
+* Conditional processing
+* Org manual demo
+* Menu for switching between different manuals
+* Weekend project: Build a television program database
+* GitHub and DITA for technical writers
+* BibTeX demo
+* State machine drawing of single sourcing
+* Other technical writing and single source tools.

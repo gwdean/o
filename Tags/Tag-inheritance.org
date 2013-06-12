@@ -1,0 +1,20 @@
+/Tags/ make use of the hierarchical structure of outline trees.
+
+If a heading has a certain tag, all subheadings will inherit
+the tag as well.
+
+For example, in the list:
+
+#+BEGIN_EXAMPLE
+* Meeting with the French group     :work:
+** Summary by Frank                 :boss:notes:
+*** TODO Prepare slides for him     :action:
+#+END_EXAMPLE
+
+the final heading will have the tags :work:boss:notes:action:
+
+You can also set tags that all entries in a file should
+inherit by including the following line:
+
+#+FILETAGS: :Peter:Boss:Secret:
+

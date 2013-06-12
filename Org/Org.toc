@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Arrangements}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}David Touretzky. "Common Lisp. A Gentle Introduction to Symbolic Computation."}{1}{subsection.1.1}

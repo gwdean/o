@@ -1,0 +1,22 @@
+* Hyperlinks
+** Link format
+=[[link][description]]=
+
+or =[[link]]=
+
+** Internal links
+[[#id1]]
+[[#id2]]
+[[#id3]]
+[[#id4]]
+[[#id5]]
+
+[[My Target]] 
+[[My Target][Find my target]]
+
+# <<My Target>>
+
+<<My Target>>
+
+** External links
+[[http://www.gnu.org/software/emacs/][GNU Emacs]]

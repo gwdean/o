@@ -1,0 +1,30 @@
+OnBabel.org
+
+Commentary on *Babel: Introduction*
+http://orgmode.org/worg/org-contrib/babel/intro.html
+
+* Introduction
+* Overview
+* Initial Configuration
+* Code Blocks
+** Code Blocks in Org
+#+begin_src language org-switches
+,body
+#+end_src
+
+#+begin_src ruby
+,require 'date'
+,"This file was last evaluated on #{Date.today}"
+#+end_src
+
+** Code Blocks in Babel
+#+begin_src language org-switches header-arguments
+,body
+#+end_src
+
+
+* Source Code Execution
+* Using Code Blocks in Org Tables
+* The Library of Babel
+* Literate Programming
+* Reproducible Research

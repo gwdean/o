@@ -1,0 +1,136 @@
+This is an emerging document that helps
+capture the spirit of writing in Org. 
+
+The name is a reference to Paul Graham's
+/On Lisp/, an absolute classic. This is
+perhaps a pale reflection of the above , but still,
+even a pale reflection of such a work could help 
+someone with something. Also I am writing
+*ON* org, in the sense that I am writing
+a commentary on top of the main outline of
+the /Org Mode 7 Reference Manual/. (It could
+have been called Org.org, but that will be
+another work for another time.)
+
+Meta-ness will be likely be involved, but
+hopefully kept to a minimum.
+
+* Introduction
+** Summary.
+Excellent summary. A snappy one-page account.
+* Document Structure
+** Outlines
+Org is implemented on top of Outline mode.
+Outlines allow a document to be organized in a hierarchical manner
+* Tables
+* Hyperlinks
+The general link format looks like:
+
+#+BEGIN_EXAMPLE
+[[link][description]] or alternatively [[link]]
+#+END_EXAMPLE
+[[link]]
+[[link][description]]
+
+To show the internal structure of all links, use
+the menu entry =Org->Hyperlinks->Literal links=
+
+Custom IDs are good for HTML export, where they
+produce nice-looking section links.
+
+Links such as '[[My Target]]' or '[[My Target][Find my target]]'
+
+Targets may be located anywhere; sometimes it is convenient
+to put them into a comment line.
+
+# <<My Target>>
+
+Links are enclosed in double brackets and may contain a descriptive
+text to be displayed instead of the URL.
+
+[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+
+* TODO items
+* Tags
+* Properties and columns
+* Dates and Times
+(C-c . enter)
+<2013-06-11 Tue>
+<2013-06-11 Tue>
+<2013-06-11 Tue>
+<2013-06-11 Tue>
+<2013-06-11 Tue>
+
+
+    
+* Capture-Refile-Archive
+* Agenda views
+* Markup for rich export
+* Exporting
+* Publishing
+* Working with source code
+** Evaluating code blocks
+Code blocks can be evaluated and the results placed
+in the Org-mode buffer.
+
+Although only Emacs Lisp code is evaluated in code
+blocks by default, support exists for evaluating
+blocks in many languages. The list is impressive,
+and could be considered a set of essential modern
+languages worth knowing about.
+
+There are a number of ways to evaluate code blocks.
+
+- (C-c C-c) or (C-c C-v e) with the point on a code block.
+This calls the /org-babel-execute-src-block/ function
+to evaluate the block and insert its results into the 
+Org-mode buffer.
+
+- It is also possible to evaluate named code blocks
+from anywhere in an Org-mode buffer or an Org-mode
+table.
+
+- call/function/lob can be used to remotely execute
+code blocks
+
+#+BEGIN_SRC emacs-lisp
+(defun org-xor (a b)
+   "Exclusive or."
+   (if a (not b) b))
+#+END_SRC
+
+** Languages
+
+(asymptote c c++ clojure css ditaa dot emacs-lisp gnuplot haskell
+latex matlab mscgen ocaml octave oz perl python r ruby sass screen
+sh sql sqlite) -> from the Org Mode 7 Reference Manual (2010).
+
+Language-specific documentation can be found at
+
+http://orgmode.org/worg/org-contrib/babel/languages
+
+The /org-babel-load-languages/ controls which languages are 
+enabled for evaluation. (emacs-lisp is the only language
+enabled by default.)
+
+The following disables emacs-lisp evaluation and enables
+evaluation of R code blocks:
+
+#+BEGIN_EXAMPLE
+(org-babel-do-load-languages
+  'org-babel-load-languages
+  '((emacs-lisp . nil)
+    (R . t)))
+#+END_EXAMPLE 
+
+The following adds support for evaluating =clojure= code
+blocks.
+
+#+BEGIN_EXAMPLE
+(require 'ob-clojure)
+#+END_EXAMPLE
+
+* The spreadsheet
+* Miscellaneous
+* Appendix A Hacking
+* Appendix B MobileOrg

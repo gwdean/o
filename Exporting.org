@@ -1,0 +1,17 @@
+* The export dispatcher (135)
+All export commands can be reached using the
+*export dispatcher* (a prefix key that prompts
+for an additional key specifying the command.)
+
+=C-c C-e=     -> Dispatcher for export and publishing commands
+=C-c C-e v=   -> Like =C-c C-e=, but only export the text that is currently visible
+
+* HTML export (136)
+Org-mode contains an (X)HTML exporter with extensive
+HTML formatting, in ways similar to John Gruber's /markdown/
+language, but with additional support for tables.
+
+** HTML export commands
+(C-c C-e h) -> export as HTML file 'yo.html'
+(C-c C-e b) -> export as HTML file and immediately open it with a browser.
+(C-c C-e H) -> export to a temporary buffer. Do not create a file.

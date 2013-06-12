@@ -1,0 +1,15 @@
+This is a companion to the /On.org/
+document. /Org.org/ is the more experimental
+side of things. 
+
+* Arrangements
+** David Touretzky. "Common Lisp. A Gentle Introduction to Symbolic Computation."
+2013/06
+
+#+BEGIN_SRC emacs-lisp
+(defun average (x y)
+  (let ((sum (+ x y)))
+    (list x y 'average 'is (/ sum 2.0))))
+#+END_SRC
+
+ 

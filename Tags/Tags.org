@@ -1,0 +1,6 @@
+* Tags
+An excellent way to implement labels and contexts
+for cross-correlating information is to assign /tags/
+to headlines.
+
+[[Tag-inheritance.org][Tag Inheritance]]

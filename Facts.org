@@ -1,0 +1,6 @@
+** Resources
+http://www.ohloh.net/p/org-mode
+git://orgmode.org/org-mode.git 
+
+Github Page
+https://github.com/jwiegley/org-mode
