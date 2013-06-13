@@ -1,0 +1,44 @@
+#+BEGIN_QUOTE
+The interpreter for a computer language is just another program.
+#+END_QUOTE
+
+Hal Abelson claims that you cannot be a master
+programmer until you learn how to write interpreters.
+
+#+BEGIN_QUOTE
+
+#+END_QUOTE
+This is a collection of interpreters that I have
+arranged so that I can gain an understanding of what
+they are and how they work. 
+* 1985-Abelson
+** Core of the Interpreter
+(define (eval exp env)
+  (cond ((self-evaluating? exp) exp)
+	((quoted? exp) (text-of-quotation))
+        ((variable? exp) (lookup-variable-value exp env))
+        ((definition? exp) (eval-definition exp env))
+	((assignment? exp) (eval-assignment exp env))
+        ((lambda? exp) (make-procedure exp env))
+	((conditional? exp) (eval-cond (clauses exp) env))
+	((application? exp)
+	 (apply (eval (operator exp) env)
+		(list-of-values (operands exp) env)))
+	(else (error "Unknown expression type -- EVAL" exp)))
+	
+(define (apply procedure arguments)
+  (cond ((primitive-procedure? procedure)
+	 (apply-primitive-procedure procedure arguments))
+	((compound-procedure? procedure)
+	 (eval-sequence (procedure-body procedure)
+			(extend-environment
+			 (parameters procedure)
+			 arguments
+			 (procedure-environment procedure))))
+	(else
+	 (error "Unknown procedure type -- APPLY" procedure))))
+* 2002-Graham
+* 2005-Seibel
+* 2008-Friedman
+* 2009-Dybvig
+* 2013-Touretzky

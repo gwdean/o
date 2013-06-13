@@ -1,0 +1,78 @@
+#+TITLE:     On Interpreters
+#+AUTHOR:    Greg
+#+EMAIL:     greg@greg-Satellite-C855D
+#+DATE:      2013-06-13 Thu
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+Hal Abelson, in his /Foreword/ to the book
+/Essentials of Programming Languages/, claims that you cannot be a master
+programmer until you learn how to write interpreters.
+
+#+BEGIN_QUOTE
+This book brings you face-to-face with the most fundamental idea in computer programming:
+
+THE INTERPRETER FOR A COMPUTER LANGUAGE IS JUST ANOTHER PROGRAM.
+
+It sounds obvious, doesn't it? But the implications are profound. If you
+are a computational theorist, the interpreter idea recalls Godel's discovery
+of the limitations of formal logical systems, Turing's concept of a universal
+computer, and von Neumann's basic notion of the stored-program machine.
+If you are a programmer, mastering the idea of an interpreter is a source of
+great power. It provokes a real shift in mindset, a basic change in the way
+you think about programming.
+
+I did a lot of programming before I learned about interpreters, and I pro-
+duced some substantial programs... The notion that there was some underlying structure to the way the language was
+organized, and that I might want to override some of the language design-
+ers’ decisions, never occurred to me. I didn’t know how to create embedded
+sublanguages to help organize my implementation, so the entire program
+seemed like a large, complex mosaic, where each piece had to be carefully
+shaped and fitted into place, rather than a cluster of languages, where the
+pieces could be flexibly combined. If you don’t understand interpreters, you
+can still write programs; you can even be a competent programmer. But you
+can’t be a master.
+#+END_QUOTE
+
+This is a collection of interpreters that I have
+arranged so that I can gain an understanding of what
+they are and how they work. 
+* 1985-Abelson
+** Core of the Interpreter
+(define (eval exp env)
+  (cond ((self-evaluating? exp) exp)
+	((quoted? exp) (text-of-quotation))
+        ((variable? exp) (lookup-variable-value exp env))
+        ((definition? exp) (eval-definition exp env))
+	((assignment? exp) (eval-assignment exp env))
+        ((lambda? exp) (make-procedure exp env))
+	((conditional? exp) (eval-cond (clauses exp) env))
+	((application? exp)
+	 (apply (eval (operator exp) env)
+		(list-of-values (operands exp) env)))
+	(else (error "Unknown expression type -- EVAL" exp)))
+	
+(define (apply procedure arguments)
+  (cond ((primitive-procedure? procedure)
+	 (apply-primitive-procedure procedure arguments))
+	((compound-procedure? procedure)
+	 (eval-sequence (procedure-body procedure)
+			(extend-environment
+			 (parameters procedure)
+			 arguments
+			 (procedure-environment procedure))))
+	(else
+	 (error "Unknown procedure type -- APPLY" procedure))))
+* 2002-Graham
+* 2005-Seibel
+* 2008-Friedman
+* 2009-Dybvig
+* 2013-Touretzky

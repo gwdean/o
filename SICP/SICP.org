@@ -1,0 +1,35 @@
+Notes on Abelson, Sussman and Sussman's classic
+work of Computer Science. 
+
+* Building Abstractions with Procedures
+** Basic Functions
+(define (square x) (* x x))
+
+(define (sum-of-squares x y)
+  (+ (square x) (square y)))
+
+(define (f a)
+  (sum-of-squares (+ a 1) (* a 2)))
+
+
+* Building Abstractions with Data
+** Data-directed programming
+/Data-directed programming/ helps one modularize a system.
+
+Operators (real-part imag-part magnitude angle)
+Types     (Polar Rectangular)
+
+              Polar                    Rectangular
+real-part     real-part-polar          real-part-rectangular
+imag-part     imag-part-polar          imag-part-rectangular
+magnitude     magnitude-polar          magnitude-rectangular
+angle         angle-polar              angle-rectangular
+
+Table of operators for complex-number system.
+
+Data-directed programming is the technique of designing
+programs to work with such a table directly.
+
+* Modularity, Objects, and State
+* Metalinguistic Abstraction
+* Computing with Register Machines
