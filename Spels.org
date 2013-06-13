@@ -1,0 +1,52 @@
+* Spels
+Notes on the work on Conrad Barski's excellent
+/Casting Spels in Emacs Lisp/
+http://www.lisperati.com/casting-spels-emacs/html/casting-spels-emacs-22.html
+
+A key to understanding this program (a text engine) is to figure out what it means to "cast a spel" in Lisp. Barski reveals this to us on page 22. Here are the two pieces of code to meditate on for a while:
+
+#+BEGIN_SRC emacs-lisp
+(defmacro defspel (&rest rest) `(defmacro ,@rest))
+#+END_SRC
+
+and 
+
+#+BEGIN_SRC emacs-lisp
+(defspel walk (direction)
+  `(walk-direction ',direction))
+#+END_SRC emacs-lisp
+
+Despite the smallness of the code, there
+is quite a bit going on. 
+
+SPEL is short for "Semantic Program Enhancement Logic". In the course of his story, Barski does
+not go into it in detail, but points more advanced Lisp programmers towards a short essay, The Case Against the word "Macro":
+
+http://www.lisperati.com/casting-spels-emacs/html/casting-spels-emacs-33.html
+
+Barski suggests that we replace the word Macro with the word SPEL. I like Barski, so I am giving him the benefit of the doubt, and I am going to start using that term: SPEL.
+
+Semantic 
+Program
+Enhancement
+Logic
+
+The term has several benefits. 
+
+
+It captures the almost magical power that Lisp macros can have to change the behavior of a Lisp environment.
+
+The term SPEL can be used in a million different ways to explain programming concepts in elegant ways, using the metaphor of the spell and casting spells.
+
+The term causes no confusion between true macros and other types of macros.
+
+The semantic load of the term SPEL is very low. A Google search for "(macro OR macros) programming -lisp -scheme" returns about 1,150,000 hits. A Google search for "(spel OR spels) programming -lisp -scheme" returns only about 28,400. Even worse when you consider that the search "(macro OR macros) programming (lisp OR scheme)" only returns a measly 395,000!
+
+So I hope, as a Lisper, you'll consider supporting this new term. Naturally, any new memes like this have a very low likelihood of success.
+If you have a library or are a Lisp implementation author, please drop everything you are doing right now and add the following line to your library:
+
+(defmacro defspel (&rest rest) `(defmacro ,@rest))
+
+
+
+

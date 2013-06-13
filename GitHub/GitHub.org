@@ -1,0 +1,37 @@
+GitHub is an amazing system, but it is often
+difficult to wrap one's head around it. I have
+been on the fringes of GitHub since I first
+discovered it in 2009. I've made a few gists
+here and there, added some repositories
+done some branching, made a few commits, etc,
+but I still do not feel fluent in this technology. 
+
+The goal for me in writing this document is to
+gain fluency in GitHub.
+
+So here's the state of my knowledge as of right
+now. This document, "Github.org", is the latest
+addition to the https://github.com/gwdean/o
+repository. 
+
+The resource I am using to gain fluency is /Pro Git/,
+by Scott Chacon: http://git-scm.com/book
+
+So let's review my setup so far.
+
+Org is used for most of the programming
+GitHub is where the public parts are displayed.
+
+The Pro Git book is divided into several parts,
+as follows:
+
+Getting Started
+Git Basics
+Git Branching
+Git on the Server
+Distributed Git
+Git Tools
+Customizing Git
+Git and Other Systems
+Git Internals
+Index of Commands

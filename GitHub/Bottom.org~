@@ -1,0 +1,69 @@
+This document is a commentary on John Wiegley's 
+tremendously useful 29-page treatise "Git from
+the bottom up". 
+
+* Introduction
+The book begins by identifying certain key
+terms, so the reader is best served by committing
+these terms to memory:
+
+*repository*
+*the-index*
+*working-tree*
+*branch*
+*master*
+*HEAD*
+
+If we wanted to use a cool Lisp like notation, 
+we can do this:
+
+(define key-terms '(repository the-index working-tree branch master HEAD))
+
+Or shorten it like: (define k '(r i wt b m H))
+
+Playing around with the equations and representing them in
+different notations helps one gain a better understanding
+of the problem.
+
+The relationship between all of these GitHub concepts 
+can be a very good exercise. Actually I think it is 
+the essential exercise if you want to really understand
+how GitHub works. 
+
+So we have six terms:
+
+Repository
+The Index
+Working Tree
+Branch
+Master
+HEAD
+
+** Perspective #1: Six nodes: R,T,W,B,M,H.
+** Perspective #2: Hyperlinked words
+*repository* A repository is an archive of what the working tree looked like at different times in the past — whether on your machine or someone else’s. It’s a history of snapshots, and allows you to compare your working tree to those past states. You can even “checkout” a copy of the past, make changes you should have made long ago, and then merge those changes forward into your current branch.
+
+*the-index* Unlike other, similar tools you may have used, Git does not commit changes directly from the working tree into the repository. Instead, changes are first registered in something called the index. Think of it as a way of “confirming” your changes, one by one, before doing a commit (which records all your approved changes at once). Some find it helpful to call it instead as the “staging area”, instead of the index.
+
+*working-tree* A working tree is any directory on your filesystem which has a repository associated with it (typically indicated by the presence of a sub-directory within it named .git.). It includes all the files and sub-directories in that directory.
+
+*branch* A branch is just a name for a commit (and much more will be said about commits in a moment), also called a reference. It’s the parentage of a commit which defines its history, and thus the typical notion of a “branch of development”.
+
+*master* The mainline of development in most repositories is done on a branch called “master”. Although this is a typical default, it is in no way special.
+
+*HEAD* refers to the most recent commit of the last branch you checked out. Thus, if you are currently on the master branch, the
+words master and HEAD would be equivalent.
+  
+** Perspective #3: A Typical Project's Life-Cycle
+Three Objects
+- Repository:  cylinder
+- WorkingTree: cloud
+- Index:       triangle
+
+Arrows between (R W I)
+(R W) (W I) (I R) 
+* Repository: Directory content tracking
+* The Index: Meet the middle man
+* To reset, or not to reset
+* Last links in the chain: Stashing and the reflog
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Spels</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-06-12 21:14:15 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Spels</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Spels </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Spels </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>Notes on the work on Conrad Barski's excellent
+<i>Casting Spels in Emacs Lisp</i>
+<a href="http://www.lisperati.com/casting-spels-emacs/html/casting-spels-emacs-22.html">http://www.lisperati.com/casting-spels-emacs/html/casting-spels-emacs-22.html</a>
+</p>
+<p>
+A key to understanding this program (a text engine) is to figure out what it means to "cast a spel" in Lisp. Barski reveals this to us on page 22. Here are the two pieces of code to meditate on for a while:
+</p>
+
+
+
+<pre class="src src-emacs-lisp">(<span style="color: #00ffff;">defmacro</span> <span style="color: #00fa9a;">defspel</span> (<span style="color: #ffff00;">&amp;rest</span> rest) `(<span style="color: #00ffff;">defmacro</span> ,@rest))
+</pre>
+
+
+
+
+<p>
+and 
+</p>
+
+
+
+<pre class="src src-emacs-lisp">(defspel walk (direction)
+  `(walk-direction ',direction))
+</pre>
+
+
+
+
+<p>
+Despite the smallness of the code, there
+is quite a bit going on. 
+</p>
+<p>
+SPEL is short for "Semantic Program Enhancement Logic". In the course of his story, Barski does
+not go into it in detail, but points more advanced Lisp programmers towards a short essay, The Case Against the word "Macro":
+</p>
+<p>
+<a href="http://www.lisperati.com/casting-spels-emacs/html/casting-spels-emacs-33.html">http://www.lisperati.com/casting-spels-emacs/html/casting-spels-emacs-33.html</a>
+</p>
+<p>
+Barski suggests that we replace the word Macro with the word SPEL. I like Barski, so I am giving him the benefit of the doubt, and I am going to start using that term: SPEL.
+</p>
+<p>
+Semantic 
+Program
+Enhancement
+Logic
+</p>
+<p>
+The term has several benefits. 
+</p>
+
+<p>
+It captures the almost magical power that Lisp macros can have to change the behavior of a Lisp environment.
+</p>
+<p>
+The term SPEL can be used in a million different ways to explain programming concepts in elegant ways, using the metaphor of the spell and casting spells.
+</p>
+<p>
+The term causes no confusion between true macros and other types of macros.
+</p>
+<p>
+The semantic load of the term SPEL is very low. A Google search for "(macro OR macros) programming -lisp -scheme" returns about 1,150,000 hits. A Google search for "(spel OR spels) programming -lisp -scheme" returns only about 28,400. Even worse when you consider that the search "(macro OR macros) programming (lisp OR scheme)" only returns a measly 395,000!
+</p>
+<p>
+So I hope, as a Lisper, you'll consider supporting this new term. Naturally, any new memes like this have a very low likelihood of success.
+If you have a library or are a Lisp implementation author, please drop everything you are doing right now and add the following line to your library:
+</p>
+<p>
+(defmacro defspel (&amp;rest rest) `(defmacro ,@rest))
+</p>
+
+
+
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-06-12 21:14:15 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

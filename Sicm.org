@@ -1,0 +1,67 @@
+* Sicm
+After recommending Sussman/Wisdom's SICM to more 
+than one person, I decided to construct this 
+project, which organizes some of the ideas.
+
+Let's begin with the notation, which the authors
+consider a /functional mathematical notation/.
+
+/Generic Arithmetic/ is used.
+
+/Tuple Arithmetic/
+
+The mathematical notation is in one-to-one correspondence
+with expressions of the computer language /Scheme/.
+
+Scheme is based on the L-calculus and directly supports
+the manipulation of functions.
+
+Euclidean Distance between two points in the plane:
+(define (d x1 y1 x2 y2)
+  (sqrt (+ (square (- x2 x1)) (square (- y2 y1)))))
+
+A procedure =h= that computes the cube of the sine of
+its argument can be expressed as:
+
+(define h (compose cube sin))
+(h 2)
+
+which is the same as:
+
+(cube (sin 2))
+
+(define g (* cube sin))
+(g 2)
+
+(* (cube 2) (sin 2))
+
+(print-expression
+  ((compose cube sin) 'a))
+
+(print-expression
+  ((- (+ (square sin) (square cos)) 1) 'a))
+
+** Tuples
+There are two kinds of tuples: /up/ tuples and
+/down/ tuples. 
+
+In Scheme, tuples are made with the constructors =up=
+and =down=:
+
+(define v (up 'v^0 'v^1 'v^2))
+
+(print-expression v)
+
+(define p (down 'p_0 'p_1 'p_2))
+
+(print-expression p)
+
+** Derivatives
+The Scheme procedure for producing the derivative of a 
+function is named =D=. The derivative of the =sin= 
+procedure is a procedure that computers =cos=:
+
+(define derivative-of-sine (D sin))
+
+(print-expression (derivative-of-sine 'x))
+
