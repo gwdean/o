@@ -1,0 +1,73 @@
+* Obj
+A nice thing about learning Lisp is that it
+connects well with Object-Oriented Programming.
+
+Two good ways to understand Object-Oriented Programming
+is to delve into the Common Lisp Object System (CLOS),
+and to create an Object Oriented Language of one's own.
+
+The following document reviews several Object-Oriented
+Systems in Lisp. They are listed in chronological order.
+
+** 1989-Keene.
+*** Developing a Simple CLOS Program: Locks.
+(defclass lock ()
+      ((name :initarg :name :reader lock-name))
+  (:documentation "The foundation of all locks."))
+
+(defclass null-lock (lock)
+      ()
+  (:documentation "A lock that is always free."))
+
+(defclass simple-lock (lock)
+      ((owner :initform nil :accessor lock-owner))
+  (:documentation "A lock that is either free or busy."))
+
+(setq *null-lock*
+      (make-instance 'null-lock :name "Null lock"))
+
+(setq *simple-lock*
+      (make-instance 'simple-lock :name "Simple lock"))
+** 1991-AMOP.
+** 1994-Graham.
+** 1996-Graham.
+** 2009-Dybvig.
+** 2011-Barski
+Barski's CLOS Guild Battleship
+*** Example 1: Wrapping Code Around Methods
+#+BEGIN_EXAMPLE
+(defclass widget ()
+  ((color :accessor widget-color
+             :initarg :color)))
+
+(defmethod describe-widget ((w widget))
+   (format t "this is a ~a widget" (widget-color w)))
+
+(defmethod describe-widget :before ((w widget))
+  (add-to-log "Somebody is checking on a widget"))
+#+END_EXAMPLE
+
+If we didn't have methods available we would have
+to write a dirtier version of widget code as such:
+
+#+BEGIN_EXAMPLE
+(defmethod describe-widget ((w widget))
+  (add-to-log "Somebody is checking on a widget")
+  (format t "this is a ~a widget" (widget-color w)))
+#+END_EXAMPLE
+*** Example 2: Multiple Dispatch
+#+BEGIN_EXAMPLE
+(defclass color () ())
+(defclass red (color) ())
+(defclass blue (color) ())
+(defclass yellow (color) ())
+
+(defmethod mix ((c1 color) (c2 color))
+  "I don't know what color that makes")
+
+(defmethod mix ((c1 blue) (c2 yellow))
+  "You made green!")
+
+(defmethod mix ((c1 yellow) (c2 red))
+  "You made orange!")
+#+END_EXAMPLE
