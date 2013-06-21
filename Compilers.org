@@ -1,0 +1,13 @@
+* Compilers
+Motivation for understanding how compilers work:
+http://steve-yegge.blogspot.com/2007/06/rich-programmer-food.html
+
+Interesting compiler code that I know about:
+
+- Structure and Interpretation of Computer Programs
+- Practical Common Lisp
+
+Three Major Phases of the Compiler Pipeline
+- Parsing
+- Type Checking
+- Code Generation

@@ -1,0 +1,118 @@
+#+TITLE:     Roots.org
+#+AUTHOR:    Greg
+#+EMAIL:     greg@greg-Satellite-C855D
+#+DATE:      2013-06-13 Thu
+#+DESCRIPTION: Notes on Paul Graham's "Roots of Lisp" (2002)
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+
+Notes on Paul Graham's "Roots of Lisp" (2002)
+
+* Aftermath
+What we have here is a remarkably elegant model of computation. Using just /quote/, /atom/, /eq/, /car/, /cdr/, /cons/, and /cond/ we can define a 
+function, /eval./, that actually implements our language, and then using
+that we can define any additional function we want.
+
+Steele and Sussman's "The Art of the Interpreter" (1978) shows how one
+can add aditional features onto this core.
+
+Lisp is one thing you get when you try to axiomatize computation.
+
+* Seven Primitive Operators
+#+BEGIN_EXAMPLE
+(quote x)
+(atom x)
+(eq x y)
+(car x)
+(cdr x)
+(cons x y)
+#+END_EXAMPLE
+* Denoting Functions
+A function is expressed as:
+
+(lambda (p1...pn) e)
+
+((lambda (p1...pn) e) a1...an)
+
+* Some Functions
+Now that there is a way to express functions, we can
+define some new ones in terms of our seven primitive operators.
+
+Abbreviations
+- (cxr e)
+- (list e1...en)
+
+New Functions
+- (defun null. (x)) 
+- (defun and. (x y)) 
+- (defun not. (x))
+- (defun append. (x y))
+- (defun pair. (x y))
+- (defun assoc. (x y))
+ 
+* Eval
+In addition to defining functions that concatenate lists, substitute
+one expression for another, and so on, we can also define a function
+that acts as an interpreter for our language.
+
+- (defun eval. (e a))
+- (defun evcon. (c a))
+- (defun evlis. (m a))
+
+The definition of /eval./ is very long. Here is how it works.
+
+The function takes two arguments: (e a)
+- /e/ is the expression to be evaluated
+- /a/ is the environment
+
+The spine of /eval./ is a /cond/ expression with four clauses.
+
+* Code
+#+BEGIN_EXAMPLE
+(defun eval. (e a)
+  (cond
+    ((atom e) (assoc. e a))
+    ((atom (car e))
+     (cond
+       ((eq (car e) 'quote) (cadr e))
+       ((eq (car e) 'atom)  (atom   (eval. (cadr e) a)))
+       ((eq (car e) 'eq)    (eq     (eval. (cadr e) a)
+                                    (eval. (caddr e) a)))
+       ((eq (car e) 'car)   (car    (eval. (cadr e) a)))
+       ((eq (car e) 'cdr)   (cdr    (eval. (cadr e) a)))
+       ((eq (car e) 'cons)  (cons   (eval. (cadr e) a)
+                                    (eval. (caddr e) a)))
+       ((eq (car e) 'cond)  (evcon. (cdr e) a))
+       ('t (eval. (cons (assoc. (car e) a)
+                        (cdr e))
+  		  a))))
+    ((eq (caar e) 'label)
+     (eval. (cons (caddar e) (cdr e))
+            (cons (list (cadar e) (car e)) a)))
+    ((eq (caar e) 'lambda)
+     (eval. (caddar e)
+            (append. (pair. (cadar e) (evlis. (cdr e) a))
+	             a)))))
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+(defun evcon. (c a)
+  (cond ((eval. (caar c) a)
+         (eval. (cadar c) a))
+	('t (evcon. (cdr c) a))))
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+(defun evlis. (m a)
+  (cond ((null. m) '())
+        ('t (cons (eval.  (car m) a)
+	          (evlis. (cdr m) a)))))
+#+END_EXAMPLE

@@ -1,0 +1,72 @@
+#+TITLE:     Symbolic Differentiation 
+#+AUTHOR:    Greg
+#+EMAIL:     greg@greg-Satellite-C855D
+#+DATE:      2013-06-13 Thu
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+This document consists of an implementation
+of the Symbolic Differentiation example described
+in Chapter 2 of SICP.
+
+We are building a procedure that takes an algebraic
+equation and a variable, and to return the derivative
+of the expression with respect to the variable.
+
+The complete differentiation algorithm is contained
+within the following procedure:
+
+#+BEGIN_SRC scheme
+(define (deriv exp var)
+  (cond ((constant? exp) 0)
+        ((variable? exp)
+	 (if (same-variable? exp var) 1 0))
+	((sum? exp)
+	 (make-sum (deriv (addend exp) var)
+	           (deriv (augend exp) var)))
+        ((product? exp)
+	 (make-sum
+	   (make-product (multiplier exp)
+	                 (deriv (multiplicand exp) var))
+           (make-product (deriv (multiplier exp) var)
+	                 (multiplicand exp))))))
+#+END_SRC
+
+Data representation for Symbolic Differentiation
+
+#+BEGIN_SRC scheme
+(define (constant? x) (number? x))
+(define (variable? x) (symbol? x))
+(define (same-variable? v1 v2) (and (variable? v1) (variable2 v2) (eq? v1 v2)))
+(define (make-sum a1 a2) (list '+ a1 a2))
+(define (make-product m1 m2) (list '* m1 m2))
+(define (sum? x) (if (not (atom? x)) (eq? (car x) '+) nil))
+(define (addend s) (cadr s))
+(define (augend s) (caddr s))
+(define (product? x) (if (not (atom? x)) (eq? (car x) '*) nil))
+(define (multiplier p) (cadr p))
+(define (multiplicand p) (caddr p))
+#+END_SRC
+
+Examples of the behavior of the symbolic-differentiation program.
+
+#+BEGIN_EXAMPLE
+==> (deriv '(+ x 3) 'x)
+(+ 1 0)
+
+==> (deriv '(* x y) 'x)
+(+ (* x 0) (* 1 y))
+
+==> (deriv '(* (* x y) (+ x 3)) 'x)
+(+ (* (* x y) (+ 1 0))
+   (* (+ (* x 0) (* 1 y))
+      (+ x 3)))
+#+END_EXAMPLE

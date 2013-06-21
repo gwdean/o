@@ -1,0 +1,23 @@
+* A Query Interpreter
+The central function in this code is =interpret-query=,
+which recursively works through the structure of a 
+complex query, generating bindings in the process.
+
+A sample usage of the Interpreter looks something
+like this:
+
+#+BEGIN_EXAMPLE
+(lookup 'painter '(?x ?y english))
+
+(interpret-query '(and (painter ?x ?y ?z)
+                       (dates ?x 1697 ?w)))
+#+END_EXAMPLE
+
+
+*** (defmacro with-answer (query &body body))
+*** (defmacro interpret-query (expr &optional binds))
+*** (defun interpret-and (clauses binds))
+*** (defun interpret-or (clauses binds))
+*** (defun interpret-not (clause binds))
+*** (defun lookup (pred args &optional binds))
+

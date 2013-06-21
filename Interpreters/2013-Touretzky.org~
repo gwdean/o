@@ -1,0 +1,2 @@
+(defmacro simple-incf (var)
+  (list 'setq var (list '+ var 1)))

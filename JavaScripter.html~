@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>The Little JavaScripter</title>
+</head>
+<body>
+<script type="text/javascript">
+document.writeln("Yo!");
+</script>
+</body>
+</html>
+

@@ -1,0 +1,2 @@
+(defun self-evaluating-p (form)
+  (and (atom form) (if (symbolp form) (keywordp form) t)))
