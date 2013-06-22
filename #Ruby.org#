@@ -1,0 +1,27 @@
+* Ruby.org
+This is a collection of code examples gathered
+from Flanagan and Matsumoto's /The Ruby Programming Language/.
+
+** Defining Simple Methods
+#+BEGIN_SRC ruby
+def factorial(n)
+  if n < 1
+    raise "argument must be > 0"
+  elsif n == 1
+    1
+  else
+    n * factorial(n-1)
+  end
+end
+#+END_SRC
+
+** Creating Procs
+#+BEGIN_SRC ruby
+def makeproc(&p)
+  p
+end
+
+adder = makeproc {|x,y| x+y}
+
+sum = adder.call(2,2)
+#+END_SRC
