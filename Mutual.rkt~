@@ -1,0 +1,28 @@
+#lang racket
+; mutually recursive acronyms
+; from Hofstadter's 1983 Scientific American articles on Lisp.
+
+(define TOMATOES   '(TOMATOES on MACARONI (and TOMATOES only), exquisitely SPICED.))
+(define MACARONI   '(MACARONI and CHEESE (a REPAST of Naples, Italy)))
+(define REPAST     '(rather extraordinary PASTA and SAUCE, typical))
+(define CHEESE     '(cheddar, havarti, emmenthaler (especially SHARP emmenthaler)))
+(define SHARP      '(strong, hearty, and rather pungent))
+(define SPICED     '(sweetly pickled in CHEESE ENDIVE dressing))
+(define ENDIVE     '(egg NOODLES, dipped in vinegar eggnog))
+(define NOODLES    '(NOODLES (oodles of delicious LINGUINI), elegantly served))
+(define LINGUINI   '(LAMBCHOPS (including NOODLES), gotten usually in Northern Italy))
+(define PASTA      '(PASTA and SAUCE (that's ALL!)))
+(define ALL!       '(a luscious lunch))
+(define SAUCE      '(SHAD and unusal COFFEE (eccellente!)))
+(define SHAD       '(SPAGHETTI, heated al dente))
+(define SPAGHETTI  '(standard PASTA, always good, hot especially (twist, then ingest)))
+(define COFFEE     '(choice of fine flavors, especially ESPRESSO))
+(define ESPRESSO   '(excellent, strong, powerful, rich, ESPRESSO, suppressing sleep outrageously))
+(define BASTA      '(belly all stuffed (tummy ache!)))
+(define LAMBCHOPS  '(LASAGNE and meat balls, casually heaped onto PASTA SAUCE))
+(define LASAGNA    '(LINGUINI and SAUCE and GARLIC (NOODLES everwhere!)))
+(define RHUBARB    '(RAVIOLI, heated under butter and RHUBARB (BASTA!)))
+(define RAVIOLI    '(RIGATONI and vongole in oil, lavishly introduced))
+(define RIGATONI   '(rich Italian GNOCCHI and TOMATOES (or NOODLES instead)))
+(define GNOCCHI    '(GARLIC NOODLES over crisp CHEESE, heated immediately))
+(define GARLIC     '(green and red LASAGNE in CHEESE))

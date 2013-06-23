@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Query-Compiler</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-06-23 12:40:19 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Query-Compiler</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 A Query Compiler </a>
+<ul>
+<li><a href="#sec-1.1">1.1 The Database </a>
+<ul>
+<li><a href="#sec-1.1.1">1.1.1 Basic Database Functions </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.2">1.2 Pattern-Matching Queries </a></li>
+<li><a href="#sec-1.3">1.3 A Query Interpreter </a></li>
+<li><a href="#sec-1.4">1.4 Restrictions on Binding </a></li>
+<li><a href="#sec-1.5">1.5 A Query Compiler </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> A Query Compiler </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>An implementation of the compiler described in Paul Graham's
+<i>On Lisp</i>, pages 246-257.
+</p>
+<p>
+The compiler is implemented as an <i>embedded language</i>. An
+embedded language is not implemented by a traditional 
+compiler or interpreter, but instead is implemented within
+some existing language, often by transformation. 
+</p>
+<p>
+The construction of the compiler proceeds in two parts.
+First the system is implemented as an interpreter. After
+the interpreter is completed, it is reimplemented as 
+a query compiler (essentially one big macro) which makes
+the system more efficient and better integrated with Lisp.
+</p>
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> The Database </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<p>Information in the database will be stored in lists.
+</p>
+<p>
+Entries (<i>facts</i>) will be indexed under their first element (the <i>predicate</i>).
+</p>
+<p>
+A database system needs at least two operations:
+</p><ul>
+<li>
+an operation for modifying the database
+</li>
+<li>
+an operation for examining the database
+
+</li>
+</ul>
+
+<p>The database is represented as a hash-table filled with lists of
+facts, hashed according to their predicate:
+</p>
+
+</div>
+
+<div id="outline-container-1.1.1" class="outline-4">
+<h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> Basic Database Functions </h4>
+<div class="outline-text-4" id="text-1.1.1">
+
+
+
+
+<pre class="src src-common-lisp">(<span style="color: #00ffff;">defun</span> <span style="color: #00fa9a;">make-db</span> (<span style="color: #ffff00;">&amp;optional</span> (size 100))
+  (make-hash-table <span style="color: #b0c4de;">:size</span> size))
+</pre>
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Pattern-Matching Queries </h3>
+<div class="outline-text-3" id="text-1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> A Query Interpreter </h3>
+<div class="outline-text-3" id="text-1.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Restrictions on Binding </h3>
+<div class="outline-text-3" id="text-1.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> A Query Compiler </h3>
+<div class="outline-text-3" id="text-1.5">
+
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-06-23 12:40:19 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

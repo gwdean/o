@@ -1,0 +1,52 @@
+* A Query Compiler
+An implementation of the compiler described in Paul Graham's
+/On Lisp/, pages 246-257.
+
+The compiler is implemented as an /embedded language/. An
+embedded language is not implemented by a traditional 
+compiler or interpreter, but instead is implemented within
+some existing language, often by transformation. 
+
+The construction of the compiler proceeds in two parts.
+First the system is implemented as an interpreter. After
+the interpreter is completed, it is reimplemented as 
+a query compiler (essentially one big macro) which makes
+the system more efficient and better integrated with Lisp.
+
+** The Database
+Information in the database will be stored in lists.
+
+Entries (/facts/) will be indexed under their first element (the /predicate/).
+
+A database system needs at least two operations:
+- an operation for modifying the database
+- an operation for examining the database
+
+The database is represented as a hash-table filled with lists of
+facts, hashed according to their predicate:
+
+*** Basic Database Functions
+#+BEGIN_SRC common-lisp
+(defun make-db (&optional (size 100))
+  (make-hash-table :size size))
+
+(defvar *default-db* (make-db))
+
+(defun clear-db (&optional (db *default-db*))
+  (clrhash db))
+
+(defmacro db-query (key &optional (db '*default-db*))
+  `(gethash ,key ,db))
+
+(defun db-push (key val &optional (db *default-db*))
+  (push val (db-query key db)))
+
+(defmacro fact (pred &rest args)
+  `(progn (db-push ',pred ',args)
+          ',args))
+#+END_SRC
+
+** Pattern-Matching Queries
+** A Query Interpreter
+** Restrictions on Binding
+** A Query Compiler

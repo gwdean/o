@@ -1,0 +1,20 @@
+* A Query Compiler
+An implementation of the compiler described in Paul Graham's
+/On Lisp/, pages 246-257.
+
+The compiler is implemented as an /embedded language/. An
+embedded language is not implemented by a traditional 
+compiler or interpreter, but instead is implemented within
+some existing language, often by transformation. 
+
+The construction of the compiler proceeds in two parts.
+First the system is implemented as an interpreter. After
+the interpreter is completed, it is reimplemented as 
+a query compiler (essentially one big macro) which makes
+the system more efficient and better integrated with Lisp.
+
+** The Database
+** Pattern-Matching Queries
+** A Query Interpreter
+** Restrictions on Binding
+** A Query Compiler
