@@ -1,3 +1,18 @@
+; *Finite state machines* are a technique from
+; theoretical computer science for describing
+; how simple devices work.
+
+; This section implements a general purpose
+; simulator for finite state machines.
+
+; The example given in Touretzky-2013 is a 
+; vending machine example, but the core simulator
+; is not limited to vending machines. 
+
+; Any device that can be described in a finite
+; number of states and state transitions can
+; be simulated by this program.
+
 (defstruct (node (:print-function print-node))
   (name nil)
   (inputs nil)
@@ -107,3 +122,43 @@
 (defarc have-20 coin-return   start    "Returned twenty cents.")
 
 (fsm)
+
+; Compiler Code
+
+(defun compile-arc (arc)
+  (let ((a (arc-action arc)))
+    `((equal this-input ',(arc-label arc))
+      (format t "~&~A" ,a)
+      (, (node-name (arc-to arc))
+	 (rest input-syms)))))
+
+(defun compile-node (node)
+  (let ((name (node-name node))
+	(arc-clauses
+	 (mapcar #'compile-arc
+		 (node-outputs node))))
+    `(defun ,name (input-syms
+		   &aux (this-input
+			 (first input-syms)))
+       (cond ((null input-syms) ',name)
+	     ,@arc-clauses
+	     (t (format t
+       "~&There is no arc from ~A with label ~S"
+                  ',name this-input))))))
+
+(defmacro compile-machine ()
+  `(progn ,@(mapcar #'compile-node *nodes*)))
+
+(compile-machine)
+
+; Simplified data set
+(defnode 0)
+(defnode 1)
+(defnode 2)
+(defnode 3)
+(defnode 4)
+(defnode 5)
+
+(defarc 0 x 1)
+(defarc 0 x 2)
+(defarc 0 x 0)
