@@ -1,0 +1,18 @@
+** Macros and Compilation
+*** Defining a Macro
+(defmacro simple-incf (var)
+  (list 'setq var (list '+ var 1)))
+
+*** Macros as Syntactic Extensions
+Three important differences between ordinary functions and macro functions:
+- Arguments to ordinary functions are always evaluated; the arguments to macro functions are not evaluated.
+
+- The result of an ordinary function can be anything at all; the result
+returned by a macro function must be a valid Lisp expression.
+
+- After a macro function returns an expression, that expression is immediately
+evaluated. The results returned by ordinary functions do not get evaluated.
+
+Macros as shorthand
+- anything that can be done with Macros can be done without macros, using a combination of ordinary Common Lisp functions, special functions, and (in some cases) implementation dependent functions.
+
