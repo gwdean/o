@@ -1,0 +1,415 @@
+* Monad.org
+
+Notes on Monads.
+
+** List Monad in ELisp
+Vincent Toups has an interesting Monad tutorial
+using Emacs Lisp:
+
+http://dorophone.blogspot.com/2011/04/deep-emacs-part-1.html
+
+The following section(s) are my notes on various
+aspects of this code.
+
+List Monad
+
+=list-return= can be thought of as a default/simplest-possible
+monadic function.
+
+(defun stub (x) nil)
+(defun list-return (x) (list x))
+
+More involved list-monad example
+
+"The uniformity of Lisp syntax helps keep things
+focused on the ideas."
+
+Monad as a "way of decorating function composition."
+
+Monadic functions
+
+Monadic values
+
+A /monadic value/ can be thought of as an abstract
+container which contains regular values.
+
+A list "contains" values is a simple example.
+
+Some "containment" examples are not so simple.
+
+/Monadic function/ is a function which takes
+a regular value and returns a /monadic value./
+
+Again, the key terms to keep in mind:
+- *MONADIC VALUE*
+- *MONADIC FUNCTION*
+
+Sequence monad
+
+Sequences are represented with lists
+
+Monadic Values -> Lists
+
+Lists "contain" lisp data
+
+The monadic functions associated with the
+sequence/list monad are functions which
+take a single value and return a list
+of lisp-values.
+
+In other words, whatever a *LIST MONAD* is,
+it has something to do with composing 
+functions which take a single lisp value
+and return a list. 
+
+Examples of functions in the *LIST MONAD*
+
+Friends example. 
+
+#+BEGIN_EXAMPLE
+(defvar *people* '(:ted :lea :leo :james
+                   :harvey :sally :jane :andrew)
+                  "A list of the people.")
+
+(defvar *friends-db*
+      '((:ted (:lea :keo
+(defvar *people* '(:ted :lea :leo :james 
+                   :harvey :sally :jane :andrew 
+                   :catherine) 
+                   "A list of all the people that matter.")
+(defvar *friends-db* 
+      '((:ted (:lea :leo :sally :andrew :catherine :leo :jane))
+        (:lea (:ted :leo :jane :andrew :harvey :sally :catherine))
+        (:leo (:ted :lea :ted :harvey :sally :jane :andrew 
+                    :catherine :harvey :andrew :catherine))
+        (:james (:jane :harvey :jane))
+        (:harvey (:leo :lea :leo :james :harvey :harvey :sally))
+        (:sally (:ted :leo :lea :harvey :jane :andrew))
+        (:jane (:lea :leo :james :sally :ted :james :andrew :catherine))
+        (:andrew (:ted :lea :leo :sally :jane :leo))
+        (:catherine (:ted :leo :lea :leo :jane :catherine :catherin))) 
+"Our database of friend connections.")
+
+(defun friends-of (person)
+  "Return a list of all the people in friends-db."
+  (alist *friends-db* person)
+         ;alist is a function which retrieves
+	 ;a key's data from an association list.)
+
+(defun mutual-friends-with (person1)
+  "Return a monadic function which returns
+   the friends person1 has in common with person2.
+  (lexical-let ((p1-friends (friends-of person1)))
+    (lambda (person2)
+      (let ((p2-friends (friends-of person2)))
+        (filter (lambda (friend)
+	          (in friend p1-friends)) p2-friends)))))
+
+#+END_EXAMPLE
+
+Function Composition
+
+#+BEGIN_EXAMPLE
+(defun compose2 (f2 f1)
+  "Compose F2 and F1 by returning a new function which
+   calls F1 on its arguments, then calls F2 on the result"
+   (lexical-let ((f1 f1)
+                 (f2 f2))
+    (lambda (&rest arg)
+      (funcall f2 (apply f1 args)))))
+
+(defun compose (&rest fs)
+  "Compose the functions FS (FN FN-1 FN-2 ... F1)
+   beginning with F1 and working backwards."
+  (let ((rfs (reverse fs)))
+    (reduce
+      (lambda (acc-f f)
+        (compose2 f acc-f))
+      (cdr rfs)
+      :initial-value (car rfs))))
+
+(compose #'friends-of #'friends-of)
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+(defun list-func-compose (f2 f1)
+   (lexical-let ((f1 f1)
+                 (f2 f2))
+    (lambda (arg) ; lambda need take only a single arg, as f1 must
+      (let* ((r1 (funcall f1 arg)) 
+        ; r1 is a list, because it is the result of f1, a monadic function.
+        ; f2 accepts regular old values, though, and r1 could
+        ; concievably have many values in it.
+             (r2s (mapcar f2 r1)))
+          ; now r2s contain the results of applying f2 to ALL
+          ; the values in r1.  Each of these values in r2s is
+          ; itself a list, because f2 always returns a list (it 
+          ; is a monadic function itself)
+             (reduce #'append r2s)
+          ; Well, we want a list of things in the monad, not a
+          ; list of lists, so we just append all the r2s together 
+          ; (see footnote #1).
+          ; Now we've got a list of lisp values, which  means
+          ; that this lambda is a monadic function in its own
+          ; right.  Success!!
+          ))))
+#+END_EXAMPLE
+
+Monads in one sentence:
+
+A monad is a set of operations which relate specific
+functions called /monadic functions/ and specific 
+values, which are either /naked values/ (input type
+to monadic function), or /monadic values/ (output
+type of monadic function)
+
+The /bind/ operation knows how to pull values out
+of monadic values, apply monadic functions to them,
+and collect the resulting monadic values into one
+big monadic value.
+
+Using /bind/ we can compose or otherwise manipulate
+monadic functions in a controlled way.
+
+Anatomy of let.
+#+BEGIN_EXAMPLE
+(defmacro my-let (bindings &rest body)
+  (funcall (lambda ,(mapcar #'car bindings)
+              ,@body)
+      ,@(mapcar #'cadr bindings)))
+
+; (my-let ((x 1) (y 2)) (+ x y))
+;
+; expands to
+;
+; (funcall (lambda (x y) (+ x y)) 1 2)
+
+; The following example won't work
+; (funcall (lambda (x y) (+ x y)) 1 (+ x 2))
+
+; let* is the form that let us chain together
+; multiple variable bindings.
+
+(defun empty? (x) (not x))
+
+(defmacro my-let* (bindings &rest body)
+  (cond
+    ((empty? bindings) `(progn ,@body))
+    (t
+     `(funcall (lambda (,(car (car bindings)))
+          (my-let* ,(cdr bindings) ,@body))
+	,(cadr (car bindings))))))
+
+; (my-let* ((x 10)
+;           (y (+ x 11)))
+;    (+ x y))
+;
+; expands to
+;
+; (funcall
+;       (lambda (x)
+;         (funcall (lambda (y) (progn (+ x y))) (+ x 11))
+;      10))
+
+#+END_EXAMPLE
+
+Each subsequent bind value expression is evaluated in
+the context of a function where the previous binding
+symbols are already bound.
+
+This is almost function composition.
+
+(defun regular-bind (v f)
+  (funcall f v))
+
+(regular-bind 10 (lambda (x) (+ x 1)))
+
+Monads are all about /irregular/ bind operations
+
+
+** List Monad in Haskell
+instance Monad [] where
+  (>>=)  = {- definition of >>= for lists -}
+  return = {- definition of return for lists -}
+
+Empty list [] to represent type constructor (not ideal)
+
+Monadic Function for List Monad
+
+f :: a -> [b] 
+
+where [b] means "list of b"
+
+Generic definition of a monadic function
+f :: a -> m b
+
+Making our own list datatype
+data List a = Nil | Cons a (List a)
+
+Then the monadic function would look like this:
+f :: a -> List b
+
+What do such functions represent?
+
+They take an input value of type a, and produce
+a bunch of output values of type b, collected in
+one convenient container (the list).
+
+Another way to think about it...they represent
+functions with multiple return values.
+
+f :: Int -> [Int]
+g :: Int -> [Int]
+
+Here f and g both take in a single Int as an 
+argument and return a bunch of Ints as results.
+
+What if we wanted to take every results from f
+and apply g individually to each result, collecting
+all the results together?
+
+The list monad allows us to tackle this question.
+
+Example functions:
+f :: Int -> [Int]
+f x = [x-1, x, x+1]
+
+g :: Int -> [Int]
+g x = [-x, x]
+
+How could we "compose" these two functions? f x
+returns a list, so to apply g to each element
+of the list we will need the map function:
+
+f 10   --> [9, 10, 11]
+map g (f 10) --> [[-9,9],[-10,10],[-11,11]]
+
+To turn it into a simple list of Ints, we can
+flatten the list of lists using the concat 
+function 
+
+-- N.B. concat has the type  ((a)) -> (a)
+concat (map g (f 10)) --> [-9,9,-10,10,-11,11]
+
+This result represents all the results by applying
+f to an integer input and then applying g to
+one of the results.
+
+The composition of f and g is the collection of
+all paths through the f and g functions.
+
+We also just determined what the >>= operator 
+has to be for the list monad. It is defined
+as follows:
+
+-- mv :: [a]
+-- g  :: a -> [b]
+mv >>= g = concat (map g mv)
+
+Defining return in this monad
+
+return :: a -> [b]
+return x = [x]
+
+Does it pass the monad laws?
+Yes!
+
+
+** Haskell Monad Tutorial 1
+http://mvanier.livejournal.com/3917.html
+[F]iguring out a way to write side-effecting programs 
+in pure functional languages was a major research
+topic for a long time.
+
+Monads turned out to be (a) key to solving this
+problem.
+
+Monads allow us to do all the side-effecting
+computations we want in a pure functional language,
+but without destroying the purity of the language.
+
+Monads also have other uses. They are a very general
+tool for structuring various kinds of computations
+in a well-behaved way.
+
+In many cases, monadic code can be vastly shorter and
+more comprehensible than equivalent non-monadic
+code would be.
+
+Monads are truly one of the most amazing ideas in
+programming languages, and are well worth learning.
+
+What is a monad? (executive summary)
+
+#+BEGIN_QUOTE
+MONADS ARE A GENERALIZATION OF FUNCTIONS, FUNCTION
+APPLICATION, AND FUNCTION COMPOSITION TO ALLOW THEM
+TO DEAL WITH RICHER NOTIONS OF COMPUTATION THAN
+STANDARD FUNCTIONS
+#+END_QUOTE
+
+*** Notions of Computation
+The simplest and best-behaved "notion of computation"
+is ordinary (pure, mathematical) functions.
+
+In strongly-typed languages like Haskell, a function
+has a well-defined type signature, which looks like
+this:
+
+f :: a -> b
+
+The "::" means "has the following type". 
+
+So the function f has the functional type a -> b.
+
+In practice a/b will usually be the names of
+actual types (like Int, Float, String, etc)
+
+Other "notions of computation" include computations 
+that (in addition to mapping an input to an output):
+
+- may do file or terminal input/output
+- may raise exceptions
+- may read or write shared state (global/local)
+- may sometimes fail to produce any results
+- may produce multiple results at the same time
+
+and many more.
+
+*** Functions, function application and function composition
+Function type signature
+f :: a -> b
+
+Function that doubles its input
+f :: Int -> Int
+f x = 2 * x
+
+f 2 --> has value 4
+
+*Currying*
+q :: Int -> Int -> Int
+q :: Int -> (Int -> Int)
+q x y = x * x + y * y
+
+r :: Int -> Int -> Int -> Int -> Int
+r :: Int -> (Int -> (Int -> (Int -> Int)))
+r w x y z = ... -- some function of w, x, y, z
+
+Function application operator
+($) :: (a -> b) -> a -> b
+
+Note
+----
+In Haskell, f $ 2 means the same thing as ($) f 2
+
+f 2      --> has value 4
+f $ 2    --> also has value 4
+($) f 2  --> also has value 4
+
+These are just three ways of writing the exact
+same thing.
+
+Reverse apply operator (>$>)
+(>$>) :: a -> (a -> b) -> b
+x>$> f = f x -- = f $ x as well
+

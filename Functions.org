@@ -1,0 +1,63 @@
+** Functional Arguments
+From 1994-Graham.(13-15)
+
+The following six functions are all equivalent:
+#+BEGIN_SRC common-lisp
+(+ 1 2)
+(apply #'+ '(1 2))
+(apply (symbol-function '+) '(1 2))
+(apply #'(lambda (x y) (+ x y)) '(1 2))
+(apply #'+ 1 '(2))
+(funcall #'+ 1 2)
+#+END_SRC
+
+The only difference between =funcall= and =apply=
+is that =funcall= can be used without having the
+arguments organized into a list.
+
+Many built-in Common Lisp functions take /functional arguments./
+One of the most popular functions that take functional
+arguments is =mapcar=. This function takes two or more arguments,
+a function and one or more lists (one for each parameter of the
+function), and applies the function successively to elements
+of each list:
+
+#+BEGIN_SRC common-lisp
+(mapcar #'(lambda (x) (+ x 10))
+        '(1 2 3))
+
+(mapcar #'+
+        '(27 10)
+	'(35 14)
+	'(42 20))
+
+(mapcar #'+ '(27 10) '(35 14) '(42 20))
+#+END_SRC
+
+Common Lisp includes a large number of built-in functions
+that take functional arguments. Along with =mapcar=, two
+other common functions are =sort= and =remove-if=.
+
+#+BEGIN_SRC common-lisp
+(sort '(10 7 9 12 1 6) #'<)
+(sort (sort '(10 7 9 12 1 6) #'<) #'>)
+
+(remove-if #'evenp '(1 2 3 4 5 6))
+(remove-if #'oddp  '(1 2 3 4 5 6))
+(remove-if #'oddp (remove-if #'evenp '(1 2 3 4 5 6)))
+#+END_SRC
+
+If =remove-if= was not included in Common Lisp, we could
+include it by writing a function like this:
+
+#+BEGIN_SRC common-lisp
+(defun our-remove-if (fn lst)
+  (if (null lst)
+      nil
+      (if (funcall fn (car lst))
+          (our-remove-if fn (cdr lst))
+	  (cons (car lst) (our-remove-if fn (cdr lst))))))
+
+(our-remove-if #'oddp '(1 2 3))
+#+END_SRC
+

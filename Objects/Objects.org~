@@ -1,0 +1,33 @@
+* Objects.org
+A comparison of multiple viewpoints on objects.
+** CLOS
+*** 1989-Keene  (entire book is essential reading)
+*** 1994-Graham (Chapter 25. Object-Oriented Lisp" 348-379)
+**** Multiple Inheritance (3 defun)
+#+BEGIN_EXAMPLE
+(defun rget (obj prop))
+(defun get-ancestors (obj))
+(defun some2 (fn lst))
+#+END_EXAMPLE
+**** A function to create objects (3 defun)
+#+BEGIN_EXAMPLE
+(defun obj (&rest parents))
+(defun ancestors (obj))
+(defun rget (obj prop))
+#+END_EXAMPLE
+**** Functional syntax (1 defmacro 1 defun)
+#+BEGIN_EXAMPLE
+(defmacro defprop (name &optional meth?))
+(defun run-methods (obj names args))
+#+END_EXAMPLE
+**** Auxiliary methods (1 defstruct 1 defmacro 5 defun)
+#+BEGIN_EXAMPLE
+(defstruct meth around before primary after)
+(defmacro meth- (field obj))
+(defun run-methods (obj name args))
+(defun rget (obj prop &optional meth (skip 0)))
+(defun run-befores (obj prop args))
+(defun run-afters (obj prop args))
+#+END_EXAMPLE
+*** 1996-Graham (sections on Objects)
+*** 2011-Barski (two page summary of CLOS)

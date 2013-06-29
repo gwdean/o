@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Objects</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-06-26 19:54:54 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Objects</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Objects.org </a>
+<ul>
+<li><a href="#sec-1.1">1.1 CLOS </a>
+<ul>
+<li><a href="#sec-1.1.1">1.1.1 1989-Keene  (entire book is essential reading) </a></li>
+<li><a href="#sec-1.1.2">1.1.2 1994-Graham (Chapter 25. <b>Object-Oriented Lisp</b> 348-379) </a></li>
+<li><a href="#sec-1.1.3">1.1.3 1996-Graham (sections on Objects) </a></li>
+<li><a href="#sec-1.1.4">1.1.4 2011-Barski (two page summary of CLOS) </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Objects.org </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>A comparison of multiple viewpoints on objects.
+</p>
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> CLOS </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+</div>
+
+<div id="outline-container-1.1.1" class="outline-4">
+<h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> 1989-Keene  (entire book is essential reading) </h4>
+<div class="outline-text-4" id="text-1.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.2" class="outline-4">
+<h4 id="sec-1.1.2"><span class="section-number-4">1.1.2</span> 1994-Graham (Chapter 25. <b>Object-Oriented Lisp</b> 348-379) </h4>
+<div class="outline-text-4" id="text-1.1.2">
+
+<ul>
+<li id="sec-1.1.2.1">Multiple Inheritance (3 defun) <br/>
+
+
+
+<pre class="example">(defun rget (obj prop))
+(defun get-ancestors (obj))
+(defun some2 (fn lst))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.2">A function to create objects (3 defun) <br/>
+
+
+
+<pre class="example">(defun obj (&amp;rest parents))
+(defun ancestors (obj))
+(defun rget (obj prop))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.3">Functional syntax (1 defmacro 1 defun) <br/>
+
+
+
+<pre class="example">(defmacro defprop (name &amp;optional meth?))
+(defun run-methods (obj names args))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.4">Auxiliary methods (1 defstruct 1 defmacro 5 defun) <br/>
+
+
+
+<pre class="example">(defstruct meth around before primary after)
+(defmacro meth- (field obj))
+(defun run-methods (obj name args))
+(defun rget (obj prop &amp;optional meth (skip 0)))
+(defun run-befores (obj prop args))
+(defun run-afters (obj prop args))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.5">Defining methods (1 defmacro 2 defun) <br/>
+
+
+
+<pre class="example">(defmacro defmeth (name &amp;optional (type :primary)))
+(defun build-meth (name type gobj parms body))
+(defun cnm (obj name args type))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.6">Removing methods. (1 defmacro) <br/>
+
+
+
+<pre class="example">(defmacro undefmeth ((name &amp;optional (type :primary)) obj))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.7">Maintaining parent and child links. (1 defmacro 4 defun 1 defsetf) <br/>
+
+
+
+<pre class="example">(defmacro children (obj))
+(defun parents (obj))
+(defun set-parents (obj pars))
+(defsetf parents set-parents)
+(defun maphier (fn obj))
+(defun obj (&amp;rest parents))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.8">Method combination (1 defmacro 4 defun) <br/>
+
+
+
+<pre class="example">(defmacro defcomb (name op))
+(defun run-core-methods (obj name args &amp;optional pri))
+(defun comb-normal (comb obj name args))
+(defun comb-and (obj name args anc &amp;optional (last t)))
+(defun comb-or (obj name args ancs))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.9">Macro for removing methods (1 defmacro) <br/>
+
+
+
+<pre class="example">(defmacro undefmethod (name &amp;rest args))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.2.10">Complete Listing (22 defun 7 defmacro 1 defstruct 1 defsetf) <br/>
+
+
+
+<pre class="example">(defstruct meth around before primary after)
+(...to be continued...)
+</pre>
+
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.1.3" class="outline-4">
+<h4 id="sec-1.1.3"><span class="section-number-4">1.1.3</span> 1996-Graham (sections on Objects) </h4>
+<div class="outline-text-4" id="text-1.1.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.4" class="outline-4">
+<h4 id="sec-1.1.4"><span class="section-number-4">1.1.4</span> 2011-Barski (two page summary of CLOS) </h4>
+<div class="outline-text-4" id="text-1.1.4">
+
+</div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-06-26 19:54:54 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+* Objects.org
+A comparison of multiple viewpoints on objects.
+** CLOS
+*** 1989-Keene  (entire book is essential reading)
+(See the document "Keene.Lisp"
+*** 1994-Graham (Chapter 25. *Object-Oriented Lisp* 348-379)
+**** Multiple Inheritance (3 defun)
+#+BEGIN_EXAMPLE
+(defun rget (obj prop))
+(defun get-ancestors (obj))
+(defun some2 (fn lst))
+#+END_EXAMPLE
+**** A function to create objects (3 defun)
+#+BEGIN_EXAMPLE
+(defun obj (&rest parents))
+(defun ancestors (obj))
+(defun rget (obj prop))
+#+END_EXAMPLE
+**** Functional syntax (1 defmacro 1 defun)
+#+BEGIN_EXAMPLE
+(defmacro defprop (name &optional meth?))
+(defun run-methods (obj names args))
+#+END_EXAMPLE
+**** Auxiliary methods (1 defstruct 1 defmacro 5 defun)
+#+BEGIN_EXAMPLE
+(defstruct meth around before primary after)
+(defmacro meth- (field obj))
+(defun run-methods (obj name args))
+(defun rget (obj prop &optional meth (skip 0)))
+(defun run-befores (obj prop args))
+(defun run-afters (obj prop args))
+#+END_EXAMPLE
+**** Defining methods (1 defmacro 2 defun)
+#+BEGIN_EXAMPLE
+(defmacro defmeth (name &optional (type :primary)))
+(defun build-meth (name type gobj parms body))
+(defun cnm (obj name args type))
+#+END_EXAMPLE
+**** Removing methods. (1 defmacro)
+#+BEGIN_EXAMPLE
+(defmacro undefmeth ((name &optional (type :primary)) obj))
+#+END_EXAMPLE
+**** Maintaining parent and child links. (1 defmacro 4 defun 1 defsetf)
+#+BEGIN_EXAMPLE
+(defmacro children (obj))
+(defun parents (obj))
+(defun set-parents (obj pars))
+(defsetf parents set-parents)
+(defun maphier (fn obj))
+(defun obj (&rest parents))
+#+END_EXAMPLE
+**** Method combination (1 defmacro 4 defun)
+#+BEGIN_EXAMPLE
+(defmacro defcomb (name op))
+(defun run-core-methods (obj name args &optional pri))
+(defun comb-normal (comb obj name args))
+(defun comb-and (obj name args anc &optional (last t)))
+(defun comb-or (obj name args ancs))
+#+END_EXAMPLE
+**** Macro for removing methods (1 defmacro)
+#+BEGIN_EXAMPLE
+(defmacro undefmethod (name &rest args))
+#+END_EXAMPLE
+**** Complete Listing (22 defun 7 defmacro 1 defstruct 1 defsetf)
+#+BEGIN_EXAMPLE
+(defstruct meth around before primary after)
+(...to be continued...)
+#+END_EXAMPLE
+
+*** 1996-Graham (sections on Objects)
+*** 2011-Barski (two page summary of CLOS)

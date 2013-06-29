@@ -1,0 +1,12 @@
+* Macros.org
+Macros in Common Lisp collected from various sources.
+
+** 1989-Touretzky
+(setf name 'lucas)
+
+> `(this is ,name from the Twin Cities)
+(THIS IS LUCAS FROM THE TWIN CITIES)
+
+> `(,name is ,(+ 1 2) years old)
+(LUCAS IS 3 YEARS OLD)
+

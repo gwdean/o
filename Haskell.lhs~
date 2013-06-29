@@ -1,0 +1,9 @@
+// Function Composition
+
+x :: a
+f :: a -> b
+g :: b -> c
+
+g (f x)
+
+// Operator for Function Composition

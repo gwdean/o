@@ -1,0 +1,12 @@
+** Functional Arguments
+From 1994-Graham.(13-15)
+
+The following five functions are all equivalent:
+
+#+BEGIN_SRC common-lisp
+(+ 1 2)
+(apply #'+ '(1 2))
+(apply (symbol-function '+) '(1 2))
+(apply #'(lambda (x y) (+ x y)) '(1 2))
+(apply #'+ 1 '(2))
+#+END_SRC

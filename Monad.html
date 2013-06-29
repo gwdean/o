@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Monad</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-06-28 16:46:43 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Monad</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Monad.org </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Monad.org </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>Notes on Monads.
+</p>
+<p>
+Vincent Toups has an interesting Monad tutorial
+using Emacs Lisp:
+</p>
+<p>
+<a href="http://dorophone.blogspot.com/2011/04/deep-emacs-part-1.html">http://dorophone.blogspot.com/2011/04/deep-emacs-part-1.html</a>
+</p>
+<p>
+The following section(s) are my notes on various
+aspects of this code.
+</p>
+<p>
+List Monad
+</p>
+<p>
+<code>list-return</code> can be thought of as a default/simplest-possible
+monadic function.
+</p>
+<p>
+(defun stub (x) nil)
+(defun list-return (x) (list x))
+</p>
+<p>
+More involved list-monad example
+</p>
+<p>
+"The uniformity of Lisp syntax helps keep things
+focused on the ideas."
+</p>
+<p>
+Monad as a "way of decorating function composition."
+</p>
+<p>
+Monadic functions
+</p>
+<p>
+Monadic values
+</p>
+<p>
+A <i>monadic value</i> can be thought of as an abstract
+container which contains regular values.
+</p>
+<p>
+A list "contains" values is a simple example.
+</p>
+<p>
+Some "containment" examples are not so simple.
+</p>
+<p>
+<i>Monadic function</i> is a function which takes
+a regular value and returns a <i>monadic value.</i>
+</p>
+<p>
+Again, the key terms to keep in mind:
+</p><ul>
+<li>
+<b>MONADIC VALUE</b>
+</li>
+<li>
+<b>MONADIC FUNCTION</b>
+
+</li>
+</ul>
+
+<p>Sequence monad
+</p>
+<p>
+Sequences are represented with lists
+</p>
+<p>
+Monadic Values -&gt; Lists
+</p>
+<p>
+Lists "contain" lisp data
+</p>
+<p>
+The monadic functions associated with the
+sequence/list monad are functions which
+take a single value and return a list
+of lisp-values.
+</p>
+<p>
+In other words, whatever a <b>LIST MONAD</b> is,
+it has something to do with composing 
+functions which take a single lisp value
+and return a list. 
+</p>
+<p>
+Examples of functions in the <b>LIST MONAD</b>
+</p>
+<p>
+Friends example. 
+</p>
+
+
+
+<pre class="example">(defvar *people* '(:ted :lea :leo :james
+                   :harvey :sally :jane :andrew)
+                  "A list of the people.")
+
+(defvar *friends-db*
+      '((:ted (:lea :keo
+(defvar *people* '(:ted :lea :leo :james 
+                   :harvey :sally :jane :andrew 
+                   :catherine) 
+                   "A list of all the people that matter.")
+(defvar *friends-db* 
+      '((:ted (:lea :leo :sally :andrew :catherine :leo :jane))
+        (:lea (:ted :leo :jane :andrew :harvey :sally :catherine))
+        (:leo (:ted :lea :ted :harvey :sally :jane :andrew 
+                    :catherine :harvey :andrew :catherine))
+        (:james (:jane :harvey :jane))
+        (:harvey (:leo :lea :leo :james :harvey :harvey :sally))
+        (:sally (:ted :leo :lea :harvey :jane :andrew))
+        (:jane (:lea :leo :james :sally :ted :james :andrew :catherine))
+        (:andrew (:ted :lea :leo :sally :jane :leo))
+        (:catherine (:ted :leo :lea :leo :jane :catherine :catherin))) 
+"Our database of friend connections.")
+
+(defun friends-of (person)
+  "Return a list of all the people in friends-db."
+  (alist *friends-db* person)
+         ;alist is a function which retrieves
+         ;a key's data from an association list.)
+
+(defun mutual-friends-with (person1)
+  "Return a monadic function which returns
+   the friends person1 has in common with person2.
+  (lexical-let ((p1-friends (friends-of person1)))
+    (lambda (person2)
+      (let ((p2-friends (friends-of person2)))
+        (filter (lambda (friend)
+                  (in friend p1-friends)) p2-friends)))))
+
+</pre>
+
+
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-06-28 16:46:43 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

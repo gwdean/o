@@ -1,0 +1,45 @@
+* Books.org
+An iterative approach to developing a database
+for organizing books. 
+
+Here is the list of books. 
+
+(2013 Touretzky tour *TOUR*)
+(2011 Barski    bars *BARS*)
+(2005 Seibel    seib *SEIB*)
+(1996 Graham    gra2 *GRA2*)
+(1994 Graham    gra1 *GRA1*)
+(1989 Keene     keen *KEEN*)
+
+There are many ways we can organize these books. 
+Our first example draws from *TOUR*, chapter 6,
+/List Data Structures./
+
+Section 6.8, called *LISTS AS TABLES* give us an
+simple way to organize our books.
+
+(setf books
+  '((bars Barski-2011)
+    (gra1 Graham-1994)
+    (gra2 Graham-1996)
+    (keen Keene-1989)
+    (seib Seibel-2005)
+    (tour Touretzky-2013)))
+
+(assoc 'bars books)
+(BARS BARSKI-2011)
+
+(assoc 'seib books)
+(SEIB SEIBEL-2005)
+
+(assoc 'yo books)
+NIL
+
+(defun info (x)
+  (second (assoc x books)))
+
+(info 'seib)
+(SEIBEL-2005)
+
+(info 'keen)
+(KEENE-1989)
