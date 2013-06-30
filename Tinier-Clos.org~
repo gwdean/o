@@ -1,0 +1,53 @@
+; Notes on Gregor Kiczales' "tiny-clos.scm"
+
+; It is called "Tinier" because the goal is
+; to reduce his code to its core idea. 
+
+; Understanding is the goal in this document.
+
+What is TINY-CLOS?
+
+A very simple CLOS-like language, embedded in
+Scheme, with a simple MOP.
+
+The features of this default base language are:
+
+- Classes
+- Multiple Inheritance
+- Generic functions 
+- Primary methods and call-next-method
+- Class, generic function and methods are first class (meta)objects.
+
+While the MOP is simple, it is *essentially equal* in
+power to both the MOPs in AMOP.
+
+In addition to calling a generic (?), the entry points
+to the default base language are:
+
+(MAKE-CLASS)
+(MAKE-GENERIC)
+(MAKE-METHOD)
+(ADD-METHOD)
+
+(MAKE class . initargs)
+(INITIALIZE instance initargs)
+
+(SLOT-REF  object slot-name)
+(SLOT-SET! object slot-name new-value) 
+
+The introspective part of the MOP
+
+CLASS-OF
+
+CLASS-DIRECT-SUPERS
+CLASS-DIRECT-SLOTS
+CLASS-CPL
+CLASS-SLOTS
+
+GENERIC-METHODS
+
+METHOD-SPECIALIZERS
+METHOD-PROCEDURE
+
+The intercessory protocol looks like (generics in uppercase):
+
