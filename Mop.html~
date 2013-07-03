@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Mop</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-07-02 21:39:14 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Mop</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 THE DESIGN AND IMPLEMENTATION OF METAOBJECT PROTOCOLS </a>
+<ul>
+<li><a href="#sec-1.1">1.1 How CLOS is Implemented </a>
+<ul>
+<li><a href="#sec-1.1.1">1.1.1 A Subset of CLOS </a></li>
+<li><a href="#sec-1.1.2">1.1.2 Basic Backstage </a></li>
+<li><a href="#sec-1.1.3">1.1.3 Representing Classes </a></li>
+<li><a href="#sec-1.1.4">1.1.4 Printing Objects </a></li>
+<li><a href="#sec-1.1.5">1.1.5 Representing the Structure of Instances </a></li>
+<li><a href="#sec-1.1.6">1.1.6 Representing Generic Functions </a></li>
+<li><a href="#sec-1.1.7">1.1.7 Representing Methods </a></li>
+<li><a href="#sec-1.1.8">1.1.8 Invoking Generic Functions </a></li>
+<li><a href="#sec-1.1.9">1.1.9 A Word About Performance </a></li>
+<li><a href="#sec-1.1.10">1.1.10 Summary </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.2">1.2 Introspection and Analysis </a>
+<ul>
+<li><a href="#sec-1.2.1">1.2.1 Introducing Class Metaobjects </a></li>
+<li><a href="#sec-1.2.2">1.2.2 Browsing Classes </a></li>
+<li><a href="#sec-1.2.3">1.2.3 Browsing Generic Functions </a></li>
+<li><a href="#sec-1.2.4">1.2.4 Programmatic Creation of New Classes </a></li>
+<li><a href="#sec-1.2.5">1.2.5 Summary </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3">1.3 Extending the Language </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 Specialized Class Metaobjects </a></li>
+<li><a href="#sec-1.3.2">1.3.2 Terminology </a></li>
+<li><a href="#sec-1.3.3">1.3.3 Using Specialized Class Metaobject Classes </a></li>
+<li><a href="#sec-1.3.4">1.3.4 Class Precedence Lists </a></li>
+<li><a href="#sec-1.3.5">1.3.5 Slot Inheritance </a></li>
+<li><a href="#sec-1.3.6">1.3.6 Other Inheritance Protocols </a></li>
+<li><a href="#sec-1.3.7">1.3.7 Slot Access </a></li>
+<li><a href="#sec-1.3.8">1.3.8 Instance Allocation </a></li>
+<li><a href="#sec-1.3.9">1.3.9 Summary </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 Protocol Design </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 A Simple Generic Function Invocation Protocol </a></li>
+<li><a href="#sec-1.4.2">1.4.2 Functional and Procedural Protocols </a></li>
+<li><a href="#sec-1.4.3">1.4.3 Layered Protocols </a></li>
+<li><a href="#sec-1.4.4">1.4.4 Improving Performance </a></li>
+<li><a href="#sec-1.4.5">1.4.5 Protocol Design Summary </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 A METAOBJECT PROTOCOL FOR CLOS </a>
+<ul>
+<li><a href="#sec-2.1">2.1 Concepts </a>
+<ul>
+<li><a href="#sec-2.1.1">2.1.1 Introduction </a></li>
+<li><a href="#sec-2.1.2">2.1.2 Metaobjects </a></li>
+<li><a href="#sec-2.1.3">2.1.3 Inheritance Structure of Metaobject Classes </a></li>
+<li><a href="#sec-2.1.4">2.1.4 Processing of the User Interface Macros </a></li>
+<li><a href="#sec-2.1.5">2.1.5 Subprotocols </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.2">2.2 Generic Functions and Methods </a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Appendices </a>
+<ul>
+<li><a href="#sec-3.1">3.1 Introduction to CLOS </a></li>
+<li><a href="#sec-3.2">3.2 Solutions </a></li>
+<li><a href="#sec-3.3">3.3 Living with Circularity </a></li>
+<li><a href="#sec-3.4">3.4 A Working Closette Implementation </a>
+<ul>
+<li><a href="#sec-3.4.1">3.4.1 Notes on the working Closette Implementation </a></li>
+</ul>
+</li>
+<li><a href="#sec-3.5">3.5 Cross Reference to full MOP </a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Commentary </a></li>
+<li><a href="#sec-5">5 Using CLOS to get a job in CLOS </a></li>
+<li><a href="#sec-6">6 Code Examples </a>
+<ul>
+<li><a href="#sec-6.1">6.1 Keene-1989 </a>
+<ul>
+<li><a href="#sec-6.1.1">6.1.1 Triangles </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> THE DESIGN AND IMPLEMENTATION OF METAOBJECT PROTOCOLS </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> How CLOS is Implemented </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+</div>
+
+<div id="outline-container-1.1.1" class="outline-4">
+<h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> A Subset of CLOS </h4>
+<div class="outline-text-4" id="text-1.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.2" class="outline-4">
+<h4 id="sec-1.1.2"><span class="section-number-4">1.1.2</span> Basic Backstage </h4>
+<div class="outline-text-4" id="text-1.1.2">
+
+<ul>
+<li id="sec-1.1.2.1">Example CLOS program <br/>
+(defclass rectangle ()
+((height :initform 0.0 :initarg :height)
+(width  :initform 0.0 :initarg :width)))
+
+<p>
+(defclass color-mixin ()
+((cyan     :initform 0 :initarg :cyan)
+(magenta  :initform 0 :initarg :magenta)
+(yellow   :initform 0 :initarg :yellow)))
+</p>
+<p>
+(defclass color-rectangle (color-mixin rectangle)
+((clearp :initform (y-or-n-p "But is it transparent?")
+:initarg :clearp :accessor clearp)))
+</p>
+<p>
+(defgeneric paint (x))
+</p>
+<p>
+(defmethod paint ((x rectangle))                ;Method #1
+(vertical-stroke (slot-value x 'height)
+(slot-value x 'width)))
+</p>
+<p>
+(defmethod paint :before ((x color-mixin))      ;Method #2
+(set-brush-color (slot-value x 'cyan)
+(slot-value x 'magenta)
+(slot-value x 'yellow)))
+</p>
+<p>
+(defmethod paint ((x color-rectangle))          ;Method #3
+(unless (clearp x) (call-next-method)))
+</p>
+<p>
+(setq door
+(make-instance 'color-rectangle
+:width 38 :height 84 :cyan 60 :yellow 55 :clearp nil))
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.1.3" class="outline-4">
+<h4 id="sec-1.1.3"><span class="section-number-4">1.1.3</span> Representing Classes </h4>
+<div class="outline-text-4" id="text-1.1.3">
+
+<p>The CLOS user defines classes with the <code>defclass</code> macro.
+</p>
+<p>
+In the first step in the construction of Closette,
+the class <code>standard-class</code> is defined to centralize
+the description of what class metaobjects look like.
+</p>
+<p>
+Instances of <code>standard-class</code> represent individual
+classes; or, to say it another way, class metaobjects
+are instances of <code>standard-class</code> .
+</p>
+<p>
+Here is the definition of <code>standard-class</code>:
+</p>
+
+
+
+<pre class="example">(defclass standard-class ()
+  ((name :initarg :name
+         :accessor class-name)
+   (direct-superclasses :initarg :direct-superclasses
+                                 :accessor class-direct-superclasses)
+   (direct-slots :accessor class-direct-slots)
+   (class-precedence-list :accessor class-precedence-list)
+   (effective-slots :accessor class-slots)
+   (direct-subclasses :initform ()
+                      :accessor class-direct-subclasses)
+   (direct-methods :initform ()
+                   :accessor class-direct-methods)))
+</pre>
+
+
+
+
+<p>
+In Closette's three layered implementation structure, the
+job of the <code>defclass</code> macro is to parse the class definition
+and convert it into a call to <code>ensure-class</code>.
+</p>
+
+
+
+<pre class="example">(defmacro defclass (name direct-superclasses direct-slots &amp;rest options)
+  `(ensure-class ',name
+     :direct-superclasses ,(canonicalize-direct-superclasses
+                             direct-superclasses)
+     :direct-slots ,(canonicalize-direct-slots
+                      direct-slots)
+     ,@(canonicalize-defclass-options options)))
+</pre>
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.4" class="outline-4">
+<h4 id="sec-1.1.4"><span class="section-number-4">1.1.4</span> Printing Objects </h4>
+<div class="outline-text-4" id="text-1.1.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.5" class="outline-4">
+<h4 id="sec-1.1.5"><span class="section-number-4">1.1.5</span> Representing the Structure of Instances </h4>
+<div class="outline-text-4" id="text-1.1.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.6" class="outline-4">
+<h4 id="sec-1.1.6"><span class="section-number-4">1.1.6</span> Representing Generic Functions </h4>
+<div class="outline-text-4" id="text-1.1.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.7" class="outline-4">
+<h4 id="sec-1.1.7"><span class="section-number-4">1.1.7</span> Representing Methods </h4>
+<div class="outline-text-4" id="text-1.1.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.8" class="outline-4">
+<h4 id="sec-1.1.8"><span class="section-number-4">1.1.8</span> Invoking Generic Functions </h4>
+<div class="outline-text-4" id="text-1.1.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.9" class="outline-4">
+<h4 id="sec-1.1.9"><span class="section-number-4">1.1.9</span> A Word About Performance </h4>
+<div class="outline-text-4" id="text-1.1.9">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.10" class="outline-4">
+<h4 id="sec-1.1.10"><span class="section-number-4">1.1.10</span> Summary </h4>
+<div class="outline-text-4" id="text-1.1.10">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Introspection and Analysis </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> Introducing Class Metaobjects </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.2" class="outline-4">
+<h4 id="sec-1.2.2"><span class="section-number-4">1.2.2</span> Browsing Classes </h4>
+<div class="outline-text-4" id="text-1.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.3" class="outline-4">
+<h4 id="sec-1.2.3"><span class="section-number-4">1.2.3</span> Browsing Generic Functions </h4>
+<div class="outline-text-4" id="text-1.2.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.4" class="outline-4">
+<h4 id="sec-1.2.4"><span class="section-number-4">1.2.4</span> Programmatic Creation of New Classes </h4>
+<div class="outline-text-4" id="text-1.2.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.5" class="outline-4">
+<h4 id="sec-1.2.5"><span class="section-number-4">1.2.5</span> Summary </h4>
+<div class="outline-text-4" id="text-1.2.5">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Extending the Language </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> Specialized Class Metaobjects </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2"><span class="section-number-4">1.3.2</span> Terminology </h4>
+<div class="outline-text-4" id="text-1.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.3" class="outline-4">
+<h4 id="sec-1.3.3"><span class="section-number-4">1.3.3</span> Using Specialized Class Metaobject Classes </h4>
+<div class="outline-text-4" id="text-1.3.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.4" class="outline-4">
+<h4 id="sec-1.3.4"><span class="section-number-4">1.3.4</span> Class Precedence Lists </h4>
+<div class="outline-text-4" id="text-1.3.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.5" class="outline-4">
+<h4 id="sec-1.3.5"><span class="section-number-4">1.3.5</span> Slot Inheritance </h4>
+<div class="outline-text-4" id="text-1.3.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.6" class="outline-4">
+<h4 id="sec-1.3.6"><span class="section-number-4">1.3.6</span> Other Inheritance Protocols </h4>
+<div class="outline-text-4" id="text-1.3.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.7" class="outline-4">
+<h4 id="sec-1.3.7"><span class="section-number-4">1.3.7</span> Slot Access </h4>
+<div class="outline-text-4" id="text-1.3.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.8" class="outline-4">
+<h4 id="sec-1.3.8"><span class="section-number-4">1.3.8</span> Instance Allocation </h4>
+<div class="outline-text-4" id="text-1.3.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.9" class="outline-4">
+<h4 id="sec-1.3.9"><span class="section-number-4">1.3.9</span> Summary </h4>
+<div class="outline-text-4" id="text-1.3.9">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Protocol Design </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> A Simple Generic Function Invocation Protocol </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2"><span class="section-number-4">1.4.2</span> Functional and Procedural Protocols </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.3" class="outline-4">
+<h4 id="sec-1.4.3"><span class="section-number-4">1.4.3</span> Layered Protocols </h4>
+<div class="outline-text-4" id="text-1.4.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.4" class="outline-4">
+<h4 id="sec-1.4.4"><span class="section-number-4">1.4.4</span> Improving Performance </h4>
+<div class="outline-text-4" id="text-1.4.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.5" class="outline-4">
+<h4 id="sec-1.4.5"><span class="section-number-4">1.4.5</span> Protocol Design Summary </h4>
+<div class="outline-text-4" id="text-1.4.5">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> A METAOBJECT PROTOCOL FOR CLOS </h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> Concepts </h3>
+<div class="outline-text-3" id="text-2.1">
+
+
+</div>
+
+<div id="outline-container-2.1.1" class="outline-4">
+<h4 id="sec-2.1.1"><span class="section-number-4">2.1.1</span> Introduction </h4>
+<div class="outline-text-4" id="text-2.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.2" class="outline-4">
+<h4 id="sec-2.1.2"><span class="section-number-4">2.1.2</span> Metaobjects </h4>
+<div class="outline-text-4" id="text-2.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.3" class="outline-4">
+<h4 id="sec-2.1.3"><span class="section-number-4">2.1.3</span> Inheritance Structure of Metaobject Classes </h4>
+<div class="outline-text-4" id="text-2.1.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.4" class="outline-4">
+<h4 id="sec-2.1.4"><span class="section-number-4">2.1.4</span> Processing of the User Interface Macros </h4>
+<div class="outline-text-4" id="text-2.1.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.5" class="outline-4">
+<h4 id="sec-2.1.5"><span class="section-number-4">2.1.5</span> Subprotocols </h4>
+<div class="outline-text-4" id="text-2.1.5">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> Generic Functions and Methods </h3>
+<div class="outline-text-3" id="text-2.2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Appendices </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1"><span class="section-number-3">3.1</span> Introduction to CLOS </h3>
+<div class="outline-text-3" id="text-3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-3">
+<h3 id="sec-3.2"><span class="section-number-3">3.2</span> Solutions </h3>
+<div class="outline-text-3" id="text-3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3" class="outline-3">
+<h3 id="sec-3.3"><span class="section-number-3">3.3</span> Living with Circularity </h3>
+<div class="outline-text-3" id="text-3.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.4" class="outline-3">
+<h3 id="sec-3.4"><span class="section-number-3">3.4</span> A Working Closette Implementation </h3>
+<div class="outline-text-3" id="text-3.4">
+
+
+</div>
+
+<div id="outline-container-3.4.1" class="outline-4">
+<h4 id="sec-3.4.1"><span class="section-number-4">3.4.1</span> Notes on the working Closette Implementation </h4>
+<div class="outline-text-4" id="text-3.4.1">
+
+<ul>
+<li id="sec-3.4.1.1">Loading information <br/>
+</li>
+<li id="sec-3.4.1.2">Utilities <br/>
+</li>
+<li id="sec-3.4.1.3">Standard instances <br/>
+</li>
+<li id="sec-3.4.1.4">Class metaobjects and standard-class <br/>
+</li>
+<li id="sec-3.4.1.5">Generic function metaobjects and standard-generic functions <br/>
+</li>
+<li id="sec-3.4.1.6">Method metaobjects and standard-method <br/>
+</li>
+<li id="sec-3.4.1.7">Generic function invocation <br/>
+</li>
+<li id="sec-3.4.1.8">Bootstrap <br/>
+</li>
+<li id="sec-3.4.1.9">Methods having to do with class metaobjects <br/>
+</li>
+<li id="sec-3.4.1.10">Methods having to do with generic function metaobjects <br/>
+</li>
+<li id="sec-3.4.1.11">Methods having to do with method metaobjects <br/>
+</li>
+<li id="sec-3.4.1.12">Methods having to do with generic function invocation <br/>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3.5" class="outline-3">
+<h3 id="sec-3.5"><span class="section-number-3">3.5</span> Cross Reference to full MOP </h3>
+<div class="outline-text-3" id="text-3.5">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Commentary </h2>
+<div class="outline-text-2" id="text-4">
+
+<p>The book is about a new approach to programming language design,
+in which the two demands of elegance and efficiency are viewed
+as compatible, not conflicting.
+</p>
+<p>
+Metaobject protocols are interfaces to the language that 
+give users the ability to incrementally modify the 
+language's behavior and implementation, as well as the 
+ability to write programs within the language.
+</p>
+<p>
+Languages that incorportate metaobject protocols blur the
+distinction between language designer and language user.
+</p>
+<p>
+The metaobject protocol approach is based on the idea that
+one can and should "open languages up", allowing users to
+adjust the design and implementation to suit their 
+particular needs.
+</p>
+<p>
+If handled properly, opening up the language design need
+not compromise program portability or implementation 
+efficiency.
+</p>
+<p>
+In a language based upon this MOP, the language implementation
+itself is structured as an object-oriented program.
+</p>
+<p>
+In effect, the resulting implementation does not represent
+a single point in the overall space of language designs,
+but rather an entire <i>region</i> within that space.
+</p>
+<p>
+The purpose of the book is two-fold:
+</p><ul>
+<li>
+Part I gradually derives a simplified metaobject protocol for CLOS
+</li>
+<li>
+Part II provides a complete and detailed description of a particular MOP designed for CLOS
+
+</li>
+</ul>
+
+<p>A running theme of the AMOP book is the
+backstage/frontstage parts of design.
+</p>
+<p>
+Practice coding.
+</p>
+<p>
+(defclass r ()
+((h :initform 0.0 :initarg :h)
+(w :initform 0.0 :initarg :w)))
+</p>
+<p>
+(defclass cm ()
+((c :initform 0 :initarg :c)
+(m :initform 0 :initarg :m)
+(y :initform 0 :initarg :y)))
+</p>
+<p>
+(defclass cr (cm r)
+((clearp :initform (y-or-n-p "But is it transparent?")
+:initarg :clearp :accessor clearp)))
+</p>
+<p>
+(defgeneric p (x))
+</p>
+<p>
+(defmethod p ((x r))
+(vs (slot-value x 'height)
+(slot-value x 'width)))
+</p>
+<p>
+(defmethod p :before ((x cm))
+(set-brush-color (slot-value x 'c)
+(slot-value x 'm)
+(slot-value x 'y)))
+</p>
+<p>
+(defmethod p ((x cr))
+(unless (clearp x) (call-next-method)))
+</p>
+<p>
+(setq d
+(make-instance 'cr
+:w 38 :h 84 :c 60 :y 55 :clearp nil))
+</p></div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Using CLOS to get a job in CLOS </h2>
+<div class="outline-text-2" id="text-5">
+
+<p>For the job seeker, the ultimate recursive solution is
+to get a job using the thing that you were doing to get
+the job.
+</p>
+<p>
+So for instance, right now I am using org-mode and CLOS
+to help me get a get a job. It would be ideal if I had
+a job where I got to use org-mode/CLOS.
+</p>
+<p>
+So we will make a list of companies that may be using
+CLOS. 
+</p>
+<p>
+(defclass company ()
+((:name :email :location)))
+</p>
+<p>
+(setq ravenbrook
+(make-instance 'company
+:ravenbrook
+:info@ravenbrook.com
+:england))
+</p>
+<p>
+Actually, we can start with Ravenbrook as the 
+prototype for our company class. 
+</p>
+<p>
+At <a href="http://www.ravenbrook.com/contact/">http://www.ravenbrook.com/contact/</a>, we
+have the following information.
+</p>
+<p>
+Name:       Ravenbrook
+E-Mail:     info@ravenbrook.com
+Telephone:  [Long British number]
+Fax:        [Long British number]
+Post:       Cambridge, England
+Location:   Google Maps Link
+</p>
+<p>
+(ravenbrook info@ravenbrook.com england)
+</p>
+<p>
+But I can use CLOS/org-mode anywhere, not
+just in explicitly Common Lisp places. So
+basically anywhere I could use the skills
+developed here (and elsewhere).
+</p>
+<p>
+The goal. Get a job in Boston or Providence.
+Or figure out how to make money as a free-lancer.
+</p>
+<p>
+(Mathworks)
+</p>
+<p>
+That's enough about jobs right now. We can come
+back to them later. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Code Examples </h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6.1" class="outline-3">
+<h3 id="sec-6.1"><span class="section-number-3">6.1</span> Keene-1989 </h3>
+<div class="outline-text-3" id="text-6.1">
+
+
+</div>
+
+<div id="outline-container-6.1.1" class="outline-4">
+<h4 id="sec-6.1.1"><span class="section-number-4">6.1.1</span> Triangles </h4>
+<div class="outline-text-4" id="text-6.1.1">
+
+
+
+
+<pre class="example">; Defines three local slots and one shared slot
+(defclass triangle (shape)
+      ((side-a :accessor side-a :initarg :side-a)
+       (side-b :accessor side-b :initarg :side-b)
+       (side-c :accessor side-c :initarg :side-c)
+       (number-of-sides :reader number-of-sides
+                        :initform 3
+                        :allocation :class)))
+
+;;; Return the area of a triangle, given three sides.
+;;; Algorithm is: area = ab(sin C)/2
+(defun area-of-triangle (a b c)
+  (let ((angle-C (three-sides-to-angle c a b)))
+    (* a b (sin angle-C) .5)))
+
+;;; Return the angle A between adjacent sides b and c
+;;; and opposite side a, given all sides of a triangle
+;;; Law of Cosines: a^2 = b^2 + c^2 - 2bc(cos A)
+(defun three-sides-to-angle (a b c)
+  (acos (/ (- (+ (expt b 2) (expt c 2))
+              (expt a 2))
+           (* 2 b c))))
+
+;;; Return the area of a triangle.
+(defmethod area ((tri triangle))
+  (area-of-triangle (side-a tri)
+                    (side-b tri)
+                    (side-c tri)))
+
+;;; Defines a local slot that stores the area of each
+;;; triangle and a reader method for the slot.
+(defclass triangle (shape)
+      ((side-a :accessor side-a :initarg :side-a)
+       (side-b :accessor side-b :initarg :side-b)
+       (side-c :accessor side-c :initarg :side-c)
+       (number-of-sides :reader number-of-sides
+                        :initform 3
+                        :allocation :class)
+       (area :reader area :initarg :area)))
+
+;;; Defines a constructor which initializes the area
+(defun make-triangle (side-a side-b side-c)
+  (make-instance 'triangle
+                 :side-a side-a
+                 :side-b side-b
+                 :side-c side-c
+                 :area (area-of-triangle
+                         side-a side-b side-c)))
+</pre>
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-07-02 21:39:14 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

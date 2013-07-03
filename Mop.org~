@@ -1,0 +1,313 @@
+* THE DESIGN AND IMPLEMENTATION OF METAOBJECT PROTOCOLS
+** How CLOS is Implemented
+*** A Subset of CLOS
+*** Basic Backstage 
+**** Example CLOS program
+(defclass rectangle ()
+     ((height :initform 0.0 :initarg :height)
+      (width  :initform 0.0 :initarg :width)))
+
+(defclass color-mixin ()
+     ((cyan     :initform 0 :initarg :cyan)
+      (magenta  :initform 0 :initarg :magenta)
+      (yellow   :initform 0 :initarg :yellow)))
+
+(defclass color-rectangle (color-mixin rectangle)
+     ((clearp :initform (y-or-n-p "But is it transparent?")
+              :initarg :clearp :accessor clearp)))
+
+(defgeneric paint (x))
+
+(defmethod paint ((x rectangle))                ;Method #1
+  (vertical-stroke (slot-value x 'height)
+                   (slot-value x 'width)))
+
+(defmethod paint :before ((x color-mixin))      ;Method #2
+  (set-brush-color (slot-value x 'cyan)
+                   (slot-value x 'magenta)
+		   (slot-value x 'yellow)))
+
+(defmethod paint ((x color-rectangle))          ;Method #3
+  (unless (clearp x) (call-next-method)))
+
+(setq door
+      (make-instance 'color-rectangle
+        :width 38 :height 84 :cyan 60 :yellow 55 :clearp nil))
+
+*** Representing Classes
+The CLOS user defines classes with the =defclass= macro.
+
+In the first step in the construction of Closette,
+the class =standard-class= is defined to centralize
+the description of what class metaobjects look like.
+
+Instances of =standard-class= represent individual
+classes; or, to say it another way, class metaobjects
+are instances of =standard-class= .
+
+Here is the definition of =standard-class=:
+
+#+BEGIN_EXAMPLE
+(defclass standard-class ()
+  ((name :initarg :name
+         :accessor class-name)
+   (direct-superclasses :initarg :direct-superclasses
+                                 :accessor class-direct-superclasses)
+   (direct-slots :accessor class-direct-slots)
+   (class-precedence-list :accessor class-precedence-list)
+   (effective-slots :accessor class-slots)
+   (direct-subclasses :initform ()
+                      :accessor class-direct-subclasses)
+   (direct-methods :initform ()
+                   :accessor class-direct-methods)))
+#+END_EXAMPLE
+
+In Closette's three layered implementation structure, the
+job of the =defclass= macro is to parse the class definition
+and convert it into a call to =ensure-class=.
+
+#+BEGIN_EXAMPLE
+(defmacro defclass (name direct-superclasses direct-slots &rest options)
+  `(ensure-class ',name
+     :direct-superclasses ,(canonicalize-direct-superclasses
+                             direct-superclasses)
+     :direct-slots ,(canonicalize-direct-slots
+	              direct-slots)
+     ,@(canonicalize-defclass-options options)))
+#+END_EXAMPLE
+
+*** Printing Objects
+*** Representing the Structure of Instances
+*** Representing Generic Functions
+*** Representing Methods
+*** Invoking Generic Functions
+*** A Word About Performance
+*** Summary      
+** Introspection and Analysis
+*** Introducing Class Metaobjects
+*** Browsing Classes
+*** Browsing Generic Functions
+*** Programmatic Creation of New Classes
+*** Summary
+** Extending the Language
+*** Specialized Class Metaobjects
+*** Terminology
+*** Using Specialized Class Metaobject Classes
+*** Class Precedence Lists
+*** Slot Inheritance
+*** Other Inheritance Protocols
+*** Slot Access
+*** Instance Allocation
+*** Summary
+** Protocol Design
+*** A Simple Generic Function Invocation Protocol
+*** Functional and Procedural Protocols
+*** Layered Protocols
+*** Improving Performance
+*** Protocol Design Summary
+* A METAOBJECT PROTOCOL FOR CLOS
+** Concepts
+*** Introduction
+*** Metaobjects
+*** Inheritance Structure of Metaobject Classes
+*** Processing of the User Interface Macros
+*** Subprotocols
+** Generic Functions and Methods
+* Appendices
+** Introduction to CLOS
+** Solutions
+** Living with Circularity
+** A Working Closette Implementation
+*** Notes on the working Closette Implementation
+**** Loading information
+**** Utilities
+**** Standard instances
+**** Class metaobjects and standard-class
+**** Generic function metaobjects and standard-generic functions
+**** Method metaobjects and standard-method
+**** Generic function invocation
+**** Bootstrap
+**** Methods having to do with class metaobjects
+**** Methods having to do with generic function metaobjects
+**** Methods having to do with method metaobjects
+**** Methods having to do with generic function invocation
+** Cross Reference to full MOP
+* Commentary
+The book is about a new approach to programming language design,
+in which the two demands of elegance and efficiency are viewed
+as compatible, not conflicting.
+
+Metaobject protocols are interfaces to the language that 
+give users the ability to incrementally modify the 
+language's behavior and implementation, as well as the 
+ability to write programs within the language.
+
+Languages that incorportate metaobject protocols blur the
+distinction between language designer and language user.
+
+The metaobject protocol approach is based on the idea that
+one can and should "open languages up", allowing users to
+adjust the design and implementation to suit their 
+particular needs.
+
+If handled properly, opening up the language design need
+not compromise program portability or implementation 
+efficiency.
+
+In a language based upon this MOP, the language implementation
+itself is structured as an object-oriented program.
+
+In effect, the resulting implementation does not represent
+a single point in the overall space of language designs,
+but rather an entire /region/ within that space.
+
+The purpose of the book is two-fold:
+- Part I gradually derives a simplified metaobject protocol for CLOS
+- Part II provides a complete and detailed description of a particular MOP designed for CLOS
+
+A running theme of the AMOP book is the
+backstage/frontstage parts of design.
+
+Practice coding.
+
+(defclass r ()
+  ((h :initform 0.0 :initarg :h)
+   (w :initform 0.0 :initarg :w)))
+
+(defclass cm ()
+  ((c :initform 0 :initarg :c)
+   (m :initform 0 :initarg :m)
+   (y :initform 0 :initarg :y)))
+
+(defclass cr (cm r)
+  ((clearp :initform (y-or-n-p "But is it transparent?")
+           :initarg :clearp :accessor clearp)))
+
+(defgeneric p (x))
+
+(defmethod p ((x r))
+  (vs (slot-value x 'height)
+      (slot-value x 'width)))
+
+(defmethod p :before ((x cm))
+  (set-brush-color (slot-value x 'c)
+                   (slot-value x 'm)
+		   (slot-value x 'y)))
+
+(defmethod p ((x cr))
+  (unless (clearp x) (call-next-method)))
+
+(setq d
+      (make-instance 'cr
+      :w 38 :h 84 :c 60 :y 55 :clearp nil))
+* Using CLOS to get a job in CLOS
+For the job seeker, the ultimate recursive solution is
+to get a job using the thing that you were doing to get
+the job.
+
+So for instance, right now I am using org-mode and CLOS
+to help me get a get a job. It would be ideal if I had
+a job where I got to use org-mode/CLOS.
+
+So we will make a list of companies that may be using
+CLOS. 
+
+(defclass company ()
+  ((:name :email :location)))
+
+(setq ravenbrook
+  (make-instance 'company
+    :ravenbrook
+    :info@ravenbrook.com
+    :england))
+
+Actually, we can start with Ravenbrook as the 
+prototype for our company class. 
+
+At http://www.ravenbrook.com/contact/, we
+have the following information.
+
+Name:       Ravenbrook
+E-Mail:     info@ravenbrook.com
+Telephone:  [Long British number]
+Fax:        [Long British number]
+Post:       Cambridge, England
+Location:   Google Maps Link
+
+(ravenbrook info@ravenbrook.com england)
+
+But I can use CLOS/org-mode anywhere, not
+just in explicitly Common Lisp places. So
+basically anywhere I could use the skills
+developed here (and elsewhere).
+
+The goal. Get a job in Boston or Providence.
+Or figure out how to make money as a free-lancer.
+
+(Mathworks)
+
+That's enough about jobs right now. We can come
+back to them later. 
+
+* Code Examples
+** Keene-1989
+*** Triangles
+The sources for this example are from pp. 65-75 and 144-153
+19 pages of text.
+#+BEGIN_EXAMPLE
+; Defines three local slots and one shared slot
+(defclass triangle (shape)
+      ((side-a :accessor side-a :initarg :side-a)
+       (side-b :accessor side-b :initarg :side-b)
+       (side-c :accessor side-c :initarg :side-c)
+       (number-of-sides :reader number-of-sides
+                        :initform 3
+                        :allocation :class)))
+
+;;; Return the area of a triangle, given three sides.
+;;; Algorithm is: area = ab(sin C)/2
+(defun area-of-triangle (a b c)
+  (let ((angle-C (three-sides-to-angle c a b)))
+    (* a b (sin angle-C) .5)))
+
+;;; Return the angle A between adjacent sides b and c
+;;; and opposite side a, given all sides of a triangle
+;;; Law of Cosines: a^2 = b^2 + c^2 - 2bc(cos A)
+(defun three-sides-to-angle (a b c)
+  (acos (/ (- (+ (expt b 2) (expt c 2))
+              (expt a 2))
+	   (* 2 b c))))
+
+;;; Return the area of a triangle.
+(defmethod area ((tri triangle))
+  (area-of-triangle (side-a tri)
+                    (side-b tri)
+		    (side-c tri)))
+
+;;; Defines a local slot that stores the area of each
+;;; triangle and a reader method for the slot.
+(defclass triangle (shape)
+      ((side-a :accessor side-a :initarg :side-a)
+       (side-b :accessor side-b :initarg :side-b)
+       (side-c :accessor side-c :initarg :side-c)
+       (number-of-sides :reader number-of-sides
+                        :initform 3
+                        :allocation :class)
+       (area :reader area :initarg :area)))
+
+;;; Defines a constructor which initializes the area
+(defun make-triangle (side-a side-b side-c)
+  (make-instance 'triangle
+                 :side-a side-a
+                 :side-b side-b
+                 :side-c side-c
+                 :area (area-of-triangle
+                         side-a side-b side-c)))
+#+END_EXAMPLE
+
+*** Installation
+The sources for this example are from pages 75-82
+7 pages of text
+*** Locks
+The sources for this example are from pages 17-64
+47 Pages of text 

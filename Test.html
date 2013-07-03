@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Easy JavaScript Testing </title>
+	<style>
+		.pass:before {
+			content: 'PASS: ';
+			color:  blue;
+			font-weight: bold;
+		}
+		
+		.fail:before {
+			content: 'FAIL: ';
+			color: red;
+			font-weight: bold;
+			
+		}
+	</style>
+</head>
+<body>
+
+<ul id="output"></ul>
+	
+<script>
+var output = document.getElementById('output');
+
+function assert( outcome, description ) {
+	var li = document.createElement('li');
+	li.className = outcome ? 'pass' : 'fail';
+	li.appendChild( document.createTextNode( description ) );
+	
+	output.appendChild(li);
+};
+</script>
+</body>
+</html>

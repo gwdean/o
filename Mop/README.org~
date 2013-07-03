@@ -1,0 +1,18 @@
+* MOP 
+Notes on the implementation of three CLOS MOPs.
+
+The practical end goal is to understand the CLOS
+MOP it so well that I will be able to port it to 
+something like the JSCL Lisp-to-Javascript compiler.
+
+https://github.com/davazp/jscl
+
+** Tiny-Clos Scheme
+The first version of Tiny CLOS we will look at is the
+Scheme version written by Gregor Kiczales. The latest
+update I have on this is 8/9/94. It was found at the
+following weblink:
+
+ftp://ftp.parc
+
+** Tiny-Clos Common Lisp 
