@@ -1,0 +1,28 @@
+map
+(:notes "A topic map mainly contains: 
+	   - a title child element
+	   - a topicmeta element
+	   - a hierarchy of topicref elements) 
+
+  title Objects
+
+  topicmeta
+    author
+    publisher
+    critdates
+  topicmeta
+
+  topicref
+  topicref
+  topicref
+    topicref
+  topicref
+  topicref
+
+  topichead
+    topicref
+    topicref
+  topichead
+  
+  topicref
+map

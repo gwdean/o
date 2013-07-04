@@ -1,0 +1,35 @@
+<bookmap>
+  <booktitle>
+    <mainbooktitle>Notes on the Metaobject Protocol</mainbooktitle>
+  </booktitle>
+  
+  <bookmeta>
+    <authorinformation>
+      <personinfo>Greg Dean</personinfo>
+      <organizationinfo>The Organization</organizationinfo>
+    </authorinformation>
+    <critdates>
+      <created date="July 4, 2013"/>
+    </critdates>
+  </bookmeta>
+
+  <frontmatter>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <tablelist/>
+    </booklists>
+  </frontmatter>
+
+  <chapter href="0.dita"/>
+  <chapter href="1.dita">
+    <topicref href="1-1.dita">
+      <topicref href="1-1-1.dita" toc="no"/>
+    </topicref>
+    <topicref href="1-2.dita"/>
+    <topicref href="1-3.dita"/>
+    <topicref href="1-4.dita"/>
+  </chapter>  
+  <chapter href="2.dita"/>
+  <chapter href="3.dita"/>
+</bookmap>

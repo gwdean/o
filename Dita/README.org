@@ -1,0 +1,10 @@
+This directory ("gwdean/o/Dita") contains code relating
+to the Darwin Information Typing Architecture (DITA).
+
+References
+
+DITA Oasis Standard
+http://dita.xml.org/standard
+
+DITA Open Toolkit
+http://dita-ot.sourceforge.net/

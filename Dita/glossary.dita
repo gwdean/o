@@ -1,0 +1,22 @@
+<glossgroup id="sample_glossary">
+  <title>Glossary</title>
+
+  <glossentry id="accessor">
+    <glossterm>Accessor</glossterm>
+    <glossdef>A generic function for reading or writing the
+              value of a slot. The term "accessor" includes
+	      both readers and writers. The :accessor
+	      slot option to =defclass= causes methods for
+	      a reader and a writer for that slot to be
+	      generated automatically.</glossdef>
+  </glossentry>
+
+  <glossentry id="after-method">
+    <glossterm>After-method</glossterm>
+    <glossdef>A method whose role is to be called after the
+              primary method, usually to do some sort of
+	      cleanup work. The standard method combination
+	      recognizes an after-method by the method qualifier
+	      :after in the =defmethod= form.</glossdef>
+  </glossentry>
+</glossgroup>

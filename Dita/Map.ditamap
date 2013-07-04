@@ -1,0 +1,17 @@
+<map>
+  <title>Title</title>
+
+  <topicmeta>
+    <author>Bob Author</author>
+    <publisher>Publishers Inc.</publisher>
+    <critdates>
+      <created date="June 4, 2013"/>
+    </critdates>
+  </topicmeta>
+
+  <topicref href="opening.dita"/>
+  <topicref href="body.dita"/>
+  <topicref href="closing.dita"/>
+
+  <topicref href="glossary.dita"/>
+</map>

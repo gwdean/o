@@ -1,0 +1,22 @@
+<topic id="body">
+  <title>Body</title>
+
+  <shortdesc>This is where the body goes.</shortdesc>
+
+  <body>
+    <p>Paragraph 1 goes here.</p>
+    <p>Paragraph 2 goes here.</p>
+  </body>
+
+  <related-links>
+    <link format="html" href="http://dita-ot.sourceforge.net/1.8/" scope="external">
+      <linktext>DITA Open Toolkit</linktext>
+    </link>
+
+    <link format="html"
+	  href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita"
+	  scope="external">
+      <linktext>DITA</linktext>
+    </link>
+  </related-links>
+</topic>
