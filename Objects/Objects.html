@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 lang="en" xml:lang="en">
 <head>
 <title>Objects</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-06-26 19:54:54 EDT"/>
+<meta name="generated" content="2013-07-04 13:22:20 EDT"/>
 <meta name="author" content="Greg"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -84,7 +84,8 @@ lang="en" xml:lang="en">
 <li><a href="#sec-1.1.1">1.1.1 1989-Keene  (entire book is essential reading) </a></li>
 <li><a href="#sec-1.1.2">1.1.2 1994-Graham (Chapter 25. <b>Object-Oriented Lisp</b> 348-379) </a></li>
 <li><a href="#sec-1.1.3">1.1.3 1996-Graham (sections on Objects) </a></li>
-<li><a href="#sec-1.1.4">1.1.4 2011-Barski (two page summary of CLOS) </a></li>
+<li><a href="#sec-1.1.4">1.1.4 2005-Seibel (Object Reorientation) </a></li>
+<li><a href="#sec-1.1.5">1.1.5 2011-Barski (two page summary of CLOS) </a></li>
 </ul>
 </li>
 </ul>
@@ -112,7 +113,8 @@ lang="en" xml:lang="en">
 <h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> 1989-Keene  (entire book is essential reading) </h4>
 <div class="outline-text-4" id="text-1.1.1">
 
-</div>
+<p>(See the document "Keene.Lisp"
+</p></div>
 
 </div>
 
@@ -258,8 +260,151 @@ lang="en" xml:lang="en">
 </div>
 
 <div id="outline-container-1.1.4" class="outline-4">
-<h4 id="sec-1.1.4"><span class="section-number-4">1.1.4</span> 2011-Barski (two page summary of CLOS) </h4>
+<h4 id="sec-1.1.4"><span class="section-number-4">1.1.4</span> 2005-Seibel (Object Reorientation) </h4>
 <div class="outline-text-4" id="text-1.1.4">
+
+<ul>
+<li id="sec-1.1.4.1">Object Reorientation: Generic Functions <br/>
+A generic function is a unification of methods and functions
+
+<p>
+Generic functions are the heart of the Common Lisp Object System
+</p>
+<p>
+A generic function, <code>draw</code>, that will be used to draw
+different kinds of shapes on the screen.
+</p>
+
+
+
+<pre class="example">(defgeneric draw (shape)
+  (:documentation "Draw the given shape on the screen."))
+
+(defmethod draw ((shape circle))
+  ...)
+
+(defmethod draw ((shape triangle))
+  ...)
+</pre>
+
+
+
+
+<p>
+A generic function can (at least in theory) accept any
+objects as arguments.
+</p>
+<p>
+Perhaps the biggest difference between a generic 
+function-based system and a message-passing system
+is that methods don't belong to classes, they
+belong to the generic function.
+</p>
+<p>
+Methods <i>specialize</i> the required parameters 
+defined by the generic function.
+</p>
+<p>
+The basic form of <code>DEFGENERIC</code> is similar to <code>DEFUN</code>
+except with no body.
+</p>
+<p>
+The parameter list of <code>DEFGENERIC</code> specifies the
+parameters that must be accepted by all the methods
+that will be defined on the generic function.
+</p>
+
+
+
+<pre class="example">(defgeneric withdraw (account amount)
+  (:documentation "Withdraw the specified amount from the account.
+                   Signal an error if the current balance is less
+                   than amount."))
+
+(defmethod withdraw ((account bank-account) amount)
+  (when (&lt; (balance account) amount)
+    (error "Account overdrawn."))
+  (decf (balance account) amount))
+
+(defmethod withdraw ((account checking-account) amount)
+  (let ((overdraft (- amount (balance account))))
+    (when (plusp overdraft)
+      (withdraw (overdraft-account account) overdraft)
+      (incf (balance account) overdraft)))
+  (call-next-method))
+
+(defmethod withdraw ((proxy proxy-account) amount)
+  (withdraw (proxied-account proxy) amount))
+</pre>
+
+
+
+</li>
+<li id="sec-1.1.4.2">Object Reorientation: Classes <br/>
+If generic functions are the verbs of CLOS, then classes
+are the nouns.
+
+<p>
+Basic form of a <code>DEFCLASS</code> expression:
+</p>
+
+
+
+<pre class="example">(defclass name (direct-superclass-name*)
+  (slot-specifier*))
+</pre>
+
+
+
+
+<p>
+Some example bank-account classes without
+the slot specifiers.
+</p>
+
+
+
+<pre class="example">(defclass bank-account () ...)
+(defclass checking-account (bank-account) ...)
+(defclass savings-account (bank-account) ...)
+</pre>
+
+
+
+
+<p>
+The bulk of a <code>DEFCLASS</code> form consists of
+the list of slot specifiers.
+</p>
+
+
+
+<pre class="example">(defclass bank-account ()
+  (customer-name
+   balance))
+
+(make-instance 'bank-account)
+
+(defparameter *account* (make-instance 'bank-account))
+(setf (slot-value *account* 'customer-name) "Jim Smith")
+(setf (slot-value *account* 'balance) 1000)
+
+(slot-value *account* 'customer-name)
+(slot-value *account* 'balance)
+</pre>
+
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.1.5" class="outline-4">
+<h4 id="sec-1.1.5"><span class="section-number-4">1.1.5</span> 2011-Barski (two page summary of CLOS) </h4>
+<div class="outline-text-4" id="text-1.1.5">
 
 </div>
 </div>
@@ -269,7 +414,7 @@ lang="en" xml:lang="en">
 <p class="author"> Author: Greg
 <a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
 </p>
-<p class="date"> Date: 2013-06-26 19:54:54 EDT</p>
+<p class="date"> Date: 2013-07-04 13:22:20 EDT</p>
 <p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
 </div>
 </div>

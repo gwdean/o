@@ -68,4 +68,101 @@ A comparison of multiple viewpoints on objects.
 #+END_EXAMPLE
 
 *** 1996-Graham (sections on Objects)
+*** 2005-Seibel (Object Reorientation)
+**** Object Reorientation: Generic Functions
+A generic function is a unification of methods and functions
+
+Generic functions are the heart of the Common Lisp Object System
+
+A generic function, =draw=, that will be used to draw
+different kinds of shapes on the screen.
+
+#+BEGIN_EXAMPLE
+(defgeneric draw (shape)
+  (:documentation "Draw the given shape on the screen."))
+
+(defmethod draw ((shape circle))
+  ...)
+
+(defmethod draw ((shape triangle))
+  ...)
+#+END_EXAMPLE
+
+A generic function can (at least in theory) accept any
+objects as arguments.
+
+Perhaps the biggest difference between a generic 
+function-based system and a message-passing system
+is that methods don't belong to classes, they
+belong to the generic function.
+
+Methods /specialize/ the required parameters 
+defined by the generic function.
+
+The basic form of =DEFGENERIC= is similar to =DEFUN=
+except with no body.
+
+The parameter list of =DEFGENERIC= specifies the
+parameters that must be accepted by all the methods
+that will be defined on the generic function.
+
+#+BEGIN_EXAMPLE
+(defgeneric withdraw (account amount)
+  (:documentation "Withdraw the specified amount from the account.
+                   Signal an error if the current balance is less
+		   than amount."))
+
+(defmethod withdraw ((account bank-account) amount)
+  (when (< (balance account) amount)
+    (error "Account overdrawn."))
+  (decf (balance account) amount))
+
+(defmethod withdraw ((account checking-account) amount)
+  (let ((overdraft (- amount (balance account))))
+    (when (plusp overdraft)
+      (withdraw (overdraft-account account) overdraft)
+      (incf (balance account) overdraft)))
+  (call-next-method))
+
+(defmethod withdraw ((proxy proxy-account) amount)
+  (withdraw (proxied-account proxy) amount))
+#+END_EXAMPLE
+**** Object Reorientation: Classes
+If generic functions are the verbs of CLOS, then classes
+are the nouns.
+
+Basic form of a =DEFCLASS= expression:
+
+#+BEGIN_EXAMPLE
+(defclass name (direct-superclass-name*)
+  (slot-specifier*))
+#+END_EXAMPLE
+
+Some example bank-account classes without
+the slot specifiers.
+
+#+BEGIN_EXAMPLE
+(defclass bank-account () ...)
+(defclass checking-account (bank-account) ...)
+(defclass savings-account (bank-account) ...)
+#+END_EXAMPLE
+
+The bulk of a =DEFCLASS= form consists of
+the list of slot specifiers.
+
+#+BEGIN_EXAMPLE
+(defclass bank-account ()
+  (customer-name
+   balance))
+
+(make-instance 'bank-account)
+
+(defparameter *account* (make-instance 'bank-account))
+(setf (slot-value *account* 'customer-name) "Jim Smith")
+(setf (slot-value *account* 'balance) 1000)
+
+(slot-value *account* 'customer-name)
+(slot-value *account* 'balance)
+#+END_EXAMPLE
+
 *** 2011-Barski (two page summary of CLOS)
