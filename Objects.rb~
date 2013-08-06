@@ -1,0 +1,38 @@
+# Some practice code. 
+# Adapted from "Design Patterns in Ruby".
+
+class BankAccount
+  def initialize( account_owner )
+    @owner = account_owner
+    @balance = 0
+  end
+
+  def deposit( amount )
+    @balance = @balance + amount
+  end
+
+  def withdraw( amount )
+    @balance = @balance - amount
+  end
+
+  def balance
+    @balance
+  end
+
+  def set_balance(new_balance)
+    @balance = new_balance
+  end
+end
+
+my_account = BankAccount.new('greg')
+puts(my_account.balance)
+
+class BankAccount
+  def initialize( account_owner )
+    @owner = account_owner
+    @balance = 0
+  end
+  attr_accessor :balance
+end
+
+

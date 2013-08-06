@@ -1,0 +1,9 @@
+* Concepts
+This document provides a summary of chapter 5 in AMOP.
+
+** Introduction
+AMOP extends the CLOS specification by defining a 
+metaobject protocol for CLOS-- that is, a description
+of CLOS itself as an extensible CLOS program.
+
+** Metaobjects

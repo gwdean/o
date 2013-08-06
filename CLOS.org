@@ -1,0 +1,253 @@
+* Common Lisp Object System (CLOS)
+** Introduction
+This is a review of CLOS from the perspective
+of someone who is trying to learn it in 2013.
+A lot of groundwork has been done, and I have
+developed a curriculum. There are three basic
+texts that I am using to understand what I
+will call Level 1.
+
+Sonya E. Keene. 1989. "Object-Oriented Programming in Common Lisp" (entire)
+Paul Graham. 1994.    "On Lisp" (parts)
+Paul Graham. 1996.    "ANSI Common Lisp" Part 
+
+Level 2 will begin once Level 1 has been understood.
+Keene's book leaves off with the CLOS Metaobject Protocol, 
+which is the core of level two. The work here is the 
+classic AMOP, and I should make a list of some supplementary
+texts. 
+
+Bobrow, etc. 1991. "The Art of the Metaobject Protocol"
+** Commentary
+*** 1989-Keene
+**** Introduction to the CLOS Model
+Any CLOS program could be written using the traditional style
+of Lisp programming. An important advantage of using CLOS lies
+in the automatic control of the interaction among the objects.
+
+Main benefits of using CLOS.
+- /The program more closely resembles the world it is modeling./
+- /Client programs benefit from a well-defined interface./
+- /The programmer benefits from a modular implementation./
+- /A CLOS program is conveniently extensible./
+- /CLOS defines conventions that are shared across the COMMON LISP community./
+
+CLOS provides tools that can help you design modular and extensible
+programs. The goal of 1989-Keene is to help you learn how to exploit
+these tools to good advantage.
+
+**** Elements of CLOS Programs
+
+First step in writing a CLOS program is to define a new type
+of data structure called a /class/.
+
+Each individual object of that type of is an /instance/ of the class.
+
+Each instance of a given class has the same structure, behavior and type
+as do the other instances of the class.
+
+It is useful at this point to compare Keene with the presentation of
+1994-Graham on page 356.
+
+#+BEGIN_EXAMPLE
+(defstruct meth around before primary after)
+#+END_EXAMPLE
+
+There are four major types of method in CLOS:
+
+- /around methods/ 
+- /before/ 
+- /primary/ 
+- /after/ 
+
+CLOS makes it possible to split up the work of a 
+generic function into several methods.
+
+A /primary method/ performs the bulk of the work
+of a generic function.
+
+The primary method can be assisted by auxiliary
+methods, such as /before-methods/ and /after-methods/.
+
+Before methods are called before the primary method. (eg. Set up work)
+
+After methods are called after the primary method. (eg. Clean up work)
+
+Around methods are discussed later.
+
+
+**** Developing a Simple CLOS Program: Locks
+(See "Keene.Lisp")
+**** Programming with Methods
+**** Controlling the Generic Dispatch
+**** Class Inheritance
+**** Defining CLOS Elements
+**** Redefining CLOS Elements
+**** Creating and Initializing Instances
+**** A Procedural Definition: Initialization
+**** Developing an Advanced CLOS Program: Streams
+**** Highlights of CLOS
+Three important design goals of CLOS.
+One important design non-goal of CLOS.
+
+- CLOS should be a standard language extension that includes the
+most useful aspects of the existing object-oriented paradigms
+
+- The CLOS programmer interface should be powerful and flexible
+enough for developing most application programs
+
+- CLOS itself should be designed as an extensible protocol, to allow for
+customization of its behavior and to encourage further research in
+object-oriented programming
+
+- CLOS should *NOT* provide automatic support for specifying and 
+enforcing protocols.
+
+The third goal (*protocol extensibility*) leads to an advanced topic
+of CLOS--the metaobject protocol (MOP).
+ 
+This book only discusses the MOP briefly.
+
+;;; Summary of the Programmer Interface
+Major techniques supported by the CLOS programmer interface:
+
+- /Defining organizations of classes./
+- /Creating and initializing instances./
+- /Defining different kinds of methods./
+- /Defining methods that work together./
+- /Using a different framework for generic dispatch./
+- /Redefining elements dynamically./
+
+These features add up to a great deal of expressive power.
+
+There is a tradeoff. At times CLOS users might be overwhelmed
+by the wide assortment of techniques and features to be learned.
+
+For newcomers to CLOS it is essential not to get bogged down
+in the non-essentials, and focus on the central themes of how
+CLOS works, *especially the GENERIC DISPATCH*. If you understand
+what happens when a *GENERIC FUNCTION* is called, you are well
+on your way.
+
+The next step is to start writing CLOS programs.
+
+In the course of development one finds problems that cannot be
+solved with the most basic CLOS features (such as primary methods,
+before-methods, and after-methods), and then you can look at more
+advanced features (such as around-methods, or other types of method
+combination).
+  
+**** Glossary of CLOS Terminology
+Generic dispatch
+  The Lisp code that comprises the implementation of a generic
+  function for for a given set of arguments. An effective method
+  combines the applicable methods according to the method
+  combination type.
+
+Generic function
+  A Lisp function whose implementation is distributed across one
+  or more methods. To the caller, a generic function looks like an
+  ordinary Lisp function. It accepts arguments, performs some
+  operation, and returns values. Invisibly to the caller, an internal
+  and automatic procedure (the generic dispatch) occurs when a 
+  generic function is called; this entails choosing the method or
+  methods appropriate to the arguments.
+
+**** Syntax of CLOS Operators
+**** CLOS Operators Not Documented in This Book
+**** Bibliography
+1988-Bobrow0
+1984-Steele
+1988-Bobrow1
+1986-Bobrow2
+1982-Cannon
+1987-DeMichiel
+1987-Kempf
+1986-Moon
+????-Moon
+1985-Snyder
+1986-Stefik
+
+*** 1996-Graham
+**** Chapter 11. CLOS. (176-194).
+**** Chapter 17. Example: Objects. (269-285).
+This section presents a minimal object system
+designed as a language embedded within Lisp.
+
+The language is based on the message-passing model
+of objects.
+
+In the message passing model:
+- objects have properties
+- and respond to messages
+- and inherit properties and methods from their parents
+
+Objects can be mimicked by hash-tables (and other things in CL)
+
+#+BEGIN_EXAMPLE
+(gethash 'color obj)
+
+(funcall (gethash 'move obj) obj 10)
+
+(defun tell (obj message &rest args)
+  (apply (gethash message obj) obj args))
+#+END_EXAMPLE
+
+The only ingredient that plain Lisp lacks is inheritance.
+
+Simple inheritance can be added by defining a recursive
+version of =gethash=, called =rget= (recursive get).
+
+#+BEGIN_EXAMPLE
+(defun rget (prop obj)
+  (multiple-value-bind (val in) (gethash prop obj)
+    (if in
+        (values val in)
+	(let ((par (gethash :parent obj)))
+	  (and par (rget prop par))))))
+
+(defun tell (obj message &rest args)
+  (apply (rget message obj) obj args))
+#+END_EXAMPLE
+
+**** Code Examples
+Area with structures and a function.
+#+BEGIN_EXAMPLE
+(defstruct rectangle
+  height width)
+
+(defstruct circle
+  radius)
+
+(defun area (x)
+  (cond ((rectangle-p x)
+         (* (rectangle-height x) (rectangle-width x)))
+	((circle-p x)
+	 (* pi (expt (circle-radius x) 2)))))
+
+(let ((r (make-rectangle)))
+  (setf (rectangle-height r) 2
+        (rectangle-width r)  3)
+  (area r))
+#+END_EXAMPLE
+
+Area with classes and methods.
+#+BEGIN_EXAMPLE
+(defclass rectangle ()
+  (height width))
+
+(defclass circle ()
+  (radius))
+
+(defmethod area ((x rectangle))
+  (* (slot-value x 'height) (slot-value x 'width)))
+
+(defmethod area ((x circle))
+  (* pi (expt (slot-value x 'radius) 2)))
+
+(let ((r (make-instance 'rectangle)))
+  (setf (slot-value r 'height) 2
+        (slot-value r 'width) 3)
+  (area r))
+#+END_EXAMPLE
+

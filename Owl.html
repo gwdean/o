@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Owl</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-07-10 14:43:34 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Owl</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 OWL </a>
+<ul>
+<li><a href="#sec-1.1">1.1 OWL in OWL </a></li>
+<li><a href="#sec-1.2">1.2 Syntax Comparison </a>
+<ul>
+<li><a href="#sec-1.2.1">1.2.1 Header </a></li>
+<li><a href="#sec-1.2.2">1.2.2 Class Elements </a></li>
+<li><a href="#sec-1.2.3">1.2.3 Property Elements </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3">1.3 Semantics and Abstract Syntax </a></li>
+<li><a href="#sec-1.4">1.4 Mika-2006 </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 The Resource Description Format (RDF) and RDF Schema </a></li>
+<li><a href="#sec-1.4.2">1.4.2 The Web Ontology Language (OWL) </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> OWL </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> OWL in OWL </h3>
+<div class="outline-text-3" id="text-1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Syntax Comparison </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> Header </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+<p>Ontology(
+Annotation(rdfs:comment "An example OWL ontology")
+Annotation(rdfs:label "University Ontology")
+Annotation(owl:imports <a href="http://www.mydomain.org/persons">http://www.mydomain.org/persons</a>)
+)
+</p>
+<p>
+&lt;rdf:RDF
+xmlns:owl  ="<a href="http://www.w3.org/2002/07/owl#"">http://www.w3.org/2002/07/owl#"</a>
+xmlns:rdf  ="<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"">http://www.w3.org/1999/02/22-rdf-syntax-ns#"</a>
+xmlns:rdfs ="<a href="http://www.w3.org/2000/01/rdf-schema#"">http://www.w3.org/2000/01/rdf-schema#"</a>
+xmlns:xsd  ="<a href="http://www.w3.org/2001/XMLSchema#"">http://www.w3.org/2001/XMLSchema#"</a>&gt;
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.2.2" class="outline-4">
+<h4 id="sec-1.2.2"><span class="section-number-4">1.2.2</span> Class Elements </h4>
+<div class="outline-text-4" id="text-1.2.2">
+
+<p>Class(associateProfessor partial academicStaffMember)
+</p>
+<p>
+Class(professor partial)
+DisjointClasses(associateProfessor assistantProfessor)
+DisjointClasses(professor associateProfessor)
+</p>
+<p>
+Class(faculty complete academicStaffMember)
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.2.3" class="outline-4">
+<h4 id="sec-1.2.3"><span class="section-number-4">1.2.3</span> Property Elements </h4>
+<div class="outline-text-4" id="text-1.2.3">
+
+<p>DatatypeProperty(age range(xsd:nonNegativeInteger))
+</p>
+<p>
+ObjectProperty(isTaughtBy
+domain(course)
+range(academicStaffMember))
+SubPropertyOf(isTaughtBy involves)
+</p>
+<p>
+ObjectProperty(teaches
+inverseOf(isTaughtBy)
+domain(academicStaffMember)
+range(course))
+</p>
+<p>
+ObjectProperty(lecturesIn)
+EquivalentProperties(lecturesIn teaches)
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Semantics and Abstract Syntax </h3>
+<div class="outline-text-3" id="text-1.3">
+
+<p>OWL Web Ontology Language
+Semantics and Abstract Syntax
+<a href="http://www.w3.org/TR/owl-semantics/">http://www.w3.org/TR/owl-semantics/</a>
+</p>
+<p>
+An OWL ontology in the abstract syntax contains a sequence of annotations, axioms, and facts. OWL ontologies can have a name. Annotations on OWL ontologies can be used to record authorship and other information associated with an ontology, including imports references to other ontologies. The main content of an OWL ontology is carried in its axioms and facts, which provide information about classes, properties, and individuals in the ontology.
+</p>
+
+
+
+<pre class="example">ontology ::= 'Ontology(' [ ontologyID ] { directive } ')'
+
+directive ::= 'Annotation(' ontologyPropertyID ontologyID ')'
+
+(...and so on...)
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Mika-2006 </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> The Resource Description Format (RDF) and RDF Schema </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+
+<p>
+Friend of a Friend (FOAF) Ontology
+<a href="http://xmlns.com/foaf/0.1/index.rdf">http://xmlns.com/foaf/0.1/index.rdf</a>
+</p>
+<p>
+TitleOfExample: "A set of triples describing two persons represented in the Turtle language."
+</p>
+
+
+<pre class="example">@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix example: &lt;http://www.example.org/&gt;
+
+example:Rembrandt rdf:type foaf:Person .
+example:Saskia    rdf:type foaf:Person .
+example:Rembrandt foaf:name "Rembrandt" .
+example:Rembrandt foaf:mbox &lt;mailto:rembrandt@example.org&gt; .
+example:Rembrandt foaf:knows example:Saskia .
+example:Saskia foaf:name "Saskia" .
+</pre>
+
+
+
+
+<p>
+RDF is minimal that in practice it is always used in combination with RDF Schema. RDF Schema is a simple extension of RDF defining a modelling vocabulary with notions such as classes and properties.
+</p>
+<p>
+TitleOfExample:"Some statements from the FOAF ontology"
+</p>
+
+
+<pre class="example">@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+
+foaf:Person rdf:type owl:Class .
+foaf:Person rdfs:label "Person" .
+foaf:Person rdfs:subClassOf foaf:Agent
+foaf:Person owl:disjointWith foaf:Document .
+
+foaf:knows rdf:type owl:ObjectProperty .
+foaf:knows rdfs:label "knows" .
+foaf:knows rdfs:domain foaf:Person .
+foaf:knows rdfs:range foaf:Person .
+
+foaf:name rdf:type owl:DatatypeProperty .
+foaf:name rdfs:label "name"
+foaf:name rdfs:subPropertyOf rdfs:label .
+foaf:name rdfs:domain owl:Thing .
+foaf:name rdfs:range rdfs:Literal
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2"><span class="section-number-4">1.4.2</span> The Web Ontology Language (OWL) </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+<p>OWL was designed to add the constructs of Description Logics (DL) to RDF.
+</p>
+<p>
+OWL is in fact a set of three languages (in order of expressivity)
+</p><ul>
+<li>
+OWL Lite
+</li>
+<li>
+OWL DL
+</li>
+<li>
+OWL Full
+
+</li>
+</ul>
+
+<p>Basic constructs rdf:type rdf:Property rdf:XMLLiteral
+</p>
+<p>
+Collections
+</p>
+<p>
+Reification
+</p>
+<p>
+Basic constructs
+Collections
+Documentation &amp; reference
+</p>
+<p>
+(&hellip;source Mika-2006-75)
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-07-10 14:43:34 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

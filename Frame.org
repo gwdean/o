@@ -1,0 +1,70 @@
+#+TITLE:     Frame.org
+#+AUTHOR:    Greg
+#+EMAIL:     greg@greg-Satellite-C855D
+#+DATE:      2013-07-04 Thu
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+* Frame.org
+Software based on Erving Goffman's classic work /Frame Analysis/.
+** Metaobject Protocol
+The Metaobject Protocol will be used as a model of social structure
+in this piece of software. This approach overlaps with that of Goffman
+in that both make heavy use of the audience/stage model of interaction.
+
+AMOP-13: "Although understanding implementation architecture is
+important, it is vital to distinguish the implementation from the
+documented language. A useful metaphor for making this separation
+comes from the theatre. We can think of the documented language
+as being /on-stage/. Users, which we think of as the /audience/.
+only get to see this on-stage behavior...to be continued...
+
+
+** Contents of Frame Analysis
+*** Introduction
+Elementary Terms (page 10)
+
+*Strip*
+Any arbitrary slice or cut from the stream
+of ongoing activity...as seen from the 
+perspective of those subjectively involved
+in sustaining an interest in them.
+
+*Frame*
+The term derives from Bateson.
+
+The definitions of a situation are built up
+in accordance with principles of organization
+which govern events-- at least social ones--
+and our subjective involvement in them; frame
+is the word I use to refer to such of these
+basic elements as I am able to identify.
+
+*Frame Analysis*
+A slogan to refer to the examination in these
+terms of the organization of experience.
+
+
+
+*** Primary Frameworks
+*** Keys and Keyings
+*** Designs and Fabrications
+*** The Theatrical Frame
+*** Structural Issues in Fabrications
+*** Out-of-Frame Activity
+*** The Anchoring of Activity
+*** Ordinary Troubles
+*** Breaking Frame
+*** The Manufacture of Negative Experience
+*** The Vulnerabilities of Experience
+*** The Frame Analysis of Talk
+*** Conclusions
+** Bibliography

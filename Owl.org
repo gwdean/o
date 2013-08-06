@@ -1,0 +1,119 @@
+* OWL
+** OWL in OWL
+** Syntax Comparison
+*** Header
+Ontology(
+  Annotation(rdfs:comment "An example OWL ontology")
+  Annotation(rdfs:label "University Ontology")
+  Annotation(owl:imports http://www.mydomain.org/persons)
+)
+
+<rdf:RDF
+    xmlns:owl  ="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf  ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd  ="http://www.w3.org/2001/XMLSchema#">
+
+*** Class Elements 
+Class(associateProfessor partial academicStaffMember)
+
+Class(professor partial)
+DisjointClasses(associateProfessor assistantProfessor)
+DisjointClasses(professor associateProfessor)
+
+Class(faculty complete academicStaffMember)
+
+*** Property Elements
+DatatypeProperty(age range(xsd:nonNegativeInteger))
+
+ObjectProperty(isTaughtBy
+  domain(course)
+  range(academicStaffMember))
+SubPropertyOf(isTaughtBy involves)
+
+ObjectProperty(teaches
+  inverseOf(isTaughtBy)
+  domain(academicStaffMember)
+  range(course))
+
+ObjectProperty(lecturesIn)
+EquivalentProperties(lecturesIn teaches)
+** Semantics and Abstract Syntax
+OWL Web Ontology Language
+Semantics and Abstract Syntax
+http://www.w3.org/TR/owl-semantics/
+
+An OWL ontology in the abstract syntax contains a sequence of annotations, axioms, and facts. OWL ontologies can have a name. Annotations on OWL ontologies can be used to record authorship and other information associated with an ontology, including imports references to other ontologies. The main content of an OWL ontology is carried in its axioms and facts, which provide information about classes, properties, and individuals in the ontology.
+
+#+BEGIN_EXAMPLE
+ontology ::= 'Ontology(' [ ontologyID ] { directive } ')'
+
+directive ::= 'Annotation(' ontologyPropertyID ontologyID ')'
+
+(...and so on...)
+#+END_EXAMPLE
+** Mika-2006
+*** The Resource Description Format (RDF) and RDF Schema
+
+Friend of a Friend (FOAF) Ontology
+http://xmlns.com/foaf/0.1/index.rdf
+
+TitleOfExample: "A set of triples describing two persons represented in the Turtle language."
+#+BEGIN_EXAMPLE
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#label> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix example: <http://www.example.org/>
+
+example:Rembrandt rdf:type foaf:Person .
+example:Saskia    rdf:type foaf:Person .
+example:Rembrandt foaf:name "Rembrandt" .
+example:Rembrandt foaf:mbox <mailto:rembrandt@example.org> .
+example:Rembrandt foaf:knows example:Saskia .
+example:Saskia foaf:name "Saskia" .
+#+END_EXAMPLE
+
+RDF is minimal that in practice it is always used in combination with RDF Schema. RDF Schema is a simple extension of RDF defining a modelling vocabulary with notions such as classes and properties.
+
+TitleOfExample:"Some statements from the FOAF ontology"
+#+BEGIN_EXAMPLE
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+foaf:Person rdf:type owl:Class .
+foaf:Person rdfs:label "Person" .
+foaf:Person rdfs:subClassOf foaf:Agent
+foaf:Person owl:disjointWith foaf:Document .
+
+foaf:knows rdf:type owl:ObjectProperty .
+foaf:knows rdfs:label "knows" .
+foaf:knows rdfs:domain foaf:Person .
+foaf:knows rdfs:range foaf:Person .
+
+foaf:name rdf:type owl:DatatypeProperty .
+foaf:name rdfs:label "name"
+foaf:name rdfs:subPropertyOf rdfs:label .
+foaf:name rdfs:domain owl:Thing .
+foaf:name rdfs:range rdfs:Literal
+#+END_EXAMPLE
+*** The Web Ontology Language (OWL)
+OWL was designed to add the constructs of Description Logics (DL) to RDF.
+
+OWL is in fact a set of three languages (in order of expressivity)
+- OWL Lite
+- OWL DL
+- OWL Full
+
+Basic constructs rdf:type rdf:Property rdf:XMLLiteral
+
+Collections
+
+Reification
+
+Basic constructs
+Collections
+Documentation & reference
+
+(...source Mika-2006-75)
+
+
+

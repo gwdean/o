@@ -64,29 +64,4 @@
   (cond (x '())
 	('t 't)))
 
-; Seven Primitives
-
-; (quote x) 
-; (atom x) 
-; (eq x y) 
-; (car x) 
-; (cdr x) 
-; (cons x y) 
-; (cond (p1 e1) ... (pn en))
-
-; Tests
-
-> (eval. 'x '((x a) (y b))) 
-a
-
-> (eval. '(eq 'a 'a) '())
-t
-
-> (eval. '(cons x '(b c))
-	 '((x a) (y b)))
-(a b c)
-
-
-
-
 ; Greg Dean.

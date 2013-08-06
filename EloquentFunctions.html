@@ -1,0 +1,64 @@
+<html><body><script type="text/javascript">
+
+// Notes on Haverbeke's "Eloquent JavaScript", Chapter 2: Functions.
+
+// 7. Basic test
+var total = 0, count = 1;
+while (count <= 10) {
+  total += count;
+  count += 1;
+}
+document.write(total);
+
+// 29. Simple function definition
+function square(x) {
+    return x * x;
+}
+document.write(square(12));
+
+// 30. Function for computing powers (with positive integer exponents)
+function power(base, exponent) {
+    var result = 1;
+    for (var count = 0; count < exponent; count++)
+	result *= base;
+    return result;
+}
+document.write(power(2,10));
+document.write(power(power(2,2),3));
+
+// 34. Simple closure
+function createFunction() {
+    var local = 100;
+    return function(){return local;};
+}
+
+// 35. Slightly more complex closure
+function makeAdder(amount) {
+    return function(number) {
+	return number + amount;
+    };
+}
+
+var addTwo = makeAdder(2);
+document.write(addTwo(3));
+document.write(addTwo(7));
+
+// 35. Optional arguments
+function opower(number,exponent) {
+    var result = 1;
+    if (exponent === undefined)
+	exponent = 2;
+    for (var count = 0; count < exponent; count++)
+	result *= base;
+    return result;
+}
+
+// 38. Recursive power function
+function rpower(base, exponent) {
+    if (exponent == 0)
+	return 1;
+    else
+	return base * rpower(base, exponent - 1);
+}
+
+</script></body></html>

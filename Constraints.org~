@@ -1,0 +1,48 @@
+* Constraints.org
+This document contains notes on Section 6.4 ("Programming with constraints")
+of Tom Dean's /Talking with Computers/.
+
+/Constraint programming/ is a model of computation that was an important 
+influence on object-oriented programming languages. The following algebra
+problem shows the basic idea of how constraint programming works.
+
+** Problem
+The living room in Anne's house is 56 square meters. She wants to buy a rug
+that fits exactly in the room. Along one side of the room is a 3-meter-wide
+fireplace flanked by two identical bookcases that together take up the
+entire width of the room. The bookcases are 2 meters wide each. The fireplace
+and two bookcases are built into the wall and don't cover any floor space.
+What are the dimensions of the rug that Anne should buy.
+
+#+BEGIN_EXAMPLE
+Known and unknown quantities
+----------------------------
+living_room_area = 56
+bookcase_width   = 2
+fireplace_width  = 3
+living_room_width = fireplace_width + (2 * bookcase_width)
+
+General relationships
+---------------------
+living_room_area = living_room_length * living_room_width 
+
+living_room_length = living_room_area / living_room_width
+
+living_room_length = living_room_area / (fireplace_width + (2 * bookcase_width))
+#+END_EXAMPLE
+
+The idea of constraint programming emerged from the work
+of Ivar Sutherland in the 1960's while working on /Sketchpad/.
+
+Sutherland was interested in displaying graphical objects and
+he wanted to specify general constraints (equations) governing
+their position and orientation and have the computer figure out
+the consequences of those constraints in drawing the objects
+on the computer screen.
+
+For example, at one point you might say that two rectangles
+should be drawn so that one is above the other, and later you
+might add that the bottom of one should be aligned with the
+top of the other, and later you might add that the bottom of
+one should be aligned 
+

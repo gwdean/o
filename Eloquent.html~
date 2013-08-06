@@ -1,0 +1,12 @@
+<html><body><script type="text/javascript">
+
+// Notes on Haverbeke's "Eloquent JavaScript"
+
+var total = 0, count = 1;
+while (count <= 10) {
+  total += count;
+  count += 1;
+}
+document.write(total);
+
+</script></body></html>

@@ -1,0 +1,72 @@
+* Intro
+My technical interests are centered on the intersection between
+Lisp and DITA. "DitaLisp.org" is a framework developed to help myself
+understand the relation between these two technologies. Hopefully
+it will be of some use to others.  I have drawn
+on many resources during the course of this project, including:
+
+johntait.org
+2013-touretzky
+1996-graham
+1994-graham
+2005-seibel
+1989-keene
+2011-barski
+
+; the project is organized using Emacs org-mode running on Ubuntu 12.04 (64 Bit).
+* Summary of DITA
+* Tag Macro (2011-barski)
+(defmacro let1 (var val &body body)
+  `(let ((,var ,val))
+     ,@body))
+
+(defmacro split (val yes no)
+  (let1 g (gensym)
+  `(let1 ,g ,val
+     (if ,g
+       (let ((head (car ,g))
+             (tail (cdr ,g)))
+         ,yes)
+         ,no))))
+
+(defun pairs (lst)
+    (labels ((f (lst acc)
+                (split lst
+                  (if tail
+                      (f (cdr tail) (cons (cons head (car tail)) acc))
+                      (reverse acc))
+                  (reverse acc))))
+      (f lst nil)))
+
+(defun print-tag (name alst closingp)
+  (princ #\<)
+  (when closingp
+    (princ #\/))
+  (princ (string-downcase name))
+  (mapc (lambda (att)
+          (format t " ~a=\"~a\"" (string-downcase (car att)) (cdr att)))
+	alst)
+  (princ #\>))
+
+(defmacro tag (name atts &body body)
+  `(progn (print-tag ',name
+                     (list ,@(mapcar (lambda (x)
+                                       `(cons ',(car x) ,(cdr x)))
+                                     (pairs atts)))
+                     nil)
+          ,@body
+          (print-tag ',name nil t)))
+
+(defmacro svg (&body body)
+  `(tag svg (xmlns "http://www.w3.org/2000/svg" 
+             "xmlns:xlink" "http://www.w3.org/1999/xlink")
+	,@body))
+
+* Bibliography
+tait: johntait.org
+tour: 2013-touretzky
+bars: 2011-barski
+graa: 1994-graham
+grab: 1996-graham
+seib: 2005-seibel
+keen: 1989-keene
