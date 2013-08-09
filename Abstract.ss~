@@ -1,0 +1,50 @@
+; An implementation of "Defining Abstract Objects" from 2009-Dybvig
+
+; Abstract objects respond to messages
+
+; The data local to an abstract object is accessible 
+; only through the actions performed by the object
+; in response to the messages.
+
+; A particular type of abstract object is defined with
+; define-object, which has the general form
+(define-object (name var1 ...)
+  ((var2 val) ...)
+  ((msg action) ...))
+
+; Defining and using abstract objects
+(define-object (kons kar kdr)
+  ((get-car (lambda () kar))
+   (get-cdr (lambda () kdr))
+   (set-car! (lambda (x) (set! kar x)))
+   (set-cdr! (lambda (x) (set! kdr x)))))
+
+(define p (kons 'a 'b))
+(send-message p get-car)
+(send-message p get-cdr)
+(send-message p set-cdr! 'c)
+(send-message p get-cdr)
+
+; The following version of kons requires that a 
+; password be given with any request to assign
+; one of the fields. The password is a parameter
+; to the kons procedure.
+
+(define-object (kons kar kdr pwd)
+  ((get-car (lambda () kar))
+   (get-cdr (lambda () kar))
+   (set-car!
+    (lambda (x p)
+      (if (string=? p pwd)
+	  (set! kar x))))
+   (set-cdr!
+    (lambda (x p)
+      (if (string=? p pwd)
+	  (set! kar x))))))
+
+(define p1 (kons 'a 'b "magnificent"))
+(send-message p1 set-car! 'c "magnificent")
+(send-message p1 get-car)
+(send-message p1 set-car! 'd "please")
+(send-message p1 get-car)
+
