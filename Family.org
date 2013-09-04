@@ -1,0 +1,11 @@
+Assignment. 
+
+Developing the Family Tree Database described 
+in *TOUR* p. 275-278, C52-C54.
+
+1. Make database. Completed. See "Family.lisp"
+2. Write out the complete code and get it working
+   in Lisp. See "Family.lisp"
+3. Document the working code.
+4. Make a printout and laminate it.
+
