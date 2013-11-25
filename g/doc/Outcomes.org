@@ -1,0 +1,99 @@
+* Market Outcomes
+This document is an analysis of the Market Outcomes
+listed on page 334-338 of /Markets from Networks/.
+
+** Meta Information
+Five tables (A-1..5) 
+
+Each table corresponds to a different market.
+
+(A-1 PARADOX)
+(A-2 ORDINARY)
+(A-3 CROWDED)
+(A-4 UNRAVELING)
+(A-5 TRUST)
+
+Within each market, there are several submarkets:
+
+(A-1 PARADOX 6)
+(A-2 ORDINARY 5)
+(A-3 CROWDED 4)
+(A-4 UNRAVELING 4)
+(A-5 TRUST 2)
+
+There are a total of 21 submarkets. 
+
+Our prototype market is the ORDINARY region, which
+is represented by the data in Table A.2.
+
+In Table A.2 we have 5 markets, each of them containing
+three firms. Market totals for the 5 markets look like
+this:
+
+(Id Volume Revenue Profit)
+
+(a .582 3.94 2.07)
+(b .606 4.27 2.39) 
+(c .412 3.22 1.98)
+(d .336 1.35 2.39)
+(e .048 1.68 .681)
+
+(.225 1.42 .590)
+(.192 1.31 .516)
+(.165 1.20 .463)
+(.582 3.94 2.07)
+
+(.290 1.72 .552)
+(.182 1.37 .562)
+(.133 1.18 .565)
+(.606 4.27 2.39)
+
+(.186 1.23 .617)
+(.128 1.05 .613)
+(.098 .938 .610)
+(.412 3.22 1.98)
+
+To understand these numbers, we should be on intimate terms
+with each of the market types. For instance, "(l)ocation in
+ORDINARY will come to be seen as very--perhaps most--common,
+and it is the region easiest to relate to microeconomic
+analysis." (2002-White.53) 
+
+Each market can be identified by a set of two ratios: (a/c,b/d).
+The ratios used in Table A.2 are:
+
+(0.681 0.154)
+(0.681 0.461)
+(0.681 0.461)
+(0.681 0.385)
+(0.864 0.385)
+
+
+*** Table A-1.(PARADOX)
+Source: 95-99
+*** Table A-2.(ORDINARY)
+Source: 53
+*** Table A-3.(CROWDED)
+Source: 139-157
+
+*** Table A-4.(UNRAVELING)
+Source: 79-94
+*** Table A-5.(TRUST)
+Source: 190
+** Sample Numbers
+(1.0 .607 1.45 .206)
+(1.5 2.13 4.41 .197)
+(2.0 3.29 6.47 .269)
+
+(Market-total 6.03 12.33 2.91)
+
+** Table A.1.PARADOX
+| 1.0 | .607 | 1.45 | .206 |
+| 1.5 | 2.13 | 4.41 | .197 |
+| 2.0 | 3.29 | 6.47 | .269 |
+|     | 6.03 | 12.33 |2.91 |
+
+** Table A.2.ORDINARY
+** Table A.3.CROWDED
+** Table A.4.UNRAVELING
+** Table A.5.TRUST

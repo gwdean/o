@@ -1,0 +1,48 @@
+* Lean
+** Why Lean?
+*** DOTWIMPP: The Eight Deadly Wastes
+**** Defects
+Lean focuses on preventing defects instead of the 
+traditional "find and fix" mentality.
+**** Overproduction
+Producing more than is needed, or producing it
+before it is needed. It is often visible as the
+storage of materials.
+**** Transportation
+The unnecessary movement of parts between processes.
+When you move material and parts between factories,
+work cells, desks, or machines, no value is created.
+**** Waiting
+People or parts waiting for the next production step.
+**** Inventory
+All material, work-in-progress, and finished products
+that are not being processed. Inventory beyond the 
+bare minimum consumes productive floor space and delays
+the identification of problems (if you've got plenty
+of spares, there's no incentive to fix quality-related
+problems). 
+**** Motion
+People or equipment moving or walking more than is needed
+to perform the processing.
+**** Processing
+Overprocessing beyond the standard required by the customer.
+This adds additional cost without adding additional value.
+**** Underutilization of People
+Underutilization of the worker's creativity and resourcefulness.
+** Applying Lean to Software Development
+** Practice 0: Source Code Management and Scripted Builds
+** Practice 1: Automated Testing
+*** Kinds of Tests
+**** Unit Tests
+**** Mocks and Stubs
+**** Integration Tests
+**** Behavior Tests
+**** Executable Specifications
+**** Nonfunctional Testing
+**** User Interface Testing
+*** Approaches to Testing
+** Practice 2: Continuous Integration
+** Practice 3: Less Code
+** Practice 4: Short Iterations
+** Practice 5: Customer Participation
+** What Next?

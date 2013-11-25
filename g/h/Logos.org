@@ -1,0 +1,503 @@
+#+TITLE:     Logos Lab
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-11-17 Sun
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:5 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+A computational toolkit to help one understand philosophical concepts.
+* Logical Diagrams (Carlson-2007)
+** Introduction (1-5)
+According to Carlson, the "main contribution" of his 2007 book is
+that it "reduces every move in Hegel's logic to a discrete diagram".
+
+In all, there are 79 official Logical progressions, organized
+in groups of three.
+
+Each official move is diagrammed in a "Figure". 
+
+- Figure 1(c): the third sub-step of the first step of the /SL/. 
+- Figure 2(a): the first sub-step of the second step of the /SL/.
+- ...
+- Figure 79(c): the third sub-step of the seventy-ninth step of the /SL/.
+
+** With What Must Science Begin?
+Three things worth knowing (DGC-39):
+
+(a). The /SL/ is to be a groundless logic
+
+(b). Deciding to begin at all is a contingent fact.
+
+(c). PURE BEING is the best starting place, because it develops  
+into the ultimate result--ABSOLUTE KNOWING--which then mediates
+the beginning.
+
+DGC argues that the Logic's true beginning is the Understanding's
+one-sided attempt to summarize the very last step of the Logic--
+ABSOLUTE KNOWING. It cannot fix this thought. Its attempt fails.
+The collapse of thought is the modulation that Hegel describes.
+
+The beginning of the Logic is failure, and that is what makes
+it a success.
+** Borromean Knot (18-26) 
+*** Circles
+All Middle terms (such as Becoming) are made up of three circles.
+
+- Circle-1: Positive side (Left)
+- Circle-2: Negative side (Right)
+- Circle-3: Surplus of Positive and Negative (Middle)
+*** Borromean Knot
+These three circles together form a /Borromean Knot/, which 
+contains seven distinct areas.
+
+- Areas 1,3,7 are static.
+- Areas 2,4,5,6 are dynamic.
+
+Dynamic areas have at least two natures--they are subject to
+more than one jurisdiction.
+
+Area-4 is subject to all three jurisdictions.
+
+Area-4 is what Hegel (eventually) calls "being-within-self"   
+*** Modes of Consciousness
+**** The Understanding
+The Understanding is the intuition that perceives a concept
+as an immediate, uncomplicated entity. (19)
+**** Dialectical Reason
+Dialectical Reason accuses the Understanding of ignoring
+the negative component that dialectic reasoning is able
+to comprehend. (21)
+
+Dialectical Reason produces an autistic modulation
+between two identical extremes that get us nowhere; drawing
+attention to the lack in the Understanding merely replicates
+the Understanding's own error.
+**** Speculative Reason
+Speculative Reason "wisely intervenes to stop the 
+modulating nonsense". (23)
+
+(...TO BE CONTINUED...)
+
+*** Summary (26)
+The Borromean knot represents Logic as a circle comprised of circles,
+in accord with Hegel's comment from the /EL/:
+
+Each of the parts of philosophy is a philosophical whole, a circle rounded and
+complete in itself. In each of these parts, however, the philosophical Idea is
+found in a particular specificality or medium. The single circle, because it is
+a real totality, bursts through the limits imposed by its special medium, and
+gives rise to a wider circle. The whole of philosophy in this way resembles a
+circle of circles. The Idea appears in each single circle, but, at the same time,
+the whole Idea is constituted by the system of these peculiar phases, and each
+is a necessary member of the organization. /EL-15/ (DGC-26)
+
+** Observations
+*** Being-Nothing-Becoming
+We begin with the simplest of simples--PURE BEING.
+
+Hegel's opening words are: "/Being/, /pure being/, without 
+any further determination." (SL:82) (No verb! Not even "is"!)
+
+PURE BEING is immediacy /as such/, taken on its own terms
+without reference to anything else.
+**** Moves
+***** DGC.(18-26)
+***** DGC.(29-31)
+In terms of our conventions, (2) is the voice of
+Dialectical Reason. It is the suppressed voice of (1)
+and hence immanent or implicit within (1). Dialectical
+Reason merely expresses what was previously hidden.
+
+Likewise, Speculative Reason is the voice of (4),
+which is immanent to both (1) and (3). (29)
+
+Every step contains (4), which implies that the prior
+steps have never been entirely destroyed. Yet the very
+idea of taking a step means that we have negated its
+predecessor. Thus (1),(2),and (3) are expelled from
+the middle term. Yet the middle term always implies
+(1),(2), and (3) in the guise of (4),(5),(6). (29-30)
+
+Sublation--denotes the destruction and preservation
+of Logical moments by the more progressive moment
+which it generates. (31)
+***** DGC.(42)
+Consider the phrase "the relation of /A/ and /B/."
+
+(...considering....considering....considering...)
+
+The remark refers to the parts (/A/, /B/) as well
+as the relation itself. The "relation" is just as
+separate a thing as /A/ and /B/ are.
+
+Is the aforementioned relation complex or simple?
+It is both.
+
+BECOMING (1c) is just such a relation between 
+PURE BEING and PURE NOTHING. (7) is simple, and
+(4,5,6) is complex.
+
+***** DGC.(46-49)
+BECOMING--the middle term between BEING and NOTHING--
+is concrete. It has difference within it (4,5,6),
+but it is a unity (7).
+
+Coming-to-be and ceasing-to-be are in motion. In
+Figure 1c, (7) constitutes the equilibrium--the
+unity at rest.
+
+In the fourth official move of the /SL/ (2a), we take
+the static part of BECOMING (7), and move it to
+the left of the diagram (where the Understanding
+resides). (48)
+
+In Figure 2a, we take misshapen (7) and round it out
+to (1). This represents the fundamental error of the
+Understanding, which sees simplicity in lieu of
+complexity. (48)
+
+We contemplate Becoming /as if/ it were whole.
+
+Figure 2a shows the transition to DETERMINATE BEING.
+**** Comments
+Abstraction turns Pure Being into Pure Nothing. The
+modulation itself was Becoming.
+
+Difference must precede Pure Being in origin. Hegel's
+beginning is the Understanding's abstraction of 
+immediacy from the last step of the Logic.
+
+Reflection notices the difference between Pure Being/
+Nothing and Absolute Knowing--an overarching perspective
+that comprehends origin and pre-origin at the same time. (32)
+
+*** Determinate Being
+**** Moves
+***** DGC.(55-57)
+***** DGC.(57-58)
+***** DGC.(63-69)
+BECOMING is a oneness by virtue of of (7).
+
+The /whole/ of BECOMING (4-7) is not a oneness.
+
+Only from (7) does DETERMINATE BEING spring forth. (DGC-55)
+
+(...to be continued...)
+**** Comments
+** Transitions
+*** Determinate Being (48)
+*** Something/Other (70)
+*** Being-for-self (104)
+* Stepping to Infinity (Carlson-2007.(1-102))
+** Step 0 Absolute Knowing (Method)
+The /PhG/ ends when consciousness "abolishes itself
+in favor of absolute or pure knowing". (DGC.10)
+
+Absolute knowing is the /truth/ of every mode of
+consciousness because, as the course of the /PhG/
+showed, it is only in absolute knowing that the
+separation of the /object/ from the /certainty of itself/
+is completely eliminated: truth is now equated
+with certainty and this certainty with truth. (49) (DGC.10)
+
+The /SL/ takes up where the /PhG/ left off--with a 
+purer immediacy than consciousness comprehends. (DGC.10)
+*** Immediacy (595)
+*** Mediation (598)
+*** Absolute Knowing (Method) (599)
+** Step 1 Becoming 
+*** Pure Being (11)
+PURE BEING is no /unity/ of distinguishable parts. It is
+IMMEDIACY before there /are/ any parts to break it up. (DGC.10)
+
+In the pure light of BEING, NOTHING can be distinguished. (DGC.11)
+
+Pure light and pure darkness are two voids which are the
+same thing. Something can be distinguished only in 
+determinate light or darkness...[F]or this reason, it
+is only darkened light and illuminated darkness which
+have within themselves the moment of difference and are,
+therefore, /determinate being/. (SL.93)
+
+PURE BEING will require the darkness of PURE NOTHING
+before it can be thought at all. (DGC.11)
+
+PURE BEING is /indeterminacy as such/. (DGC.11) 
+
+In PURE BEING we think nothing. This is what we would
+perceive in a world of pure nothing. Hence, we might
+as well say that PURE BEING is PURE NOTHING. They are 
+/identical/. (DGC.11)
+
+"Being, the indeterminate immediate, is in fact /nothing/. (SL.82)
+
+If PURE BEING and NOTHING are the same, where does their
+/difference/ come from? (DGC.11)
+
+The origin of difference precedes PURE BEING. This is discussed
+in the introductory essay to the /SL/ entitled "With What Must
+Science Begin?" (DGC.11)
+
+PURE BEING precludes an other that thinks. This means /you/,
+among other things. (DGC.13)
+
+If PURE BEING were really here before us (and not just in
+our thoughts) we would be obliterated--sucked into a very
+black hole. (DGC.13)
+
+The fact that we are thinking at all is proof that PURE BEING
+is not before us. Rather it is apparent that PURE BEING
+/has already/ passed away. (DGC.13)
+
+"For us", PURE BEING can be thought--here we are doing it! But
+"for itself", PURE BEING will not suffer us to contemplate it. (DGC.13)
+
+In the presence of PURE BEING, there can be no determinate
+thing that thinks. (DGC.13)
+
+*** Pure Nothing (14)
+*** Becoming (15)
+From the beginning, Hegel's logic is a play between (a) /stasis/,
+(b) /movement/, and, in addition, (c) the unity of stasis and
+movement.
+
+Becoming is the first name of that unity.
+
+Becoming represents /movement/. Movement can be perceived
+only because it has as background the static, passive
+non-movement of Pure Being and Nothing.
+
+Becoming has a dual nature. It arises as the relation
+between Being/Nothing and Absolute Knowing. As a relation,
+it is /composed/ of simpler parts. It is a complex entity.
+In its complexity, Becoming moves. But when we think of
+Becoming as such, we freeze it, so that it does not move.
+** Step 2 Something
+*** Determinate Being (Quality) (48)
+*** Quality and Negation (58)
+*** Something (63)
+** Step 3 Determination of the In-Itself
+*** Something/Other (70)
+*** Being-for-other/Being-in-itself (73)
+*** Determination of the In-itself (78)
+** Step 4 Limit (Determinateness as Such)
+*** Constitution (79)
+*** Constitution v. Determination (82)
+*** Limit (Determinateness as Such) (83)
+** Step 5 The Ought
+*** Finitude (87)
+*** Limitation (87)
+*** The Ought (88)
+** Step 6 Infinity
+*** Enriched Finite (92)
+*** Another Finite (92)
+*** Infinity (93)
+** Step 7 True Infinity
+*** Spurious Infinity (94)
+*** Spurious Infinity and Its Other (94)
+*** True Infinity (97)
+The Spurious Infinite and its finite beyond modulate
+back and forth. The name of this movement is the
+True Infinite.
+
+True Infinity resembles, but is more advanced than,
+Becoming.
+
+The True Infinite is that which becomes something else
+while remaining what it is. (97)
+
+Hegel calls the True Infinite the "fundamental concept
+of philosophy".
+
+The contribution of the True Infinite is that it
+encompasses both the Finite and its beyond.
+
+In True Infinity, Limit (between the Finites) and 
+Limitation (the Other of the Spurious Infinite)
+are sublated.
+
+Kant's doctrine of the thing-in-itself depends on
+the self-identity of the phenomenal thing. Better
+to let the Finite do what it does best--cease-to-be. (99)
+
+The very act of ceasing /is/ True Infinity. (99)
+
+True Infinity, "contradiction as displayed in the
+sphere of being", is a higher reality than Determinate
+Being. It has acquired a more concrete content and
+therefore better deserves the name "reality".
+
+A better word for True Infinity may be /ideality/. (100)
+
+(...TO BE CONTINUED...)
+
+* Absolute Idea (Carlson-2007.(593-603))
+* 79 Steps of the Logic 
+** Quality (1-10)
+*** Becoming (15)
+*** Something (63)
+*** Determination of the In-Itself (78)
+*** Limit (Determinateness as such) (83)
+*** The Ought (88)
+*** Infinity (93)
+*** True Infinity (97)
+*** The One (110)
+*** Repulsion (120)
+*** Quantity (132)
+Quantity is the thinnest of entities. All its
+content is expelled; it is a mere ghost of Being. (132)
+** Quantity (11-17)
+*** Enriched Quantity (144)
+*** Quantum (155)
+*** Number (159)
+*** The Quality of Quantum (168)
+*** Qualitative Something (170)
+*** Infinitely Great and Infinitely Small (179)
+*** Ratio of Powers (189)
+** Measure (18-23)
+*** Specifying Measure (208)
+*** Ratio of Measures (210)
+*** Elective Affinity (227)
+*** Nodal Line (231)
+*** Infinite For Itself (236)
+*** Essence (246)
+** Reflection (24-33)
+*** Reflection (262)
+*** Determining Reflection (275)
+*** Opposition (289)
+*** Contradiction (297)
+*** Ground (300)
+*** Form (Ground Relation) (311)
+*** Content (Inwardization of Outward Form) (316) 
+*** Determinate Ground (318)
+*** Complete Ground (326)
+*** Fact (332)
+** Appearance (34-42)
+*** The Totality of Existence (348)
+*** Reciprocal Action of Things (352)
+*** Constitution of the Thing out of its Matters (355)
+*** Appearance (358)
+*** The Law of Law and Appearance (364)
+*** Essential Relation (372)
+*** Conditioned Relation (378)
+*** Self-Externalization of Force (Expression) (385)
+*** Actuality (388)
+** Actuality (43-52)
+*** Attribute (397)
+*** Mode (399)
+*** Contingency (405)
+*** Real Necessity (Totality of Conditions) (408)
+*** Substance (412)
+*** Power (Substantiality) (417)
+*** Original Substance (419)
+*** Internalized Causality (423)
+*** Reciprocal Action (Absolute Substance) (426)
+*** The Notion (428)
+** Subjectivity (53-62)
+*** Individual Notion (455)
+*** Negative Judgment (469)
+*** Infinite Judgment (472)
+*** Judgment of a Reflection (476)
+*** Universal Judgment (480)
+*** Disjunctive Judgment (486)
+*** Apodeictic Judgment (Syllogism) (492)
+*** IUP_E (UUU_E) (502)
+*** Syllogism of Analogy (508)
+*** Disjunctive Syllogism (IUP_N) (Objectivity) (517)
+** Objectivity (63-70)
+*** Nature of Mechanical Objects (528)
+*** Rest (531)
+*** Oneness of the Object (535)
+*** Free Mechanism (537)
+*** Chemism (540)
+*** Abstract Neutrality (543)
+*** Neutrality and Tension (End) (545)
+*** Realized End (Idea) (554)
+** The Idea (71-79)
+*** Organism (565)
+*** Reproduction (567)
+*** Assimilation of the Object (569)
+*** Cognition (570)
+*** The True (578)
+*** Scientific Laws (583)
+*** Theorem (588)
+*** Absolute Idea (591)
+*** Absolute Knowing (Method) (599)
+* Appendix 1: Science of Logic Outline
+** Objective Logic
+*** Doctrine of Being
+**** Quality
+**** Quantity
+**** Measure
+*** Doctrine of Essence
+**** Reflection
+**** Appearance
+**** Actuality
+** Subjective Logic
+*** Doctrine of Concept
+**** Subjectivity
+**** Objectivity
+**** The Idea
+* Appendix 2: Encyclopedia Logic Outline
+** Introduction (1-18)
+** Preliminary Conception (19-83)
+*** First position of thought towards objectivity: Metaphysics (26-36)
+*** Second position of thought towards objectivity (37-60)
+**** Empiricism (37)
+**** Critical Philosophy (40)
+*** Third position of thought towards objectvity: Immediate knowing (61-78)
+*** More detailed conception of the division of the Logic (79-83)
+** The Doctrine of Being (84-111)
+*** Quality
+**** Being (86)
+**** Existence (89)
+**** Being-for-itself (96)
+*** Quantity (99)
+**** Pure quantity (99)
+**** Quantum (101)
+**** Degree (103)
+*** Measure (107)
+** The Doctrine of Essence (112-159)
+*** The essence as ground of concrete existence (115)
+**** The pure determinations of reflection (115)
+***** Identity (115)
+***** Difference (116)
+***** Ground (121)
+**** Concrete existence (123)
+**** The thing (125)
+*** Appearance (131)
+**** The world of appearance (132)
+**** Content and form (133)
+**** The relationship (135)
+*** Actuality (142)
+**** The relationship of substantiality (150)
+**** The relationship of causality (153)
+**** Reciprocity (155)
+** The Doctrine of the Concept (160-244)
+*** The subjective concept (163)
+**** The concept as such (163)
+**** The judgment (166)
+***** Qualitative judgment (172)
+***** The judgment of reflection (174)
+***** Judgment of necessity (177)
+***** The judgment of the concept (178)
+**** The syllogism (181)
+***** Qualitative syllogism (183)
+***** Syllogism of reflection (190)
+***** Syllogism of necessity (191)
+*** The object (194)
+*** The idea (213)
+**** Life (216)
+**** Knowing (223)
+***** Knowing (226)
+***** Willing (233)
+**** The absolute idea (236)
+* References

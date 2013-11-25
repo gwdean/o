@@ -1,0 +1,29 @@
+Directions for Creating a BibTex File
+(http://www.bibtex.org/Using/)
+-------------------------------------
+
+Example BibTex File
+-------------------
+@misc{ Smith12,
+       author = ``Jim Smith'',
+       title = ``Article by Smith'',
+       year = ``2012''}
+
+LaTex-File
+----------
+\documentclass[11pt]{article}
+\usepackage{cite}
+
+\begin{document}
+
+\title{My Article}
+\author{Jim Smith}
+\date{Today}
+\maketitle
+
+Smith said this: ``Yo!'' ~\cite{Smith12}.
+
+\bibliography{mybib}{}
+\bibliographystyle{plain}
+\end{document}
+

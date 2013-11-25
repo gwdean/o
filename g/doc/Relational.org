@@ -1,0 +1,20 @@
+* Notes on Relational Sociology
+** Relations from /Identity and Control/
+Table 3.1 (page 65)
+
+| Genre     | Process | Valuation Order |
+| interface | commit  | quality         |
+| council   | mediate | prestige        |
+| arena     | select  | purity          |
+
+Nine categories of discipline
+
+Interface (low/medium/high involution)
+Council   (low/medium/high differentiation)
+Arena     (low/medium/high dependence)
+
+
+** Sources
+White-2008
+Burt-1992
+Lin-2001 

@@ -1,0 +1,42 @@
+#+TITLE:     Logos Lab
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-11-17 Sun
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+A computational toolkit to help one understand philosophical concepts.
+* Logical Diagrams (Carlson-2007)
+** Borromean Knot
+** Game Dynamics
+** Steps and Transitions
+* Stepping to Infinity (Carlson-2007.(1-102))
+** Step 0 Absolute Knowledge
+** Step 1 Becoming
+** Step 2 Something
+** Step 3 Determination of the In-Itself
+** Step 4 Limit (Determinateness as Such)
+** Step 5 The Ought
+** Step 6 Infinity
+** Step 7 True Infinity
+* The Infinite (Lauer-1982.(162-202))
+* The Concept (Lauer-1982.(57-127))
+* God as Spirit (Lauer-1982.(128-161))
+* Parmenides (Plato.(1152-1168))
+* Computational Monadology.(Steinhart.online)
+* 2/27 of the Science of Logic (Houlgate-2006)
+* 38 Dialectics in the PhG (Wheat-2012)
+* PhG.min
+* Resources
+- Carlson-2007
+- Lauer-1982
+- Kontopoulos-1979
+- Houlgate-2006

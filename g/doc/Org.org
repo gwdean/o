@@ -1,0 +1,139 @@
+* Org
+** Document Structure
+*** Blocks
+#+BEGIN_EXAMPLE
+> #+STARTUP: hideblocks
+> #+STARTUP: nohideblocks
+#+END_EXAMPLE
+*** Footnotes
+The Org homepage[fn:1] now looks a lot better than it used to.
+...
+[fn:1] The link is: http://orgmode.org
+
+Valid footnote references:
+#+BEGIN_EXAMPLE
+[1] A plain numeric footnote marker...
+[fn:name] A named footnote reference...
+[fn:: This is the inline definition of this footnote]
+[fn:name: a definition] 
+#+END_EXAMPLE
+
+** Tables
+*** The bulit-in table editor
+| Name  | Phone | Age |
+|-------+-------+-----|
+| Peter |  1234 |  17 |
+| Anna  |  4321 |  25 |
+
+You can create basic tables quickly like:
+
+=|Name|Phone|Age|=
+
+After this, pages 23-26 get into some advanced
+keyboard moves for moving around a table, sorting
+columns and rows, converting the active region
+to a table, and other things along those lines.
+
+Section 3.2 /Column width and alignment/ is 
+technical and can be visited later.
+
+*** Column Groups
+This is a somewhat esoteric topic, but this section
+includes an excellent table.
+
+| N | N^2 | N^3 | N^4 | sqrt(n) | sqrt[4](N) |
+|---+-----+-----+-----+---------+------------|
+| / |   < |     |   > |       < |          > |
+| 1 |   1 |   1 |   1 |       1 |          1 |
+| 2 |   4 |   8 |  16 |  1.4142 |     1.1892 |
+| 3 |   9 |  27 |  81 |  1.7321 |     1.3161 |
+|---+-----+-----+-----+---------+------------| 
+#+TBLFM: $2=$1^2::$3=$1^3::$4=$1^4::$5=sqrt($1)::$6=sqrt(sqrt(($1)))
+
+Pages 28-29 can be ignored for the time being.
+
+*
+** Hyperlinks
+Worth spending a couple of hours/days mastering
+this. There is a lot here, and a little summary
+would not do this section justice.
+** Time.org (Chapters 5-10)
+Chapters 5-10 are all related to organizing 
+oneself, and will be the subject of another
+document called Time.org.
+** Markup for rich export
+*** Structural markup elements
+**** Document title
+The title of the exported document is taken from the line:
+#+BEGIN_EXAMPLE
+> #+TITLE: This is the title of the document
+#+END_EXAMPLE
+**** Headings and sections
+#+BEGIN_EXAMPLE
+> #+OPTIONS: H:4
+#+END_EXAMPLE
+**** Table of Contents
+#+BEGIN_EXAMPLE
+> #+OPTIONS: toc:2       (only to two levels in the TOC)
+> #+OPTIONS: toc:nil     (no TOC at all)
+#+END_EXAMPLE
+**** Paragraphs, line breaks, and quoting
+#+BEGIN_VERSE
+Great clouds overhead
+Tiny black birds rise and fall
+Snow covers Emacs
+    -- AlexSchroeder
+#+END_VERSE
+
+#+BEGIN_QUOTE
+Everything should be made as simple as possible,
+but not any simpler -- Albert Einstein
+#+END_QUOTE
+
+#+BEGIN_CENTER
+I am being centered.
+#+END_CENTER
+
+**** Comment lines
+# Lines starting with '#' in column zero are treated as comments
+# and will never be exported.
+*** Images and Tables
+#+CAPTION: This is the caption for the next table (or link)
+#+LABEL:   tbl:basic-data
+| ... | ... |
+|-----|-----| 
+            
+#+CAPTION: The caption for the next figure link (or table)
+#+LABEL:   fig:SED=HR4049
+[[./img/a.jpg]]
+
+*** Literal Examples
+#+BEGIN_EXAMPLE
+(define (yo x) (* x x))
+#+END_EXAMPLE
+
+For simplicity when using small examples, you can
+also start the examples lines with a colon followed 
+by a space.
+
+Here is an example:
+   : (define (yo x) (* x x))
+
+#+BEGIN_SRC emacs-lisp
+(defun org-xor (a b)
+  "Exclusive or."
+  (if a (not b) b))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp -n -r
+(save-excursion              (ref:sc)
+   (goto-char (point-min))   (ref:jump)
+#+END_SRC
+In line [[(sc)]] we remember the current position.
+[[(jump)]][Line (jump)]] jumps to point-min.
+
+*** Index entries
+The publishing section provides more info on this.
+**** Curriculum Vitae
+#+INDEX: CV
+#+INDEX: Application!CV

@@ -1,0 +1,133 @@
+* Ic.org
+Notes on H.C. White's /Identity and Control/.
+
+** Identities Seek Control
+** Networks and Stories
+** Three Disciplines
+** Styles
+351- Moody and White portray cohesion as what I call a /style/.
+** Institutions and Rhetorics
+** Regimes of Control
+** Getting Action
+** Overview and Contexts
+*** Concepts (from 8.1.5 Sketch of Chapters)
+The following concepts are highlighted in the text (339-341)
+- identities
+- control
+- meaning
+- switchings
+- netdom
+- public
+- footing
+- context
+- stochastic
+- streq
+- levels
+- networks
+- stories
+- mark
+- ties
+- type of tie
+- multiplex
+- set-of-stories
+- disciplines
+- valuation-order
+- sensibility
+- style
+- folk theory
+- rhetorics
+- institutional-systems
+- regimes
+
+351- Moody and White portray cohesion as what I call a /style/.
+
+So the key to understanding /style/ is to understand what Moody and 
+White call "cohesion". Turning to that paper, here is the definition
+that we have:
+
+*Structural Cohesion*: the minimum number of actors who, if removed from
+a group, would disconnect the group.
+
+Structual cohesion simultaneously defines a *group* property
+characterizing the collectivity, a *positional* property
+that situates subgroups relative to each other in a population,
+and *individual* membership properties.
+
+Although the authors do not claim to capture the full range 
+of either "solidarity" or "embeddedness", structural cohesion
+provides an exact analytic operationalization of a dimension
+of each.
+
+Now back to White. On 112-113 he provides his view on
+what a style is. Here are some clues.
+
+A *sensibility* is how *style* presents itself in experience.
+
+*Style* can be of any scope and level: it is a scale-invariant concept.
+
+*** Embeddings with Three Dimensions 
+It is not clear how to model interaction between disciplines.
+
+How can the embedding of identity forms into networks, in
+parallel and crossing arrangements, be modeled explicitly
+as population?
+
+How can one predict and represent the suppression of
+one alternative discipline by another?
+
+The three dimensions that White uses to model disciplines
+are *involution*, *dependence* and *differentiation*.
+
+In this section, these three dimensions are used to
+index styles, institutional systems, and control regimes.
+
+- STYLE                 -> Interface/Involution
+- INSTITUTIONAL SYSTEM  -> Council/Differentiation
+- CONTROL REGIME        -> Arena/Dependency
+
+White speculates that each of the three process formations
+is especially focused on, and outcomes shaped especially
+by, the value of just one parameter ratio. (see also section 3.2.3)
+
+**** Interface (10 Examples)
+- Discussion Group
+- "World System"
+- Amateur theater group
+- Fiber optics
+- Sugar trust
+- Aborigine Hordes
+- Professors' offices
+- Classificatory kinship
+- City neighborhoods
+- Battle-line units
+
+**** Council (14 Examples)
+- Cooperative federation
+- Phillipine clientage
+- Autocracy
+- Segmentary lineage
+- Standestaat
+- JP Bench
+- Noble Councils
+- Roman senate
+- Parlements
+- Royal councils
+- Movie production
+- Segmentary kinship
+- Thai clientele
+- Commissaires
+
+
+**** Arena (10 Examples)
+- Multi-party electoral system
+- Cults
+- Exchange markets
+- Committees
+- Engineering
+- Medicine
+- Professions
+- Law
+- Functional department
+- Multiple hierarchy
+** Glossary
+** Bibliography

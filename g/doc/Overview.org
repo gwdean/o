@@ -1,0 +1,20 @@
+This document serves as a "route-map" (I think)
+of my general theory. The railroad theme is
+appropriate.
+
+Anyway, here are some of the basic themes that
+I will be dealing with from a top-down perspective.
+
+- Social Theory [[file:Theory.org]]
+- Consciousness [[file:Consciousness.org]]
+- Programming [[file:Programming.org]]
+- Technical Writing [[file:Writing.org]]
+- Network Analysis [[file:Networks.org]]
+- Data Science [[file:Data.org]]
+- Education [[file:Education.org]]
+
+This general theory framework is intended to provide
+thinkers better tools with which to think. I've 
+spent a tremendous amount of time on all of these
+topics, and I writing this to share what I have found
+at the intersection of all of these various realms.

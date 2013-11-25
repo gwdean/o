@@ -1,0 +1,286 @@
+Notes on /The PhG/
+* What is the Task of /The PhG/?
+To run through, in a scientifically purged order,
+the stages of the mind's necessary progress from
+immediate sense-consciousness to the position of
+a scientific philosophy, showing thereby that 
+this position is the only one that the mind can
+take, when it comes to the end of the intellectual
+and spiritual adventures described in the book.
+(Findlay. Foreword to the /PhG/.v)
+
+* Notes on Wheat's Dialectics
+"The now-almost-universal skepticism about
+the idea that Hegel uses thesis-antithesis-synthesis
+dialectics of a dynamic (nonstatic) sort
+runs afoul of overwhelming evidence that 
+Hegel does practice thesis-antithesis-synthesis 
+dialectics.
+
+Among the most powerful pieces of evidence are
+Hegel's soon-to-be-revealed actual dialectics:
+
+- 1 Overarching Dialectic (Macrodialectic)
+- 1 Preface Dialectic 
+- 4 Table-of-Contents Dialectics
+- 22 Microdialectics
+- 10 History Dialectics
+
+That's 38 Dialectics identified by Wheat. 
+
+** Macrodialectic
+Lets start at the top, with what Wheat calls the /Macrodialectic/ (/MD/),
+"because it takes 493 pages of Miller's translation to reach
+its conclusion.
+
+To fully understand the /MD/, one must understand what Hegel means
+by the word /Spirit/ or /Geist/ (/G/).
+
+- /G/ is not metaphysical/supernatural
+- /G/ is closely analogous to Tillich's "God above the God of theism".
+- /G/ has a physical side
+- /G/ has a mental side
+- A physical side has a universal (general) feature
+- A physical side has a particular feature 
+- A mental side has a universal (general) feature
+- A mental side has a particular feature
+
+The general structure shared by /G/ and /Tillich's God/ (/TG/) looks like
+this:
+
+#+BEGIN_EXAMPLE
+1. Physical Side (Tangible) 
+  a. General (Universal)
+  b. Particular
+2. Mental Side (Intangible)
+  a. General (Universal)
+  b. Particular
+#+END_EXAMPLE
+
+Hegel conceives the absolute as, figuratively, a
+living organism. Spirit has the following form:
+
+#+BEGIN_EXAMPLE
+1. Physical Side (The Universe--natural and artificial objects)
+  a. General: The Universe conceived of as /one/ entity.
+  b. Particular: The Many particular "objects" that constitute the universe
+2. Mental Side (The Human Mind--subjective, intangible)
+  a. General: Mind, the collective Mind of humans (Spirit's Mind)
+  b. Particular: minds (the minds and thoughts of individual humans)
+#+END_EXAMPLE
+
+Only at the end of the /PhG/, where Hegel comes
+along and, acting as Spirit's Mind, recognizes
+that subject (mind, itself) and object (nature,
+including man) are identical--that both are
+Spirit-- do subject and object become identical.
+
+In short:
+
+- Subject -> Mind
+- Object  -> Nature
+- /G/ -> Unity of Mind and Nature
+- /G/ -> Unity of Subject and Object
+
+A key for Wheat is to think of /G/ as a living
+organism. The humans are the "thinking" part
+of /G/, and the physical universe is the "body"
+of /G/.
+
+Divine Life at the highest level of abstraction
+is the same for both Hegel and Tillich:
+
+- The: Potential Union
+- Ant: Actual Separation
+- Syn: Actual Union
+
+For Wheat, /G/ is a figurative God, an ersatz God.
+
+Hegel's primary separation-and-return theme,
+the macrodialectic, depicts a purely conceptual
+Spirit--an idea--that (1) begins as an unconscious
+union ("one") of constituent parts (everything 
+in the universe), then (2) becomes conscious
+and consciously separates into a multitude
+of observed "objects" ("many"), and ultimately
+(3) returns--consciously this time--to its
+original state of union.
+
+The reunion or "return" takes place when 
+Spirit consciously recognizes that the
+many constitute the one ("one composed of
+many", "one=many").
+
+Other dialectical formulations depict
+"consciousness"--the human mind advancing 
+through history--as separating from and
+returning to a wide variety of things:
+divinity, freedom, monarchy, essence, truth,
+predation, one, subject, nature, and so on--
+whatever the dialectic's thesis concept
+happens to be.
+
+Quote from Tillich: "The blood that courses
+through his [Hegel's whole system" is
+"his 'estrangement and reconciliation", or
+the more formalized 'antithesis' and 
+'synthesis'"
+
+In Tillich's scheme:
+
+- Man begins in a state of union with the God of theism
+- Man becomes separated from this God (becomes an atheist)
+- Man returns to "the God above the God of theism".
+
+Christianity becomes a springboard from
+which Spirit analogically leaps from
+
+- (a) A picture-thinking union of God and Man (man symbolized by Jesus)
+- (b) Spirit's self-realization, wherein genuine union of God and man occurs.
+
+God becomes Spirit, and Jesus is replaced by all mankind.
+
+BEGIN AGAIN AT LOCATION 2058.
+
+Read "Revealed Religion" section in the /PhG/.
+(sections 748-787)
+
+Hegel makes separation and return the basis of
+his philosophy. In his main dialectic (the /MD/),
+the Spirit separates from and returns to union.
+
+Spirit moves from:
+
+- 1. YES to an UNCONSCIOUS form of UNION
+- 2. CONSCIOUS NO to UNION (SEPARATION)
+- 3. YES to higher form of CONSCIOUS UNION
+
+Spirit passes from primal unconsciousness
+in the form of nature [THESIS] to ultimate
+self-unconsciousness in the person of 
+historical man [SYNTHESIS].
+
+UNCONSCIOUS UNION via CONSCIOUS SEPARATION
+to CONSCIOUS UNION (SELF-CONSCIOUSNESS)
+
+- The: Unconscious + Union
+- Ant: Conscious + Separation
+- Syn: Conscious + Union
+
+Whatever Spirit returns to must be what Spirit
+began with, before becoming estranged. (2231/9168)
+** Antithetical Pairs
+Explained in chapter 1. Location 886.
+
+
+** Thesis-Antithesis Conceptual Pairs
+1. Universal and Particular
+1. One and Many
+1. Union and Separation
+1. Essence and Existence
+1. Divine and Human
+1. Inner and Outer
+1. In-Itself and For-Itself
+1. Potential and Actual
+1. Unconscious and Conscious
+1. Artificial (Man-Made) and Natural
+1. God and Man
+1. Father and Son
+1. God in heaven and God incarnate
+1. Abstract and Concrete
+1. Theology (Revelation) and Philosophy (Reason)
+1. God (Divine Ruler) and Monarch (Human Ruler)
+1. Independence and Dependence
+1. Freedom (from superstition) and Bondage (by superstition)
+1. Truth and Falsehood
+1. Natural (Physical) Law and Psychological (Mental) Law
+1. Moral (Societal) Law and Natural (Personal) Impulses
+1. Inner Law ("of the heart", personal) and Outer Law (societal)
+1. Predator and Victim
+1. Subject and Object
+1. Internal (self) Approval and External (societal) Approval
+1. Theory and Practice
+1. Validity and Invalidity
+1. Woman (family,divinity) and Man (state,humanity)
+1. Divine Law and Human Law
+1. Morality (moral law) and Human Nature (natural law)
+1. Conscience and Morality
+1. Identity (one) and Nonidentity (many)
+1. Thought and Substance
+1. One Ruler and Many Rulers
+1. One Ruled Territory and Many Ruled Territories
+
+** In-itself and For-itself
+In-itself
+- Universal
+- One
+- Unified
+- Essence (if every particular)
+- Divine
+- "Inside"
+- Spirit as a concept
+
+For-itself
+- Particular
+- Member of Many
+- Separate "object"
+- Existence
+- Neither divine nor human
+- Visible exterior
+- Material 
+
+- In-itself :: Thesis
+- For-itself :: Anti-thesis
+
+The "in-itself" is an observed object's
+inner essence; the "for-itself" is the
+object's misleading outer appearance.
+
+"In-and-for-itself" refers to the dialectical
+synthesis, which combines (the best parts of)
+the thesis and the antithesis. 
+
+The word "mediate" is used to describe the
+combining of a thesis and an antithesis into
+a synthesis.
+
+"In" is relatively easy to understand...it
+refers to the "inner" core of the object, the
+unifying concept (Spirit) found /in/ everything.
+
+The "for" in "for itself" is less clear. One
+way to think about it is as "for itself to see",
+referring to the particularizing outer characteristics
+of an observed object.
+
+Again.
+
+- In-itself  -> Thesis
+- For-itself -> Antithesis
+- In-and-for-itself -> Synthesis
+
+** Potential and Actual
+- Potential :: Unconscious
+- Actual :: Conscious
+
+** Dialectical Terminology
+"Negation" -> Antithesis
+"Negation of the Negation" -> Synthesis
+
+Whether he used these terms together, and
+whether he used "thesis" with them (he didn't),
+is irrelevant. What is relevant is that Hegel
+referred to his use of dialectics.
+
+* Sources
+/SL/
+/PhG/
+Wheat-2012
+Leonard F. Wheat. /Hegel's Undisovered Thesis-Antithesis-Synthesis Dialectics"
+Prometheus Books. 2012.
+Carlson-2007
+Verene-2007
+Magee-2011
+Houlgate-2005
+Houlgate-2006
+Carlson-2005

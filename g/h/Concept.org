@@ -1,0 +1,64 @@
+#+TITLE:     The Concept
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-11-15
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+Notes on "The Doctrine of Concept" from Hegel's Encyclopedia
+1-17, 161-244. These notes follow the argument developed by
+Quentin Lauer in /Hegel's Concept of God/. (SUNY Press, 1982)
+ 
+** Philosophical Thinking (59)
+This section analyzes an important section of Hegel's work,
+notably the Introduction (nos. 1-17) to his
+/Encyclopedia of the Philosophical Sciences/.
+
+** The "Necessity" of Truth (76)
+** Relation of Thought and Reality
+** The Meaning of Concept
+When Hegel uses the term "concept", he is speaking from the
+perspective of "absolute idealism", according to which what
+ordinary consciousness looks upon as a "being" independent
+of consciousness is seen to be but an "ideal moment" of a 
+larger whole in which only "/begreifendes Erkennen/" can come
+to grips with. (80)
+
+The "logic of understanding", on the other hand, tends to 
+look upon the concept as simply a form of subjective thinking,
+the way the individual mind "represents" to itself universally
+the object it thinks, an empty abstraction. (80-81)
+
+For Hegel, the concept is the exact opposite of abstract;
+it is an "utterly concrete", vital principle. (81)
+
+The concept  as "uniting the totality of finite
+perspectives into an ideal unity, into a determinate whole,
+it is concrete, the locus of concrete universality, 
+the /really real/, not the mentally fragmented. (81)
+
+In this sense, the concept is /the/ definition of the absolute. (81)
+
+The concept is the "dynamic reproduction in thought
+of the rational structure of reality." (81)
+
+ 
+** Judgment 
+** Syllogism
+** From Subjectivity to Objectivity
+** The Meaning of "Objectivity"
+** The Dynamism of Purpose
+** Subject-Object
+** Truth as Idea
+** Idea as Process
+** Idea as Absolute
+
+ 

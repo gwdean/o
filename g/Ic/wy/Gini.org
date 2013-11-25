@@ -1,0 +1,32 @@
+* Gini
+(source: Leifer White 1987 317-319)
+Within the stable market region- where firms are constrained to maintain
+their niches-- it turns out that inequality in market (revenue) share depends
+primarily on the ratio which we call /g/.
+
+/g/ = (b/c)-1/(a/c)-1
+
+To mathematically explore inequality as a function of /g/, some simplifying
+assumptions are necessary. We assume that /K/ (see equation 11.10) is zero,
+and that producers are spread uniformly across the entire range of /n/.
+
+With these assumptions, we can derive an equation for the Gini index 
+(a widely used measure of inequality). The Gini index, /G/, is equal to
+
+Gini = G = 1/1+2/(g-1)d
+
+Figure 11.5 graphs the full gamut of possibilities for market share or
+profits across markets. (for d=1)
+
+0.2 -> Inequality in a typical business hierarchy of managers
+0.4 -> Inequality in earned income in a Western society
+0.8 -> Inequality in capital ownership in Western society
+
+The Gini index for actual revenue outcomes in the frozen pizza market
+is 0.283, a considerable, but not extreme, degree of inequality.
+
+The analytically derived prediction for inequality is 0.255.
+
+The statistics for this Pizza market is not in (Leifer White 1987)
+but in (Leifer 1985).
+

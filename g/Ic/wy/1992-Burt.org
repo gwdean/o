@@ -1,0 +1,29 @@
+* Structural Holes
+** Introduction
+#+BEGIN_QUOTE
+The structural hole is an element of social
+structure simple in concept, powerful in 
+describing empirical data, with integrating
+implications for diverse lines of social
+science theory.
+#+END_QUOTE
+
+The structural hole quality has four signature
+qualities.
+
+- Competition is a matter of relations, not player attributes.
+- Competition is a relation emergent, not observed.
+- Competition is a process, not just a result.
+- Imperfect competition is a matter of freedom, not just power.
+
+These four qualities are not individually unique to the
+structural hole argument. They are jointly characteristic of it.
+
+
+** The Social Structure of Competition
+** Formalizing the Argument
+** Turning a Profit
+** Getting Ahead
+** Player-Structure Duality
+** Commit and Survive
+** Strategic Embedding and Institutional Residue

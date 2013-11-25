@@ -1,0 +1,45 @@
+#+TITLE:     Commentary on Hegel's PhG
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-11-20 Wed
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:4 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+* PhG Chapter Commentaries
+** Preface: On Scientific Cognition
+** Introduction
+** Consciousness
+** Self-Consciousness
+** Reason
+** Spirit
+** Religion
+** Absolute Knowing
+* PhG Table of Contents
+** Preface: On Scientific Cognition (1)
+** Introduction (46)
+** A. Consciousness (58)
+*** I. Sense Certainty: Or the 'This' and 'Meaning'
+*** II. Perception: Or the Thing and Deception
+*** III. Force and the Understanding: Appearance and the Supersensible World
+** B. Self-Consciousness (104)
+*** IV. The Truth of Self-Certainty
+**** A. Independence and dependence of self-consciousness: Lordship and Bondage
+**** B. Freedom of self-consciousness: Stoicism, Scepticism, and the Unhappy Consciousness
+** C. (AA.) Reason (139)
+*** V. The Certainty and Truth of Reason
+**** A. Observing Reason
+**** B. The actualization of rational self-consciousness through its own activity 
+**** C. Individuality which takes itself to be real in and for itself
+** (BB.) Spirit
+** (CC.) Religion
+** (DD.) Absolute Knowing
+** Analysis of the Text
+** Index

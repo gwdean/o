@@ -1,0 +1,48 @@
+Notes on /Tools for the Advancement of Objective Logic/. by William Lawvere (1994)
+
+Thesis: The explicit adequate development of the
+science of knowing will require the use of the
+mathematical theory of categories.
+
+The theory has has approximated a /particular/ model
+of the general, sufficient as a foundation for a 
+/general/ account of all particulars. Category theory
+emerged in 1945 and has developed a variety of important
+notions (adjoint functor, topos, closed category, etc.)
+in order to provide:
+
+A guide to the complex, but very non-arbitrary
+constructions of the concepts and their interactions
+which grow out of the study of space and quantity.
+
+The subjective logic of inference between statements.
+Here statements are of interest only for their 
+potential to describe the objects which concretize the
+concepts; here by describing, we mean both commenting
+on the objects constructed and indicating desiderata
+for their construction.
+
+Specifically we need a mathematical model of the
+following philosophical position. Within thinking:
+
+- (a) Subjective logic is a part of objective logic, which also reflects and partly guides construction in the latter.
+- (b) Thinking itself is a part of being, which reflects being and guides our action on it.
+- (c) One of the many aspects of being is (b) itself, which is therefore reflected to manifest itself as (a).
+- (d) Considered as a process within being, (a) is a central feature of thinking which a /science/ of thinking must address.
+
+I believe that there is a second central feature of
+thinking: individuals think, but so do clans, "schools
+of thought",professions,social classes,nations,etc.;
+thinking takes place in brains, but also in schools,
+newspapers, meeting houses, etc.-- i.e., in material
+institutions which people have created for the
+purpose of mutually transforming individual thinking
+and collective thinking into each other.
+
+An explicit philosophy, dealing with both the mutual
+transformation of subjective logic and objective
+logic, as well as the mutual transformation of 
+individual thinking and collective thinking, could
+be very helpful (for example, when reforming the
+schools) and adequate mathematical models will be
+an essential basis of clarity.

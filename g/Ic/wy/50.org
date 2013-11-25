@@ -1,0 +1,115 @@
+* Mathematics and Social Science 50 Years Later
+** Overview
+Symposium at University of Pennsylvania.
+Philadelphia. June 1963.
+** Charlesworth("Foreword")
+** Hurwicz("Economics.HasArrived")
+Mathematical economics has "arrived"
+
+At the time, mathematical economics is a "growth industry"
+
+But it is not a new industry.
+
+*** A Bit of History
+Early "literary" economists (Smith, Ricardo, Say, Mill, etc.) largely
+eclipsed by more sophisticated mathematical economists.
+
+Cournot (1838) raised the bar on mathematical sophistication.
+
+Cournot not only raised the mathematical level of analysis,
+but also pioneered many concepts (e.g. demand function) now
+common to both mathematical and literary economists.
+
+Cournot's formulation of market phenomena is still in use 
+today: competition, monopoly, oligopoly.
+
+Cournot lay dormant for 30 or so years, until Jevons, Walras
+in the 1870s and 1880s kicked off a round of innovation.
+
+Marshall, Pareto, and Irving Fisher are some other big
+names around this time.
+
+*** Early Critics
+Cairnes (1875) is a classic critique of the mathematical
+economic program by an established "literary" economist.
+
+*** The Variety of Uses
+Although mathematical economics not longer has to fight
+for its life, it is sometimes difficult to explain 
+to outsiders.
+
+One of the major uses of mathematics is in developing
+and clarifying points of /economic theory/. Obviously,
+those who have little use for any sort of theorizing
+will not appreciate a tool to help in theorizing.
+
+/Econometrics/ relies on mathematically formulated 
+models of economic phenomena.
+
+/Operations Research/, which involves a scientific
+approach to decision problems faced by a variety of
+organizations. (linear programming, inventory theory)
+
+
+
+** Morgenstern("Economics.LimitsToMath")
+** Benson("PoliSci.UseOfMath")
+** Hacker("PoliSci.AndMath")
+** White("Sociology.UsesOfMath")
+Similar organizations
+- Subinfeudation
+- Industrial Decentralization
+- Tennessee Valley Authority
+- Daley's Chicago Machine
+
+Submission of disputes to the lowest common
+supervisor is a core norm in formal organizations.
+
+Two Vassals -> Lord
+Two Men     -> Vassal
+
+Factions emerge from empire-building, but so do parties.
+
+Quite a tangle: feudalism, decentralization, pluralism
+(Different Yet Cousins)
+
+Without context, concepts are not closely related to 
+reality. But with complete context, concepts become
+descriptions, with little power of unification.
+
+It is the art of science to strip the fullest possible
+appreciation of events in context down to some core
+elements deemed essential and then to adhere 
+ruthlessly to the abstraction while matching these 
+core elements with those drawn from other contexts.
+
+Mathematics is the most incisive technique for such
+abstraction and matching.
+
+Mathematics is not a noun, not a lovely green chest
+of tools--not here.
+
+Mathematics is a living tradition in tool-making.
+
+Mathematics will grow in some new directions as
+sociology grows because every line of scientific
+work is intertwined with mathematics.
+
+"Large" differences in the rates and dispersions of
+communication in essentially similar structures might
+mark off these three "systems" from each other.
+
+How does one measure and relate structures themselves?
+
+*** Models of Structures
+*** Chance in Behavior
+*** Control Processes and Motivation
+
+** Martindale("Sociology.LimitsToMath")
+*** The Historical Tie Between Humanism and Mathematics
+*** The Alientation of Post-Renaissance Humanism from the Western Mathematical Tradition
+*** Arguments for the Exclusion of Mathematics from Sociology
+*** Technical and Practical Limits on the Use of Mathematics in Sociology
+*** Summary of Formulae of S-Theory
+
+** Reference

@@ -1,0 +1,310 @@
+#+TITLE:     Notes on Hegel's /Logic/
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-10-16 Wed
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+The following notes work out the details of Hegel's /Logic/.
+* Being
+** Being (11-19)
+*** Pure Being and Nothing 
+*** The Concept of Becoming
+*** The Concept of Determinate Being and the Concept of Negation
+** Quality (20-26)
+*** Becoming and Determinate Being
+The concepts of something and of something else are categories.
+They are necessary concepts to get from pure being to determinate
+being.
+*** Something and Something Else
+*** Bad Infinity
+The concept of 'something' implies by necessity the concept of
+'something else'. The two concepts limit each other. 
+
+But just as the 'something' by necessity implies 'something else',
+so the concept of 'something else' in-itself is a 'something'. That is,
+it is a 'something else' only insofar as it is that which limits
+the 'something'...this process can continue for infinity.
+
+For Hegel, the above is a "bad infinity" because it is an endless
+series of finite items, that is, items that, by necessity, are
+finite and also, by necessity, must continue to the next item.
+
+*** True Infinity
+True Infinity is not a series that continues infinitely as a straight
+line, but can be compared to the Infinity of a circle.
+
+True Infinity is an infinity where a something implies a something
+else; this something else, in turn, is seen to imply that very
+something by which it was implied.
+
+To see what this means, we can look at the concept of negation.
+Each 'something' has positive value and corresponding negative
+values. This involves each 'something' being not only that 
+which it is, but also that which it is not. If a 'something' is
+'A', then to be 'A' means to be that which is not 'non-A'.
+
+However, if 'A' is 'something', then that which is 'non-A'
+must be 'something else'. Therefore, 'something' is both
+'A' and that which is not 'non-A'; and because not 'non-A'
+is 'something else', it follows that 'something' is 
+identical with 'something else': Their identity conditions
+are interdefined.
+
+Using the colors example, we can look at it like this.
+If 'A' is red, then 'non-A' is the class of all other
+colors. 'A' is only red insofar as it cannot be said
+to be any other color. To say that it is red is to say
+that the color it is, is none of the other colors. If
+red were the only color, there would be no color
+whatever. In order to be a color at all, any color
+requires other colors with which it contrasts; if there
+were no such other colors, no color name could have
+any meaning.
+
+To say that a thing is that which it is not is thus a
+proposition whose truth is required as well from an
+ontological point of view as from a logical point of
+view.
+
+The True Infinity has absorbed the finite. In themselves,
+the 'something' and the 'something else' are finite, and
+as long as their identity is not understood, they constitute
+elements of bad infinity; but if their identity is understood,
+it is understood that it is a negation of the negation--
+understood that it is a self-negation and therefore a self-limitation--
+then it is understood that they constitute elements of True Infinity.
+*** Being-for-Self
+True Infinity is a category because it applies by necessity
+to whatever is. There is nothing which is not identical that
+which negates it; their identity conditions are interdefined.
+
+The wording is tricky here, so we will word it in a variety
+of ways. 
+
+Nothing could be anything but nothing if it was not determined
+by the negative properties.
+
+A less provocative way of expressing Hegel's statement would be
+to state the claim that to possess a property P is to possess the
+properties that negate non-P. P can only be P if there are 
+properties belonging to the same class of properties as P, but
+that differ from P. If this is not the case, P could no longer
+be called a property.
+
+The number 2 is what it is because it is the number between 1
+and 3. It is the number 2 because it is neither the number 1
+or the number 3 (among other things). The number 2 has the 
+negative properties of being neither number 1 nor number 3.
+These negative properties define the number 2. The number 2
+is the negation of its negation.
+
+Closely connected with the category of True Infinity
+is the category of Being-For-Self. True Infinity concerns
+(at least) two finite elements--the something and the
+something else--regarding which, as soon as it is
+understood that they are identical, it is seen that
+together they constitute an infinite set. They constitute
+a self-determined unity, a negation of negation: when we
+negate the something, we get the something else, and
+when the something else is negated, we get back to the
+original, that is, to the something.
+
+** Quantity (27-39)
+*** Pure Quantity and Quantum
+*** Continuity and Discreteness
+*** Number
+*** Extensive and Intensive Magnitudes
+*** Quantitative Infinity
+*** Measure
+** Summary of Being (39-40)
+Concept of negation is the foundation of Hegel's /Logic/
+
+Negativity is a necessary condition for determination
+
+Negativity leads us from pure being, and thus from nothing
+and becoming, to determinate being.
+
+Being is determined by having some quality.
+
+* Essence
+** Essence (41-49)
+*** Essence as Mediated Being
+*** Identity
+*** Identity and Difference
+*** Contradiction
+** Ground (50-62)
+*** Ground as Unity of Identity and Difference
+*** Formal Ground, Real Ground, Sufficient Ground, Efficient Cause
+*** The Complete Ground--Condition and Conditioned
+*** Nature as the Ground of the World--Existence
+*** Things and Properties
+** Appearance (62-66)
+*** Appearance as Law
+*** Appearance as Both Reflection-Into-Self and Reflection-Into-Other
+*** The Inverted World
+** Relation
+*** Whole and Parts
+*** Force and Expression
+*** Outer and Inner
+** Actuality
+*** Actuality and Reason
+*** Modality, Possibility, Contingency and Necessity
+** Absolute Relations
+*** Substance and Accident
+*** Causality
+*** Reciprocity
+** Summary of Essence
+
+* The Concept 
+** The Concept
+*** Subjectivity (The Concept as Such)
+*** Judgment
+*** The Judgment of the Concept
+*** The Syllogism
+** The Object
+*** The Object as Mechanical Object
+*** The Object as Chemical Object
+*** The Object as Teleological Object
+** The Idea
+*** The Idea as Unity of Subjectivity and Objectivity
+*** Life
+*** The Life Process
+*** The Idea as Cognition
+*** The Theoretical Idea
+*** The Idea as Volition--the Good
+*** The Practical Idea
+*** The Absolute Idea
+** Summary of Concept
+
+* Misunderstandings (Houlgate-2006.266)
+In this section, Houlgate describes some of the challenges
+involved with understanding Being/Nothing/Becoming.
+Hegel's account of pure Being is both conceptual and ontological.
+The bare thought of being mutates into the thought of becoming.
+Being turns out to be becoming. Pure Being does not vanish or come
+into being /over time/, but instead pure Being proves to be 
+/logically/ or /structurally/ unstable. In other words, it turns
+out logically to be nothing but vanishing and becoming.
+
+The task of the /Logic/ is not to describe temporal developments,
+but rather to lay out before us all that being logically must be.
+Logically, Being proves not just to be Being after all, but to
+be Becoming; Becoming, accordingly, is nothing but the structural
+instability that Being immediately proves to be. Sheer indeterminate
+becoming is the same as being as utter instability.
+
+In the /Logic/, Being and Nothing are initially pure and indeterminate,
+but they soon prove to be much more determinate and complex than
+mere /being/ and /nothing/ (or becoming). Being will mutate
+logically into Reality, Being-Something, Actually, and ultimately,
+Space, whereas Nothing, or the simple "not", will mutate into
+Negation, Otherness, Negativity, and ultimately, Time. In each one,
+however, Being and Nothing as such will be preserved. 
+
+"Nowhere in heaven or on earth is there anything which does not 
+contain within itself both being and nothing." (/SL/ 85/1:86)
+
+Every further determination /of/ Being and Nothing will simply 
+be a more complex and intimate interrelation /between/ Being
+and Nothing.
+
+The KEY to understanding Hegel's /Logic/ is to distinguish 
+carefully what is true of Being /qua/ pure Being from what 
+it is true of, for example, Being /qua/ reality or Being-Something
+and to avoid reducing one category or determination of Being
+to another. There will be structural affinities between such
+determinations since less determinate ones are contained in
+more determinate ones, but there will also be significant
+differences that are not to be overlooked.
+
+Sheer indeterminate Being (as opposed to determinate Being) is
+logically indistinguishable from Nothingness. We can say of 
+pure Being that it is identical to Nothingness because Pure
+Being considered by itself is indeterminate. We cannot say
+of finite things that they are just Nothing or that their
+existence and non-existence are indistinguishable because
+finitude has a determinate logical structure that is clearly
+different from that of pure Nothingness.
+
+Utterly /indeterminate/ Being is logically indistinguishable
+from--though also irreducible to--sheer nothingness. Many 
+people misunderstand Hegel fail to distinguish between the
+logical character of pure Being as such and that of 
+Determinate Being. 
+
+When Hegel states that Being is in fact Nothing, he is not
+denying that there is Being, but rather that insofar as
+Being is utterly immediate and indeterminate, Being vanishes
+logically into Nothing. 
+
+* References
+- Hartnack-1998
+- Houlgate-2006
+* Random Stuff
+** Denotation and Connotation (25)
+- Denotation -> Attraction -> One
+- Connotation -> Repulsion -> Many
+
+** Quality and Quantity (27)
+|----------+------------+----------------|
+|          | One        | Many           |
+|----------+------------+----------------|
+| Quality  | Something  | Something Else |
+| Quantity | Continuity | Discreteness   |
+|----------+------------+----------------|
+
+
+** Pure Quantity/ Quantum (28)
+
+** Language Game Interdependence (29)
+
+** The True is Both Subject and Substance (73)
+Everything turns on grasping and expressing the true not only
+as substance, but equally as subject.
+
+** Concept (of Concept) (90)
+Hegel's concept (of concept) contains three moments:
+- Universality
+- Particularity
+- Individuality
+
+** Substance, Reciprocity, Necessity, Freedom, I. (89-90)
+From the concept of substance, to reciprocity, from there
+to necessity, which implies freedom, which in turn implies the
+I, we have the insight that substance is seen as identical
+with subject. 
+
+** The Concept of Freedom (89)
+The concept of freedom is the key to understanding the concept
+of the concept.
+
+** Reciprocity (89)
+Reciprocity is identical with the concept of the concept.
+* Experimental
+One KEY to understanding the dialectic of Being and Nothing
+is to look at it through the lens of denotation/connotation.
+Hartnack takes Findlay to task over this issue on p.13 in
+Hartnack-1998. 
+
+A paradoxical line of Hegel's is "Being and nothing is (are)
+the same." This is no longer a paradox if it is recognized
+that the two are IDENTICAL IN DENOTATION, but are NOT 
+IDENTICAL IN CONNOTATION.
+
+The difference in connotation is shown by the logical fact
+that from the concept of pure Being FOLLOWS its ontological
+emptiness, whereas the concept of Nothing DIRECTLY EXPRESSES
+its ontological emptiness. (Hartnack-1998.14)
+
+
+
+

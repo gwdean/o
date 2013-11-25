@@ -1,0 +1,69 @@
+#+TITLE:     Hegel for the Working Christian I.
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-10-27 Sun
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+
+* Hegel for the Working Christian I.
+** Hegel Overview
+- Dates:    1770-1831
+- Location: Stuttgart/Tubingen/Jena/Berlin
+- Religion: Lutheran
+- Profession: Professor of Philosophy Berlin
+- Influenced By: Christianity,Kant,Plato,Aristotle,Leibniz,Eckhart
+
+** Key Works
+The following are most (but not all) of Hegel's
+key works. There are a few others, but this
+gives you the general scope of his concerns.
+
+*** The Early Theological Writings (1795-1805)
+The Early Theological Writings are very important
+for those interested in the Philosophical and
+Theological beliefs that shaped the younger
+Hegel's thinking.
+*** The Phenomenology of Spirit (Geist) (1807)
+*** The Science of Logic (1812-1816...continually revised)
+The core Hegelian system is contained within 
+two works, /The Phenomenology of Spirit (Geist)/
+and the /Science of Logic/. These are dense
+works that need to be worked through over a 
+period of time. The /PhG/ and the /Science of Logic/
+are the keys to the Lamborghini.
+
+The best pathway into Hegel is to start
+with The /PhG/ and then work through the /Logic/.
+Everything else in Hegel emerges from the arguments he 
+he lays out in these two works. Mastering the ideas
+in the /Logic/ is a good way to learn Western
+Thought inside and out.
+
+Christians should note that Hegel's /Science of Logic/ is
+not mathematical "logic" (in the Russellian sense)
+but rather "Logic" relating the Greek /LOGOS/. /Science
+of the LOGOS/ might be a better term for the work
+than /Science of Logic/, but we've inherited the 
+term "Logic" so that's what we have. 
+
+*** The Philosophy of Right (1821)
+The /Philosophy of Right/ (1821) is Hegel's
+theory of politics. It has been influential across
+the board, from Marxists to Neo-Cons to Moderates 
+to any one who has to think strategically and 
+who is interested in the relationship between 
+the "state" and "freedom".
+
+*** Lectures on Art, Religion, History, Nature, Philosophy (1820s-1830s)
+The /Lectures/ are interesting Philosophical 
+Histories about various parts of human life, using
+Hegel's trademark philosophical insight.

@@ -1,0 +1,44 @@
+* Properties
+Properties are a set of key-value pairs associated with an entry. 
+
+There are two main applications for properties (in org-mode)
+- Properties are like tags, but with a value
+- Properties can be used to implement (very basic) database capabilities
+
+Properties can be conveniently edited and viewed in column view
+
+Example of property syntax:
+
+** CD Collection
+*** Classic 
+**** Goldberg Variations
+     :PROPERTIES:
+     :Title:     Goldberg Variations
+     :Composer:  JS Bach
+     :Artist:    Glenn Gould
+     :Publisher: Deutsche Grammophon
+     :NDisks:    1
+     :END:
+
+We can predefine publishers and the number of disks in a box:
+
+** CD collection
+   :PROPERTIES:
+   :NDisks_ALL: 1 2 3 4
+   :Publisher_ALL: "Deutsche Grammophon" Philips EMI
+   :END:
+
+If you want to set properties that can be inherited by any
+entry in a file, use a line like
+
+  #+PROPERTY: NDisks_ALL 1 2 3 4
+
+Special properties provide an alternative access method
+to Org-mode features.
+
+The following property names are special and should 
+not be used as keys in the properties drawer:
+
+TODO TAGS ALLTAGS CATEGORY PRIORITY DEADLINE SCHEDULED
+CLOSED TIMESTAMP TIMESTAMP_IA CLOCKSUM BLOCKED ITEM
+

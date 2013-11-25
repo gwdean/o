@@ -1,0 +1,87 @@
+* Disciplines
+The core of White's Theory of Disciplines
+can be found in the three diagrams on pages
+355-357 of /Identity and Control/.
+
+** Three Parameters
+Each discipline is associated with a score
+along three parameters:
+
+- Involution       (INV)
+- Dependence       (DEP)
+- Differentiation  (DIF)
+
+Each of the discipline examples have a 
+score on one of the parameters: High (2),
+Medium(1), or Low(0).
+
+For example, within the INTERFACE discipline,
+the /Battle-line units/ example score looks
+like this:
+
+- INV: 2
+- DEP: 2
+- DIF: 0
+
+Whereas the /City-neighborhoods/ example
+looks like this:
+
+- INV: 2
+- DEP: 2
+- DIF: 2
+
+** 34 Examples. 9 Classifications
+*** Interface
+IL -> (01..03)
+IM -> (04..05)
+IH -> (06..10)
+*** Council
+CL -> (11..14)
+CM -> (15..20)
+CH -> (21..24)
+*** Arena
+AL -> (25..27)
+AM -> (28..32)
+AH -> (33..34)
+** The 3-D space for interface discipline
+(id name DIF DEP INV)
+(01 Discussion-group        0 0 0) 
+(02 "World-system"          2 2 0)
+(03 Amateur-theater-group   0 2 0)
+(04 Fiber-optics            2 2 1)
+(05 Sugar-trust             0 2 1)
+(06 City-neighborhoods      2 2 2)
+(07 Aborigine-hordes        2 0 2)
+(08 Classificatory-Kinship  1 1 2)
+(09 Professors-offices      0 0 2)
+(10 Battle-line-units       0 2 2)
+  
+** The 3-D space for council discipline
+(id name INV DEP DIF)
+(11 Cooperative federation x x 0)
+(12 Phillipine clientelege x x 0)
+(13 Autocracy              x x 0)
+(14 Segmentary lineage     x x 0)
+(15 Standestaat            x x 1) ref 245
+(16 JP Bench               x x 1)
+(17 Noble councils         x x 1)
+(18 Roman senate           x x 1)
+(19 Parlements             x x 1)
+(20 Royal Councils         x x 1)
+(21 Movie production       x x 2)
+(22 Segmentary kinship     x x 2)
+(23 Thai clientele         x x 2)
+(24 Commissaires           x x 2)
+
+** The 3-D space for arena discipline
+(id name INV DIF DEP)
+(25 Multi-party electoral system x x 0)
+(26 Cults                        x x 0)
+(27 Exchange markets             x x 0)
+(28 Law                          x x 1)
+(29 Committees                   x x 1)
+(30 Professions                  x x 1)
+(31 Engineering                  x x 1)
+(32 Medicine                     x x 1)
+(33 Multiple hierarchy           x x 2)
+(34 Functional department        x x 2)

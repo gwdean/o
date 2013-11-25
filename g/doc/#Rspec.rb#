@@ -1,0 +1,26 @@
+# Notes from the RSpec book
+
+# Basic RSpec
+describe MovieList do
+  context "when first created" do
+    it "is empty" do
+      movie_list = MovieList.new
+      movie_list.should be_empty
+    end
+  end
+end
+
+# Basic Cucumber
+Feature: pay bill on-line
+  In order to reduce the time I spend paying bills
+  As a bank customer with a checking account
+  I want to pay my bills on-line
+
+  Scenario: pay a bill
+    Given checking account with $50
+    And a payee named Acme
+    And an Acme bill for $37
+    When I pay the Acme bill
+    ...and so on
+
+  

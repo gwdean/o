@@ -1,0 +1,43 @@
+* Functional Notation in Scheme
+Adapted from Wisdom-Sussman-2012.(Appendix-B)
+
+** Overview
+** Functions
+
+#+BEGIN_EXAMPLE
+(define (d x1 y1 x2 y2)
+  (sqrt (+ (square (- x2 x1)) (square (- y2 y1)))))
+
+(define h (compose cube sin))
+
+(h 2) ;=> .7518...
+
+(cube (sin 2)) ;=> .7518...
+
+(define g (* cube sin))
+
+(g 2) ;=> .7274...
+
+(* (cube 2) (sin 2)) ;=> .7274...
+#+END_EXAMPLE
+
+** Symbolic Values
+
+#+BEGIN_EXAMPLE
+((compose cube sin) 'a) ;=> (expt (sin a) 3)
+
+((- (+ (square sin) (square cos)) 1) 'a) ;=> 0
+
+((literal-function 'f) 'x) ;=> (f x)
+
+((compose (literal-function 'g (-> (X Real Real) Real))))
+
+(g 'x 'y) ;=> (g x y)
+#+END_EXAMPLE
+
+** Tuples
+** Derivatives
+** Derivatives of Functions of Multiple Arguments
+** Structured Results
+** Chain Rule
+** Computing Derivatives

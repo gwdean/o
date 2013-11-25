@@ -1,0 +1,67 @@
+* Production Market I: Short
+A /production market/ consists of:
+- a limited number of *quality producers* who
+- *commit* to particular *volumes of production*
+- on the basis of *mutually adjusted decisions*
+- that create implicit (self-organizing) *coordination*
+and 'contain' competition.
+
+* Production Market II: Long
+** Explanation
+** Reproducibility
+** Production Market Model
+
+* Production Market III: Summary
+KMK wrote this.
+
+White begins with the recognition that production markets in
+the 20th century, especially in the World War II era, involve
+more than producers who sell their products and consumers who
+buy them. As production moved to a mass, assembly-lined based
+production of complex commodities, it became a larger market
+of interdependent suppliers, subcontractors, and producers 
+engaging and selling to each other in stream-like and streamlined
+networks of production. White posits that the production market
+model involves "upstream" and "downstream" connections and 
+orientations, upstream in the direction of sourcing intermediate
+components produced by other production firms as suppliers and
+downstream being in the direction of marketing, distribution
+and consumption. In any market, we start with these three
+interconnected roles of suppliers, (focal) producers, and buyers.
+
+The (linear, so far) network of supplier, producer and buyer may
+be extended in several different directions. Indeed, who is 
+named a producer? This is a matter of perspective. Ford making a
+particular car? What of the company that makes the GPS or the
+electronic systems for the Ford automobile, say, Garmin or Philips?
+They are also producers themselves, with upstream suppliers of
+their own and downstream buyers (perhaps, Ford and Toyota). And
+so it goes in a line.
+
+
+* Production Market IV: Modeling
+** ORDINARY and TRUST Regions
+ORDINARY (a<1,b=0,c=1,d=0)
+TRUST    (a>1,b=0,c=1,d=0)
+
+ORDINARY.prototype = (0.7 0.0 1.0 0.0)
+TRUST.prototype    = (1.3 0.0 1.0 0.0)
+
+The only difference between the ORDINARY and
+the TRUST region has to do with the "a" parameter.
+
+| Value of "a" | S(y) - C(y) |
+|              |             |
+| 0.2          | .333        |
+| 0.4          | .214        |
+| 0.6          | .125        |
+| 0.8          | .056        |
+| 1            | 0           |
+
+*** Basic Equations
+W(y) = (Ay^g+k)^f
+S(y) = ry^an^b
+C(y) = qy^cn^d
+
+* References
+

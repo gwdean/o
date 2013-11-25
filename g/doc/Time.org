@@ -1,0 +1,78 @@
+** Timestamps
+<2013-08-15 Thu>
+<2013-08-15 Thu 12:35> 
+<2013-08-15 Thu 12:35-23:59>
+[2013-08-15 Thu]
+
+** Relative Dates
+You can specify a relative date by giving, as the
+/first/ thing in the input: a plus/minus sign, a
+number and a letter ([dwmy]) to indicate change
+in days, weeks, months, or years.
+
+With a single plus or minus, the date is always
+relative to today.
+
+The relative date feature can be used with the
+following notations:
+#+BEGIN_EXAMPLE
++0      => today
+.       => today
++4d     => four days from today
++4      => same as above
++2w     => two weeks from today
+++5     => five days from default date
++2tue   => second Tuesday from now
+#+END_EXAMPLE
+** Deadlines and Scheduling
+DEADLINE
+*** TODO write article about the Earth for the Guide
+    The editor in charge is [[bbdb:Ford Prefect]]
+    DEADLINE: <2013-08-15 Thu -5d>
+
+SCHEDULED
+*** TODO Watch Rams game 
+    SCHEDULED: <2013-08-15 Thu> DEADLINE: <2013-08-15 Thu>
+
+Inserting deadlines and schedules can be done using
+some Emacs-fu along these lines:    
+#+BEGIN_EXAMPLE
+C-c C-d        Insert 'DEADLINE' keyword along with a stamp.    
+C-c C-s        Insert 'SCHEDULED' keyword along with a stamp.
+C-c C-x C-k    Mark the current entry for agenda action.
+C-c / d        Create sparse tree
+C-c / b        Sparse tree for deadlines and scheduled items before a given date    
+C-c / a        Sparse tree for deadlines and schedules items after a given date
+#+END_EXAMPLE
+** Repeated Tasks
+*** TODO Pay the rent
+    DEADLINE: <2013-08-15 Thu +1m>
+
+*** TODO Call Father
+    DEADLINE: <2013-08-15 Thu ++1w>
+    Marking this DONE will shift the date by at least one week,
+    but also by as many weeks as it takes to get this date into
+    the future. However, it stays on a Sunday, even if you
+    called and marked it done on Saturday.
+*** TODO Check the batteries in the smoke detectors
+** Using the TODO feature
+*** TODO figure out how this TODO system works
+*** TODO 
+*** TODO Plan trip to Philadelphia
+<2013-08-15 Thu>
+<2013-08-16 Fri>
+<2013-08-17 Sat>
+<2013-08-18 Sun>
+<2013-08-19 Mon>
+Leave my house <2013-08-19 Mon 05:00>
+Arrive in Phil <2013-08-19 Mon 12:00>
+Meet DrK       <2013-08-19 Mon xx:xx>
+
+<2013-08-20 Tue>
+<2013-08-21 Wed>
+<2013-08-22 Thu>
+<2013-08-23 Fri>
+
+* Weekend Dinner Party
+** TODO Invite David and Susan
+** TODO Order wines

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Tmin</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-08-12 10:12:37 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Tmin</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Tmin </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Abstract </a></li>
+<li><a href="#sec-1.2">1.2 Lecture 1. The Nature of Classical Physics. </a>
+<ul>
+<li><a href="#sec-1.2.1">1.2.1 Spaces, Trigonometry, and Vectors </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3">1.3 Lecture 2. Motion. </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 Integral Calculus </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 Dynamics </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 Partial Differentiation </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.5">1.5 Systems of More Than One Particle </a></li>
+<li><a href="#sec-1.6">1.6 Energy </a></li>
+<li><a href="#sec-1.7">1.7 Principle of Least Action </a>
+<ul>
+<li><a href="#sec-1.7.1">1.7.1 The Transition to Advanced Mechanics </a></li>
+<li><a href="#sec-1.7.2">1.7.2 Action and the Lagrangian </a></li>
+<li><a href="#sec-1.7.3">1.7.3 Derivation of the Euler-Lagrange Equation </a></li>
+<li><a href="#sec-1.7.4">1.7.4 More Particles and More Dimensions </a></li>
+<li><a href="#sec-1.7.5">1.7.5 What's Good about Least Action? </a></li>
+<li><a href="#sec-1.7.6">1.7.6 Generalized Coordinates and Momenta </a></li>
+<li><a href="#sec-1.7.7">1.7.7 Cyclic Coordinates </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.8">1.8 Symmetries and Conservation Laws </a></li>
+<li><a href="#sec-1.9">1.9 Hamiltonian Mechanics and Time-Translation Invariance </a></li>
+<li><a href="#sec-1.10">1.10 The Phase Space Fluid and the Gibbs-Liouville Theorem </a></li>
+<li><a href="#sec-1.11">1.11 Poisson Brackets, Angular Momentum, and Symmetries </a></li>
+<li><a href="#sec-1.12">1.12 Electric and Magnetic Forces </a></li>
+<li><a href="#sec-1.13">1.13 Appendix I. Central Forces and Planetary Orbits </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Sicm </a>
+<ul>
+<li><a href="#sec-2.1">2.1 Lagrangian Mechanics </a></li>
+<li><a href="#sec-2.2">2.2 Rigid Bodies </a></li>
+<li><a href="#sec-2.3">2.3 Hamiltonian Mechanics </a></li>
+<li><a href="#sec-2.4">2.4 Phase Space Structure </a></li>
+<li><a href="#sec-2.5">2.5 Canonical Transformations </a></li>
+<li><a href="#sec-2.6">2.6 Canonical Perturbation Theory </a></li>
+<li><a href="#sec-2.7">2.7 Scheme </a></li>
+<li><a href="#sec-2.8">2.8 Notation </a>
+<ul>
+<li><a href="#sec-2.8.1">2.8.1 Functions </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Tmin </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>Notes on Susskind-Hrabovsky-2013.
+</p>
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Abstract </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<p>Susskind-Hrabovsky's <i>The Theoretical Minimum</i> explains
+clearly but in depth, the fundamentals of classical 
+physics to the (mathematically literate) outsider.
+These tools should be ported into the social sciences
+and be considered part of the basic sociological 
+tool-kit. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Lecture 1. The Nature of Classical Physics. </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> Spaces, Trigonometry, and Vectors </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Lecture 2. Motion. </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> Integral Calculus </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Dynamics </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> Partial Differentiation </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> Systems of More Than One Particle </h3>
+<div class="outline-text-3" id="text-1.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.6" class="outline-3">
+<h3 id="sec-1.6"><span class="section-number-3">1.6</span> Energy </h3>
+<div class="outline-text-3" id="text-1.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7" class="outline-3">
+<h3 id="sec-1.7"><span class="section-number-3">1.7</span> Principle of Least Action </h3>
+<div class="outline-text-3" id="text-1.7">
+
+
+</div>
+
+<div id="outline-container-1.7.1" class="outline-4">
+<h4 id="sec-1.7.1"><span class="section-number-4">1.7.1</span> The Transition to Advanced Mechanics </h4>
+<div class="outline-text-4" id="text-1.7.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7.2" class="outline-4">
+<h4 id="sec-1.7.2"><span class="section-number-4">1.7.2</span> Action and the Lagrangian </h4>
+<div class="outline-text-4" id="text-1.7.2">
+
+<p>To formulate the action principle, we need
+the same parameters as for formulating Newton's
+equations. 
+</p>
+<p>
+We need to know the <b>MASSES OF THE PARTICLES</b> and
+we have to know the <b>POTENTIAL ENERGY</b>
+</p>
+<p>
+The <b>ACTION</b> is for a <b>TRAJECTORY</b> is an integral
+from the start of the trajectory (t0) and the
+end of the trajectory (t1).
+</p>
+<p>
+Think of the <b>LAGRANGIAN</b> as a function of the 
+<b>POSITION</b> <i>x</i> and <b>VELOCITY</b> <i>x-dot</i>.
+</p>
+<p>
+L = L(x,x-dot)
+L = L(Position, Velocity)
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.7.3" class="outline-4">
+<h4 id="sec-1.7.3"><span class="section-number-4">1.7.3</span> Derivation of the Euler-Lagrange Equation </h4>
+<div class="outline-text-4" id="text-1.7.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7.4" class="outline-4">
+<h4 id="sec-1.7.4"><span class="section-number-4">1.7.4</span> More Particles and More Dimensions </h4>
+<div class="outline-text-4" id="text-1.7.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7.5" class="outline-4">
+<h4 id="sec-1.7.5"><span class="section-number-4">1.7.5</span> What's Good about Least Action? </h4>
+<div class="outline-text-4" id="text-1.7.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7.6" class="outline-4">
+<h4 id="sec-1.7.6"><span class="section-number-4">1.7.6</span> Generalized Coordinates and Momenta </h4>
+<div class="outline-text-4" id="text-1.7.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7.7" class="outline-4">
+<h4 id="sec-1.7.7"><span class="section-number-4">1.7.7</span> Cyclic Coordinates </h4>
+<div class="outline-text-4" id="text-1.7.7">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.8" class="outline-3">
+<h3 id="sec-1.8"><span class="section-number-3">1.8</span> Symmetries and Conservation Laws </h3>
+<div class="outline-text-3" id="text-1.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.9" class="outline-3">
+<h3 id="sec-1.9"><span class="section-number-3">1.9</span> Hamiltonian Mechanics and Time-Translation Invariance </h3>
+<div class="outline-text-3" id="text-1.9">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.10" class="outline-3">
+<h3 id="sec-1.10"><span class="section-number-3">1.10</span> The Phase Space Fluid and the Gibbs-Liouville Theorem </h3>
+<div class="outline-text-3" id="text-1.10">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.11" class="outline-3">
+<h3 id="sec-1.11"><span class="section-number-3">1.11</span> Poisson Brackets, Angular Momentum, and Symmetries </h3>
+<div class="outline-text-3" id="text-1.11">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.12" class="outline-3">
+<h3 id="sec-1.12"><span class="section-number-3">1.12</span> Electric and Magnetic Forces </h3>
+<div class="outline-text-3" id="text-1.12">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.13" class="outline-3">
+<h3 id="sec-1.13"><span class="section-number-3">1.13</span> Appendix I. Central Forces and Planetary Orbits </h3>
+<div class="outline-text-3" id="text-1.13">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Sicm </h2>
+<div class="outline-text-2" id="text-2">
+
+<p>Notes on Sussman-Wisdom-2002
+</p>
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> Lagrangian Mechanics </h3>
+<div class="outline-text-3" id="text-2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> Rigid Bodies </h3>
+<div class="outline-text-3" id="text-2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3"><span class="section-number-3">2.3</span> Hamiltonian Mechanics </h3>
+<div class="outline-text-3" id="text-2.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4"><span class="section-number-3">2.4</span> Phase Space Structure </h3>
+<div class="outline-text-3" id="text-2.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.5" class="outline-3">
+<h3 id="sec-2.5"><span class="section-number-3">2.5</span> Canonical Transformations </h3>
+<div class="outline-text-3" id="text-2.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.6" class="outline-3">
+<h3 id="sec-2.6"><span class="section-number-3">2.6</span> Canonical Perturbation Theory </h3>
+<div class="outline-text-3" id="text-2.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7" class="outline-3">
+<h3 id="sec-2.7"><span class="section-number-3">2.7</span> Scheme </h3>
+<div class="outline-text-3" id="text-2.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.8" class="outline-3">
+<h3 id="sec-2.8"><span class="section-number-3">2.8</span> Notation </h3>
+<div class="outline-text-3" id="text-2.8">
+
+
+</div>
+
+<div id="outline-container-2.8.1" class="outline-4">
+<h4 id="sec-2.8.1"><span class="section-number-4">2.8.1</span> Functions </h4>
+<div class="outline-text-4" id="text-2.8.1">
+
+<p>(define (square x)
+(* x x))
+</p>
+<p>
+(define (d x1 y1 x2 y2)
+(sqrt (+ (square (- x2 x1)) (square (- y2 y1)))))
+</p>
+<p>
+; test
+(d 0 0 5 5) ;=&gt; 7.0710678118654755
+</p>
+<p>
+(define h (compose cube sin))
+</p>
+<p>
+(h 2) ;=&gt; .7518&hellip;
+</p>
+<p>
+(cube (sin 2)) ;=&gt; .7518&hellip;
+</p>
+<p>
+(define g (* cube sin))
+</p>
+<p>
+(g 2) ;=&gt; 7.274379&hellip;
+</p>
+<p>
+(* (cube 2) (sin 2)) ;=&gt; 7.274379 
+</p></div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-08-12 10:12:37 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

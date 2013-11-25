@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Instructions</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-10-15 17:53:09 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Instructions</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Understanding the <i>PhG</i> </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Step 1. Get a standard version of the <i>PhG</i> </a></li>
+<li><a href="#sec-1.2">1.2 Step 2: Understand What Hegel is Trying to Do in the <i>PhG</i>. </a></li>
+<li><a href="#sec-1.3">1.3 Step 3: Engage with the Book </a></li>
+<li><a href="#sec-1.4">1.4 Step 4: Ascertain the General Structure of the <i>PhG</i> </a></li>
+<li><a href="#sec-1.5">1.5 Step 5: Scan the Foreword by JN Findlay </a></li>
+<li><a href="#sec-1.6">1.6 Step 6: Introduction </a></li>
+<li><a href="#sec-1.7">1.7 Step 7: Read Any of the Other Sections In Any Order </a></li>
+<li><a href="#sec-1.8">1.8 Step 8: Repeat Any Steps in Any Order Until The Ideas Are Absorbed </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Understanding the <i>PhG</i> </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>Hegel's <i>Phenomenology of Spirit</i> (1807) is a literary and philosophical
+masterpiece of the highest order, but it is very difficult to move 
+through when one is not aware of what Hegel is trying to do. These
+notes are my explanation of how to move through the <i>Phenomenology</i>
+as effectively as possible. 
+</p>
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Step 1. Get a standard version of the <i>PhG</i> </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<p>The AV Miller Translation (Clarendon Press Oxford 1977) is my
+personal choice. There are many advantages of using this one, not
+least of which are the summaries and commentaries by JN Findlay.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Step 2: Understand What Hegel is Trying to Do in the <i>PhG</i>. </h3>
+<div class="outline-text-3" id="text-1.2">
+
+<p>In the <i>PhG</i>, Hegel claims to have achieved philosophical
+maturity and shows the reader the explicit steps he took to reach this
+point of maturity. It is a autobiography of the evolution of Hegel's 
+Consciousness, which also doubles as a philosophical history of 
+Western Thought, since the development of Hegel's Consciousness emerged from 
+deeply grappling with the Western Tradition over a long period
+of time. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Step 3: Engage with the Book </h3>
+<div class="outline-text-3" id="text-1.3">
+
+<p>The Findlay/Miller version that we are using is nicely organized.
+This is fortunate, because the <i>PhG</i> is not a linear text.
+It is meant to be read in a variety of ways. Once we break the 
+<i>PhG</i> into its components it becomes much less daunting.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>Foreword by JN Findlay</td><td>(25 pages)</td><td>(v-xxx)</td></tr>
+<tr><td>Table of Contents</td><td>(3 pages)</td><td></td></tr>
+<tr><td>Text Proper</td><td>(493 pages)</td><td>(1-493)</td></tr>
+<tr><td>Analysis of the Text</td><td>(97 pages)</td><td>(495-591)</td></tr>
+<tr><td>Index</td><td>(3 pages)</td><td>(593-595)</td></tr>
+</tbody>
+</table>
+
+
+<p>
+Now the beauty of the Findlay/Miller version comes into play. 
+Most of the time, we do not need to read the "Text Proper". It is too
+verbose. JN Findlay provides a paragraph-by-paragraph
+"compression" of the text proper from almost 500 pages to 100
+pages in the <i>Analysis of the Text</i>. The text proper can be referenced
+as needed, but the <i>Analysis of the Text</i> typically is clearer
+and more concise. 
+</p>
+<p>
+So now we have four parts, and our 620-page book is now 125 pages.
+The Index isn't really a part, but it is good to know it is there.
+It is a usable competent Index. So we don't need to worry about that.
+</p>
+<p>
+So now we are down to three sections:
+</p><ul>
+<li>
+Foreword by JN Findlay (25 pages)
+</li>
+<li>
+The Table of Contents  (3 pages)
+</li>
+<li>
+Analysis of the Text   (97 pages)
+
+</li>
+</ul>
+
+<p>This is the core 125 pages that we need to understand the <i>PhG</i>.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Step 4: Ascertain the General Structure of the <i>PhG</i> </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<p>The core of the <i>PhG</i> (compressed in the Analysis version) is
+97 pages, which is divided into 808 sections. The "plot" of
+the book is the maturation of Consciousness towards Absolute Knowing.
+</p>
+<p>
+The Preface and the Introduction provide overviews from 
+different perspectives of the entire argument. Once the
+reader achives an understanding of the chapter on "Absolute
+Knowing" he has attained philosophical maturity.
+</p>
+<p>
+The following chart summarizes the high-level structure of the
+<i>PhG</i>.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="right" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>Section</td><td>Pages</td><td>Sections (#)</td></tr>
+<tr><td>Preface</td><td>495-504</td><td>001-072 (72)</td></tr>
+<tr><td>Introduction</td><td>505-507</td><td>073-089 (17)</td></tr>
+<tr><td>Consciousness</td><td>507-518</td><td>090-165 (76)</td></tr>
+<tr><td>Self-Consciousness</td><td>518-527</td><td>166-230 (65)</td></tr>
+<tr><td>Reason</td><td>527-550</td><td>231-437 (207)</td></tr>
+<tr><td>Spirit</td><td>550-577</td><td>438-671 (234)</td></tr>
+<tr><td>Religion</td><td>577-589</td><td>672-787 (116)</td></tr>
+<tr><td>Absolute Knowing</td><td>589-591</td><td>788-808 (21)</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> Step 5: Scan the Foreword by JN Findlay </h3>
+<div class="outline-text-3" id="text-1.5">
+
+<p>JN Findlay's Foreword is outstanding, and provides the proper
+context for understanding Hegel's program in more depth. It
+is 25 pages and provides all the background necessary for 
+mastering the ideas in the <i>PhG</i>. Read as much
+or as little of it as you want right now. It is a great
+reference.
+</p>
+<p>
+The Foreword is organized as follows:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">Section</th><th scope="col">Pages</th></tr>
+</thead>
+<tbody>
+<tr><td>Overview and Context</td><td>v-xiii</td></tr>
+<tr><td>Introduction</td><td>xiii-xv</td></tr>
+<tr><td>Consciousness</td><td>xv-xvi</td></tr>
+<tr><td>Self-Consciousness</td><td>xvi-xviii</td></tr>
+<tr><td>Reason</td><td>xviii-xix</td></tr>
+<tr><td>Spirit</td><td>xix-xxvi</td></tr>
+<tr><td>Religion</td><td>xxvi-xxvii</td></tr>
+<tr><td>Absolute Knowing</td><td>xxvii-xxx</td></tr>
+<tr><td>Preface</td><td>xxx</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.6" class="outline-3">
+<h3 id="sec-1.6"><span class="section-number-3">1.6</span> Step 6: Introduction </h3>
+<div class="outline-text-3" id="text-1.6">
+
+<p>JN Findlay (xiii) suggests that we start with the Introduction.
+I think this is good advice. It is only 2.5 pages and it summarizes
+the <i>PhG</i> effectively. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.7" class="outline-3">
+<h3 id="sec-1.7"><span class="section-number-3">1.7</span> Step 7: Read Any of the Other Sections In Any Order </h3>
+<div class="outline-text-3" id="text-1.7">
+
+<p>One of the most exciting things about the <i>PhG</i> is its non-linear
+nature. Once you ascertain the general structure of the <i>PhG</i> you
+can read around to the topics that are of most interest. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.8" class="outline-3">
+<h3 id="sec-1.8"><span class="section-number-3">1.8</span> Step 8: Repeat Any Steps in Any Order Until The Ideas Are Absorbed </h3>
+<div class="outline-text-3" id="text-1.8">
+
+<p>Once you have comprehened the various forms of Consciousness described
+by Hegel in the <i>PhG</i>, you will have attained Philosophical Wisdom.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-10-15 17:53:09 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

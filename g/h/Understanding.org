@@ -1,0 +1,132 @@
+#+TITLE:     Understanding Hegel's /PhG/
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+* Understanding the /PhG/
+Hegel's /Phenomenology of Spirit (Geist)/ (1807) is a literary and philosophical
+masterpiece of the highest order, but it is very difficult to move 
+through when one is not aware of what Hegel is trying to do. These
+notes are my explanation of how to move through the /PhG/
+as effectively as possible. There are 8 basic steps.
+
+** Get a Standard Version of the /PhG/
+The AV Miller Translation (Clarendon Press Oxford 1977) is my
+personal choice. There are many advantages of using this one, not
+least of which are the summaries and commentaries by JN Findlay.
+
+** Understand What Hegel is Trying to Do in the /PhG/.
+In the /PhG/, Hegel claims to have achieved philosophical
+maturity and shows the reader the explicit steps he took to reach this
+point of maturity. It is a autobiography of the evolution of Hegel's 
+Consciousness, which also doubles as a philosophical history of 
+Western Thought, since the development of Hegel's Consciousness emerged from 
+deeply grappling with the Western Tradition over a long period
+of time. 
+
+** Engage with the Book
+The Findlay/Miller version that we are using is nicely organized.
+This is fortunate, because the /PhG/ is not a linear text.
+It is meant to be read in a variety of ways. Once we break the 
+/PhG/ into its components it becomes much less daunting.
+
+|------------------------+-------------+-----------|
+| Component              | # of Pages  | Pages     |
+|------------------------+-------------+-----------|
+| Foreword by JN Findlay | (25 pages)  | (v-xxx)   |
+| Table of Contents      | (3 pages)   |           |
+| Text Proper            | (493 pages) | (1-493)   |
+| Analysis of the Text   | (97 pages)  | (495-591) |
+| Index                  | (3 pages)   | (593-595) |
+|------------------------+-------------+-----------|
+                         
+Now the beauty of the Findlay/Miller version comes into play. 
+Most of the time, we do not need to read the /Text Proper/. It is too
+verbose. JN Findlay provides a paragraph-by-paragraph
+"compression" of the text proper from almost 500 pages to 100
+pages in the /Analysis of the Text/. The text proper can be referenced
+as needed, but the /Analysis of the Text/ typically is clearer
+and more concise. 
+
+So now we have four parts, and our 620-page book is now 125 pages.
+The Index isn't really a part, but it is good to know it is there.
+It is a usable competent Index. So we don't need to worry about that.
+
+So now we are down to three sections:
+
+- Foreword by JN Findlay (25 pages)
+- The Table of Contents  (3 pages)
+- Analysis of the Text   (97 pages)
+
+This is the core 125 pages that we need to understand the /PhG/.
+
+** Ascertain the General Structure of the /PhG/
+The core of the /PhG/ (compressed in the /Analysis of the Text/ version) is
+97 pages, which is divided into 808 sections. The "plot" of
+the book is the maturation of Consciousness towards Absolute Knowing.
+
+The Preface and the Introduction provide overviews from 
+different perspectives of the entire argument. Once the
+reader achives an understanding of the chapter on Absolute
+Knowing he has attained philosophical maturity.
+
+The following chart summarizes the high-level structure of the
+/PhG/.
+|--------------------+---------+---------------|
+| Chapter            |   Pages | Sections (#)  |
+|--------------------+---------+---------------|
+| Preface            | 495-504 | 001-072 (72)  |
+| Introduction       | 505-507 | 073-089 (17)  |
+| Consciousness      | 507-518 | 090-165 (76)  |
+| Self-Consciousness | 518-527 | 166-230 (65)  |
+| Reason             | 527-550 | 231-437 (207) |
+| Spirit             | 550-577 | 438-671 (234) |
+| Religion           | 577-589 | 672-787 (116) |
+| Absolute Knowing   | 589-591 | 788-808 (21)  |
+|--------------------+---------+---------------|
+                   
+** Scan the Foreword by JN Findlay
+JN Findlay's Foreword is outstanding, and provides the proper
+context for understanding Hegel's program in more depth. It
+is 25 pages and provides all the background necessary for 
+mastering the ideas in the /PhG/. Read as much
+or as little of it as you want right now. It is a great
+reference.
+
+The Foreword is organized as follows:
+
+|----------------------|------------|
+| Section              | Pages      |
+|----------------------+------------|
+| Overview and Context | v-xiii     |
+| Introduction         | xiii-xv    |
+| Consciousness        | xv-xvi     |
+| Self-Consciousness   | xvi-xviii  |
+| Reason               | xviii-xix  |
+| Spirit               | xix-xxvi   |
+| Religion             | xxvi-xxvii |
+| Absolute Knowing     | xxvii-xxx  |
+| Preface              | xxx        |
+|----------------------|------------|
+
+** Introduction
+JN Findlay (xiii) suggests that we start with the Introduction.
+I think this is good advice. It is only 2.5 pages and it summarizes
+the /PhG/ effectively. 
+
+** Read Any of the Other Sections In Any Order
+One of the most exciting things about the /PhG/ is its non-linear
+nature. Once you ascertain the general structure of the /PhG/ you
+can read around to the topics that are most interesting to you.
+
+** Repeat Any Steps in Any Order Until The Ideas Are Absorbed
+Once you have comprehened the various forms of Consciousness described
+by Hegel in the /PhG/, you will have attained philosophical maturity.
+

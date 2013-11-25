@@ -1,0 +1,45 @@
+#+TITLE:     Fifth.org
+#+AUTHOR:    Greg
+#+EMAIL:     greg@greg-Satellite-C855D
+#+DATE:      2013-08-09 Fri
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+
+* Fifth.org
+Notes on Peter Senge's /The Fifth Discipline/.
+
+** Part I HOW OUR ACTIONS CREATE OUR REALITY
+*** Give Me a Lever Long Enough...
+*** Does Your Organization Have a Learning Disability?
+*** Prisoners of the System, or Prisoners of Our Own Thinking?
+** Part II THE FIFTH DISCIPLINE
+*** The Laws of the Fifth Discipline
+*** A Shift of Mind
+*** Nature's Templates: Identifying Patterns That Control Events
+*** Self-Limiting or Self-Sustaining Growth
+** Part III THE CORE DISCIPLINES
+*** Personal Mastery
+*** Mental Models
+*** Shared Vision
+*** Team Learning
+** Part IV REFLECTIONS FROM PRACTICE
+*** Foundations
+*** Impetus
+*** Strategies
+*** The Leader's New Work
+*** Systems Citizens
+*** Frontiers
+** Part V CODA
+*** The Indivisible Whole
+** Appendix 1: The Learning Disciplines
+** Appendix 2: Systems Archetypes
+** Appendix 3: The U Process 

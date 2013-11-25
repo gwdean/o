@@ -1,0 +1,97 @@
+* Tmin
+Notes on Susskind-Hrabovsky-2013.
+
+** Abstract
+Susskind-Hrabovsky's /The Theoretical Minimum/ explains
+clearly but in depth, the fundamentals of classical 
+physics to the (mathematically literate) outsider.
+These tools should be ported into the social sciences
+and be considered part of the basic sociological 
+tool-kit. 
+
+** Lecture 1. The Nature of Classical Physics.
+*** Spaces, Trigonometry, and Vectors
+** Lecture 2. Motion.
+*** Integral Calculus
+** Dynamics
+*** Partial Differentiation
+** Systems of More Than One Particle
+** Energy
+** Principle of Least Action
+*** The Transition to Advanced Mechanics
+*** Action and the Lagrangian
+To formulate the action principle, we need
+the same parameters as for formulating Newton's
+equations. 
+
+We need to know the *MASSES OF THE PARTICLES* and
+we have to know the *POTENTIAL ENERGY*
+
+The *ACTION* is for a *TRAJECTORY* is an integral
+from the start of the trajectory (t0) and the
+end of the trajectory (t1).
+
+Think of the *LAGRANGIAN* as a function of the 
+*POSITION* /x/ and *VELOCITY* /x-dot/.
+
+L = L(x,x-dot)
+L = L(Position, Velocity)
+
+*** Derivation of the Euler-Lagrange Equation
+*** More Particles and More Dimensions
+*** What's Good about Least Action?
+*** Generalized Coordinates and Momenta
+*** Cyclic Coordinates
+** Symmetries and Conservation Laws
+** Hamiltonian Mechanics and Time-Translation Invariance
+** The Phase Space Fluid and the Gibbs-Liouville Theorem
+** Poisson Brackets, Angular Momentum, and Symmetries
+** Electric and Magnetic Forces
+** Appendix I. Central Forces and Planetary Orbits
+
+* Sicm
+Notes on Sussman-Wisdom-2002
+** Lagrangian Mechanics
+*** Computing Actions
+(define ((L-free-particle mass) local)
+  (let ((v (velocity local)))
+    (* 1/2 mass (dot-product v v))))
+** Rigid Bodies
+** Hamiltonian Mechanics
+** Phase Space Structure
+** Canonical Transformations
+** Canonical Perturbation Theory
+** Scheme
+** Notation
+*** Functions
+(define (square x)
+  (* x x))
+
+(define (d x1 y1 x2 y2)
+  (sqrt (+ (square (- x2 x1)) (square (- y2 y1)))))
+
+; test
+(d 0 0 5 5) ;=> 7.0710678118654755
+
+(define h (compose cube sin))
+
+(h 2) ;=> .7518...
+
+(cube (sin 2)) ;=> .7518...
+
+(define g (* cube sin))
+
+(g 2) ;=> 7.274379...
+
+(* (cube 2) (sin 2)) ;=> 7.274379 
+
+** From Sicp
+(define dx 0.00001)
+
+(define (deriv g)
+  (lambda (x)
+    (/ (- (g (+ x dx)) (g x))
+       dx)))
+
+(define cube (* x x x))
+((deriv cube) 5) ;=> 75.0...

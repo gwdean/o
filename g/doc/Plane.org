@@ -1,0 +1,35 @@
+* Plane
+This document provides directions for
+constructing the *MARKET PLANE* found
+in Chapter 3 of Harrison C. White's 
+/Markets from Networks/.
+
+** Four Regions in Two Dimensions
+Table 3.1
+Cross-Tabulation of Parameters
+
+                               Buyer Need         Producer Cost
+Volume sensitivity             a                  c
+Quality sensitivity            b                  d
+
+The four regions:
+
+ORDINARY -> Perhaps the most common. 
+         -> Similar to microeconomic analysis.
+
+ADVANCED -> Increasing returns to scale.
+         -> Furthest from microeconomics.
+
+TRUST      -> Increasing returns to scale.
+           -> Involuting tendencies.
+           -> Dealt with in later chapters.
+
+UNRAVELING -> Dealt with in later chapters.
+
+** Drawing the table.
+There are a variety of market plane maps throughout
+/Markets from Networks/. The prototypical market
+plane map is found on page 52. We will use JavaScript
+to make an interactive version of this map. 
+
+ 

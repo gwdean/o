@@ -1,0 +1,48 @@
+* Topos
+** Overview
+William Lawvere and Stephen Schanuel's /Conceptual Mathematics/
+is a classic in the field of category theory. It starts from
+the beginning and builds up to a concept called a /topos/. 
+This is an important concept, although the definition is 
+opaque to the uninitiated:
+
+*Definition:*
+
+A category /C/ is a *topos* iff:
+
+1. /C/ has 0,1,*,+ and for every object X, /C/ /X has products.
+2. /C/ has map objects Y^X and
+3. /C/ has a 'truth-value object' (sub-object classifier)
+
+Many categories that LS describe are toposes:
+- sets
+- irreflexive graphs
+- dynamical systems
+- reflexive graphs
+
+The following are not toposes since having 
+map objects implies distributivity.
+- pointed sets
+- bipointed sets
+
+The goal of this document is to make the above
+definition clear. To do this requires a lot 
+of background information, and this document
+will provide that background. I draw entirely
+on LS for the answers.
+** Topos Definition
+A *category* /C/ is a *topos* iff
+- /C/ has *0*, *1*, *times*, *plus*
+- For every object *X*, /C/ / *X* has *products*.
+- /C/ has *map objects* Y^X
+- /C/ has a 'truth-value object' *1* -> *omega* (*subobject classifier*)
+** Categories that are toposes
+The following categories are examples of toposes. 
+*** Sets
+*** Irreflexive Graphs
+*** Dynamical Systems
+*** Reflexive Graphs
+** Categories that are not toposes
+The following categories are not toposes.
+*** Pointed Sets
+*** Bipointed Sets

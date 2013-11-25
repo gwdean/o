@@ -1,0 +1,91 @@
+* Logical Steps
+** Introduction 
+This document lays out the steps developed by David
+Gray Carlson in his work on the /Science of Logic/ (SL). [fn:1]
+
+According to Carlson, the "major contribution" of
+his book is that "it reduces every move in Hegel's
+logic to a discrete diagram." (4) 
+
+In all, there are precisely 79 official logical
+progressions, organized in groups of three.
+
+Each official move is diagrammed in a "Figure". Thus
+Figure 1(c) (Becoming) is the third sub-step of the
+first step of the Logic.
+
+There are a handful of "unofficial" steps in the Logic
+used by Hegel and Carlson to clarify certain details
+in the progression of the Logic.
+
+The the terms referring to the official steps of the
+Logic will be capitalized. 
+
+Carlson uses the AV Miller translation as his main
+source.
+** Division of the Logic (steps)
+*** Objective Logic (1-52)
+**** Doctrine of Being (1-23)
+***** Quality (1-10)
+***** Quantity (11-17)
+***** Measure (18-23)
+**** Doctrine of Essence (24-52)
+***** Reflection (24-33)
+***** Appearance (34-42)
+***** Actuality (43-52)
+*** Subjective Logic (53-79)
+**** Doctrine of Concept (53-79)
+***** Subjectivity (53-62)
+***** Objectivity (63-71)
+***** Idea (71-79)
+** Steps
+*** Quality (1-10)  
+|------+-------------------------------+--------------------------------------+--------------------------------------|
+| Step | Substep a                     | Substep b                            | Substep c                            |
+|------+-------------------------------+--------------------------------------+--------------------------------------|
+|    1 | Pure Being (11)               | Pure Nothing (14)                    | Becoming (15)                        |
+|    2 | Determinate Being (48)        | Quality and Negation (58)            | Something (63)                       |
+|    3 | Something/Other (70)          | Being-for-other/Being-in-itself (73) | Determination of the In-itself (78)  |
+|    4 | Constitution (79)             | Constitution vs. Determination (82)  | Limit (Determinateness as Such) (83) |
+|    5 | Finitude (87)                 | Limitation (87)                      | The Ought (88)                       |
+|    6 | Enriched Finite (92)          | Another Finite (92)                  | Infinity (93)                        |
+|    7 | Spurious Infinity (94)        | Spurious Infinity and Its Other (94) | True Infinity (97)                   |
+|    8 | Being-for-self (104)          | Being-For-One (106)                  | The One (110)                        |
+|    9 | The One in Its Own Self (111) | The One and the Void (112)           | Repulsion (120)                      |
+|   10 | Attraction (121)              | Repulsion and Attraction (125)       | Quantity (132)                       |
+|------+-------------------------------+--------------------------------------+--------------------------------------|
+      
+*** Quantity (11-17)
+*** Measure (18-23)
+*** Reflection (24-33)
+*** Appearance (34-42)
+*** Actuality (43-52)
+*** Subjectivity (53-62)
+*** Objectivity (63-71)
+*** Idea (71-79)
+** Transitions
+The descriptions of the transitions involved in 2a, 3a and 8a
+are provided on page 104.
+
+*** 2a: (-> 7 1) page 48. Understanding (as such)
+This transition represents the Understanding's focus on
+the IMMEDIACY present in the middle term (7).
+
+*** 3a: (-> (4 5 6) 1) p.70. Mediation 
+This transition represents the Understanding's focus on
+the MEDIATION within the middle term.
+
+*** 8a: (-> (4 5 6 7) 1) p.104. Speculative Reason
+This transition represents the Understanding's focus on
+the UNITY of IMMEDIACY and MEDIATION.
+** Resources
+Carlson, David Gray. "A Commentary to Hegel's 
+/Science of Logic/". 2007. New York: Palgrave
+MacMillan.
+
+Hegel, GWF. "The Science of Logic". AV Miller
+Translation. 
+
+
+[fn:1] The term "/SL/" refers to the book by Hegel, while 
+the term "Logic" refers to the content of the book. 

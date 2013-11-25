@@ -1,0 +1,93 @@
+#+TITLE:     Notes on Category Theory
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-10-09 Wed
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+The following notes are adapted from Lawvere and Schanuel's /Conceptual Mathematics/.
+
+* Sets. Maps. Composition.
+** Overview
+*** Guide
+*** Summary: Definition of a Category
+** Definition: Point
+A *point* of a set X is a map *1*->X.
+** Definition: Category
+A *CATEGORY* consists of the DATA:
+- (1) Objects 
+- (2) Maps 
+- (3) Domain and Codomain
+- (4) Identity Map
+- (5) Composite Map
+
+Satisfying the following RULES:
+- (i)  Identity Laws
+- (ii) Associative Law
+
+* Isomorphisms.
+** Overview
+*** Isomorphisms
+*** General Division Problems: Determination and Choice
+*** Retractions, Sections and Idempotents
+*** Isomorphisms and Automorphisms
+*** Guide
+*** Summary: Special Properties a Map May Have
+** Definition: Isomorphism
+** Definition: Retraction
+** Definition: Section
+** Proposition 1
+** Proposition 2
+** Definition: Injective
+** Definition: Monomorphism
+** Definition: Epimorphism
+** Proposition 3
+** Definition: Idempotent
+** Theorem (uniqueness of inverses)
+** Definition: Isomorphism
+** Definition: Automorphism
+** Summary: Special properties a map f:A->B may have.
+* Examples of Categories.
+** Overview
+*** The Category END of Endomaps of Sets
+*** Typical Applications of END
+*** Two Subcategories of END
+*** Categories of Endomaps
+*** Irreflexive Graphs
+*** Endomaps as Special Graphs
+*** The Simpler Category SGL: Objects Are Just Maps of Sets
+*** Reflexive Graphs
+*** Summary of the Examples and Their General Significance
+*** Retractions and Injectivity
+*** Types of Structure
+*** Guide 
+* Universal Mapping Properties.
+** Overview
+*** Terminal Objects
+*** Separating
+*** Initial Object
+*** Products
+*** Commutative, Associative, and Identity Laws for Multiplication of Objects
+*** Sums
+*** Distributive Laws
+*** Guide
+* Map Objects.
+** Overview
+*** Definition of Map Object
+*** Distributivity
+*** Map Objects and the Diagonal Argument
+*** Universal Properties and 'Observables'
+*** Guide
+*** Definition: Map Object
+*** Notation
+*** Proposition
+*** Theorem (Cantor's Diagonal Argument)
+*** Definition: Chaotic
+*** Definition: Admissible Notion

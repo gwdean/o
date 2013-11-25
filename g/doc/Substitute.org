@@ -1,0 +1,61 @@
+* Substitute.org
+Notes on Chapter Six of /Markets from Networks/ (121-138).
+
+This chapter looks at the competitive rather than
+the complementary relations with other markets,
+cross-stream rather than along the streams.
+
+This chapter consists of the following subheadings:
+
+- Boundaries: Porac's Case Study of the Scottish Knitwear Industry
+- Quality Spread Within a Market
+- The Two Faces of Substitutability
+- Substitutability Parameter and Buyer Power
+- *Feedback between Profile and Aggregate Production
+- Las Vegas Paradigm
+
+** Boundaries (122-124)
+** Quality Spread Within a Market (124-127)
+The crux of this section is captured by FIG. 6.1, from page 125.
+
+There are six markets:
+
+(hand high-fashion traditional-frame mid-market upscale mass)
+
+Relationships between these markets are illustrated, based on the
+data found in Porac-1995.
+
+** The Two Faces (127-128)
+** Substitutability Parameter and Buyer Power (128-130)
+** Feedback (130-136)
+This section contains the bulk of the mathematical analysis.
+
+Step 1. Describe all the mathematical relationships.
+
+See also [[Tau.html]]
+*** Equation 6.3
+TAU = V/W
+V   = Total Aggregate Valuation received by Buyers
+W   = Total Aggregate Market Revenue paid to Producers
+
+TAU must be greater than unity for buyers not to balk
+
+*** Equation 6.4
+*** Equation 6.5
+*** Equation 6.6
+*** Equation 6.7
+*** Equation 6.8
+*** Equation 6.9
+*** Equation 6.10
+ 
+** Las Vegas Paradigm (136-138)
+The description of Las Vegas on page 136-138 is a vivid account
+of the style of analysis found in /Markets from Networks/.
+
+- Let gamblers be the producer firms.
+- The individual house is the market.
+- The dealers correspond to the aggregate buyer in the W(y) model.
+- (...to be continued...)
+
+** References
+Porac-1995

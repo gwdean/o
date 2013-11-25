@@ -1,0 +1,2581 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Logos Lab</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-11-17 Sun"/>
+<meta name="author" content="GW Dean"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Logos Lab</h1>
+
+<p>A computational toolkit to help one understand philosophical concepts.
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Logical Diagrams (Carlson-2007) </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Introduction (1-5) </a></li>
+<li><a href="#sec-1.2">1.2 With What Must Science Begin? </a></li>
+<li><a href="#sec-1.3">1.3 Borromean Knot (18-26) </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 Circles </a></li>
+<li><a href="#sec-1.3.2">1.3.2 Borromean Knot </a></li>
+<li><a href="#sec-1.3.3">1.3.3 Modes of Consciousness </a>
+<ul>
+<li><a href="#sec-1.3.3.1">1.3.3.1 The Understanding </a></li>
+<li><a href="#sec-1.3.3.2">1.3.3.2 Dialectical Reason </a></li>
+<li><a href="#sec-1.3.3.3">1.3.3.3 Speculative Reason </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3.4">1.3.4 Summary (26) </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 Observations </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 Being-Nothing-Becoming </a>
+<ul>
+<li><a href="#sec-1.4.1.1">1.4.1.1 Moves </a>
+<ul>
+<li><a href="#sec-1.4.1.1.1">1.4.1.1.1 DGC.(18-26) </a></li>
+<li><a href="#sec-1.4.1.1.2">1.4.1.1.2 DGC.(29-31) </a></li>
+<li><a href="#sec-1.4.1.1.3">1.4.1.1.3 DGC.(42) </a></li>
+<li><a href="#sec-1.4.1.1.4">1.4.1.1.4 DGC.(46-49) </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4.1.2">1.4.1.2 Comments </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4.2">1.4.2 Determinate Being </a>
+<ul>
+<li><a href="#sec-1.4.2.1">1.4.2.1 Moves </a>
+<ul>
+<li><a href="#sec-1.4.2.1.1">1.4.2.1.1 DGC.(55-57) </a></li>
+<li><a href="#sec-1.4.2.1.2">1.4.2.1.2 DGC.(57-58) </a></li>
+<li><a href="#sec-1.4.2.1.3">1.4.2.1.3 DGC.(63-69) </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4.2.2">1.4.2.2 Comments </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-1.5">1.5 Transitions </a>
+<ul>
+<li><a href="#sec-1.5.1">1.5.1 Determinate Being (48) </a></li>
+<li><a href="#sec-1.5.2">1.5.2 Something/Other (70) </a></li>
+<li><a href="#sec-1.5.3">1.5.3 Being-for-self (104) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Stepping to Infinity (Carlson-2007.(1-102)) </a>
+<ul>
+<li><a href="#sec-2.1">2.1 Step 0 Absolute Knowing (Method) </a>
+<ul>
+<li><a href="#sec-2.1.1">2.1.1 Immediacy (595) </a></li>
+<li><a href="#sec-2.1.2">2.1.2 Mediation (598) </a></li>
+<li><a href="#sec-2.1.3">2.1.3 Absolute Knowing (Method) (599) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.2">2.2 Step 1 Becoming </a>
+<ul>
+<li><a href="#sec-2.2.1">2.2.1 Pure Being (11) </a></li>
+<li><a href="#sec-2.2.2">2.2.2 Pure Nothing (14) </a></li>
+<li><a href="#sec-2.2.3">2.2.3 Becoming (15) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.3">2.3 Step 2 Something </a>
+<ul>
+<li><a href="#sec-2.3.1">2.3.1 Determinate Being (Quality) (48) </a></li>
+<li><a href="#sec-2.3.2">2.3.2 Quality and Negation (58) </a></li>
+<li><a href="#sec-2.3.3">2.3.3 Something (63) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.4">2.4 Step 3 Determination of the In-Itself </a>
+<ul>
+<li><a href="#sec-2.4.1">2.4.1 Something/Other (70) </a></li>
+<li><a href="#sec-2.4.2">2.4.2 Being-for-other/Being-in-itself (73) </a></li>
+<li><a href="#sec-2.4.3">2.4.3 Determination of the In-itself (78) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.5">2.5 Step 4 Limit (Determinateness as Such) </a>
+<ul>
+<li><a href="#sec-2.5.1">2.5.1 Constitution (79) </a></li>
+<li><a href="#sec-2.5.2">2.5.2 Constitution v. Determination (82) </a></li>
+<li><a href="#sec-2.5.3">2.5.3 Limit (Determinateness as Such) (83) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.6">2.6 Step 5 The Ought </a>
+<ul>
+<li><a href="#sec-2.6.1">2.6.1 Finitude (87) </a></li>
+<li><a href="#sec-2.6.2">2.6.2 Limitation (87) </a></li>
+<li><a href="#sec-2.6.3">2.6.3 The Ought (88) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.7">2.7 Step 6 Infinity </a>
+<ul>
+<li><a href="#sec-2.7.1">2.7.1 Enriched Finite (92) </a></li>
+<li><a href="#sec-2.7.2">2.7.2 Another Finite (92) </a></li>
+<li><a href="#sec-2.7.3">2.7.3 Infinity (93) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.8">2.8 Step 7 True Infinity </a>
+<ul>
+<li><a href="#sec-2.8.1">2.8.1 Spurious Infinity (94) </a></li>
+<li><a href="#sec-2.8.2">2.8.2 Spurious Infinity and Its Other (94) </a></li>
+<li><a href="#sec-2.8.3">2.8.3 True Infinity (97) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Absolute Idea (Carlson-2007.(593-603)) </a></li>
+<li><a href="#sec-4">4 79 Steps of the Logic </a>
+<ul>
+<li><a href="#sec-4.1">4.1 Quality (1-10) </a>
+<ul>
+<li><a href="#sec-4.1.1">4.1.1 Becoming (15) </a></li>
+<li><a href="#sec-4.1.2">4.1.2 Something (63) </a></li>
+<li><a href="#sec-4.1.3">4.1.3 Determination of the In-Itself (78) </a></li>
+<li><a href="#sec-4.1.4">4.1.4 Limit (Determinateness as such) (83) </a></li>
+<li><a href="#sec-4.1.5">4.1.5 The Ought (88) </a></li>
+<li><a href="#sec-4.1.6">4.1.6 Infinity (93) </a></li>
+<li><a href="#sec-4.1.7">4.1.7 True Infinity (97) </a></li>
+<li><a href="#sec-4.1.8">4.1.8 The One (110) </a></li>
+<li><a href="#sec-4.1.9">4.1.9 Repulsion (120) </a></li>
+<li><a href="#sec-4.1.10">4.1.10 Quantity (132) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.2">4.2 Quantity (11-17) </a>
+<ul>
+<li><a href="#sec-4.2.1">4.2.1 Enriched Quantity (144) </a></li>
+<li><a href="#sec-4.2.2">4.2.2 Quantum (155) </a></li>
+<li><a href="#sec-4.2.3">4.2.3 Number (159) </a></li>
+<li><a href="#sec-4.2.4">4.2.4 The Quality of Quantum (168) </a></li>
+<li><a href="#sec-4.2.5">4.2.5 Qualitative Something (170) </a></li>
+<li><a href="#sec-4.2.6">4.2.6 Infinitely Great and Infinitely Small (179) </a></li>
+<li><a href="#sec-4.2.7">4.2.7 Ratio of Powers (189) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.3">4.3 Measure (18-23) </a>
+<ul>
+<li><a href="#sec-4.3.1">4.3.1 Specifying Measure (208) </a></li>
+<li><a href="#sec-4.3.2">4.3.2 Ratio of Measures (210) </a></li>
+<li><a href="#sec-4.3.3">4.3.3 Elective Affinity (227) </a></li>
+<li><a href="#sec-4.3.4">4.3.4 Nodal Line (231) </a></li>
+<li><a href="#sec-4.3.5">4.3.5 Infinite For Itself (236) </a></li>
+<li><a href="#sec-4.3.6">4.3.6 Essence (246) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.4">4.4 Reflection (24-33) </a>
+<ul>
+<li><a href="#sec-4.4.1">4.4.1 Reflection (262) </a></li>
+<li><a href="#sec-4.4.2">4.4.2 Determining Reflection (275) </a></li>
+<li><a href="#sec-4.4.3">4.4.3 Opposition (289) </a></li>
+<li><a href="#sec-4.4.4">4.4.4 Contradiction (297) </a></li>
+<li><a href="#sec-4.4.5">4.4.5 Ground (300) </a></li>
+<li><a href="#sec-4.4.6">4.4.6 Form (Ground Relation) (311) </a></li>
+<li><a href="#sec-4.4.7">4.4.7 Content (Inwardization of Outward Form) (316) </a></li>
+<li><a href="#sec-4.4.8">4.4.8 Determinate Ground (318) </a></li>
+<li><a href="#sec-4.4.9">4.4.9 Complete Ground (326) </a></li>
+<li><a href="#sec-4.4.10">4.4.10 Fact (332) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.5">4.5 Appearance (34-42) </a>
+<ul>
+<li><a href="#sec-4.5.1">4.5.1 The Totality of Existence (348) </a></li>
+<li><a href="#sec-4.5.2">4.5.2 Reciprocal Action of Things (352) </a></li>
+<li><a href="#sec-4.5.3">4.5.3 Constitution of the Thing out of its Matters (355) </a></li>
+<li><a href="#sec-4.5.4">4.5.4 Appearance (358) </a></li>
+<li><a href="#sec-4.5.5">4.5.5 The Law of Law and Appearance (364) </a></li>
+<li><a href="#sec-4.5.6">4.5.6 Essential Relation (372) </a></li>
+<li><a href="#sec-4.5.7">4.5.7 Conditioned Relation (378) </a></li>
+<li><a href="#sec-4.5.8">4.5.8 Self-Externalization of Force (Expression) (385) </a></li>
+<li><a href="#sec-4.5.9">4.5.9 Actuality (388) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.6">4.6 Actuality (43-52) </a>
+<ul>
+<li><a href="#sec-4.6.1">4.6.1 Attribute (397) </a></li>
+<li><a href="#sec-4.6.2">4.6.2 Mode (399) </a></li>
+<li><a href="#sec-4.6.3">4.6.3 Contingency (405) </a></li>
+<li><a href="#sec-4.6.4">4.6.4 Real Necessity (Totality of Conditions) (408) </a></li>
+<li><a href="#sec-4.6.5">4.6.5 Substance (412) </a></li>
+<li><a href="#sec-4.6.6">4.6.6 Power (Substantiality) (417) </a></li>
+<li><a href="#sec-4.6.7">4.6.7 Original Substance (419) </a></li>
+<li><a href="#sec-4.6.8">4.6.8 Internalized Causality (423) </a></li>
+<li><a href="#sec-4.6.9">4.6.9 Reciprocal Action (Absolute Substance) (426) </a></li>
+<li><a href="#sec-4.6.10">4.6.10 The Notion (428) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.7">4.7 Subjectivity (53-62) </a>
+<ul>
+<li><a href="#sec-4.7.1">4.7.1 Individual Notion (455) </a></li>
+<li><a href="#sec-4.7.2">4.7.2 Negative Judgment (469) </a></li>
+<li><a href="#sec-4.7.3">4.7.3 Infinite Judgment (472) </a></li>
+<li><a href="#sec-4.7.4">4.7.4 Judgment of a Reflection (476) </a></li>
+<li><a href="#sec-4.7.5">4.7.5 Universal Judgment (480) </a></li>
+<li><a href="#sec-4.7.6">4.7.6 Disjunctive Judgment (486) </a></li>
+<li><a href="#sec-4.7.7">4.7.7 Apodeictic Judgment (Syllogism) (492) </a></li>
+<li><a href="#sec-4.7.8">4.7.8 IUP<sub>E</sub> (UUU<sub>E</sub>) (502) </a></li>
+<li><a href="#sec-4.7.9">4.7.9 Syllogism of Analogy (508) </a></li>
+<li><a href="#sec-4.7.10">4.7.10 Disjunctive Syllogism (IUP<sub>N</sub>) (Objectivity) (517) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.8">4.8 Objectivity (63-70) </a>
+<ul>
+<li><a href="#sec-4.8.1">4.8.1 Nature of Mechanical Objects (528) </a></li>
+<li><a href="#sec-4.8.2">4.8.2 Rest (531) </a></li>
+<li><a href="#sec-4.8.3">4.8.3 Oneness of the Object (535) </a></li>
+<li><a href="#sec-4.8.4">4.8.4 Free Mechanism (537) </a></li>
+<li><a href="#sec-4.8.5">4.8.5 Chemism (540) </a></li>
+<li><a href="#sec-4.8.6">4.8.6 Abstract Neutrality (543) </a></li>
+<li><a href="#sec-4.8.7">4.8.7 Neutrality and Tension (End) (545) </a></li>
+<li><a href="#sec-4.8.8">4.8.8 Realized End (Idea) (554) </a></li>
+</ul>
+</li>
+<li><a href="#sec-4.9">4.9 The Idea (71-79) </a>
+<ul>
+<li><a href="#sec-4.9.1">4.9.1 Organism (565) </a></li>
+<li><a href="#sec-4.9.2">4.9.2 Reproduction (567) </a></li>
+<li><a href="#sec-4.9.3">4.9.3 Assimilation of the Object (569) </a></li>
+<li><a href="#sec-4.9.4">4.9.4 Cognition (570) </a></li>
+<li><a href="#sec-4.9.5">4.9.5 The True (578) </a></li>
+<li><a href="#sec-4.9.6">4.9.6 Scientific Laws (583) </a></li>
+<li><a href="#sec-4.9.7">4.9.7 Theorem (588) </a></li>
+<li><a href="#sec-4.9.8">4.9.8 Absolute Idea (591) </a></li>
+<li><a href="#sec-4.9.9">4.9.9 Absolute Knowing (Method) (599) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Appendix 1: Science of Logic Outline </a>
+<ul>
+<li><a href="#sec-5.1">5.1 Objective Logic </a>
+<ul>
+<li><a href="#sec-5.1.1">5.1.1 Doctrine of Being </a>
+<ul>
+<li><a href="#sec-5.1.1.1">5.1.1.1 Quality </a></li>
+<li><a href="#sec-5.1.1.2">5.1.1.2 Quantity </a></li>
+<li><a href="#sec-5.1.1.3">5.1.1.3 Measure </a></li>
+</ul>
+</li>
+<li><a href="#sec-5.1.2">5.1.2 Doctrine of Essence </a>
+<ul>
+<li><a href="#sec-5.1.2.1">5.1.2.1 Reflection </a></li>
+<li><a href="#sec-5.1.2.2">5.1.2.2 Appearance </a></li>
+<li><a href="#sec-5.1.2.3">5.1.2.3 Actuality </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5.2">5.2 Subjective Logic </a>
+<ul>
+<li><a href="#sec-5.2.1">5.2.1 Doctrine of Concept </a>
+<ul>
+<li><a href="#sec-5.2.1.1">5.2.1.1 Subjectivity </a></li>
+<li><a href="#sec-5.2.1.2">5.2.1.2 Objectivity </a></li>
+<li><a href="#sec-5.2.1.3">5.2.1.3 The Idea </a></li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Appendix 2: Encyclopedia Logic Outline </a>
+<ul>
+<li><a href="#sec-6.1">6.1 Introduction (1-18) </a></li>
+<li><a href="#sec-6.2">6.2 Preliminary Conception (19-83) </a>
+<ul>
+<li><a href="#sec-6.2.1">6.2.1 First position of thought towards objectivity: Metaphysics (26-36) </a></li>
+<li><a href="#sec-6.2.2">6.2.2 Second position of thought towards objectivity (37-60) </a>
+<ul>
+<li><a href="#sec-6.2.2.1">6.2.2.1 Empiricism (37) </a></li>
+<li><a href="#sec-6.2.2.2">6.2.2.2 Critical Philosophy (40) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.2.3">6.2.3 Third position of thought towards objectvity: Immediate knowing (61-78) </a></li>
+<li><a href="#sec-6.2.4">6.2.4 More detailed conception of the division of the Logic (79-83) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.3">6.3 The Doctrine of Being (84-111) </a>
+<ul>
+<li><a href="#sec-6.3.1">6.3.1 Quality </a>
+<ul>
+<li><a href="#sec-6.3.1.1">6.3.1.1 Being (86) </a></li>
+<li><a href="#sec-6.3.1.2">6.3.1.2 Existence (89) </a></li>
+<li><a href="#sec-6.3.1.3">6.3.1.3 Being-for-itself (96) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.3.2">6.3.2 Quantity (99) </a>
+<ul>
+<li><a href="#sec-6.3.2.1">6.3.2.1 Pure quantity (99) </a></li>
+<li><a href="#sec-6.3.2.2">6.3.2.2 Quantum (101) </a></li>
+<li><a href="#sec-6.3.2.3">6.3.2.3 Degree (103) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.3.3">6.3.3 Measure (107) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.4">6.4 The Doctrine of Essence (112-159) </a>
+<ul>
+<li><a href="#sec-6.4.1">6.4.1 The essence as ground of concrete existence (115) </a>
+<ul>
+<li><a href="#sec-6.4.1.1">6.4.1.1 The pure determinations of reflection (115) </a>
+<ul>
+<li><a href="#sec-6.4.1.1.1">6.4.1.1.1 Identity (115) </a></li>
+<li><a href="#sec-6.4.1.1.2">6.4.1.1.2 Difference (116) </a></li>
+<li><a href="#sec-6.4.1.1.3">6.4.1.1.3 Ground (121) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.4.1.2">6.4.1.2 Concrete existence (123) </a></li>
+<li><a href="#sec-6.4.1.3">6.4.1.3 The thing (125) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.4.2">6.4.2 Appearance (131) </a>
+<ul>
+<li><a href="#sec-6.4.2.1">6.4.2.1 The world of appearance (132) </a></li>
+<li><a href="#sec-6.4.2.2">6.4.2.2 Content and form (133) </a></li>
+<li><a href="#sec-6.4.2.3">6.4.2.3 The relationship (135) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.4.3">6.4.3 Actuality (142) </a>
+<ul>
+<li><a href="#sec-6.4.3.1">6.4.3.1 The relationship of substantiality (150) </a></li>
+<li><a href="#sec-6.4.3.2">6.4.3.2 The relationship of causality (153) </a></li>
+<li><a href="#sec-6.4.3.3">6.4.3.3 Reciprocity (155) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-6.5">6.5 The Doctrine of the Concept (160-244) </a>
+<ul>
+<li><a href="#sec-6.5.1">6.5.1 The subjective concept (163) </a>
+<ul>
+<li><a href="#sec-6.5.1.1">6.5.1.1 The concept as such (163) </a></li>
+<li><a href="#sec-6.5.1.2">6.5.1.2 The judgment (166) </a>
+<ul>
+<li><a href="#sec-6.5.1.2.1">6.5.1.2.1 Qualitative judgment (172) </a></li>
+<li><a href="#sec-6.5.1.2.2">6.5.1.2.2 The judgment of reflection (174) </a></li>
+<li><a href="#sec-6.5.1.2.3">6.5.1.2.3 Judgment of necessity (177) </a></li>
+<li><a href="#sec-6.5.1.2.4">6.5.1.2.4 The judgment of the concept (178) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.5.1.3">6.5.1.3 The syllogism (181) </a>
+<ul>
+<li><a href="#sec-6.5.1.3.1">6.5.1.3.1 Qualitative syllogism (183) </a></li>
+<li><a href="#sec-6.5.1.3.2">6.5.1.3.2 Syllogism of reflection (190) </a></li>
+<li><a href="#sec-6.5.1.3.3">6.5.1.3.3 Syllogism of necessity (191) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-6.5.2">6.5.2 The object (194) </a></li>
+<li><a href="#sec-6.5.3">6.5.3 The idea (213) </a>
+<ul>
+<li><a href="#sec-6.5.3.1">6.5.3.1 Life (216) </a></li>
+<li><a href="#sec-6.5.3.2">6.5.3.2 Knowing (223) </a>
+<ul>
+<li><a href="#sec-6.5.3.2.1">6.5.3.2.1 Knowing (226) </a></li>
+<li><a href="#sec-6.5.3.2.2">6.5.3.2.2 Willing (233) </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.5.3.3">6.5.3.3 The absolute idea (236) </a></li>
+</ul></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-7">7 References </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Logical Diagrams (Carlson-2007) </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Introduction (1-5) </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<p>According to Carlson, the "main contribution" of his 2007 book is
+that it "reduces every move in Hegel's logic to a discrete diagram".
+</p>
+<p>
+In all, there are 79 official Logical progressions, organized
+in groups of three.
+</p>
+<p>
+Each official move is diagrammed in a "Figure". 
+</p>
+<ul>
+<li>
+Figure 1(c): the third sub-step of the first step of the <i>SL</i>. 
+</li>
+<li>
+Figure 2(a): the first sub-step of the second step of the <i>SL</i>.
+</li>
+<li>
+&hellip;
+</li>
+<li>
+Figure 79(c): the third sub-step of the seventy-ninth step of the <i>SL</i>.
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> With What Must Science Begin? </h3>
+<div class="outline-text-3" id="text-1.2">
+
+<p>Three things worth knowing (DGC-39):
+</p>
+<p>
+(a). The <i>SL</i> is to be a groundless logic
+</p>
+<p>
+(b). Deciding to begin at all is a contingent fact.
+</p>
+<p>
+(c). PURE BEING is the best starting place, because it develops  
+into the ultimate result&ndash;ABSOLUTE KNOWING&ndash;which then mediates
+the beginning.
+</p>
+<p>
+DGC argues that the Logic's true beginning is the Understanding's
+one-sided attempt to summarize the very last step of the Logic--
+ABSOLUTE KNOWING. It cannot fix this thought. Its attempt fails.
+The collapse of thought is the modulation that Hegel describes.
+</p>
+<p>
+The beginning of the Logic is failure, and that is what makes
+it a success.
+</p></div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Borromean Knot (18-26) </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> Circles </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+<p>All Middle terms (such as Becoming) are made up of three circles.
+</p>
+<ul>
+<li>
+Circle-1: Positive side (Left)
+</li>
+<li>
+Circle-2: Negative side (Right)
+</li>
+<li>
+Circle-3: Surplus of Positive and Negative (Middle)
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2"><span class="section-number-4">1.3.2</span> Borromean Knot </h4>
+<div class="outline-text-4" id="text-1.3.2">
+
+<p>These three circles together form a <i>Borromean Knot</i>, which 
+contains seven distinct areas.
+</p>
+<ul>
+<li>
+Areas 1,3,7 are static.
+</li>
+<li>
+Areas 2,4,5,6 are dynamic.
+
+</li>
+</ul>
+
+<p>Dynamic areas have at least two natures&ndash;they are subject to
+more than one jurisdiction.
+</p>
+<p>
+Area-4 is subject to all three jurisdictions.
+</p>
+<p>
+Area-4 is what Hegel (eventually) calls "being-within-self"   
+</p></div>
+
+</div>
+
+<div id="outline-container-1.3.3" class="outline-4">
+<h4 id="sec-1.3.3"><span class="section-number-4">1.3.3</span> Modes of Consciousness </h4>
+<div class="outline-text-4" id="text-1.3.3">
+
+
+</div>
+
+<div id="outline-container-1.3.3.1" class="outline-5">
+<h5 id="sec-1.3.3.1"><span class="section-number-5">1.3.3.1</span> The Understanding </h5>
+<div class="outline-text-5" id="text-1.3.3.1">
+
+<p>The Understanding is the intuition that perceives a concept
+as an immediate, uncomplicated entity. (19)
+</p></div>
+
+</div>
+
+<div id="outline-container-1.3.3.2" class="outline-5">
+<h5 id="sec-1.3.3.2"><span class="section-number-5">1.3.3.2</span> Dialectical Reason </h5>
+<div class="outline-text-5" id="text-1.3.3.2">
+
+<p>Dialectical Reason accuses the Understanding of ignoring
+the negative component that dialectic reasoning is able
+to comprehend. (21)
+</p>
+<p>
+Dialectical Reason produces an autistic modulation
+between two identical extremes that get us nowhere; drawing
+attention to the lack in the Understanding merely replicates
+the Understanding's own error.
+</p></div>
+
+</div>
+
+<div id="outline-container-1.3.3.3" class="outline-5">
+<h5 id="sec-1.3.3.3"><span class="section-number-5">1.3.3.3</span> Speculative Reason </h5>
+<div class="outline-text-5" id="text-1.3.3.3">
+
+<p>Speculative Reason "wisely intervenes to stop the 
+modulating nonsense". (23)
+</p>
+<p>
+(&hellip;TO BE CONTINUED&hellip;)
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3.4" class="outline-4">
+<h4 id="sec-1.3.4"><span class="section-number-4">1.3.4</span> Summary (26) </h4>
+<div class="outline-text-4" id="text-1.3.4">
+
+<p>The Borromean knot represents Logic as a circle comprised of circles,
+in accord with Hegel's comment from the <i>EL</i>:
+</p>
+<p>
+Each of the parts of philosophy is a philosophical whole, a circle rounded and
+complete in itself. In each of these parts, however, the philosophical Idea is
+found in a particular specificality or medium. The single circle, because it is
+a real totality, bursts through the limits imposed by its special medium, and
+gives rise to a wider circle. The whole of philosophy in this way resembles a
+circle of circles. The Idea appears in each single circle, but, at the same time,
+the whole Idea is constituted by the system of these peculiar phases, and each
+is a necessary member of the organization. <i>EL-15</i> (DGC-26)
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Observations </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> Being-Nothing-Becoming </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+<p>We begin with the simplest of simples&ndash;PURE BEING.
+</p>
+<p>
+Hegel's opening words are: "<i>Being</i>, <i>pure being</i>, without 
+any further determination." (SL:82) (No verb! Not even "is"!)
+</p>
+<p>
+PURE BEING is immediacy <i>as such</i>, taken on its own terms
+without reference to anything else.
+</p>
+</div>
+
+<div id="outline-container-1.4.1.1" class="outline-5">
+<h5 id="sec-1.4.1.1"><span class="section-number-5">1.4.1.1</span> Moves </h5>
+<div class="outline-text-5" id="text-1.4.1.1">
+
+
+</div>
+
+<div id="outline-container-1.4.1.1.1" class="outline-6">
+<h6 id="sec-1.4.1.1.1"><span class="section-number-6">1.4.1.1.1</span> DGC.(18-26) </h6>
+<div class="outline-text-6" id="text-1.4.1.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.1.1.2" class="outline-6">
+<h6 id="sec-1.4.1.1.2"><span class="section-number-6">1.4.1.1.2</span> DGC.(29-31) </h6>
+<div class="outline-text-6" id="text-1.4.1.1.2">
+
+<p>In terms of our conventions, (2) is the voice of
+Dialectical Reason. It is the suppressed voice of (1)
+and hence immanent or implicit within (1). Dialectical
+Reason merely expresses what was previously hidden.
+</p>
+<p>
+Likewise, Speculative Reason is the voice of (4),
+which is immanent to both (1) and (3). (29)
+</p>
+<p>
+Every step contains (4), which implies that the prior
+steps have never been entirely destroyed. Yet the very
+idea of taking a step means that we have negated its
+predecessor. Thus (1),(2),and (3) are expelled from
+the middle term. Yet the middle term always implies
+(1),(2), and (3) in the guise of (4),(5),(6). (29-30)
+</p>
+<p>
+Sublation&ndash;denotes the destruction and preservation
+of Logical moments by the more progressive moment
+which it generates. (31)
+</p></div>
+
+</div>
+
+<div id="outline-container-1.4.1.1.3" class="outline-6">
+<h6 id="sec-1.4.1.1.3"><span class="section-number-6">1.4.1.1.3</span> DGC.(42) </h6>
+<div class="outline-text-6" id="text-1.4.1.1.3">
+
+<p>Consider the phrase "the relation of <i>A</i> and <i>B</i>."
+</p>
+<p>
+(&hellip;considering&hellip;.considering&hellip;.considering&hellip;)
+</p>
+<p>
+The remark refers to the parts (<i>A</i>, <i>B</i>) as well
+as the relation itself. The "relation" is just as
+separate a thing as <i>A</i> and <i>B</i> are.
+</p>
+<p>
+Is the aforementioned relation complex or simple?
+It is both.
+</p>
+<p>
+BECOMING (1c) is just such a relation between 
+PURE BEING and PURE NOTHING. (7) is simple, and
+(4,5,6) is complex.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.1.1.4" class="outline-6">
+<h6 id="sec-1.4.1.1.4"><span class="section-number-6">1.4.1.1.4</span> DGC.(46-49) </h6>
+<div class="outline-text-6" id="text-1.4.1.1.4">
+
+<p>BECOMING&ndash;the middle term between BEING and NOTHING--
+is concrete. It has difference within it (4,5,6),
+but it is a unity (7).
+</p>
+<p>
+Coming-to-be and ceasing-to-be are in motion. In
+Figure 1c, (7) constitutes the equilibrium&ndash;the
+unity at rest.
+</p>
+<p>
+In the fourth official move of the <i>SL</i> (2a), we take
+the static part of BECOMING (7), and move it to
+the left of the diagram (where the Understanding
+resides). (48)
+</p>
+<p>
+In Figure 2a, we take misshapen (7) and round it out
+to (1). This represents the fundamental error of the
+Understanding, which sees simplicity in lieu of
+complexity. (48)
+</p>
+<p>
+We contemplate Becoming <i>as if</i> it were whole.
+</p>
+<p>
+Figure 2a shows the transition to DETERMINATE BEING.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.1.2" class="outline-5">
+<h5 id="sec-1.4.1.2"><span class="section-number-5">1.4.1.2</span> Comments </h5>
+<div class="outline-text-5" id="text-1.4.1.2">
+
+<p>Abstraction turns Pure Being into Pure Nothing. The
+modulation itself was Becoming.
+</p>
+<p>
+Difference must precede Pure Being in origin. Hegel's
+beginning is the Understanding's abstraction of 
+immediacy from the last step of the Logic.
+</p>
+<p>
+Reflection notices the difference between Pure Being/
+Nothing and Absolute Knowing&ndash;an overarching perspective
+that comprehends origin and pre-origin at the same time. (32)
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2"><span class="section-number-4">1.4.2</span> Determinate Being </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+
+</div>
+
+<div id="outline-container-1.4.2.1" class="outline-5">
+<h5 id="sec-1.4.2.1"><span class="section-number-5">1.4.2.1</span> Moves </h5>
+<div class="outline-text-5" id="text-1.4.2.1">
+
+
+</div>
+
+<div id="outline-container-1.4.2.1.1" class="outline-6">
+<h6 id="sec-1.4.2.1.1"><span class="section-number-6">1.4.2.1.1</span> DGC.(55-57) </h6>
+<div class="outline-text-6" id="text-1.4.2.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2.1.2" class="outline-6">
+<h6 id="sec-1.4.2.1.2"><span class="section-number-6">1.4.2.1.2</span> DGC.(57-58) </h6>
+<div class="outline-text-6" id="text-1.4.2.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2.1.3" class="outline-6">
+<h6 id="sec-1.4.2.1.3"><span class="section-number-6">1.4.2.1.3</span> DGC.(63-69) </h6>
+<div class="outline-text-6" id="text-1.4.2.1.3">
+
+<p>BECOMING is a oneness by virtue of of (7).
+</p>
+<p>
+The <i>whole</i> of BECOMING (4-7) is not a oneness.
+</p>
+<p>
+Only from (7) does DETERMINATE BEING spring forth. (DGC-55)
+</p>
+<p>
+(&hellip;to be continued&hellip;)
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2.2" class="outline-5">
+<h5 id="sec-1.4.2.2"><span class="section-number-5">1.4.2.2</span> Comments </h5>
+<div class="outline-text-5" id="text-1.4.2.2">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> Transitions </h3>
+<div class="outline-text-3" id="text-1.5">
+
+
+</div>
+
+<div id="outline-container-1.5.1" class="outline-4">
+<h4 id="sec-1.5.1"><span class="section-number-4">1.5.1</span> Determinate Being (48) </h4>
+<div class="outline-text-4" id="text-1.5.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.5.2" class="outline-4">
+<h4 id="sec-1.5.2"><span class="section-number-4">1.5.2</span> Something/Other (70) </h4>
+<div class="outline-text-4" id="text-1.5.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.5.3" class="outline-4">
+<h4 id="sec-1.5.3"><span class="section-number-4">1.5.3</span> Being-for-self (104) </h4>
+<div class="outline-text-4" id="text-1.5.3">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Stepping to Infinity (Carlson-2007.(1-102)) </h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> Step 0 Absolute Knowing (Method) </h3>
+<div class="outline-text-3" id="text-2.1">
+
+<p>The <i>PhG</i> ends when consciousness "abolishes itself
+in favor of absolute or pure knowing". (DGC.10)
+</p>
+<p>
+Absolute knowing is the <i>truth</i> of every mode of
+consciousness because, as the course of the <i>PhG</i>
+showed, it is only in absolute knowing that the
+separation of the <i>object</i> from the <i>certainty of itself</i>
+is completely eliminated: truth is now equated
+with certainty and this certainty with truth. (49) (DGC.10)
+</p>
+<p>
+The <i>SL</i> takes up where the <i>PhG</i> left off&ndash;with a 
+purer immediacy than consciousness comprehends. (DGC.10)
+</p>
+</div>
+
+<div id="outline-container-2.1.1" class="outline-4">
+<h4 id="sec-2.1.1"><span class="section-number-4">2.1.1</span> Immediacy (595) </h4>
+<div class="outline-text-4" id="text-2.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.2" class="outline-4">
+<h4 id="sec-2.1.2"><span class="section-number-4">2.1.2</span> Mediation (598) </h4>
+<div class="outline-text-4" id="text-2.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.3" class="outline-4">
+<h4 id="sec-2.1.3"><span class="section-number-4">2.1.3</span> Absolute Knowing (Method) (599) </h4>
+<div class="outline-text-4" id="text-2.1.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> Step 1 Becoming </h3>
+<div class="outline-text-3" id="text-2.2">
+
+
+</div>
+
+<div id="outline-container-2.2.1" class="outline-4">
+<h4 id="sec-2.2.1"><span class="section-number-4">2.2.1</span> Pure Being (11) </h4>
+<div class="outline-text-4" id="text-2.2.1">
+
+<p>PURE BEING is no <i>unity</i> of distinguishable parts. It is
+IMMEDIACY before there <i>are</i> any parts to break it up. (DGC.10)
+</p>
+<p>
+In the pure light of BEING, NOTHING can be distinguished. (DGC.11)
+</p>
+<p>
+Pure light and pure darkness are two voids which are the
+same thing. Something can be distinguished only in 
+determinate light or darkness&hellip;[F]or this reason, it
+is only darkened light and illuminated darkness which
+have within themselves the moment of difference and are,
+therefore, <i>determinate being</i>. (SL.93)
+</p>
+<p>
+PURE BEING will require the darkness of PURE NOTHING
+before it can be thought at all. (DGC.11)
+</p>
+<p>
+PURE BEING is <i>indeterminacy as such</i>. (DGC.11) 
+</p>
+<p>
+In PURE BEING we think nothing. This is what we would
+perceive in a world of pure nothing. Hence, we might
+as well say that PURE BEING is PURE NOTHING. They are 
+<i>identical</i>. (DGC.11)
+</p>
+<p>
+"Being, the indeterminate immediate, is in fact <i>nothing</i>. (SL.82)
+</p>
+<p>
+If PURE BEING and NOTHING are the same, where does their
+<i>difference</i> come from? (DGC.11)
+</p>
+<p>
+The origin of difference precedes PURE BEING. This is discussed
+in the introductory essay to the <i>SL</i> entitled "With What Must
+Science Begin?" (DGC.11)
+</p>
+<p>
+PURE BEING precludes an other that thinks. This means <i>you</i>,
+among other things. (DGC.13)
+</p>
+<p>
+If PURE BEING were really here before us (and not just in
+our thoughts) we would be obliterated&ndash;sucked into a very
+black hole. (DGC.13)
+</p>
+<p>
+The fact that we are thinking at all is proof that PURE BEING
+is not before us. Rather it is apparent that PURE BEING
+<i>has already</i> passed away. (DGC.13)
+</p>
+<p>
+"For us", PURE BEING can be thought&ndash;here we are doing it! But
+"for itself", PURE BEING will not suffer us to contemplate it. (DGC.13)
+</p>
+<p>
+In the presence of PURE BEING, there can be no determinate
+thing that thinks. (DGC.13)
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2.2.2" class="outline-4">
+<h4 id="sec-2.2.2"><span class="section-number-4">2.2.2</span> Pure Nothing (14) </h4>
+<div class="outline-text-4" id="text-2.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2.3" class="outline-4">
+<h4 id="sec-2.2.3"><span class="section-number-4">2.2.3</span> Becoming (15) </h4>
+<div class="outline-text-4" id="text-2.2.3">
+
+<p>From the beginning, Hegel's logic is a play between (a) <i>stasis</i>,
+(b) <i>movement</i>, and, in addition, (c) the unity of stasis and
+movement.
+</p>
+<p>
+Becoming is the first name of that unity.
+</p>
+<p>
+Becoming represents <i>movement</i>. Movement can be perceived
+only because it has as background the static, passive
+non-movement of Pure Being and Nothing.
+</p>
+<p>
+Becoming has a dual nature. It arises as the relation
+between Being/Nothing and Absolute Knowing. As a relation,
+it is <i>composed</i> of simpler parts. It is a complex entity.
+In its complexity, Becoming moves. But when we think of
+Becoming as such, we freeze it, so that it does not move.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3"><span class="section-number-3">2.3</span> Step 2 Something </h3>
+<div class="outline-text-3" id="text-2.3">
+
+
+</div>
+
+<div id="outline-container-2.3.1" class="outline-4">
+<h4 id="sec-2.3.1"><span class="section-number-4">2.3.1</span> Determinate Being (Quality) (48) </h4>
+<div class="outline-text-4" id="text-2.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3.2" class="outline-4">
+<h4 id="sec-2.3.2"><span class="section-number-4">2.3.2</span> Quality and Negation (58) </h4>
+<div class="outline-text-4" id="text-2.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3.3" class="outline-4">
+<h4 id="sec-2.3.3"><span class="section-number-4">2.3.3</span> Something (63) </h4>
+<div class="outline-text-4" id="text-2.3.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4"><span class="section-number-3">2.4</span> Step 3 Determination of the In-Itself </h3>
+<div class="outline-text-3" id="text-2.4">
+
+
+</div>
+
+<div id="outline-container-2.4.1" class="outline-4">
+<h4 id="sec-2.4.1"><span class="section-number-4">2.4.1</span> Something/Other (70) </h4>
+<div class="outline-text-4" id="text-2.4.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4.2" class="outline-4">
+<h4 id="sec-2.4.2"><span class="section-number-4">2.4.2</span> Being-for-other/Being-in-itself (73) </h4>
+<div class="outline-text-4" id="text-2.4.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4.3" class="outline-4">
+<h4 id="sec-2.4.3"><span class="section-number-4">2.4.3</span> Determination of the In-itself (78) </h4>
+<div class="outline-text-4" id="text-2.4.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.5" class="outline-3">
+<h3 id="sec-2.5"><span class="section-number-3">2.5</span> Step 4 Limit (Determinateness as Such) </h3>
+<div class="outline-text-3" id="text-2.5">
+
+
+</div>
+
+<div id="outline-container-2.5.1" class="outline-4">
+<h4 id="sec-2.5.1"><span class="section-number-4">2.5.1</span> Constitution (79) </h4>
+<div class="outline-text-4" id="text-2.5.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.5.2" class="outline-4">
+<h4 id="sec-2.5.2"><span class="section-number-4">2.5.2</span> Constitution v. Determination (82) </h4>
+<div class="outline-text-4" id="text-2.5.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.5.3" class="outline-4">
+<h4 id="sec-2.5.3"><span class="section-number-4">2.5.3</span> Limit (Determinateness as Such) (83) </h4>
+<div class="outline-text-4" id="text-2.5.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.6" class="outline-3">
+<h3 id="sec-2.6"><span class="section-number-3">2.6</span> Step 5 The Ought </h3>
+<div class="outline-text-3" id="text-2.6">
+
+
+</div>
+
+<div id="outline-container-2.6.1" class="outline-4">
+<h4 id="sec-2.6.1"><span class="section-number-4">2.6.1</span> Finitude (87) </h4>
+<div class="outline-text-4" id="text-2.6.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.6.2" class="outline-4">
+<h4 id="sec-2.6.2"><span class="section-number-4">2.6.2</span> Limitation (87) </h4>
+<div class="outline-text-4" id="text-2.6.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.6.3" class="outline-4">
+<h4 id="sec-2.6.3"><span class="section-number-4">2.6.3</span> The Ought (88) </h4>
+<div class="outline-text-4" id="text-2.6.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.7" class="outline-3">
+<h3 id="sec-2.7"><span class="section-number-3">2.7</span> Step 6 Infinity </h3>
+<div class="outline-text-3" id="text-2.7">
+
+
+</div>
+
+<div id="outline-container-2.7.1" class="outline-4">
+<h4 id="sec-2.7.1"><span class="section-number-4">2.7.1</span> Enriched Finite (92) </h4>
+<div class="outline-text-4" id="text-2.7.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7.2" class="outline-4">
+<h4 id="sec-2.7.2"><span class="section-number-4">2.7.2</span> Another Finite (92) </h4>
+<div class="outline-text-4" id="text-2.7.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7.3" class="outline-4">
+<h4 id="sec-2.7.3"><span class="section-number-4">2.7.3</span> Infinity (93) </h4>
+<div class="outline-text-4" id="text-2.7.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.8" class="outline-3">
+<h3 id="sec-2.8"><span class="section-number-3">2.8</span> Step 7 True Infinity </h3>
+<div class="outline-text-3" id="text-2.8">
+
+
+</div>
+
+<div id="outline-container-2.8.1" class="outline-4">
+<h4 id="sec-2.8.1"><span class="section-number-4">2.8.1</span> Spurious Infinity (94) </h4>
+<div class="outline-text-4" id="text-2.8.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.8.2" class="outline-4">
+<h4 id="sec-2.8.2"><span class="section-number-4">2.8.2</span> Spurious Infinity and Its Other (94) </h4>
+<div class="outline-text-4" id="text-2.8.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.8.3" class="outline-4">
+<h4 id="sec-2.8.3"><span class="section-number-4">2.8.3</span> True Infinity (97) </h4>
+<div class="outline-text-4" id="text-2.8.3">
+
+<p>The Spurious Infinite and its finite beyond modulate
+back and forth. The name of this movement is the
+True Infinite.
+</p>
+<p>
+True Infinity resembles, but is more advanced than,
+Becoming.
+</p>
+<p>
+The True Infinite is that which becomes something else
+while remaining what it is. (97)
+</p>
+<p>
+Hegel calls the True Infinite the "fundamental concept
+of philosophy".
+</p>
+<p>
+The contribution of the True Infinite is that it
+encompasses both the Finite and its beyond.
+</p>
+<p>
+In True Infinity, Limit (between the Finites) and 
+Limitation (the Other of the Spurious Infinite)
+are sublated.
+</p>
+<p>
+Kant's doctrine of the thing-in-itself depends on
+the self-identity of the phenomenal thing. Better
+to let the Finite do what it does best&ndash;cease-to-be. (99)
+</p>
+<p>
+The very act of ceasing <i>is</i> True Infinity. (99)
+</p>
+<p>
+True Infinity, "contradiction as displayed in the
+sphere of being", is a higher reality than Determinate
+Being. It has acquired a more concrete content and
+therefore better deserves the name "reality".
+</p>
+<p>
+A better word for True Infinity may be <i>ideality</i>. (100)
+</p>
+<p>
+(&hellip;TO BE CONTINUED&hellip;)
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Absolute Idea (Carlson-2007.(593-603)) </h2>
+<div class="outline-text-2" id="text-3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 79 Steps of the Logic </h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4.1" class="outline-3">
+<h3 id="sec-4.1"><span class="section-number-3">4.1</span> Quality (1-10) </h3>
+<div class="outline-text-3" id="text-4.1">
+
+
+</div>
+
+<div id="outline-container-4.1.1" class="outline-4">
+<h4 id="sec-4.1.1"><span class="section-number-4">4.1.1</span> Becoming (15) </h4>
+<div class="outline-text-4" id="text-4.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.2" class="outline-4">
+<h4 id="sec-4.1.2"><span class="section-number-4">4.1.2</span> Something (63) </h4>
+<div class="outline-text-4" id="text-4.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.3" class="outline-4">
+<h4 id="sec-4.1.3"><span class="section-number-4">4.1.3</span> Determination of the In-Itself (78) </h4>
+<div class="outline-text-4" id="text-4.1.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.4" class="outline-4">
+<h4 id="sec-4.1.4"><span class="section-number-4">4.1.4</span> Limit (Determinateness as such) (83) </h4>
+<div class="outline-text-4" id="text-4.1.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.5" class="outline-4">
+<h4 id="sec-4.1.5"><span class="section-number-4">4.1.5</span> The Ought (88) </h4>
+<div class="outline-text-4" id="text-4.1.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.6" class="outline-4">
+<h4 id="sec-4.1.6"><span class="section-number-4">4.1.6</span> Infinity (93) </h4>
+<div class="outline-text-4" id="text-4.1.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.7" class="outline-4">
+<h4 id="sec-4.1.7"><span class="section-number-4">4.1.7</span> True Infinity (97) </h4>
+<div class="outline-text-4" id="text-4.1.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.8" class="outline-4">
+<h4 id="sec-4.1.8"><span class="section-number-4">4.1.8</span> The One (110) </h4>
+<div class="outline-text-4" id="text-4.1.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.9" class="outline-4">
+<h4 id="sec-4.1.9"><span class="section-number-4">4.1.9</span> Repulsion (120) </h4>
+<div class="outline-text-4" id="text-4.1.9">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.1.10" class="outline-4">
+<h4 id="sec-4.1.10"><span class="section-number-4">4.1.10</span> Quantity (132) </h4>
+<div class="outline-text-4" id="text-4.1.10">
+
+<p>Quantity is the thinnest of entities. All its
+content is expelled; it is a mere ghost of Being. (132)
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4.2" class="outline-3">
+<h3 id="sec-4.2"><span class="section-number-3">4.2</span> Quantity (11-17) </h3>
+<div class="outline-text-3" id="text-4.2">
+
+
+</div>
+
+<div id="outline-container-4.2.1" class="outline-4">
+<h4 id="sec-4.2.1"><span class="section-number-4">4.2.1</span> Enriched Quantity (144) </h4>
+<div class="outline-text-4" id="text-4.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.2.2" class="outline-4">
+<h4 id="sec-4.2.2"><span class="section-number-4">4.2.2</span> Quantum (155) </h4>
+<div class="outline-text-4" id="text-4.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.2.3" class="outline-4">
+<h4 id="sec-4.2.3"><span class="section-number-4">4.2.3</span> Number (159) </h4>
+<div class="outline-text-4" id="text-4.2.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.2.4" class="outline-4">
+<h4 id="sec-4.2.4"><span class="section-number-4">4.2.4</span> The Quality of Quantum (168) </h4>
+<div class="outline-text-4" id="text-4.2.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.2.5" class="outline-4">
+<h4 id="sec-4.2.5"><span class="section-number-4">4.2.5</span> Qualitative Something (170) </h4>
+<div class="outline-text-4" id="text-4.2.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.2.6" class="outline-4">
+<h4 id="sec-4.2.6"><span class="section-number-4">4.2.6</span> Infinitely Great and Infinitely Small (179) </h4>
+<div class="outline-text-4" id="text-4.2.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.2.7" class="outline-4">
+<h4 id="sec-4.2.7"><span class="section-number-4">4.2.7</span> Ratio of Powers (189) </h4>
+<div class="outline-text-4" id="text-4.2.7">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.3" class="outline-3">
+<h3 id="sec-4.3"><span class="section-number-3">4.3</span> Measure (18-23) </h3>
+<div class="outline-text-3" id="text-4.3">
+
+
+</div>
+
+<div id="outline-container-4.3.1" class="outline-4">
+<h4 id="sec-4.3.1"><span class="section-number-4">4.3.1</span> Specifying Measure (208) </h4>
+<div class="outline-text-4" id="text-4.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.3.2" class="outline-4">
+<h4 id="sec-4.3.2"><span class="section-number-4">4.3.2</span> Ratio of Measures (210) </h4>
+<div class="outline-text-4" id="text-4.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.3.3" class="outline-4">
+<h4 id="sec-4.3.3"><span class="section-number-4">4.3.3</span> Elective Affinity (227) </h4>
+<div class="outline-text-4" id="text-4.3.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.3.4" class="outline-4">
+<h4 id="sec-4.3.4"><span class="section-number-4">4.3.4</span> Nodal Line (231) </h4>
+<div class="outline-text-4" id="text-4.3.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.3.5" class="outline-4">
+<h4 id="sec-4.3.5"><span class="section-number-4">4.3.5</span> Infinite For Itself (236) </h4>
+<div class="outline-text-4" id="text-4.3.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.3.6" class="outline-4">
+<h4 id="sec-4.3.6"><span class="section-number-4">4.3.6</span> Essence (246) </h4>
+<div class="outline-text-4" id="text-4.3.6">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.4" class="outline-3">
+<h3 id="sec-4.4"><span class="section-number-3">4.4</span> Reflection (24-33) </h3>
+<div class="outline-text-3" id="text-4.4">
+
+
+</div>
+
+<div id="outline-container-4.4.1" class="outline-4">
+<h4 id="sec-4.4.1"><span class="section-number-4">4.4.1</span> Reflection (262) </h4>
+<div class="outline-text-4" id="text-4.4.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.2" class="outline-4">
+<h4 id="sec-4.4.2"><span class="section-number-4">4.4.2</span> Determining Reflection (275) </h4>
+<div class="outline-text-4" id="text-4.4.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.3" class="outline-4">
+<h4 id="sec-4.4.3"><span class="section-number-4">4.4.3</span> Opposition (289) </h4>
+<div class="outline-text-4" id="text-4.4.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.4" class="outline-4">
+<h4 id="sec-4.4.4"><span class="section-number-4">4.4.4</span> Contradiction (297) </h4>
+<div class="outline-text-4" id="text-4.4.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.5" class="outline-4">
+<h4 id="sec-4.4.5"><span class="section-number-4">4.4.5</span> Ground (300) </h4>
+<div class="outline-text-4" id="text-4.4.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.6" class="outline-4">
+<h4 id="sec-4.4.6"><span class="section-number-4">4.4.6</span> Form (Ground Relation) (311) </h4>
+<div class="outline-text-4" id="text-4.4.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.7" class="outline-4">
+<h4 id="sec-4.4.7"><span class="section-number-4">4.4.7</span> Content (Inwardization of Outward Form) (316) </h4>
+<div class="outline-text-4" id="text-4.4.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.8" class="outline-4">
+<h4 id="sec-4.4.8"><span class="section-number-4">4.4.8</span> Determinate Ground (318) </h4>
+<div class="outline-text-4" id="text-4.4.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.9" class="outline-4">
+<h4 id="sec-4.4.9"><span class="section-number-4">4.4.9</span> Complete Ground (326) </h4>
+<div class="outline-text-4" id="text-4.4.9">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.4.10" class="outline-4">
+<h4 id="sec-4.4.10"><span class="section-number-4">4.4.10</span> Fact (332) </h4>
+<div class="outline-text-4" id="text-4.4.10">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.5" class="outline-3">
+<h3 id="sec-4.5"><span class="section-number-3">4.5</span> Appearance (34-42) </h3>
+<div class="outline-text-3" id="text-4.5">
+
+
+</div>
+
+<div id="outline-container-4.5.1" class="outline-4">
+<h4 id="sec-4.5.1"><span class="section-number-4">4.5.1</span> The Totality of Existence (348) </h4>
+<div class="outline-text-4" id="text-4.5.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.2" class="outline-4">
+<h4 id="sec-4.5.2"><span class="section-number-4">4.5.2</span> Reciprocal Action of Things (352) </h4>
+<div class="outline-text-4" id="text-4.5.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.3" class="outline-4">
+<h4 id="sec-4.5.3"><span class="section-number-4">4.5.3</span> Constitution of the Thing out of its Matters (355) </h4>
+<div class="outline-text-4" id="text-4.5.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.4" class="outline-4">
+<h4 id="sec-4.5.4"><span class="section-number-4">4.5.4</span> Appearance (358) </h4>
+<div class="outline-text-4" id="text-4.5.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.5" class="outline-4">
+<h4 id="sec-4.5.5"><span class="section-number-4">4.5.5</span> The Law of Law and Appearance (364) </h4>
+<div class="outline-text-4" id="text-4.5.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.6" class="outline-4">
+<h4 id="sec-4.5.6"><span class="section-number-4">4.5.6</span> Essential Relation (372) </h4>
+<div class="outline-text-4" id="text-4.5.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.7" class="outline-4">
+<h4 id="sec-4.5.7"><span class="section-number-4">4.5.7</span> Conditioned Relation (378) </h4>
+<div class="outline-text-4" id="text-4.5.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.8" class="outline-4">
+<h4 id="sec-4.5.8"><span class="section-number-4">4.5.8</span> Self-Externalization of Force (Expression) (385) </h4>
+<div class="outline-text-4" id="text-4.5.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.5.9" class="outline-4">
+<h4 id="sec-4.5.9"><span class="section-number-4">4.5.9</span> Actuality (388) </h4>
+<div class="outline-text-4" id="text-4.5.9">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.6" class="outline-3">
+<h3 id="sec-4.6"><span class="section-number-3">4.6</span> Actuality (43-52) </h3>
+<div class="outline-text-3" id="text-4.6">
+
+
+</div>
+
+<div id="outline-container-4.6.1" class="outline-4">
+<h4 id="sec-4.6.1"><span class="section-number-4">4.6.1</span> Attribute (397) </h4>
+<div class="outline-text-4" id="text-4.6.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.2" class="outline-4">
+<h4 id="sec-4.6.2"><span class="section-number-4">4.6.2</span> Mode (399) </h4>
+<div class="outline-text-4" id="text-4.6.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.3" class="outline-4">
+<h4 id="sec-4.6.3"><span class="section-number-4">4.6.3</span> Contingency (405) </h4>
+<div class="outline-text-4" id="text-4.6.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.4" class="outline-4">
+<h4 id="sec-4.6.4"><span class="section-number-4">4.6.4</span> Real Necessity (Totality of Conditions) (408) </h4>
+<div class="outline-text-4" id="text-4.6.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.5" class="outline-4">
+<h4 id="sec-4.6.5"><span class="section-number-4">4.6.5</span> Substance (412) </h4>
+<div class="outline-text-4" id="text-4.6.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.6" class="outline-4">
+<h4 id="sec-4.6.6"><span class="section-number-4">4.6.6</span> Power (Substantiality) (417) </h4>
+<div class="outline-text-4" id="text-4.6.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.7" class="outline-4">
+<h4 id="sec-4.6.7"><span class="section-number-4">4.6.7</span> Original Substance (419) </h4>
+<div class="outline-text-4" id="text-4.6.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.8" class="outline-4">
+<h4 id="sec-4.6.8"><span class="section-number-4">4.6.8</span> Internalized Causality (423) </h4>
+<div class="outline-text-4" id="text-4.6.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.9" class="outline-4">
+<h4 id="sec-4.6.9"><span class="section-number-4">4.6.9</span> Reciprocal Action (Absolute Substance) (426) </h4>
+<div class="outline-text-4" id="text-4.6.9">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.6.10" class="outline-4">
+<h4 id="sec-4.6.10"><span class="section-number-4">4.6.10</span> The Notion (428) </h4>
+<div class="outline-text-4" id="text-4.6.10">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.7" class="outline-3">
+<h3 id="sec-4.7"><span class="section-number-3">4.7</span> Subjectivity (53-62) </h3>
+<div class="outline-text-3" id="text-4.7">
+
+
+</div>
+
+<div id="outline-container-4.7.1" class="outline-4">
+<h4 id="sec-4.7.1"><span class="section-number-4">4.7.1</span> Individual Notion (455) </h4>
+<div class="outline-text-4" id="text-4.7.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.2" class="outline-4">
+<h4 id="sec-4.7.2"><span class="section-number-4">4.7.2</span> Negative Judgment (469) </h4>
+<div class="outline-text-4" id="text-4.7.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.3" class="outline-4">
+<h4 id="sec-4.7.3"><span class="section-number-4">4.7.3</span> Infinite Judgment (472) </h4>
+<div class="outline-text-4" id="text-4.7.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.4" class="outline-4">
+<h4 id="sec-4.7.4"><span class="section-number-4">4.7.4</span> Judgment of a Reflection (476) </h4>
+<div class="outline-text-4" id="text-4.7.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.5" class="outline-4">
+<h4 id="sec-4.7.5"><span class="section-number-4">4.7.5</span> Universal Judgment (480) </h4>
+<div class="outline-text-4" id="text-4.7.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.6" class="outline-4">
+<h4 id="sec-4.7.6"><span class="section-number-4">4.7.6</span> Disjunctive Judgment (486) </h4>
+<div class="outline-text-4" id="text-4.7.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.7" class="outline-4">
+<h4 id="sec-4.7.7"><span class="section-number-4">4.7.7</span> Apodeictic Judgment (Syllogism) (492) </h4>
+<div class="outline-text-4" id="text-4.7.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.8" class="outline-4">
+<h4 id="sec-4.7.8"><span class="section-number-4">4.7.8</span> IUP<sub>E</sub> (UUU<sub>E</sub>) (502) </h4>
+<div class="outline-text-4" id="text-4.7.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.9" class="outline-4">
+<h4 id="sec-4.7.9"><span class="section-number-4">4.7.9</span> Syllogism of Analogy (508) </h4>
+<div class="outline-text-4" id="text-4.7.9">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.7.10" class="outline-4">
+<h4 id="sec-4.7.10"><span class="section-number-4">4.7.10</span> Disjunctive Syllogism (IUP<sub>N</sub>) (Objectivity) (517) </h4>
+<div class="outline-text-4" id="text-4.7.10">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.8" class="outline-3">
+<h3 id="sec-4.8"><span class="section-number-3">4.8</span> Objectivity (63-70) </h3>
+<div class="outline-text-3" id="text-4.8">
+
+
+</div>
+
+<div id="outline-container-4.8.1" class="outline-4">
+<h4 id="sec-4.8.1"><span class="section-number-4">4.8.1</span> Nature of Mechanical Objects (528) </h4>
+<div class="outline-text-4" id="text-4.8.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.2" class="outline-4">
+<h4 id="sec-4.8.2"><span class="section-number-4">4.8.2</span> Rest (531) </h4>
+<div class="outline-text-4" id="text-4.8.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.3" class="outline-4">
+<h4 id="sec-4.8.3"><span class="section-number-4">4.8.3</span> Oneness of the Object (535) </h4>
+<div class="outline-text-4" id="text-4.8.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.4" class="outline-4">
+<h4 id="sec-4.8.4"><span class="section-number-4">4.8.4</span> Free Mechanism (537) </h4>
+<div class="outline-text-4" id="text-4.8.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.5" class="outline-4">
+<h4 id="sec-4.8.5"><span class="section-number-4">4.8.5</span> Chemism (540) </h4>
+<div class="outline-text-4" id="text-4.8.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.6" class="outline-4">
+<h4 id="sec-4.8.6"><span class="section-number-4">4.8.6</span> Abstract Neutrality (543) </h4>
+<div class="outline-text-4" id="text-4.8.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.7" class="outline-4">
+<h4 id="sec-4.8.7"><span class="section-number-4">4.8.7</span> Neutrality and Tension (End) (545) </h4>
+<div class="outline-text-4" id="text-4.8.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.8.8" class="outline-4">
+<h4 id="sec-4.8.8"><span class="section-number-4">4.8.8</span> Realized End (Idea) (554) </h4>
+<div class="outline-text-4" id="text-4.8.8">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4.9" class="outline-3">
+<h3 id="sec-4.9"><span class="section-number-3">4.9</span> The Idea (71-79) </h3>
+<div class="outline-text-3" id="text-4.9">
+
+
+</div>
+
+<div id="outline-container-4.9.1" class="outline-4">
+<h4 id="sec-4.9.1"><span class="section-number-4">4.9.1</span> Organism (565) </h4>
+<div class="outline-text-4" id="text-4.9.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.2" class="outline-4">
+<h4 id="sec-4.9.2"><span class="section-number-4">4.9.2</span> Reproduction (567) </h4>
+<div class="outline-text-4" id="text-4.9.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.3" class="outline-4">
+<h4 id="sec-4.9.3"><span class="section-number-4">4.9.3</span> Assimilation of the Object (569) </h4>
+<div class="outline-text-4" id="text-4.9.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.4" class="outline-4">
+<h4 id="sec-4.9.4"><span class="section-number-4">4.9.4</span> Cognition (570) </h4>
+<div class="outline-text-4" id="text-4.9.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.5" class="outline-4">
+<h4 id="sec-4.9.5"><span class="section-number-4">4.9.5</span> The True (578) </h4>
+<div class="outline-text-4" id="text-4.9.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.6" class="outline-4">
+<h4 id="sec-4.9.6"><span class="section-number-4">4.9.6</span> Scientific Laws (583) </h4>
+<div class="outline-text-4" id="text-4.9.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.7" class="outline-4">
+<h4 id="sec-4.9.7"><span class="section-number-4">4.9.7</span> Theorem (588) </h4>
+<div class="outline-text-4" id="text-4.9.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.8" class="outline-4">
+<h4 id="sec-4.9.8"><span class="section-number-4">4.9.8</span> Absolute Idea (591) </h4>
+<div class="outline-text-4" id="text-4.9.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-4.9.9" class="outline-4">
+<h4 id="sec-4.9.9"><span class="section-number-4">4.9.9</span> Absolute Knowing (Method) (599) </h4>
+<div class="outline-text-4" id="text-4.9.9">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Appendix 1: Science of Logic Outline </h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5.1" class="outline-3">
+<h3 id="sec-5.1"><span class="section-number-3">5.1</span> Objective Logic </h3>
+<div class="outline-text-3" id="text-5.1">
+
+
+</div>
+
+<div id="outline-container-5.1.1" class="outline-4">
+<h4 id="sec-5.1.1"><span class="section-number-4">5.1.1</span> Doctrine of Being </h4>
+<div class="outline-text-4" id="text-5.1.1">
+
+
+</div>
+
+<div id="outline-container-5.1.1.1" class="outline-5">
+<h5 id="sec-5.1.1.1"><span class="section-number-5">5.1.1.1</span> Quality </h5>
+<div class="outline-text-5" id="text-5.1.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-5.1.1.2" class="outline-5">
+<h5 id="sec-5.1.1.2"><span class="section-number-5">5.1.1.2</span> Quantity </h5>
+<div class="outline-text-5" id="text-5.1.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-5.1.1.3" class="outline-5">
+<h5 id="sec-5.1.1.3"><span class="section-number-5">5.1.1.3</span> Measure </h5>
+<div class="outline-text-5" id="text-5.1.1.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5.1.2" class="outline-4">
+<h4 id="sec-5.1.2"><span class="section-number-4">5.1.2</span> Doctrine of Essence </h4>
+<div class="outline-text-4" id="text-5.1.2">
+
+
+</div>
+
+<div id="outline-container-5.1.2.1" class="outline-5">
+<h5 id="sec-5.1.2.1"><span class="section-number-5">5.1.2.1</span> Reflection </h5>
+<div class="outline-text-5" id="text-5.1.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-5.1.2.2" class="outline-5">
+<h5 id="sec-5.1.2.2"><span class="section-number-5">5.1.2.2</span> Appearance </h5>
+<div class="outline-text-5" id="text-5.1.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-5.1.2.3" class="outline-5">
+<h5 id="sec-5.1.2.3"><span class="section-number-5">5.1.2.3</span> Actuality </h5>
+<div class="outline-text-5" id="text-5.1.2.3">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5.2" class="outline-3">
+<h3 id="sec-5.2"><span class="section-number-3">5.2</span> Subjective Logic </h3>
+<div class="outline-text-3" id="text-5.2">
+
+
+</div>
+
+<div id="outline-container-5.2.1" class="outline-4">
+<h4 id="sec-5.2.1"><span class="section-number-4">5.2.1</span> Doctrine of Concept </h4>
+<div class="outline-text-4" id="text-5.2.1">
+
+
+</div>
+
+<div id="outline-container-5.2.1.1" class="outline-5">
+<h5 id="sec-5.2.1.1"><span class="section-number-5">5.2.1.1</span> Subjectivity </h5>
+<div class="outline-text-5" id="text-5.2.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-5.2.1.2" class="outline-5">
+<h5 id="sec-5.2.1.2"><span class="section-number-5">5.2.1.2</span> Objectivity </h5>
+<div class="outline-text-5" id="text-5.2.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-5.2.1.3" class="outline-5">
+<h5 id="sec-5.2.1.3"><span class="section-number-5">5.2.1.3</span> The Idea </h5>
+<div class="outline-text-5" id="text-5.2.1.3">
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Appendix 2: Encyclopedia Logic Outline </h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6.1" class="outline-3">
+<h3 id="sec-6.1"><span class="section-number-3">6.1</span> Introduction (1-18) </h3>
+<div class="outline-text-3" id="text-6.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.2" class="outline-3">
+<h3 id="sec-6.2"><span class="section-number-3">6.2</span> Preliminary Conception (19-83) </h3>
+<div class="outline-text-3" id="text-6.2">
+
+
+</div>
+
+<div id="outline-container-6.2.1" class="outline-4">
+<h4 id="sec-6.2.1"><span class="section-number-4">6.2.1</span> First position of thought towards objectivity: Metaphysics (26-36) </h4>
+<div class="outline-text-4" id="text-6.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.2.2" class="outline-4">
+<h4 id="sec-6.2.2"><span class="section-number-4">6.2.2</span> Second position of thought towards objectivity (37-60) </h4>
+<div class="outline-text-4" id="text-6.2.2">
+
+
+</div>
+
+<div id="outline-container-6.2.2.1" class="outline-5">
+<h5 id="sec-6.2.2.1"><span class="section-number-5">6.2.2.1</span> Empiricism (37) </h5>
+<div class="outline-text-5" id="text-6.2.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.2.2.2" class="outline-5">
+<h5 id="sec-6.2.2.2"><span class="section-number-5">6.2.2.2</span> Critical Philosophy (40) </h5>
+<div class="outline-text-5" id="text-6.2.2.2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.2.3" class="outline-4">
+<h4 id="sec-6.2.3"><span class="section-number-4">6.2.3</span> Third position of thought towards objectvity: Immediate knowing (61-78) </h4>
+<div class="outline-text-4" id="text-6.2.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.2.4" class="outline-4">
+<h4 id="sec-6.2.4"><span class="section-number-4">6.2.4</span> More detailed conception of the division of the Logic (79-83) </h4>
+<div class="outline-text-4" id="text-6.2.4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.3" class="outline-3">
+<h3 id="sec-6.3"><span class="section-number-3">6.3</span> The Doctrine of Being (84-111) </h3>
+<div class="outline-text-3" id="text-6.3">
+
+
+</div>
+
+<div id="outline-container-6.3.1" class="outline-4">
+<h4 id="sec-6.3.1"><span class="section-number-4">6.3.1</span> Quality </h4>
+<div class="outline-text-4" id="text-6.3.1">
+
+
+</div>
+
+<div id="outline-container-6.3.1.1" class="outline-5">
+<h5 id="sec-6.3.1.1"><span class="section-number-5">6.3.1.1</span> Being (86) </h5>
+<div class="outline-text-5" id="text-6.3.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.3.1.2" class="outline-5">
+<h5 id="sec-6.3.1.2"><span class="section-number-5">6.3.1.2</span> Existence (89) </h5>
+<div class="outline-text-5" id="text-6.3.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.3.1.3" class="outline-5">
+<h5 id="sec-6.3.1.3"><span class="section-number-5">6.3.1.3</span> Being-for-itself (96) </h5>
+<div class="outline-text-5" id="text-6.3.1.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.3.2" class="outline-4">
+<h4 id="sec-6.3.2"><span class="section-number-4">6.3.2</span> Quantity (99) </h4>
+<div class="outline-text-4" id="text-6.3.2">
+
+
+</div>
+
+<div id="outline-container-6.3.2.1" class="outline-5">
+<h5 id="sec-6.3.2.1"><span class="section-number-5">6.3.2.1</span> Pure quantity (99) </h5>
+<div class="outline-text-5" id="text-6.3.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.3.2.2" class="outline-5">
+<h5 id="sec-6.3.2.2"><span class="section-number-5">6.3.2.2</span> Quantum (101) </h5>
+<div class="outline-text-5" id="text-6.3.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.3.2.3" class="outline-5">
+<h5 id="sec-6.3.2.3"><span class="section-number-5">6.3.2.3</span> Degree (103) </h5>
+<div class="outline-text-5" id="text-6.3.2.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.3.3" class="outline-4">
+<h4 id="sec-6.3.3"><span class="section-number-4">6.3.3</span> Measure (107) </h4>
+<div class="outline-text-4" id="text-6.3.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.4" class="outline-3">
+<h3 id="sec-6.4"><span class="section-number-3">6.4</span> The Doctrine of Essence (112-159) </h3>
+<div class="outline-text-3" id="text-6.4">
+
+
+</div>
+
+<div id="outline-container-6.4.1" class="outline-4">
+<h4 id="sec-6.4.1"><span class="section-number-4">6.4.1</span> The essence as ground of concrete existence (115) </h4>
+<div class="outline-text-4" id="text-6.4.1">
+
+
+</div>
+
+<div id="outline-container-6.4.1.1" class="outline-5">
+<h5 id="sec-6.4.1.1"><span class="section-number-5">6.4.1.1</span> The pure determinations of reflection (115) </h5>
+<div class="outline-text-5" id="text-6.4.1.1">
+
+
+</div>
+
+<div id="outline-container-6.4.1.1.1" class="outline-6">
+<h6 id="sec-6.4.1.1.1"><span class="section-number-6">6.4.1.1.1</span> Identity (115) </h6>
+<div class="outline-text-6" id="text-6.4.1.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.1.1.2" class="outline-6">
+<h6 id="sec-6.4.1.1.2"><span class="section-number-6">6.4.1.1.2</span> Difference (116) </h6>
+<div class="outline-text-6" id="text-6.4.1.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.1.1.3" class="outline-6">
+<h6 id="sec-6.4.1.1.3"><span class="section-number-6">6.4.1.1.3</span> Ground (121) </h6>
+<div class="outline-text-6" id="text-6.4.1.1.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.4.1.2" class="outline-5">
+<h5 id="sec-6.4.1.2"><span class="section-number-5">6.4.1.2</span> Concrete existence (123) </h5>
+<div class="outline-text-5" id="text-6.4.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.1.3" class="outline-5">
+<h5 id="sec-6.4.1.3"><span class="section-number-5">6.4.1.3</span> The thing (125) </h5>
+<div class="outline-text-5" id="text-6.4.1.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.4.2" class="outline-4">
+<h4 id="sec-6.4.2"><span class="section-number-4">6.4.2</span> Appearance (131) </h4>
+<div class="outline-text-4" id="text-6.4.2">
+
+
+</div>
+
+<div id="outline-container-6.4.2.1" class="outline-5">
+<h5 id="sec-6.4.2.1"><span class="section-number-5">6.4.2.1</span> The world of appearance (132) </h5>
+<div class="outline-text-5" id="text-6.4.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.2.2" class="outline-5">
+<h5 id="sec-6.4.2.2"><span class="section-number-5">6.4.2.2</span> Content and form (133) </h5>
+<div class="outline-text-5" id="text-6.4.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.2.3" class="outline-5">
+<h5 id="sec-6.4.2.3"><span class="section-number-5">6.4.2.3</span> The relationship (135) </h5>
+<div class="outline-text-5" id="text-6.4.2.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.4.3" class="outline-4">
+<h4 id="sec-6.4.3"><span class="section-number-4">6.4.3</span> Actuality (142) </h4>
+<div class="outline-text-4" id="text-6.4.3">
+
+
+</div>
+
+<div id="outline-container-6.4.3.1" class="outline-5">
+<h5 id="sec-6.4.3.1"><span class="section-number-5">6.4.3.1</span> The relationship of substantiality (150) </h5>
+<div class="outline-text-5" id="text-6.4.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.3.2" class="outline-5">
+<h5 id="sec-6.4.3.2"><span class="section-number-5">6.4.3.2</span> The relationship of causality (153) </h5>
+<div class="outline-text-5" id="text-6.4.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4.3.3" class="outline-5">
+<h5 id="sec-6.4.3.3"><span class="section-number-5">6.4.3.3</span> Reciprocity (155) </h5>
+<div class="outline-text-5" id="text-6.4.3.3">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.5" class="outline-3">
+<h3 id="sec-6.5"><span class="section-number-3">6.5</span> The Doctrine of the Concept (160-244) </h3>
+<div class="outline-text-3" id="text-6.5">
+
+
+</div>
+
+<div id="outline-container-6.5.1" class="outline-4">
+<h4 id="sec-6.5.1"><span class="section-number-4">6.5.1</span> The subjective concept (163) </h4>
+<div class="outline-text-4" id="text-6.5.1">
+
+
+</div>
+
+<div id="outline-container-6.5.1.1" class="outline-5">
+<h5 id="sec-6.5.1.1"><span class="section-number-5">6.5.1.1</span> The concept as such (163) </h5>
+<div class="outline-text-5" id="text-6.5.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.2" class="outline-5">
+<h5 id="sec-6.5.1.2"><span class="section-number-5">6.5.1.2</span> The judgment (166) </h5>
+<div class="outline-text-5" id="text-6.5.1.2">
+
+
+</div>
+
+<div id="outline-container-6.5.1.2.1" class="outline-6">
+<h6 id="sec-6.5.1.2.1"><span class="section-number-6">6.5.1.2.1</span> Qualitative judgment (172) </h6>
+<div class="outline-text-6" id="text-6.5.1.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.2.2" class="outline-6">
+<h6 id="sec-6.5.1.2.2"><span class="section-number-6">6.5.1.2.2</span> The judgment of reflection (174) </h6>
+<div class="outline-text-6" id="text-6.5.1.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.2.3" class="outline-6">
+<h6 id="sec-6.5.1.2.3"><span class="section-number-6">6.5.1.2.3</span> Judgment of necessity (177) </h6>
+<div class="outline-text-6" id="text-6.5.1.2.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.2.4" class="outline-6">
+<h6 id="sec-6.5.1.2.4"><span class="section-number-6">6.5.1.2.4</span> The judgment of the concept (178) </h6>
+<div class="outline-text-6" id="text-6.5.1.2.4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.3" class="outline-5">
+<h5 id="sec-6.5.1.3"><span class="section-number-5">6.5.1.3</span> The syllogism (181) </h5>
+<div class="outline-text-5" id="text-6.5.1.3">
+
+
+</div>
+
+<div id="outline-container-6.5.1.3.1" class="outline-6">
+<h6 id="sec-6.5.1.3.1"><span class="section-number-6">6.5.1.3.1</span> Qualitative syllogism (183) </h6>
+<div class="outline-text-6" id="text-6.5.1.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.3.2" class="outline-6">
+<h6 id="sec-6.5.1.3.2"><span class="section-number-6">6.5.1.3.2</span> Syllogism of reflection (190) </h6>
+<div class="outline-text-6" id="text-6.5.1.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.1.3.3" class="outline-6">
+<h6 id="sec-6.5.1.3.3"><span class="section-number-6">6.5.1.3.3</span> Syllogism of necessity (191) </h6>
+<div class="outline-text-6" id="text-6.5.1.3.3">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.5.2" class="outline-4">
+<h4 id="sec-6.5.2"><span class="section-number-4">6.5.2</span> The object (194) </h4>
+<div class="outline-text-4" id="text-6.5.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.3" class="outline-4">
+<h4 id="sec-6.5.3"><span class="section-number-4">6.5.3</span> The idea (213) </h4>
+<div class="outline-text-4" id="text-6.5.3">
+
+
+</div>
+
+<div id="outline-container-6.5.3.1" class="outline-5">
+<h5 id="sec-6.5.3.1"><span class="section-number-5">6.5.3.1</span> Life (216) </h5>
+<div class="outline-text-5" id="text-6.5.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.3.2" class="outline-5">
+<h5 id="sec-6.5.3.2"><span class="section-number-5">6.5.3.2</span> Knowing (223) </h5>
+<div class="outline-text-5" id="text-6.5.3.2">
+
+
+</div>
+
+<div id="outline-container-6.5.3.2.1" class="outline-6">
+<h6 id="sec-6.5.3.2.1"><span class="section-number-6">6.5.3.2.1</span> Knowing (226) </h6>
+<div class="outline-text-6" id="text-6.5.3.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5.3.2.2" class="outline-6">
+<h6 id="sec-6.5.3.2.2"><span class="section-number-6">6.5.3.2.2</span> Willing (233) </h6>
+<div class="outline-text-6" id="text-6.5.3.2.2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.5.3.3" class="outline-5">
+<h5 id="sec-6.5.3.3"><span class="section-number-5">6.5.3.3</span> The absolute idea (236) </h5>
+<div class="outline-text-5" id="text-6.5.3.3">
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> References </h2>
+<div class="outline-text-2" id="text-7">
+
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: GW Dean
+<a href="mailto:gwdean@gmail.com">&lt;gwdean@gmail.com&gt;</a>
+</p>
+<p class="date"> Date: 2013-11-17 Sun</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

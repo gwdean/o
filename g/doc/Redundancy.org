@@ -1,0 +1,39 @@
+* Redundancy
+adapted from 1992-Burt.(51-54)
+** 1.1 Network Expansion
+*** Network A
+(0 1 2 3 4)
+
+*** Network B
+(0 1 2 3 4 5 6 7 8)
+(1 2)
+(3 4)
+(5 6)
+(7 8)
+
+(0 1 2 .. 16)
+(1 2 3 4)
+(5 6 7 8)
+(9 10 11 12)
+(13 14 15 16)
+
+
+** 1.3 Strategic Network Expansion
+** 1.4 Optimizing for Structural Holes
+** Table 2.1
+Table 2.1 Size, Effective Size, and Efficiency
+Number of contacts
+Primary Secondary Effective size Efficiency
+Figure 1.1
+Network A 4 0 4.0 1.00
+Network B 8 0 4.0 0.50
+Network C 16 0 4.0 0.25
+
+Figure 1.3
+Network A' 4 0 4.0 1.00
+Network B' 4 4 4.0 1.00
+Network C' 4 12 4.0 1.00
+
+Figure 1.4
+Before 5 10 3.4 0.68
+After 5 24 5.0 1.00

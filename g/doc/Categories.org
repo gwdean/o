@@ -1,0 +1,31 @@
+* Categories
+** Category of finite sets and maps
+An *object* in this category is a finite set or collection.
+
+(the set of all women in this room)           is one object
+(the set of all desks in this room)           is another object
+(the set of all 26 letters in the alphabet)   is another object
+
+(1 2 3) is another object
+(3 4 5) is another object
+(3 2 1) is the same object as (1 2 3)
+
+A *map* in this category consists of three things:
+- a set /A/, called the *domain* of the map.
+- a set /B/, called the *codomain* of the map.
+- a rule, assigning to each element a in the domain an element b in the codomain.
+
+
+** Definition of Category
+A *CATEGORY* consists of:
+
+- OBJECTS            (A B C)
+- MAPS               (f g h)
+- DOMAIN/CODOMAIN    (f A B)
+- IDENTITY MAP       (f A A)
+- COMPOSITE MAP      [A]-(f)->[B]-(g)->[C] 
+                     [A]-(fg)->[C]
+
+satisfying the following rules:
+- IDENTITY LAWS
+- ASSOCIATIVE LAW

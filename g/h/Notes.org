@@ -1,0 +1,1014 @@
+#+TITLE:     Notes on Hegel's Logic
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-11-02 Sat
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:4 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+* Overview
+This document is a collection of notes relating to Hegel's
+Logic.
+
+* Borromean Knot (18-26)
+The "Game Dynamics" of the /SL/ are summarized by DGC using
+a Borromean Knot Model.
+** Three Circles
+All middle terms (such as BECOMING) are made up of three circles.
+
+First Circle  
+- Emphasizes the Positive, Qualitative Side of the Diagram
+- Leans to the Left Side of the Diagram
+
+Second Circle (Right)
+- Emphasizes the Negative Side of the Diagram
+- Leans to the Right Side of the Diagram
+
+Since negation always presupposes something to negate, the negative
+moment is always a double, "dialectical" pairing.
+
+The two dialectically opposed entities are reconciled by a
+Third Circle, which contains a surplus (i.e. the whole is 
+always greater than the parts). 
+
+Third Circle (Middle)
+- Contains material that exceeds what is provided by the two extremes. 
+- This excess guarantees that the dialectic progress grows in complexity and sophistication with each step.
+
+
+
+** Seven Areas
+The three overlapping circles produce seven distinct areas.
+- Areas 1,3,7 are static (no overlap).
+- Areas 2,4,5,6 are dynamic (overlapping areas)
+- Areas 2,5,6 are subject to 2 jurisdictions
+- Area 4 is subject to 3 jurisdictions
+
+The dynamic areas have "at least two natures--they are subject
+to more than one jurisdiction."
+
+Only Area-4 is present within every single step of the /SL/.
+Later we will see that Area-4 is what Hegel calls "BEING-WITHIN-SELF".
+** Four Agents (Modes of Consciousness)
+Logic progresses via propositions about the middle term.
+- Step 1: The Understanding Abstracts of the Immediate part of the Middle Circle
+- Step 2: Dialectical Reason Remembers that the Supposedly was Mediated
+- Step 3: Speculative Reason Intervenes to stop the "Modulating Nonsense".
+- Step 0: Absolute Knowing Emerges after Steps 1-3 Iterate Many Times
+
+More details of the Four Agents are described below.
+*** The Understanding
+*** Dialectical Reason 
+*** Speculative Reason
+*** Absolute Knowing
+
+* With What Must Science Begin?
+At the beginning of the /SL/, Hegel writes a short
+essay entitled /With What Must Science Begin?/. This
+essay "yields three lessons worth remembering" (DGC.39)
+
+1. The /SL/ is to be a groundless logic, utterly free from presupposition
+
+2. Deciding to begin at all is a contingent fact
+
+3. Given that we have chosen to begin, PURE BEING is 
+the best starting place, because it develops into the 
+ultimate result--ABSOLUTE KNOWING--which then mediates
+the beginning.
+
+The Logic's true beginning is the Understanding's 
+one-sided attempt to summarize the very last step of
+the Logic--ABSOLUTE KNOWING. It cannot fix this
+thought. Its attempt fails. The collapse of thought
+is the modulation Hegel writes of.
+
+The beginning of the Logic is a failure, and that's
+what makes it a success.
+
+* Personalizing the /SL/
+One of the ways to grasp the /SL/ at first is to think of it
+in terms of personalities of different consciousnesses.
+DGC writes in such a way as to give the different steps in the 
+/SL/ "personalities". We will do this from the "real" beginning
+(chapter 27) up until True Infinity. This is 25 diagrams and 8
+stages.
+** Stage 0
+"Being, pure being" with which the logic begins (or has begun)
+is, in a sense, a more comprehensive concept than that of the
+absolute idea at the beginning of the last chapter of the logic.
+And yet the absolute idea also comprehends and at the same 
+time exceeds what has been developed so far as to put itself
+in the position of uniqueness that allows it to bring the
+logic to an end. (Nuzzo-2005.191)
+
+
+*** ABSOLUTE IDEA 
+ABSOLUTE IDEA, the "speculative nucleus" of Hegelianism, is 
+what remains after thinking (TRUTH) and doing (GOOD) abolish
+themselves.
+
+The TRUTH is that self-identical things pass away.
+
+The GOOD is the obliteration of all obstacles to the creation
+of a reality in which the subject is at home.
+
+The TRUE GOOD is is the realization that ABSOLUTE IDEA has 
+only itself as its obstacle.
+
+ABSOLUTE IDEA is not the final step in the Logic. ABSOLUTE IDEA
+must develop its moments of IMMEDIACY and MEDIATION.
+*** IMMEDIACY
+IMMEDIACY is Hegel's true beginning.
+
+ABSOLUTE KNOWING "creates the world" by /reducing/ itself to
+IMMEDIACY--an original sin which must of necessity lead to
+the development of all the forms described throughout the /SL/.
+ 
+*** MEDIATION
+*** ABSOLUTE KNOWING (METHOD)
+** Stage 1
+*** Pure Being.(11)
+*** Pure Nothing.(14)
+*** Becoming.(15)
+** Stage 2
+*** Determinate Being
+*** Quality and Negation
+*** Something
+** Stage 3
+*** Something/Other
+*** Being-for-Other and Being-in-Itself
+*** Determination of the In-Itself
+** Stage 4
+*** Constitution
+*** Constitution vs Determination
+*** Limit (Determinateness as Such)
+** Stage 5
+*** Finitude
+*** Limitation
+*** The Ought
+** Stage 6
+*** Enriched Finite
+*** Another Finite
+*** Infinity
+** Stage 7
+*** Spurious Infinity
+*** Spurious Infinity and Its Other
+*** True Infinity
+
+* True Infinity
+Self-subsistence is the hallmark of True Infinity. The True Infinite
+/ceases to be/ but /remains what it is/. (80)
+
+** Overview
+TRUE INFINITY is one of the most important concepts in Hegel's
+philosophy. 
+
+** 21 Steps to True Infinity
+*** Pure Being (1a)
+**** Type
+- Type: Circle
+- Id-1: Pure Being
+
+**** Comments 
+Pure light and pure darkness are two voids which are the same
+thing. Something can be distinguished only in determinate 
+light or darkness...
+
+PURE BEING is /indeterminacy as such/.
+
+In PURE BEING we think nothing. But this is what we would
+perceive in a world of pure nothing. Hence, we might as
+well say that PURE BEING is PURE NOTHING.
+
+PURE BEING precludes an other that thinks. This means /you/,
+among other things.
+
+If PURE BEING were really here before us (and not just in
+our thoughts) we would be obliterated--sucked into a very
+black hole. The very fact that we are thinking at all
+is proof that PURE BEING is not before us...PURE BEING
+is never before us...it is apparent that PURE BEING has
+already passed away.
+
+We think, therefore PURE BEING has long since passed on.
+This is a good thing, given our aversion to obliteration.
+Self-conscious entities are much further along the road
+than PURE BEING. Yet, we are the audience that witnesses
+the unfolding of LOGIC.
+
+What is "for us" is like a prologue in a Shakespeare play...the
+audience can hear the prologue, but the players are oblivious.
+Similarly, "for us", PURE BEING can be thought--here we
+are doing it! But "for itself", PURE BEING will not suffer us
+to contemplate it.
+*** Pure Nothing (1b)
+**** Type
+- Type: Circle
+- Id-1: Pure Nothing
+**** Comments
+PURE BEING is PURE NOTHING.
+
+Since PURE BEING is self-identical, so is PURE NOTHING.
+
+Thinking stands opposed to both PURE BEING and PURE NOTHING.
+If you have a thought, you have already trafficked in
+distinction, contrary to the premises of PURE BEING.
+
+What could be more radically different from PURE BEING
+than PURE NOTHING? Yet paradoxically, they are the same!
+
+/NOTHING is, after all, SOMETHING./ NOTHING /is/--a paradox!
+
+That NOTHING /is/--this paradox reflects the claim that 
+there is no difference between PURE BEING and PURE NOTHING.
+*** Becoming (1c)
+**** Type
+- Type: Borromean
+- Id-1: Pure Being
+- Id-2: Pure Nothing
+- Id-3: Becoming (Determinate Being)
+**** Comments
+**** The Unity of PURE BEING and PURE NOTHING
+**** Moments of BECOMING: Coming-to-Be and Ceasing-to-Be
+BECOMING is concrete. It has difference within it [4,5,6],
+but it is a unity (7).
+
+**** Sublation of BECOMING
+Coming-to-be and Ceasing-to-be are in motion.
+
+If PURE BEING and PURE NOTHING are a contradiction, then
+BECOMING "contains" the contradiction.
+
+BECOMING has contradiction inside it (and hence "contains" it).
+
+BECOMING, so long as it stays a fixed moment, prevents 
+contradiction from blowing apart.
+
+BECOMING has active parts and static wholeness. This contradictory
+state of affairs means that BECOMING must disintegrate.
+
+How can something move and stay put simultaneously? This
+contradiction implies "the vanishedness of BECOMING."
+*** The Move to Determinate Being (2a)
+**** Type
+- Type: Move Diagram
+- Id-1: Pure Being 
+- Id-2: Pure Nothing
+- Id-3: Becoming (Determinate Being)
+- Id-4: Determinate Being (Quality)
+**** Comments
+*** Quality and Negation (2b)
+- Type: Double Circle
+- Id-1: Quality
+- Id-2: Empty
+- Id-3: Negation
+*** Something (2c)
+**** Type
+- Type: Borromean
+- Id-1: Quality
+- Id-2: Negation
+- Id-3: Something
+
+*** Something/Other (3a)
+*** Being-for-Other/Being-in-Itself (3b)
+*** Determination of the In-Itself (3c)
+*** Constitution (4a)
+*** Constitution vs Determination (4b)
+*** Limit (Determinateness as Such) (4c)
+*** Finitude (5a)
+*** Limitation (5b)
+*** The Ought (5c)
+*** Enriched Finite (6a)
+*** Another Finite (6b)
+*** Infinity (6c)
+*** Spurious Infinity (7a)
+*** Spurious Infinity and Its Other (7b)
+*** True Infinity (7c)
+
+** References
+
+* Being-Within-Self
+Being-Within-Self, which is represented by the fourth
+position in the Borromean Knot, /4/, is the "silent fourth". (67)
+
+In the Objective Logic, /4/ represents the "alien substrate"
+that is not part of Being. It is the /subject/, which is needed
+to /complete the object/. (67)
+
+Only /4/ is present in all steps of the /SL/. Later, we will
+see that /4/ is what Hegel calls "Being-Within-Self". (18)
+
+** References
+18, 66-67, 82-83, 85, 92, 114-115, 148, 205, 213, 221, 599-600.
+
+* Method
+** Absolute Idea (78c)
+** Immediacy (79a)
+** Mediation (79b)
+** Absolute Knowing (Method) (79
+* Notes on the Construction of the Diagrams
+** Types of Diagrams
+Basic Circle
+Borromean Knot
+Double Circle
+Move Diagram
+Triple Borromean
+** True Infinity (n=21)
+- 1a,1b -> Basic Circle (n=2)
+- 1c-7c -> Borromean Knot (n=7)
+- 2b-7b -> Double Circle (n=6)
+- 2a    -> (Unique) Move Diagram (n=1)
+- 3a-7a -> Move Diagram (n=5)
+** Method (n=4)
+- 78c     -> Borromean (n=1)
+- 79a-79c -> Triple Borromean (n=3)
+
+* Structure of the /Science of Logic/
+** Objective Logic
+*** Doctrine of Being
+**** Quality
+**** Quantity
+**** Measure
+*** Doctrine of Essence
+**** Reflection
+**** Appearance
+**** Actuality
+** Subjective Logic
+*** Doctrine of The Concept
+**** Subjectivity
+**** Objectivity
+**** The Idea
+
+* The Antepenultimacy of the Beginning in Hegel's Logic
+Philosophy must be self-grounding. It cannot start from
+'givens'.
+
+Presupposition is the enemy of science. Hegel's goal is
+to develop a presuppositionless philosophy. He claims
+to have succeeded. DCG and others seem to agree. This
+article is DCG's defense of Hegel's claims to a 
+presupposition-less philosophy.
+
+DCG aims to defend this proposition:
+
+"The last 'ultimate' step of the /Science of Logic/
+is not the first step. Rather, the first step of the
+logic is the /antepenultimate/ step-- the /third/
+from the last-- in the /Science of Logic/ as a whole.
+
+This argument addresses a question that has often 
+bothered readers of Hegel:
+
+- Where does difference come from?
+- In the obliterative regime of PURE BEING, how can difference be accounted for?
+
+Key points to DCG's argument:
+Difference /IS/ pre-supposed, as Hegel's critics have alleged.
+
+However, what is different (in BECOMING) is ABSOLUTE KNOWING--the ultimate
+step, and PURE IMMEDIACY-- the antepenultimate step.
+
+BECOMING summarizes the difference between these two-- /NOT/ the difference
+between BEING and NOTHING as such. 
+
+In other words, PURE BEING was /SUPPOSED/ to be ABSOLUTE KNOWING--the
+Understanding's propositional summary of it. But it ended up being nothing
+at all--a failure.
+
+DCG's argument begins at the end--only by recalling the future may we
+comprehend the past.
+
+** Hegel's Last Chapter
+Hegel's last chapter is called "ABSOLUTE IDEA".
+
+Generally speaking, 'idea' is the negative unity of subject and object. Throughout
+the last third of the /Science of Logic/--The Subjective Logic--the notion or 
+concept (/Begriff/) theorizes itself. It produces an objective account of its
+subjective self bu transporting itself from subject into predicate. This process
+occurs in the chapter entitled SYLLOGISM, though perhaps this is better translated
+as 'inference'. In effect, the subject /infers/ its own objectivity. Yet it finds
+itself alienated from its self-inference and enters into a subject-object relation.
+
+IDEA is the dynamic quality that both subject and predicate share: each on its own
+logic has no right against the other. Each sacrifices itself on behalf of the other,
+pointing to the other as the source of its being. IDEA is the common element of 
+self-sacrifice-- the inability of any positivized concept to maintain itself
+against its 'other'.
+
+ABSOLUTE IDEA arises when both the TRUE (or thinking) and the GOOD (or doing) give
+up their pretensions.
+
+What ends up being true is that Kantian philosophy is a failure. The truth is that
+there /is/ no thing-in-itself; it's just an illusion that passes away like any
+other appearance.
+
+The GOOD (or PRACTICAL IDEA) is the obliteration of anything that stands in the
+way of the subject's freedom.
+
+The true GOOD is the realization that the only obstacle to the subject's freedom
+and self-knowledge is the very falsehood that the subject manufactured in theorizing
+about itself.
+
+The GOOD and the TRUE each sacrifice themselves: this commonality shared by
+the TRUE and the GOOD is the ABSOLUTE IDEA.
+
+ABSOLUTE IDEA is also called METHOD. 
+
+METHOD is very, very negative. The METHOD is that all affirmative propositions
+must obliterate themselves as inadequate to their own object. The /Science of Logic/
+is thoroughly Spinozist in nature. For Spinoza, '/[d]eterminateness is negation./
+[T]his true and simple insight establishes the absolute unity of substance.'
+
+The difference between Hegel and Spinoza is that Hegel's substance is so
+negative that it positivizes itself, only to dissolve its positive implication.
+
+Like all concepts in the /SL/, the ABSOLUTE IDEA is put through the gauntlet
+of three logical steps:
+
+The Understanding (U)
+- Makes immediate propositions
+- Considers all encountered beings to be at peace, fixed, defined individual, and positive.
+- Is static. (always leaves something out since Reality is ultimately dynamic) 
+
+Dialectical Reason (DR)
+- Is the critique of the Understanding
+- Emphasizes the omitted materials that the Understanding has left out
+- /Remembers/ the logical sequence that the Understanding suppresses
+- For DR, "memory is the stuff that dialectical dreams are made of".
+- DR, however, does not just negate a positive theory, but also positivizes the materials suppressed by U.
+
+Specualative Reason (SR)
+- Shows that the U and DR share an identity or a commonality as well as a difference.
+- Their commonality /is/ their difference. (WORTH REPEATING TO DIGEST FULLY)
+- The SR exploits this excluded negative (difference) 
+- SR is constantly bringing this commonality to the fore.
+
+The three-step process is then repeated. What SR produces
+is 'interpreted' by the U. This interpretation is one-sided.
+Once again, something further is left out, which generates
+further steps in the Logic. The move from SR to U is always
+retrogressive.
+
+Advance is a /retreat into ground/.
+
+Nevertheless, as the U interprets the material at hand, the
+propositions of the U become more sophisticated as the Logic
+progresses. By the time the U reaches the REALM OF ESSENCE, 
+all of its propositions are negative and dialectical in nature.
+
+In effect, the U transforms itself into DR.
+
+By the time the U reaches the REALM OF NOTION, it sees things
+speculatively, and thus transforms itself into SR.
+
+The /SL/ ends when the U, DR, and SR coverge in ABSOLUTE IDEA.
+Taken together, they are METHOD.
+
+"SELF-SACRIFICE DISAPPEARANCE OF THE SUBJECT" is the very 'idea' of the /SL/.
+
+To understand why self-sacrifice takes on a special meaning at the advanced
+level of the idea, we can consider the very core of Hegel's system: the concept
+of TRUE INFINITY.
+
+*** TRUE INFINITY
+A FINITE THING, by its own logic, /must/ come to an end.
+
+When it does end, the FINITE THING has become what it OUGHT to be-- NOTHING.
+
+Yet for Hegel, NOTHING is SOMETHING.
+
+If the FINITE THING passes away, the memory of it remains.
+
+The FINITE THING obtains an /ideal/ existence when it ceases to be.
+
+It is ideal form, BEING is subject to /recollection/ (inwardization)
+
+TRUE INFINITY is therefore the process of inwardization
+
+TRUE INFINITY's place in the /SL/ is the very portal from /reality/ to /ideality/.
+
+Ideality constitutes the memory of what /was/.
+
+The TRUE INFINITE becomes what it ought to be--
+but /it also remains what it was./
+
+It is a /unity/ of its finite self /and/ its beyond.
+
+The TRUE INFINITE constantly removes itself from self-presence to a beyond--/and/ it brings its beyond into its own presence.
+
+This double movement of cancellation and preservation is called SUBLATION.
+(or in Zizek's terms: the "chiasmic exchange of properties")
+
+In sublation, the FINITE THING invests itself into the 
+beyond when it ceases to be, and the
+beyond invests itself into present thought
+when /it/ ceases to be.
+
+With the advent of ABSOLUTE IDEA, the very idea of a 'beyond' becomes untenable.
+
+In ABSOLUTE IDEA, there is no longer a place to which the TRUE INFINITE can withdraw.
+Here the distinction between form and content falls apart.
+
+ABSOLUTE IDEA is absolute form.
+
+ABSOLUTE IDEA must play out the three moments of the U, DR, and SR. Indeed,
+these moments /literally are/ the U, DR, and SR. The moments identified in
+the last chapter /are/ method itself--each one moment implying all the others
+as well as itself.
+*** True Beginning of the /SL/.
+The first step in the analysis of ABSOLUTE IDEA is the antepenultimate step
+of the /SL/ and, DGC contends, the true beginning for the /SL/. This is the
+step of IMMEDIACY. It represents the Understanding as such.
+
+The second step is MEDIATION--all the mediations there are. This is the
+dialectical step in which identity is paired with difference. (Though
+covertly, DR actually compares two /identities/.) The significance of
+MEDIATION is that ABSOLUTE IDEA is revealed to be an active, dialectic
+thinker that thinks itself. As such, it is PERSONALITY, something that
+Hegel has declared to be missing from Spinoza's system.
+
+Hegel contra Spinoza
+- The ABSOLUTE cannot be a /first/. It must be the /result/.
+- The CONCEPT thinks itself dynamically, and this means it is person-like.
+- The highest, most concentrated point is the /pure personality/.
+
+Personality implies LIFE, but also the COGNITION of being alive.
+
+LIFE is IMMEDIATE IDEA. LIFE ends up standing for self-sacrifice.
+There can only be life in general if individual lives terminate in death.
+
+COGNITION is MEDIATED IDEA. It cognizes itself as LIFE and so too it sacrifices
+itself.
+
+This implies that ABSOLUTE KNOWING--the Ultimate Step--is, as negation of the
+negation, the sacrifice of self-sacrifice. On its own logic, ABSOLUTE KNOWING
+shows what it is when it /stops/ sacrificing itself and produces some 
+positivized account of itself, and account in which /Geist/ aspires /not/ to
+sacrifice itself.
+
+In the very last step of the Logic, ABSOLUTE IDEA returns to immediacy as its
+final act of self-manifestation. ABSOLUTE KNOWING is therefore the unity of
+doing (or thinking) and being. It is divine creation--what Kant called 'intellectual
+intuition'. What it /thinks/ truly /is/.
+
+ABSOLUTE KNOWING is the ultimate step in the /SL/.
+
+ABSOLUTE KNOWING is also the very last step in the /PhG/.
+
+ABSOLUTE KNOWING stands for the realization that human consciousness is /not/ any
+basis for scientific philosophizing. In effect, absolute knowledge 'ceases itself
+to be knowledge'. It is also /all the knowledge there is/--that there is no knowledge.
+There is only the appearance of knowledge.
+** Hegel's First Chapter
+The beginning of the /SL/ is simply the IMMEDIATE version
+of ABSOLUTE KNOWING. It is what the ultimate step of ABSOLUTE
+KNOWING, on its own logic, must produce.
+
+The first step is thus not the ultimate 'speculative' step
+or the penultimate 'dialectic' step, but the antepenultimate
+step--the Understanding as such.
+
+The following diagram shows the structure of the beginning in the
+Science of Logic. In this diagram, the left side of the page is to be identified
+with positivity. The right side of the page leans to negativity. The middle of
+the page is positivity and negativity thought together. So conceived, abso-
+lute knowledge can be portrayed as follows:
+
+/INSERT PICTURE OF ABSOLUTE KNOWING/
+
+Hegel's beginning is an immediate proposition about ABSOLUTE KNOWING:
+
+/INSERT PICTURE OF HEGEL'S BEGINNING/
+
+In the picture above, PURE BEING is shown to be a one-sided view of
+all the knowledge there is. In effect, the concept, if it is to
+know itself, must make a proposition about itself. It must say
+affirmatively what it /is/.
+
+This first thought of itself is a failure. It fails even to /be/
+a thought, for:
+
+'there is nothing, nothing in heaven or in nature or mind or anywhere
+else which does not equally contain both immediacy and mediation, so
+that these two determinations reveal themselves to be unseparated and
+inseparable and the opposition between them to be a nullity.' (Hegel's words)
+
+In this recollection, the motor of the logic--contradiction--cannot get
+started. ABSOLUTE IDEA perpetually turns the ignition key of
+Understanding and gets no result.
+
+In an important, paradoxical way, Hegel's beginning /is/ a failure, but
+Hegel makes his failure a success. 
+
+The failure to have a thought /at all/ is the beginning of the /SL/.
+Curiously, /non-thought/ is highly descriptive of ABSOLUTE KNOWING,
+which is /no knowledge at all./
+
+The Understanding paradoxically succeeds by failing. And in its failure
+it anticipates the final result very presciently--all immediate
+propositions must fail.
+
+Although it sometimes said that PURE BEING is shown to be PURE NOTHING,
+perhaps could be translated as 'PURE BEING and PURE NOTHING is the same'.
+
+The indeterminate moments of BECOMING are not true moments: they 
+cannot be concretely specified, since such moments "are always changing
+into each other, and reciprocally cancelling each other."
+
+We mortals /believe/ that BEING and NOTHING is nothing. It cannot suffice
+merely to /believe/ that BEING and NOTHING is different. We must prove it.
+
+Where does difference come from?
+
+Difference precedes PURE BEING in origin. (213)
+
+The identification (of difference) depends upon a viewpoint
+that is able to comprehend absolute knowing standing over against its
+initial, failed self-interpretation. According to this viewpoint, Speculative
+Reason compares absolute knowing to the failed attempt of the Under-
+standing to account for it. It perceives a vanishing of all thought into no
+thought at all. All thought is different from no thought.
+
+Simple immediacy is itself an expression of reflection and contains a ref-
+erence to its distinction from what is mediated. This simple immediacy,
+therefore, in its true expression is pure being... . Here the beginning is
+made with being which is represented as having come to be through
+mediation, a mediation which is also a sublating of itself; and there is
+presupposed pure knowing as the outcome of finite knowing, of con-
+sciousness. But if no presupposition is to be made, and the beginning
+itself is taken immediately, then its only determination is that it is to be
+the beginning of logic, of thought, as such. All that is present is simply
+the resolve, which can also be regarded as arbitrary, that we propose to
+consider thought as such. (HEGEL QUOTE)
+
+/Why/ should we begin? At the beginning this is no means clear.
+But by the end, we know that idea requires its own manifestation. It /must/
+begin.
+
+What pure being is different from is not pure nothing but pure knowing –
+Logic’s ultimate step.
+
+Thinking stands for absolute knowing, which, we know from
+Hegel’s last chapter, has the active principle – personality. 
+
+What is the truth is neither being nor nothing, but that being does not
+pass over but has passed over – into nothing. But it is equally true that
+they are not undistinguished from each other ... they are absolutely dis-
+tinct, and yet that they are unseparated and inseparable and that each
+immediately vanishes in its opposite. Their truth is, therefore, this 
+movement of the immediate vanishing of the one in the other: becoming, a
+movement in which both are distinguished, but by a difference which
+has equally immediately resolved itself. (HEGEL QUOTE)
+
+Hegel refers to movement between being and nothing. But strictly
+speaking this movement has to be understood, not as the movement
+between being and nothing, but as the movement from absolute
+knowing (or active thinking) to being/nothing, its first failed proposition
+about itself.
+
+In short, it is the very nature of a beginning that it must fail; otherwise it
+would be result – not beginning.
+
+In spite of itself, PURE BEING refers
+to something other than itself, and so as a beginning it is a failure. This
+requires an over-arching perspective that can discern the difference
+between ABSOLUTE KNOWING, on the one hand, and BEING and NOTHING, on
+the other.
+
+** Becoming as the True Beginning  
+Being and nothing represents a recollection by absolute knowing of what it once must have
+been. What becoming represents is all the Science of Logic ceasing to be in
+the Understanding.
+
+For Hegel, the modulation between being and nothing is not what
+precedes becoming. What precedes ‘becoming’ is thinking which fails to
+form a thought of its own being. Instead of contemplating its own being,
+absolute knowing finds before it nothing at all. In thought it has ceased to
+be.
+
+The collapse of ABSOLUTE KNOWING is the beginning.
+
+Becoming is absolute knowing itself, as it stands back from its own failed proposition, ‘learning’
+from its failure that when it tries to think an immediate thought, it ceases to
+be in that thought and is alienated from its product.
+
+The ‘transition’ from pure nothing and pure being to
+becoming should be viewed as a non-transition, since transition implies a
+difference between origin and result. Hegel was aware of this when he
+referred to the fact that ‘being does not pass over but has passed over – into
+nothing.’73 Pure being and pure nothing are simply what becoming
+implies.
+
+** Conclusion
+Hegel aims for a presupposition-free philosophy. Logic is a circle, as every
+Hegelian knows. Yet movement in Logic is a ‘lumpy, bumpy triangular
+wheel.’75 Logic progresses by dropping back and hazarding one-sided propo-
+sitions doomed to fail in advance. This is just as true of Hegel’s beginning.
+Pure being, which is pure nothing, is just such a retrogression. In the
+methodical progress that Hegel describes, the beginning is a retrogression to
+the antepenultimate step – the appearance of the Understanding, the faculty
+of immediacy. Hegel’s beginning is a failure, and that is why it succeeds.
+
+* Moves
+57. Following Zizek, DGC argues that there is always a
+"fourth" in addition to the triad of Understanding,
+Dialectic and Speculative Reason. He compares it
+to the dummy in a game of bridge--the silent spectator
+that actually controls the game--a "Master Signifier"
+or vanishing mediator that makes sense of all the other
+signifiers.
+* Hegelian System of Determinations (1980.35-36)
+** I. Transcendent Determinations
+*** A. General Transcendent Dialectic
+*** B. Particular Dialectics
+** II. Extensional Determinations
+*** A. Predication
+*** B. Binary Oppositional Determinations
+*** C. The Concrete as the Totality of External Determinations
+** III. Intensional Determinations
+*** A. The /Appetitive/ 'I' of Intellectual Sensibility
+*** B. The /Recognitive/ 'I' of History
+*** C. The /Universal/ 'I' of the Actual Dialectic
+** IV. Unconditional Determinations
+*** A. The Emergence of Reason
+*** B. Absolute Knowledge
+* Finitude
+When we say of things /that they are finite/, we
+understand thereby that...finite things are not
+merely limited--but that...non-being constitutes
+their...being. Finite things...send themselves
+away beyond themselves, beyond their being. They
+/are/, but the truth of this being is their /end/.
+The finite not only alters, like something in
+general, but /ceases to be/; and its ceasing to 
+be is not merely a possibility...but the being
+as such of finite things is to have the germ of
+decease as their being-within-self: the hour of
+their birth is the hour of their death. (129)
+
+DGC's interpretation of the above quote: We
+think of ourselves as finite beings. We know that
+we shall die. So death is already embedded within
+us. Death is our Being-in-itself. We only await
+our Being-in-itself to posit itself as actual.
+At that point, life ends, and we shuffle off 
+this mortal coil to encounter what dreams may
+come.
+
+For God, there is no time; birth is /simultaneously/ death.
+God sees our lives as the constant modulation of BEING
+into NOTHING. To God, we are born and we die in the
+very same "hour". 
+
+FINITUDE is negation "/fixed in itself/, and it therefore
+stands in abrupt contrast to its affirmative."
+** The Immediacy of Finitude
+** Limitation and the Ought
+** The Ought
+** Transition of the Finite into the Infinite
+* Varieties of Being
+Carlson mentions somewhere that Hegel uses the word
+Being in a large number of ways. Let's look at the
+Index to see how many he lists.
+** Accent on
+** Determinate
+** Doing and
+** For other
+** For self (103-111)
+Covers three steps:
+- 8a. BEING-FOR-SELF.(104)
+- 8b. BEING-FOR-ONE.(106)
+- 8c. THE ONE.(110)
+
+QUALITATIVE BEING finds its consummation in
+BEING-FOR-SELF.
+
+- Chapter 1 -> BEING
+- Chapter 2 -> NEGATION of BEING
+- Chapter 3 -> Middle Term
+
+BEING-FOR-SELF is an ironic portion of the /SL/.
+The chapter takes up with a positivization
+of the TRUE INFINITE, which is self-erasure
+as such.
+
+BEING is for-itself when it erases itself.
+
+BEING-FOR-SELF is /form and no content/. Its
+content is entirely outside itself.
+
+*** Being-For-Self as Such
+**** Determinate Being and Being-For-Self
+Something is "for itself in so far
+as it transcends otherness".
+
+The FINITE once /was/, but it has
+ceased to be; yet it is idealized, 
+preserved in memory.
+
+The Understanding grasps BEING-FOR-SELF
+as "infinity which has collapsed into
+simple being." 
+
+
+** Having, and
+
+** Illusory
+** Infinite
+** In and for self
+** In itself
+** Pure
+** Timelessly past
+** Within Self
+* Parmenides (Plato, 1152-1168)
+* Computational Monadology.(Steinhart.online)
+* 2/27 of the Science of Logic (Houlgate-2006)
+* 38 Dialectics in the PhG (Wheat-2012)
+* Gospel of John
+* PhG.min
+* Free Thought vs. Common Sense (Carslon-2007.49-50)
+If we can draw the Concept from the object, then thinking
+becomes free. /Free/ thought is that which is "performed
+with awareness of what is being done." (37)
+
+When thinking is instinctive (unaware of itself), "spirit
+is enmeshed in the bonds of its categories and is broken
+up into an infinitely varied material." (37)
+
+Instinctive thinking cannot fathom the unity in diverse 
+things.
+
+Free thought follows a necessary development. In this development,
+the steps must /necessarily/ follow one another. Even the very
+idea of necessity must be derived /necessarily/. Logic must
+therefore be self-referential: it has its own self as its
+subject matter.
+
+Logic is both:
+- Method
+- Derivation of Method
+
+Every other science distinguishes subject matter and method.
+Method, however, must be Logic's own final result. If logic
+would be a /science/, it cannot borrow methods from "subordinate"
+fields such as mathematics.
+
+"[W]hat logic is cannot be stated beforehand". (43) Its method
+must emerge as the final outcome.
+
+Common Sense (aka unfree thought, or the Understanding) leaves
+truth and content to one side and considers only form. It is 
+an important step, however, because by separating form and
+content (i.e. thought from the object) the Understanding divides
+the object. "But /equally/ it must transcend ... its /separating/
+determinations and straightway /connect/ them." (46) This
+connecting activity (Speculative Reason) is the great "negative
+step" that leads to the true Concept of reason.
+
+In the /SL/, mind learns what it is.
+
+In the /PhG/ a thinking subject faced an object. The end
+result was the unity of subject and object--ABSOLUTE KNOWING.
+
+The /PhG/'s result was the elimination of consciousness as
+a valid philosophical standpoint.
+
+This is also the beginning point of the /SL/: "[P]ure science
+presupposes liberation from the opposition of consciousness." (/SL/:49)
+
+In other words, THOUGHT THINKS ITSELF. (50)
+
+Logic's point of view is strictly its own--not ours.
+
+"[L]ogic is to be understood as the system of pure reason,
+as the realm of pure thought. This realm is truth as it is
+without veil and in its own absolute nature." (/SL/ 49-50).
+* The Concept (Lauer-1982.(57-127))
+** Overview (57)
+** Philosophical Thinking (59)
+** The "Necessity" of Truth (76)
+** Relation of Thought and Reality (77)
+** The Meaning of Concept (80)
+This section provides a commentary on sections 
+160-164 from the Encyclopedia.
+
+The Concept is "the dynamic reproduction in thought
+of the rational structure of reality." (81)
+
+The overall pattern of logical thinking contains three
+main parts:
+- (1) The Logic of Being
+- (2) The Logic of Essence
+- (3) The Logic of Concept
+
+The Logic of Being -> the self-development of thought's inevitable
+object
+
+The Logic of Essence -> reflection on the object as it is reproduced
+in thought
+
+The Logic of Concept -> investigation of the dynamic structure of
+thought as expressing the structure of reality  
+
+Subjective Logic and its relation to Reason (82-83)
+
+The process of development (of a Concept) begins with the
+subjective concept, that which the thinking of an individual
+subject produces, and we must see what this subjective form,
+merely as such, involves.
+
+This process of development contains the three "moments":
+- Universality
+- Particularity
+- Singularity
+
+By calling these terms "moments", Hegel indicates that he 
+considers them as dynamic elements in a process, each
+intelligible only as related to the others in a movement
+from one to the other--and back.
+
+UNIVERSALITY designates the character of sameness with
+itself that the the concept retains in each of its
+instantiations (/Bestimmtheit/).
+
+PARTICULARITY is the generalized instantiation, in which
+the self-sameness of the universal remains undisturbed.
+
+SINGULARITY is the ultimate instantiation, wherein are
+reflected both the determinacy of the PARTICULAR and the
+self-sameness of the UNIVERSAL.
+
+The singular is the same as the "actual thing", but it is
+the conceptualized thing, posited in a universal way
+as simply this thing identical with itself.
+
+An important thing to remember about the Hegelian concept,
+then, is that it is at once Universal, Particular, and 
+Singular.
+
+Hegel's /Logic/ can be characterized as a "constantly
+repeated defining of God". (85)
+
+The concept is truly first, and "things are what they are
+through the activity of the concepts that dwell in them." (85)
+
+Just as divine thought is creative of the conceptual
+structure of reality, so human thought is recreative of
+a conceptual structure which is antecedent to finite
+thinking.
+
+The concept is what is unconditionally concrete, because the
+self-contained unity with itself which constitutes the
+intrinsic determinateness of singularity is precisely its
+relation to itself which constitutes universality.
+
+The relationship between Universality, Particularity and 
+Singularity is discussed in depth on page 86. Needs some
+digesting before I take thorough notes.
+
+** Judgment (86)
+** Syllogism (91)
+** From Subjectivity to Objectivity (96)
+** The Meaning of "Objectivity" (101)
+** The Dynamism of Purpose (104)
+Commentary on EpW.(205-207)
+
+In tracing the movement from the subjectivity
+of conceptual thinking to the objectivity of
+"the concept", the notion of "purpose" is of
+utmost importance. (105)
+
+Purpose "realizes itself" in the becoming of
+that which is intrinsically ordered to an end.
+
+Purpose is a closed book to "formal" thinking; 
+it has to be grasped "speculatively". (106)
+
+** Subject-Object (109)
+** Truth as Idea (113)
+** Idea as Process (117)
+** Idea as Absolute (122)
+* God as Spirit (Lauer-1982.(128-161))
+** Overview (128)
+** Identity of Finite and Infinite Spirit (132)
+** Self-Manifestation Essential to Spirit (137)
+** Activity Without Passivity (141)
+** Only Spirit Knows Spirit (145)
+** Relation of Divine Spirit to the World (149)
+** Human Self-Consciousness Reveals the Divine (154)
+** The Function of Negation (158)
+* The Infinite (Lauer-1982.(162-202))
+** Overview (162)
+** The Infinite Object of Thought (166)
+** The Meaning of "Infinite" (170)
+** Infinity of Concept (174)
+** The Infinity of the Finite (178)
+** Phenomenology of Spirit (183)
+** Philosophy of Religion (189)
+** The Necessary Connection of Thinking and the Reality of God (195)

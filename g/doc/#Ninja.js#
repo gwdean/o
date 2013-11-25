@@ -1,0 +1,51 @@
+// Notes on "Secrets of the JavaScript Ninja" 
+
+// Chapter 6. Object Orientation with Prototypes
+
+// Minimal object
+var o = {};
+
+// Populate Object with Properties
+var o = {};
+o.name = 'Rose';
+o.occupation = 'Muse';
+o.sexinessLevel = 100;
+
+// Prototypes as Object Blueprints
+function Ninja(){}
+
+Ninja.prototype.swingSword = function(){
+    return true;
+};
+
+var ninja1 = Ninja();
+assert(ninja1 === undefined,
+       "No instance of Ninja created.");
+
+var ninja2 = new Ninja();
+assert(ninja2 &&
+       ninja2.swingSword &&
+       ninja2.swingSword(),
+       "Instance exists and method is callable.");
+
+// Instance Properties
+function Ninja(){
+    
+    this.swung = false;
+
+    this.swingSword = function(){
+	return !this.swung;
+    };
+}
+
+Ninja.prototype.swingSword = function(){
+    return this.swung;
+};
+
+var ninja = new Ninja();
+assert(ninja.swingSword(),
+       "Called the instance method, not the prototype method.");
+
+
+
+Sam and cat

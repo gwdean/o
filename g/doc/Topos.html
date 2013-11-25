@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Topos</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-07-14 21:21:00 EDT"/>
+<meta name="author" content="Greg"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Topos</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Topos </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Overview </a></li>
+<li><a href="#sec-1.2">1.2 Topos Definition </a></li>
+<li><a href="#sec-1.3">1.3 Categories that are toposes </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 Sets </a></li>
+<li><a href="#sec-1.3.2">1.3.2 Irreflexive Graphs </a></li>
+<li><a href="#sec-1.3.3">1.3.3 Dynamical Systems </a></li>
+<li><a href="#sec-1.3.4">1.3.4 Reflexive Graphs </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 Categories that are not toposes </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 Pointed Sets </a></li>
+<li><a href="#sec-1.4.2">1.4.2 Bipointed Sets </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Topos </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Overview </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<p>William Lawvere and Stephen Schanuel's <i>Conceptual Mathematics</i>
+is a classic in the field of category theory. It starts from
+the beginning and builds up to a concept called a <i>topos</i>. 
+This is an important concept, although the definition is 
+opaque to the uninitiated:
+</p>
+<p>
+<b>Definition:</b>
+</p>
+<p>
+A category <i>C</i> is a <b>topos</b> iff:
+</p>
+<ol>
+<li>
+<i>C</i> has 0,1,*,+ and for every object X, <i>C</i> <i>X has products. 2. /C</i> has map objects Y<sup>X</sup> and
+</li>
+<li>
+<i>C</i> has a 'truth-value object' (sub-object classifier)
+
+</li>
+</ol>
+
+<p>Many categories that LS describe are toposes:
+</p><ul>
+<li>
+sets
+</li>
+<li>
+irreflexive graphs
+</li>
+<li>
+dynamical systems
+</li>
+<li>
+reflexive graphs
+
+</li>
+</ul>
+
+<p>The following are not toposes since having 
+map objects implies distributivity.
+</p><ul>
+<li>
+pointed sets
+</li>
+<li>
+bipointed sets
+
+</li>
+</ul>
+
+<p>The goal of this document is to make the above
+definition clear. To do this requires a lot 
+of background information, and this document
+will provide that background. I draw entirely
+on LS for the answers.
+</p></div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Topos Definition </h3>
+<div class="outline-text-3" id="text-1.2">
+
+<p>A <b>category</b> <i>C</i> is a <b>topos</b> iff
+</p><ul>
+<li>
+<i>C</i> has <b>0</b>, <b>1</b>, <b>times</b>, <b>plus</b>
+</li>
+<li>
+For every object <b>X</b>, <i>C</i> / <b>X</b> has <b>products</b>.
+</li>
+<li>
+<i>C</i> has <b>map objects</b> Y<sup>X</sup>
+</li>
+<li>
+<i>C</i> has a 'truth-value object' <b>1</b> -&gt; <b>omega</b> (<b>subobject classifier</b>)
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Categories that are toposes </h3>
+<div class="outline-text-3" id="text-1.3">
+
+<p>The following categories are examples of toposes. 
+</p>
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> Sets </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2"><span class="section-number-4">1.3.2</span> Irreflexive Graphs </h4>
+<div class="outline-text-4" id="text-1.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.3" class="outline-4">
+<h4 id="sec-1.3.3"><span class="section-number-4">1.3.3</span> Dynamical Systems </h4>
+<div class="outline-text-4" id="text-1.3.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.4" class="outline-4">
+<h4 id="sec-1.3.4"><span class="section-number-4">1.3.4</span> Reflexive Graphs </h4>
+<div class="outline-text-4" id="text-1.3.4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Categories that are not toposes </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<p>The following categories are not toposes.
+</p>
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> Pointed Sets </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2"><span class="section-number-4">1.4.2</span> Bipointed Sets </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+</div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Greg
+<a href="mailto:greg@greg-Satellite-C855D">&lt;greg@greg-Satellite-C855D&gt;</a>
+</p>
+<p class="date"> Date: 2013-07-14 21:21:00 EDT</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Notes on Hegel's <i>Logic</i></title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-10-16 Wed"/>
+<meta name="author" content="GW Dean"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Notes on Hegel's <i>Logic</i></h1>
+
+<p>The following notes work out the details of Hegel's <i>Logic</i>.
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Being </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Being (11-19) </a>
+<ul>
+<li><a href="#sec-1.1.1">1.1.1 Pure Being and Nothing </a></li>
+<li><a href="#sec-1.1.2">1.1.2 The Concept of Becoming </a></li>
+<li><a href="#sec-1.1.3">1.1.3 The Concept of Determinate Being and the Concept of Negation </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.2">1.2 Quality (20-26) </a>
+<ul>
+<li><a href="#sec-1.2.1">1.2.1 Becoming and Determinate Being </a></li>
+<li><a href="#sec-1.2.2">1.2.2 Something and Something Else </a></li>
+<li><a href="#sec-1.2.3">1.2.3 Bad Infinity </a></li>
+<li><a href="#sec-1.2.4">1.2.4 True Infinity </a></li>
+<li><a href="#sec-1.2.5">1.2.5 Being-for-Self </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3">1.3 Quantity (27-39) </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 Pure Quantity and Quantum </a></li>
+<li><a href="#sec-1.3.2">1.3.2 Continuity and Discreteness </a></li>
+<li><a href="#sec-1.3.3">1.3.3 Number </a></li>
+<li><a href="#sec-1.3.4">1.3.4 Extensive and Intensive Magnitudes </a></li>
+<li><a href="#sec-1.3.5">1.3.5 Quantitative Infinity </a></li>
+<li><a href="#sec-1.3.6">1.3.6 Measure </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 Summary of Being (39-40) </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Essence </a>
+<ul>
+<li><a href="#sec-2.1">2.1 Essence (41-49) </a>
+<ul>
+<li><a href="#sec-2.1.1">2.1.1 Essence as Mediated Being </a></li>
+<li><a href="#sec-2.1.2">2.1.2 Identity </a></li>
+<li><a href="#sec-2.1.3">2.1.3 Identity and Difference </a></li>
+<li><a href="#sec-2.1.4">2.1.4 Contradiction </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.2">2.2 Ground (50-62) </a>
+<ul>
+<li><a href="#sec-2.2.1">2.2.1 Ground as Unity of Identity and Difference </a></li>
+<li><a href="#sec-2.2.2">2.2.2 Formal Ground, Real Ground, Sufficient Ground, Efficient Cause </a></li>
+<li><a href="#sec-2.2.3">2.2.3 The Complete Ground&ndash;Condition and Conditioned </a></li>
+<li><a href="#sec-2.2.4">2.2.4 Nature as the Ground of the World&ndash;Existence </a></li>
+<li><a href="#sec-2.2.5">2.2.5 Things and Properties </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.3">2.3 Appearance (62-66) </a>
+<ul>
+<li><a href="#sec-2.3.1">2.3.1 Appearance as Law </a></li>
+<li><a href="#sec-2.3.2">2.3.2 Appearance as Both Reflection-Into-Self and Reflection-Into-Other </a></li>
+<li><a href="#sec-2.3.3">2.3.3 The Inverted World </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.4">2.4 Relation </a>
+<ul>
+<li><a href="#sec-2.4.1">2.4.1 Whole and Parts </a></li>
+<li><a href="#sec-2.4.2">2.4.2 Force and Expression </a></li>
+<li><a href="#sec-2.4.3">2.4.3 Outer and Inner </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.5">2.5 Actuality </a>
+<ul>
+<li><a href="#sec-2.5.1">2.5.1 Actuality and Reason </a></li>
+<li><a href="#sec-2.5.2">2.5.2 Modality, Possibility, Contingency and Necessity </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.6">2.6 Absolute Relations </a>
+<ul>
+<li><a href="#sec-2.6.1">2.6.1 Substance and Accident </a></li>
+<li><a href="#sec-2.6.2">2.6.2 Causality </a></li>
+<li><a href="#sec-2.6.3">2.6.3 Reciprocity </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.7">2.7 Summary of Essence </a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 The Concept </a>
+<ul>
+<li><a href="#sec-3.1">3.1 The Concept </a>
+<ul>
+<li><a href="#sec-3.1.1">3.1.1 Subjectivity (The Concept as Such) </a></li>
+<li><a href="#sec-3.1.2">3.1.2 Judgment </a></li>
+<li><a href="#sec-3.1.3">3.1.3 The Judgment of the Concept </a></li>
+<li><a href="#sec-3.1.4">3.1.4 The Syllogism </a></li>
+</ul>
+</li>
+<li><a href="#sec-3.2">3.2 The Object </a>
+<ul>
+<li><a href="#sec-3.2.1">3.2.1 The Object as Mechanical Object </a></li>
+<li><a href="#sec-3.2.2">3.2.2 The Object as Chemical Object </a></li>
+<li><a href="#sec-3.2.3">3.2.3 The Object as Teleological Object </a></li>
+</ul>
+</li>
+<li><a href="#sec-3.3">3.3 The Idea </a>
+<ul>
+<li><a href="#sec-3.3.1">3.3.1 The Idea as Unity of Subjectivity and Objectivity </a></li>
+<li><a href="#sec-3.3.2">3.3.2 Life </a></li>
+<li><a href="#sec-3.3.3">3.3.3 The Life Process </a></li>
+<li><a href="#sec-3.3.4">3.3.4 The Idea as Cognition </a></li>
+<li><a href="#sec-3.3.5">3.3.5 The Theoretical Idea </a></li>
+<li><a href="#sec-3.3.6">3.3.6 The Idea as Volition&ndash;the Good </a></li>
+<li><a href="#sec-3.3.7">3.3.7 The Practical Idea </a></li>
+<li><a href="#sec-3.3.8">3.3.8 The Absolute Idea </a></li>
+</ul>
+</li>
+<li><a href="#sec-3.4">3.4 Summary of Concept </a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Misunderstandings (Houlgate-2006.266) </a></li>
+<li><a href="#sec-5">5 References </a></li>
+<li><a href="#sec-6">6 Random Stuff </a>
+<ul>
+<li><a href="#sec-6.1">6.1 Denotation and Connotation (25) </a></li>
+<li><a href="#sec-6.2">6.2 Quality and Quantity (27) </a></li>
+<li><a href="#sec-6.3">6.3 Pure Quantity/ Quantum (28) </a></li>
+<li><a href="#sec-6.4">6.4 Language Game Interdependence (29) </a></li>
+<li><a href="#sec-6.5">6.5 The True is Both Subject and Substance (73) </a></li>
+<li><a href="#sec-6.6">6.6 Concept (of Concept) (90) </a></li>
+<li><a href="#sec-6.7">6.7 Substance, Reciprocity, Necessity, Freedom, I. (89-90) </a></li>
+<li><a href="#sec-6.8">6.8 The Concept of Freedom (89) </a></li>
+<li><a href="#sec-6.9">6.9 Reciprocity (89) </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Being </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Being (11-19) </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+</div>
+
+<div id="outline-container-1.1.1" class="outline-4">
+<h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> Pure Being and Nothing </h4>
+<div class="outline-text-4" id="text-1.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.2" class="outline-4">
+<h4 id="sec-1.1.2"><span class="section-number-4">1.1.2</span> The Concept of Becoming </h4>
+<div class="outline-text-4" id="text-1.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.1.3" class="outline-4">
+<h4 id="sec-1.1.3"><span class="section-number-4">1.1.3</span> The Concept of Determinate Being and the Concept of Negation </h4>
+<div class="outline-text-4" id="text-1.1.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Quality (20-26) </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> Becoming and Determinate Being </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+<p>The concepts of something and of something else are categories.
+They are necessary concepts to get from pure being to determinate
+being.
+</p></div>
+
+</div>
+
+<div id="outline-container-1.2.2" class="outline-4">
+<h4 id="sec-1.2.2"><span class="section-number-4">1.2.2</span> Something and Something Else </h4>
+<div class="outline-text-4" id="text-1.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.3" class="outline-4">
+<h4 id="sec-1.2.3"><span class="section-number-4">1.2.3</span> Bad Infinity </h4>
+<div class="outline-text-4" id="text-1.2.3">
+
+<p>The concept of 'something' implies by necessity the concept of
+'something else'. The two concepts limit each other. 
+</p>
+<p>
+But just as the 'something' by necessity implies 'something else',
+so the concept of 'something else' in-itself is a 'something'. That is,
+it is a 'something else' only insofar as it is that which limits
+the 'something'&hellip;this process can continue for infinity.
+</p>
+<p>
+For Hegel, the above is a "bad infinity" because it is an endless
+series of finite items, that is, items that, by necessity, are
+finite and also, by necessity, must continue to the next item.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.2.4" class="outline-4">
+<h4 id="sec-1.2.4"><span class="section-number-4">1.2.4</span> True Infinity </h4>
+<div class="outline-text-4" id="text-1.2.4">
+
+<p>True Infinity is not a series that continues infinitely as a straight
+line, but can be compared to the Infinity of a circle.
+</p>
+<p>
+True Infinity is an infinity where a something implies a something
+else; this something else, in turn, is seen to imply that very
+something by which it was implied.
+</p>
+<p>
+To see what this means, we can look at the concept of negation.
+Each 'something' has positive value and corresponding negative
+values. This involves each 'something' being not only that 
+which it is, but also that which it is not. If a 'something' is
+'A', then to be 'A' means to be that which is not 'non-A'.
+</p>
+<p>
+However, if 'A' is 'something', then that which is 'non-A'
+must be 'something else'. Therefore, 'something' is both
+'A' and that which is not 'non-A'; and because not 'non-A'
+is 'something else', it follows that 'something' is 
+identical with 'something else': Their identity conditions
+are interdefined.
+</p>
+<p>
+Using the colors example, we can look at it like this.
+If 'A' is red, then 'non-A' is the class of all other
+colors. 'A' is only red insofar as it cannot be said
+to be any other color. To say that it is red is to say
+that the color it is, is none of the other colors. If
+red were the only color, there would be no color
+whatever. In order to be a color at all, any color
+requires other colors with which it contrasts; if there
+were no such other colors, no color name could have
+any meaning.
+</p>
+<p>
+To say that a thing is that which it is not is thus a
+proposition whose truth is required as well from an
+ontological point of view as from a logical point of
+view.
+</p>
+<p>
+The True Infinity has absorbed the finite. In themselves,
+the 'something' and the 'something else' are finite, and
+as long as their identity is not understood, they constitute
+elements of bad infinity; but if their identity is understood,
+it is understood that it is a negation of the negation--
+understood that it is a self-negation and therefore a self-limitation--
+then it is understood that they constitute elements of True Infinity.
+</p></div>
+
+</div>
+
+<div id="outline-container-1.2.5" class="outline-4">
+<h4 id="sec-1.2.5"><span class="section-number-4">1.2.5</span> Being-for-Self </h4>
+<div class="outline-text-4" id="text-1.2.5">
+
+<p>True Infinity is a category because it applies by necessity
+to whatever is. There is nothing which is not identical that
+which negates it; their identity conditions are interdefined.
+</p>
+<p>
+The wording is tricky here, so we will word it in a variety
+of ways. 
+</p>
+<p>
+Nothing could be anything but nothing if it was not determined
+by the negative properties.
+</p>
+<p>
+A less provocative way of expressing Hegel's statement would be
+to state the claim that to possess a property P is to possess the
+properties that negate non-P. P can only be P if there are 
+properties belonging to the same class of properties as P, but
+that differ from P. If this is not the case, P could no longer
+be called a property.
+</p>
+<p>
+The number 2 is what it is because it is the number between 1
+and 3. It is the number 2 because it is neither the number 1
+or the number 3 (among other things). The number 2 has the 
+negative properties of being neither number 1 nor number 3.
+These negative properties define the number 2. The number 2
+is the negation of its negation.
+</p>
+<p>
+Closely connected with the category of True Infinity
+is the category of Being-For-Self. True Infinity concerns
+(at least) two finite elements&ndash;the something and the
+something else&ndash;regarding which, as soon as it is
+understood that they are identical, it is seen that
+together they constitute an infinite set. They constitute
+a self-determined unity, a negation of negation: when we
+negate the something, we get the something else, and
+when the something else is negated, we get back to the
+original, that is, to the something.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Quantity (27-39) </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> Pure Quantity and Quantum </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2"><span class="section-number-4">1.3.2</span> Continuity and Discreteness </h4>
+<div class="outline-text-4" id="text-1.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.3" class="outline-4">
+<h4 id="sec-1.3.3"><span class="section-number-4">1.3.3</span> Number </h4>
+<div class="outline-text-4" id="text-1.3.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.4" class="outline-4">
+<h4 id="sec-1.3.4"><span class="section-number-4">1.3.4</span> Extensive and Intensive Magnitudes </h4>
+<div class="outline-text-4" id="text-1.3.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.5" class="outline-4">
+<h4 id="sec-1.3.5"><span class="section-number-4">1.3.5</span> Quantitative Infinity </h4>
+<div class="outline-text-4" id="text-1.3.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.6" class="outline-4">
+<h4 id="sec-1.3.6"><span class="section-number-4">1.3.6</span> Measure </h4>
+<div class="outline-text-4" id="text-1.3.6">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Summary of Being (39-40) </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<p>Concept of negation is the foundation of Hegel's <i>Logic</i>
+</p>
+<p>
+Negativity is a necessary condition for determination
+</p>
+<p>
+Negativity leads us from pure being, and thus from nothing
+and becoming, to determinate being.
+</p>
+<p>
+Being is determined by having some quality.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Essence </h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> Essence (41-49) </h3>
+<div class="outline-text-3" id="text-2.1">
+
+
+</div>
+
+<div id="outline-container-2.1.1" class="outline-4">
+<h4 id="sec-2.1.1"><span class="section-number-4">2.1.1</span> Essence as Mediated Being </h4>
+<div class="outline-text-4" id="text-2.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.2" class="outline-4">
+<h4 id="sec-2.1.2"><span class="section-number-4">2.1.2</span> Identity </h4>
+<div class="outline-text-4" id="text-2.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.3" class="outline-4">
+<h4 id="sec-2.1.3"><span class="section-number-4">2.1.3</span> Identity and Difference </h4>
+<div class="outline-text-4" id="text-2.1.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.1.4" class="outline-4">
+<h4 id="sec-2.1.4"><span class="section-number-4">2.1.4</span> Contradiction </h4>
+<div class="outline-text-4" id="text-2.1.4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> Ground (50-62) </h3>
+<div class="outline-text-3" id="text-2.2">
+
+
+</div>
+
+<div id="outline-container-2.2.1" class="outline-4">
+<h4 id="sec-2.2.1"><span class="section-number-4">2.2.1</span> Ground as Unity of Identity and Difference </h4>
+<div class="outline-text-4" id="text-2.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2.2" class="outline-4">
+<h4 id="sec-2.2.2"><span class="section-number-4">2.2.2</span> Formal Ground, Real Ground, Sufficient Ground, Efficient Cause </h4>
+<div class="outline-text-4" id="text-2.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2.3" class="outline-4">
+<h4 id="sec-2.2.3"><span class="section-number-4">2.2.3</span> The Complete Ground&ndash;Condition and Conditioned </h4>
+<div class="outline-text-4" id="text-2.2.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2.4" class="outline-4">
+<h4 id="sec-2.2.4"><span class="section-number-4">2.2.4</span> Nature as the Ground of the World&ndash;Existence </h4>
+<div class="outline-text-4" id="text-2.2.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2.5" class="outline-4">
+<h4 id="sec-2.2.5"><span class="section-number-4">2.2.5</span> Things and Properties </h4>
+<div class="outline-text-4" id="text-2.2.5">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3"><span class="section-number-3">2.3</span> Appearance (62-66) </h3>
+<div class="outline-text-3" id="text-2.3">
+
+
+</div>
+
+<div id="outline-container-2.3.1" class="outline-4">
+<h4 id="sec-2.3.1"><span class="section-number-4">2.3.1</span> Appearance as Law </h4>
+<div class="outline-text-4" id="text-2.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3.2" class="outline-4">
+<h4 id="sec-2.3.2"><span class="section-number-4">2.3.2</span> Appearance as Both Reflection-Into-Self and Reflection-Into-Other </h4>
+<div class="outline-text-4" id="text-2.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3.3" class="outline-4">
+<h4 id="sec-2.3.3"><span class="section-number-4">2.3.3</span> The Inverted World </h4>
+<div class="outline-text-4" id="text-2.3.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4"><span class="section-number-3">2.4</span> Relation </h3>
+<div class="outline-text-3" id="text-2.4">
+
+
+</div>
+
+<div id="outline-container-2.4.1" class="outline-4">
+<h4 id="sec-2.4.1"><span class="section-number-4">2.4.1</span> Whole and Parts </h4>
+<div class="outline-text-4" id="text-2.4.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4.2" class="outline-4">
+<h4 id="sec-2.4.2"><span class="section-number-4">2.4.2</span> Force and Expression </h4>
+<div class="outline-text-4" id="text-2.4.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4.3" class="outline-4">
+<h4 id="sec-2.4.3"><span class="section-number-4">2.4.3</span> Outer and Inner </h4>
+<div class="outline-text-4" id="text-2.4.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.5" class="outline-3">
+<h3 id="sec-2.5"><span class="section-number-3">2.5</span> Actuality </h3>
+<div class="outline-text-3" id="text-2.5">
+
+
+</div>
+
+<div id="outline-container-2.5.1" class="outline-4">
+<h4 id="sec-2.5.1"><span class="section-number-4">2.5.1</span> Actuality and Reason </h4>
+<div class="outline-text-4" id="text-2.5.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.5.2" class="outline-4">
+<h4 id="sec-2.5.2"><span class="section-number-4">2.5.2</span> Modality, Possibility, Contingency and Necessity </h4>
+<div class="outline-text-4" id="text-2.5.2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.6" class="outline-3">
+<h3 id="sec-2.6"><span class="section-number-3">2.6</span> Absolute Relations </h3>
+<div class="outline-text-3" id="text-2.6">
+
+
+</div>
+
+<div id="outline-container-2.6.1" class="outline-4">
+<h4 id="sec-2.6.1"><span class="section-number-4">2.6.1</span> Substance and Accident </h4>
+<div class="outline-text-4" id="text-2.6.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.6.2" class="outline-4">
+<h4 id="sec-2.6.2"><span class="section-number-4">2.6.2</span> Causality </h4>
+<div class="outline-text-4" id="text-2.6.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.6.3" class="outline-4">
+<h4 id="sec-2.6.3"><span class="section-number-4">2.6.3</span> Reciprocity </h4>
+<div class="outline-text-4" id="text-2.6.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.7" class="outline-3">
+<h3 id="sec-2.7"><span class="section-number-3">2.7</span> Summary of Essence </h3>
+<div class="outline-text-3" id="text-2.7">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> The Concept </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1"><span class="section-number-3">3.1</span> The Concept </h3>
+<div class="outline-text-3" id="text-3.1">
+
+
+</div>
+
+<div id="outline-container-3.1.1" class="outline-4">
+<h4 id="sec-3.1.1"><span class="section-number-4">3.1.1</span> Subjectivity (The Concept as Such) </h4>
+<div class="outline-text-4" id="text-3.1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.1.2" class="outline-4">
+<h4 id="sec-3.1.2"><span class="section-number-4">3.1.2</span> Judgment </h4>
+<div class="outline-text-4" id="text-3.1.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.1.3" class="outline-4">
+<h4 id="sec-3.1.3"><span class="section-number-4">3.1.3</span> The Judgment of the Concept </h4>
+<div class="outline-text-4" id="text-3.1.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.1.4" class="outline-4">
+<h4 id="sec-3.1.4"><span class="section-number-4">3.1.4</span> The Syllogism </h4>
+<div class="outline-text-4" id="text-3.1.4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-3">
+<h3 id="sec-3.2"><span class="section-number-3">3.2</span> The Object </h3>
+<div class="outline-text-3" id="text-3.2">
+
+
+</div>
+
+<div id="outline-container-3.2.1" class="outline-4">
+<h4 id="sec-3.2.1"><span class="section-number-4">3.2.1</span> The Object as Mechanical Object </h4>
+<div class="outline-text-4" id="text-3.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.2.2" class="outline-4">
+<h4 id="sec-3.2.2"><span class="section-number-4">3.2.2</span> The Object as Chemical Object </h4>
+<div class="outline-text-4" id="text-3.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.2.3" class="outline-4">
+<h4 id="sec-3.2.3"><span class="section-number-4">3.2.3</span> The Object as Teleological Object </h4>
+<div class="outline-text-4" id="text-3.2.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3.3" class="outline-3">
+<h3 id="sec-3.3"><span class="section-number-3">3.3</span> The Idea </h3>
+<div class="outline-text-3" id="text-3.3">
+
+
+</div>
+
+<div id="outline-container-3.3.1" class="outline-4">
+<h4 id="sec-3.3.1"><span class="section-number-4">3.3.1</span> The Idea as Unity of Subjectivity and Objectivity </h4>
+<div class="outline-text-4" id="text-3.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.2" class="outline-4">
+<h4 id="sec-3.3.2"><span class="section-number-4">3.3.2</span> Life </h4>
+<div class="outline-text-4" id="text-3.3.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.3" class="outline-4">
+<h4 id="sec-3.3.3"><span class="section-number-4">3.3.3</span> The Life Process </h4>
+<div class="outline-text-4" id="text-3.3.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.4" class="outline-4">
+<h4 id="sec-3.3.4"><span class="section-number-4">3.3.4</span> The Idea as Cognition </h4>
+<div class="outline-text-4" id="text-3.3.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.5" class="outline-4">
+<h4 id="sec-3.3.5"><span class="section-number-4">3.3.5</span> The Theoretical Idea </h4>
+<div class="outline-text-4" id="text-3.3.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.6" class="outline-4">
+<h4 id="sec-3.3.6"><span class="section-number-4">3.3.6</span> The Idea as Volition&ndash;the Good </h4>
+<div class="outline-text-4" id="text-3.3.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.7" class="outline-4">
+<h4 id="sec-3.3.7"><span class="section-number-4">3.3.7</span> The Practical Idea </h4>
+<div class="outline-text-4" id="text-3.3.7">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.3.8" class="outline-4">
+<h4 id="sec-3.3.8"><span class="section-number-4">3.3.8</span> The Absolute Idea </h4>
+<div class="outline-text-4" id="text-3.3.8">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3.4" class="outline-3">
+<h3 id="sec-3.4"><span class="section-number-3">3.4</span> Summary of Concept </h3>
+<div class="outline-text-3" id="text-3.4">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Misunderstandings (Houlgate-2006.266) </h2>
+<div class="outline-text-2" id="text-4">
+
+<p>In this section, Houlgate describes some of the challenges
+involved with understanding Being/Nothing/Becoming.
+Hegel's account of pure Being is both conceptual and ontological.
+The bare thought of being mutates into the thought of becoming.
+Being turns out to be becoming. Pure Being does not vanish or come
+into being <i>over time</i>, but instead pure Being proves to be 
+<i>logically</i> or <i>structurally</i> unstable. In other words, it turns
+out logically to be nothing but vanishing and becoming.
+</p>
+<p>
+The task of the <i>Logic</i> is not to describe temporal developments,
+but rather to lay out before us all that being logically must be.
+Logically, Being proves not just to be Being after all, but to
+be Becoming; Becoming, accordingly, is nothing but the structural
+instability that Being immediately proves to be. Sheer indeterminate
+becoming is the same as being as utter instability.
+</p>
+<p>
+In the <i>Logic</i>, Being and Nothing are initially pure and indeterminate,
+but they soon prove to be much more determinate and complex than
+mere <i>being</i> and <i>nothing</i> (or becoming). Being will mutate
+logically into Reality, Being-Something, Actually, and ultimately,
+Space, whereas Nothing, or the simple "not", will mutate into
+Negation, Otherness, Negativity, and ultimately, Time. In each one,
+however, Being and Nothing as such will be preserved. 
+</p>
+<p>
+"Nowhere in heaven or on earth is there anything which does not 
+contain within itself both being and nothing." (<i>SL</i> 85/1:86)
+</p>
+<p>
+Every further determination <i>of</i> Being and Nothing will simply 
+be a more complex and intimate interrelation <i>between</i> Being
+and Nothing.
+</p>
+<p>
+The KEY to understanding Hegel's <i>Logic</i> is to distinguish 
+carefully what is true of Being <i>qua</i> pure Being from what 
+it is true of, for example, Being <i>qua</i> reality or Being-Something
+and to avoid reducing one category or determination of Being
+to another. There will be structural affinities between such
+determinations since less determinate ones are contained in
+more determinate ones, but there will also be significant
+differences that are not to be overlooked.
+</p>
+<p>
+Sheer indeterminate Being (as opposed to determinate Being) is
+logically indistinguishable from Nothingness. We can say of 
+pure Being that it is identical to Nothingness because Pure
+Being considered by itself is indeterminate. We cannot say
+of finite things that they are just Nothing or that their
+existence and non-existence are indistinguishable because
+finitude has a determinate logical structure that is clearly
+different from that of pure Nothingness.
+</p>
+<p>
+Utterly <i>indeterminate</i> Being is logically indistinguishable
+from&ndash;though also irreducible to&ndash;sheer nothingness. Many 
+people misunderstand Hegel fail to distinguish between the
+logical character of pure Being as such and that of 
+Determinate Being. 
+</p>
+<p>
+When Hegel states that Being is in fact Nothing, he is not
+denying that there is Being, but rather that insofar as
+Being is utterly immediate and indeterminate, Being vanishes
+logically into Nothing. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> References </h2>
+<div class="outline-text-2" id="text-5">
+
+<ul>
+<li>
+Hartnack-1998
+</li>
+<li>
+Houlgate-2006
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Random Stuff </h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6.1" class="outline-3">
+<h3 id="sec-6.1"><span class="section-number-3">6.1</span> Denotation and Connotation (25) </h3>
+<div class="outline-text-3" id="text-6.1">
+
+<ul>
+<li>
+Denotation -&gt; Attraction -&gt; One
+</li>
+<li>
+Connotation -&gt; Repulsion -&gt; Many
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-6.2" class="outline-3">
+<h3 id="sec-6.2"><span class="section-number-3">6.2</span> Quality and Quantity (27) </h3>
+<div class="outline-text-3" id="text-6.2">
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col"></th><th scope="col">One</th><th scope="col">Many</th></tr>
+</thead>
+<tbody>
+<tr><td>Quality</td><td>Something</td><td>Something Else</td></tr>
+<tr><td>Quantity</td><td>Continuity</td><td>Discreteness</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6.3" class="outline-3">
+<h3 id="sec-6.3"><span class="section-number-3">6.3</span> Pure Quantity/ Quantum (28) </h3>
+<div class="outline-text-3" id="text-6.3">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6.4" class="outline-3">
+<h3 id="sec-6.4"><span class="section-number-3">6.4</span> Language Game Interdependence (29) </h3>
+<div class="outline-text-3" id="text-6.4">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6.5" class="outline-3">
+<h3 id="sec-6.5"><span class="section-number-3">6.5</span> The True is Both Subject and Substance (73) </h3>
+<div class="outline-text-3" id="text-6.5">
+
+<p>Everything turns on grasping and expressing the true not only
+as substance, but equally as subject.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.6" class="outline-3">
+<h3 id="sec-6.6"><span class="section-number-3">6.6</span> Concept (of Concept) (90) </h3>
+<div class="outline-text-3" id="text-6.6">
+
+<p>Hegel's concept (of concept) contains three moments:
+</p><ul>
+<li>
+Universality
+</li>
+<li>
+Particularity
+</li>
+<li>
+Individuality
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-6.7" class="outline-3">
+<h3 id="sec-6.7"><span class="section-number-3">6.7</span> Substance, Reciprocity, Necessity, Freedom, I. (89-90) </h3>
+<div class="outline-text-3" id="text-6.7">
+
+<p>From the concept of substance, to reciprocity, from there
+to necessity, which implies freedom, which in turn implies the
+I, we have the insight that substance is seen as identical
+with subject. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.8" class="outline-3">
+<h3 id="sec-6.8"><span class="section-number-3">6.8</span> The Concept of Freedom (89) </h3>
+<div class="outline-text-3" id="text-6.8">
+
+<p>The concept of freedom is the key to understanding the concept
+of the concept.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.9" class="outline-3">
+<h3 id="sec-6.9"><span class="section-number-3">6.9</span> Reciprocity (89) </h3>
+<div class="outline-text-3" id="text-6.9">
+
+<p>Reciprocity is identical with the concept of the concept.
+</p></div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: GW Dean
+<a href="mailto:gwdean@gmail.com">&lt;gwdean@gmail.com&gt;</a>
+</p>
+<p class="date"> Date: 2013-10-16 Wed</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

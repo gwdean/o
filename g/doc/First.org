@@ -1,0 +1,88 @@
+* Notes on First-Order Logic
+According to Raymond Smullyan, /first-order logic/ (or predicate
+logic) is "an enormous advance over propositional logic" and is
+an "adequate logical framework for the entire body
+of mathematics". (Smullyan-2007,83). That is a big
+claim and provides a great deal of motivation for one
+who is interested in mathematics. The goal of these
+notes is to understand what this means.
+
+** What is Symbolic Logic (or Mathematical Logic)?
+Symbolic/mathematical logic deals with /propositions/
+and /arguments/ codified into symbolic forms to make 
+reasoning more precise.
+** Primer Problems for First-Order Logic (Smullyan-2007.110-110)
+*** All of us here are the same type.
+*** Some of us are knights and some are knaves.
+*** All of us are knaves/Is it true that all the inhabitants are knaves?
+*** All knights on this island smoke.
+*** Some knaves on this island smoke.
+*** If I smoke, then all the inhabitants of this island smoke.
+*** If any inhabitant of this island smokes, then I smoke.
+*** Some of us smoke, but I don't.
+*** And so on...
+** Beginning First Order Logic (Smullyan-2007.111)
+- Objects (x,y,z...)
+- Properties (P,Q,R...)
+
+Given any property P and any object x, the proposition that x has
+the property P is symbolized as Px.
+
+How do we say that /every/ object x has property P?
+
+@ is the /universal quantifier/, which stands for "all" or "every".
+Thus @x is read "for all x" or "for every x", and so the English 
+sentence "Everything has the property P" is symbolically rendered
+as @xPx (read "For every x, Px")
+
+$ is the /existential quantifier/, which stands for "there exists
+at least one". Then the proposition that at least one object x has
+the property P is symbolized $xPx.
+
+To repeat:
+
+- @xPx :: Universal Quantifier
+- $xPx :: Existential Quantifier
+
+Some sentences.
+- Gx :: "x is good"
+- @xGx :: "Everyone is good"
+- $xGx :: "Some people are good"
+
+- ~$xGx :: "No one is good" (it is /not/ the case that there exists a good person)
+- @x(~Gx) :: "No one is good" (for every person x, x is not good)
+
+- Hx :: "x goes to heaven"
+- @x(Gx=>Hx) :: "All good people go to heaven" (for every person x, if x is good, then x goes to heaven)  
+- @x(~Gx=>~Hx) :: "Only good people go to heaven"
+- @x(Hx=>Gx) :: "Only good people go to heaven"
+- $x(Gx&Hx) :: "Some good people go to heaven"
+- ~$x(Gx&Hx) :: "No good person goes to heaven"
+- ~$x(Gx&~Hx) :: "No good person fails to go to heaven"
+
+Note that "No good person fails to go to heaven" is just a roundabout
+way of saying "All good people go to heaven", so
+- ~$x(Gx&~Hx) ::
+
+is equivalent to 
+
+- @x(Gx=>Hx) ::
+
+How do we interpret "God helps those who help themselves?"
+
+
+** Some Important Results in First Order Logic (Smullyan-2007.297)
+*** Completeness Theorem for Tableaux
+Every valid formula is provable by the tableaux method.
+*** Skolem-Lowenheim Theorem
+For any set /S/ of formulas, if /S/ is satisfiable, then /S/
+is satisfiable in a denumerable domain.
+*** Compactness Theorem
+For any infinite set of /S/ of formulas, if every finite subset
+of /S/ is satisfiable, then /S/ is satisfiable.
+*** Regularity Theorem
+Every valid sentence /X/ is truth-functionally implied by a regular
+set /R/.
+*** The Completeness of the Axiom System G2
+*** Craig's Interpolation Lemma (and its applications)
+*** Theorem AM

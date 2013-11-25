@@ -1,0 +1,8 @@
+* Markets from Networks
+This document collects notes and links
+to Harrison C White's /Markets from Networks/.
+
+** Firms Embed Into A Market
+** Markets Compete, Too
+** Markets along Networks
+** Markets and Firms over Time

@@ -1,0 +1,132 @@
+#+TITLE:     Notes on the INTRODUCTION to the Phenomenology of Spirit (Mind).
+#+AUTHOR:    GW Dean
+#+EMAIL:     gwdean@gmail.com
+#+DATE:      2013-10-08 Tue
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+* Muller-1970
+The long Preface of the /Phenomenology of Mind/ is followed by thirteen
+pages, now called Introduction, which contains 16 sections.
+
+These pages are something like a long subtitle explaining the meaning 
+of the title, which is still meant to be the title of the book in 
+section XV.
+
+Heraclitus quotation (from the title page of the /PoM/):
+"The soul's meaning is self-augmenting."
+
+At the end of the /Phenomenology/, Hegel says that the 
+world-consciousness as developed in the medium of the soul
+is a preparation for /Logic/.
+** Philosophical Knowledge
+Philosophical knowledge is neither a practical tool, by
+which the Absolute could be handled, nor a theoretical medium
+of reception. Both forms of empirical knowledge postulate a
+separation between an object known and empirical subjects 
+knowing it. The Absolute is both Being in itself and Subject
+for itself. Truth is the ontological consciousness of Being
+in us, the One becoming aware of itself in many beings.
+** Our Fear of Error and Untruth
+Our fear of error and untruth is a testimony to the presence
+of the absolute consciousness in our existence.
+** The Absolute is the Only Truth
+The Absolute is the only truth, and only truth is absolute.
+The absolute whole is presupposed (/vorausgesetzt/) by and 
+in all empirical informations. To "know all" is not knowledge
+of wholeness or integrity. This ground of philosophy is at 
+the same time the goal of its self-development.
+** Philosophy Is Not One Position Among Others
+Philosophy is not one position among others; it cannot withdraw
+to an inner certainty, a sentiment, a voluntaristic choice, an
+arbitrary faith, or an intuitive hunch. It has to go through all
+essential positions of consciousness to show them their own
+limitations; and in their limitations their values.
+** Ascent Toward the Absolute
+One might see this way through the stations of the appearing
+consciousness as an ascent toward the Absolute. This Platonic
+image is misleading, if it is not remembered that each station
+of this passion-way is in itself an appearing phase of the 
+Absolute; in all seemingly fixed or one-sided positions, the
+Absolute's own negations must be recognized.
+** Limits of the Natural (or Empirical) Consciousness
+For the varieties of the natural or empirical consciousness
+this realization of their limits seems to be a horrifying
+and desperate experience. The truth explodes all finite
+certainties. This way of doubt and despair must not be confused
+with mere riddles; the scientist can return to his position
+unscathed after his riddle has been figured out; but he is a
+changed man, after philosophical critique has convinced him of
+his relativity /in/ the world.
+** Self-Realizing Skepticism
+This self-realizing (/sich vollbringend/) skepticism must further
+not be identified with the particular position of skepticism as 
+one of the one-sided forms of consciousness. That one-sided skepticism
+is merely the negative result of having seen through the metaphysical
+ultimacy of sense-certainty and object-realism of natural consciousness.
+It remains negatively tied up with the dogmatic assumptions from
+which it abstains.
+** The Dialectical Process as a Living Dialogue
+The dialectical process is on all levels a living dialogue between
+the absolute world-itself and the relative consciousness of it in
+us. Every empirical subject-object dualism, every finite fixation
+is secretly aware of death as that power which overwhelms it. 
+Against this feeling of being overwhelmed (/Gefuhl der Gewalt/) and
+against all anguish in the omnipresence of the Absolute, the finite
+positions cling all the more stubbornly to their comforts. This
+is the misery of unauthentic existence, which can be cured if
+existence is willing to appropriate its own "death" as means of
+bringing itself into its true Being.
+** Transcendence and Immanence
+There seems to be, then, in all levels of existential knowledge
+a discrepancy between absolute truth as measure, and the certainties
+of standpoints as that which is measured; of Being in itself beyond
+consciousness, and Being-for consciousness; transcendence and
+immanence. 
+** This Dialectic is the Essential Nature of Consciousness
+This dialectic is the essential nature of consciousness itself.
+Every consciousness distinguishes that which it intends and its
+own awareness of intending.
+** Self-Knowledge. Self-Reflection. Self-Realization.
+We who know consciousness as this existential dialectic are
+involved in the same dialectic which we seem to be observing.
+Philosophy is self-knowledge, dialectical self-reflection and
+self-realization.
+** Philosophical knowledge, therefore, distinguishes...
+Philosophical knowledge, therefore, distinguishes itself
+from all other types of knowledge in that its observed object
+is the same sort of thing as that which does the observing.
+In apprehending the other I characterize myself. That which
+is evaluated is also that whereby it is evaluated. Empirical,
+natural consciousness intends to know objects as if they were
+independent of this consciousness. In understanding this kind
+of object-consciousness we understand a mode of existence 
+which we are if and when we practice it. Empirical consciousness,
+thus, exists in and for itself as that which it is for us in
+philosophy. Truth and certainty, that which consciousness is in
+itself and that which it is for itself, are one and the same
+appearing dialectical process.
+** Consciousness Itself Is This Process of Comparing Its Own Two Sides
+Consciousness itself is this process of comparing its own two
+sides, that of which it is aware and its being aware of it.
+Philosophical "science" (/Wissenschaft/) is pure /theoria/ 
+(/reines Zusehn/). The process of experience (/Erfahrung/) thus
+knows and criticizes itself in its limitations. 
+** This Dialectical Movement
+This dialectical movement, in which consciousness is forced
+to take one position after another in the correlations of
+knowledge and its intentional object, is the experience
+(/Eh-fahrung/) which it makes with itself. Consciousness
+constitutes itself in and by this experience.
+** The Unity and Coherence of The Process
+** The Realm of Truth and the Trials of Existence
+The realm of truth is inseparably one with our tentative
+and provisional trials of existence; there is not a moment
+of truth which is not also a shape of living consciousness.
